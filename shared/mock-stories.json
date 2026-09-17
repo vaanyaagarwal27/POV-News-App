@@ -1,0 +1,207 @@
+{
+  "edition_date": "2026-09-17",
+  "generated_at": "2026-09-17T06:30:00+05:30",
+  "stories": [
+    {
+      "id": "up-pol-001",
+      "headline": "Uttar Pradesh cabinet reshuffle reported ahead of winter session amid rising factional tensions",
+      "topic": "Politics",
+      "regions": ["Uttar Pradesh"],
+      "published": "2026-09-15",
+      "read_seconds": 180,
+      "source_count": 4,
+      "disagreement": 2,
+      "teaser": "Regional papers back the CM's strategy while national outlets call it a damage-control move",
+      "why_it_matters": "Cabinet realignment in India's most populous state could redraw political alliances before the 2027 assembly elections.",
+      "affects": ["voters", "civil servants", "opposition leaders"],
+      "agreed_facts": [
+        "Chief Minister Yogi Adityanath chaired an extended cabinet meeting on 14 September 2026.",
+        "Three ministers are reported to have submitted their resignations amid factional pressure.",
+        "The winter session of the Uttar Pradesh assembly is scheduled to begin in November 2026."
+      ],
+      "clusters": [
+        {
+          "angle": "The reshuffle reflects a deliberate strategy to consolidate the ruling party's hold ahead of elections",
+          "papers": [
+            { "name": "Dainik Jagran", "headline": "Yogi cabinet में बड़ा फेरबदल, तीन मंत्रियों ने दिया इस्तीफा", "url": "https://example.com/dainik-jagran/up-cabinet-sep15" },
+            { "name": "Amar Ujala", "headline": "UP कैबिनेट में फेरबदल की तैयारी, CM योगी की रणनीति पर नजर", "url": "https://example.com/amar-ujala/up-cabinet-sep15" }
+          ]
+        },
+        {
+          "angle": "Opposition leaders say the reshuffle exposes internal party discord and governance failures",
+          "papers": [
+            { "name": "The Hindu", "headline": "UP cabinet reshuffle signals factional tensions within BJP ahead of 2027 polls", "url": "https://example.com/the-hindu/up-cabinet-sep15" },
+            { "name": "Indian Express", "headline": "Three UP ministers resign as Yogi faces pressure from Delhi over governance record", "url": "https://example.com/indian-express/up-cabinet-sep15" }
+          ]
+        }
+      ],
+      "jargon": [
+        { "term": "winter session", "plain": "A sitting of the state legislature held in the cooler months, typically November–December, to debate legislation and government business" },
+        { "term": "factional pressure", "plain": "Tension within a political party caused by competing internal groups or power blocs pushing for influence" }
+      ],
+      "people": [
+        { "name": "Yogi Adityanath", "who": "Chief Minister of Uttar Pradesh" }
+      ]
+    },
+    {
+      "id": "ka-eco-001",
+      "headline": "Karnataka revises budget upward by ₹8,000 crore to fund road and metro expansion",
+      "topic": "Economy",
+      "regions": ["Karnataka"],
+      "published": "2026-09-13",
+      "read_seconds": 150,
+      "source_count": 3,
+      "disagreement": 1,
+      "teaser": "Business papers emphasise growth potential while Kannada dailies question the funding source",
+      "why_it_matters": "The additional allocation directly affects infrastructure contracts and public commuting timelines in Bengaluru and other cities.",
+      "affects": ["commuters", "contractors", "taxpayers"],
+      "agreed_facts": [
+        "The Karnataka cabinet approved a ₹8,000 crore supplementary budget on 12 September 2026.",
+        "The funds are earmarked for road widening and metro rail extension projects in Bengaluru.",
+        "Finance Minister Krishnamurthy tabled the revision before the state assembly on 12 September."
+      ],
+      "clusters": [
+        {
+          "angle": "The revision is a bold and necessary investment in Karnataka's urban infrastructure",
+          "papers": [
+            { "name": "Deccan Herald", "headline": "Karnataka approves ₹8,000 crore boost for Bengaluru metro and road projects", "url": "https://example.com/deccan-herald/ka-budget-sep13" },
+            { "name": "Business Standard", "headline": "Karnataka supplementary budget signals infrastructure-led growth push", "url": "https://example.com/business-standard/ka-budget-sep13" }
+          ]
+        },
+        {
+          "angle": "Opposition members argue the supplementary budget will widen the state's fiscal deficit",
+          "papers": [
+            { "name": "Vijaya Karnataka", "headline": "ಪೂರಕ ಬಜೆಟ್‌ಗೆ ವಿರೋಧ: ಸಾಲದ ಹೊರೆ ಹೆಚ್ಚಳ ಸಾಧ್ಯತೆ", "url": "https://example.com/vijaya-karnataka/budget-sep13" }
+          ]
+        }
+      ],
+      "jargon": [
+        { "term": "₹8,000 crore", "plain": "Approximately ₹80 billion, equivalent to about US $960 million at current exchange rates" }
+      ],
+      "people": [
+        { "name": "Krishnamurthy", "who": "Finance Minister of Karnataka" }
+      ]
+    },
+    {
+      "id": "nat-tech-001",
+      "headline": "Government unveils national AI policy framework; startups welcome it while digital rights groups raise alarm",
+      "topic": "Tech",
+      "regions": ["national"],
+      "published": "2026-09-16",
+      "read_seconds": 210,
+      "source_count": 5,
+      "disagreement": 3,
+      "teaser": "Tech business press calls it a growth enabler while civil liberties outlets warn of surveillance risks",
+      "why_it_matters": "India's first comprehensive AI policy will shape how algorithms are built, audited, and deployed across sectors from healthcare to law enforcement.",
+      "affects": ["tech workers", "startups", "citizens"],
+      "agreed_facts": [
+        "The Ministry of Electronics and Information Technology released the National AI Policy on 15 September 2026.",
+        "The policy mandates an AI safety board with powers to audit high-risk systems deployed in India.",
+        "Minister Ashwini Vaishnaw presented the framework to Parliament in a dedicated session on 15 September."
+      ],
+      "clusters": [
+        {
+          "angle": "Tech industry voices see the policy as a long-overdue milestone for India's AI ambitions",
+          "papers": [
+            { "name": "Economic Times", "headline": "India's National AI Policy a game-changer for startups, says industry body Nasscom", "url": "https://example.com/economic-times/ai-policy-sep16" },
+            { "name": "Mint", "headline": "Ashwini Vaishnaw unveils AI policy, startups cheer mandatory safety audits as competitive edge", "url": "https://example.com/mint/ai-policy-sep16" }
+          ]
+        },
+        {
+          "angle": "Civil liberties advocates warn the AI safety board lacks independence from government oversight",
+          "papers": [
+            { "name": "The Wire", "headline": "India's AI policy gives government sweeping powers with little independent oversight, critics warn", "url": "https://example.com/the-wire/ai-policy-sep16" },
+            { "name": "Scroll.in", "headline": "New AI safety board could become surveillance tool, say digital rights groups", "url": "https://example.com/scroll-in/ai-policy-sep16" }
+          ]
+        },
+        {
+          "angle": "Centrist commentators call for clearer enforcement timelines and penalties before the framework takes effect",
+          "papers": [
+            { "name": "Hindustan Times", "headline": "National AI Policy ambitious but vague on timelines and penalties, analysts say", "url": "https://example.com/hindustan-times/ai-policy-sep16" }
+          ]
+        }
+      ],
+      "jargon": [
+        { "term": "AI safety board", "plain": "A government body that reviews AI products for potential harms before they are widely deployed" }
+      ],
+      "people": [
+        { "name": "Ashwini Vaishnaw", "who": "Union Minister for Electronics and Information Technology" }
+      ]
+    },
+    {
+      "id": "intl-cli-001",
+      "headline": "UN climate talks stall over rich-nation finance pledges as developing countries walk out",
+      "topic": "Climate",
+      "regions": ["international"],
+      "published": "2026-09-14",
+      "read_seconds": 190,
+      "source_count": 4,
+      "disagreement": 2,
+      "teaser": "Western outlets frame the walkout as a negotiating tactic; Global South press calls it a genuine breakdown",
+      "why_it_matters": "A failure to agree on climate finance could delay adaptation funding for the nations most vulnerable to extreme weather.",
+      "affects": ["coastal communities", "policymakers", "NGOs"],
+      "agreed_facts": [
+        "Delegations from 47 developing nations walked out of the UN climate finance summit in Geneva on 13 September 2026.",
+        "The walkout followed a dispute over whether wealthy nations would meet the $100 billion annual climate finance pledge.",
+        "UN Secretary-General António Guterres called for an emergency session to resume negotiations."
+      ],
+      "clusters": [
+        {
+          "angle": "Western coverage portrays the walkout as a high-stakes but recoverable negotiating tactic",
+          "papers": [
+            { "name": "BBC News", "headline": "Climate talks: Developing nations stage walkout in Geneva finance dispute", "url": "https://example.com/bbc-news/climate-walkout-sep14" },
+            { "name": "The Guardian", "headline": "Geneva climate finance talks collapse after mass walkout — but resumption expected", "url": "https://example.com/the-guardian/climate-walkout-sep14" }
+          ]
+        },
+        {
+          "angle": "Media from the Global South frames the walkout as a justified response to years of broken climate pledges",
+          "papers": [
+            { "name": "Daily Nation (Kenya)", "headline": "African bloc quits Geneva talks: 'Enough promises, we need real climate money now'", "url": "https://example.com/daily-nation/climate-walkout-sep14" },
+            { "name": "The Hindu", "headline": "Developing nations walk out of UN climate talks, say rich countries still haven't paid up", "url": "https://example.com/the-hindu/climate-walkout-sep14" }
+          ]
+        }
+      ],
+      "jargon": [
+        { "term": "$100 billion annual climate finance pledge", "plain": "A 2009 commitment by wealthy nations to provide $100 billion per year by 2020 to help poorer countries tackle and adapt to climate change" }
+      ],
+      "people": [
+        { "name": "António Guterres", "who": "Secretary-General of the United Nations" }
+      ]
+    },
+    {
+      "id": "nat-crt-001",
+      "headline": "Supreme Court upholds state governments' right to sub-classify OBC reservations",
+      "topic": "Courts",
+      "regions": ["national"],
+      "published": "2026-09-12",
+      "read_seconds": 160,
+      "source_count": 3,
+      "disagreement": 0,
+      "teaser": "",
+      "why_it_matters": "The ruling gives state governments clear constitutional authority to distribute reservation benefits more precisely within the OBC category.",
+      "affects": ["OBC communities", "state governments", "legal practitioners"],
+      "agreed_facts": [
+        "A seven-judge Constitution Bench of the Supreme Court delivered its judgment on 11 September 2026.",
+        "The bench upheld the constitutional validity of sub-classifying OBC communities within the reservation quota.",
+        "Chief Justice D.Y. Chandrachud read out the majority opinion in open court and noted two dissenting opinions."
+      ],
+      "clusters": [
+        {
+          "angle": "All covered papers report the ruling as a landmark clarification of reservations law that expands state authority",
+          "papers": [
+            { "name": "The Hindu", "headline": "Supreme Court upholds sub-classification of OBC reservations in landmark 5-2 ruling", "url": "https://example.com/the-hindu/obc-ruling-sep12" },
+            { "name": "Indian Express", "headline": "Constitution Bench backs states' power to sub-classify OBC quotas, 5 judges to 2", "url": "https://example.com/indian-express/obc-ruling-sep12" },
+            { "name": "Hindustan Times", "headline": "SC ruling on OBC sub-classification opens door for states to target quotas more precisely", "url": "https://example.com/hindustan-times/obc-ruling-sep12" }
+          ]
+        }
+      ],
+      "jargon": [
+        { "term": "OBC", "plain": "Other Backward Classes — groups designated by the Indian government as socially and educationally disadvantaged and eligible for reservation in jobs and education" },
+        { "term": "Constitution Bench", "plain": "A bench of five or more Supreme Court judges assembled specifically to decide questions that require interpreting the Constitution" }
+      ],
+      "people": [
+        { "name": "D.Y. Chandrachud", "who": "Chief Justice of India" }
+      ]
+    }
+  ]
+}
