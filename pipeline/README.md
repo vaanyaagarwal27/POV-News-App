@@ -1,0 +1,1 @@
+Python pipeline: fetches news, groups it, summarises it, writes stories.json. Owner: Vaanya.
