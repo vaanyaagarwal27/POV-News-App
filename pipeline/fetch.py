@@ -19,6 +19,33 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 ARTICLES_FILE = os.path.join(DATA_DIR, "articles.json")
 
 
+OPINION_URL_SEGMENTS = {
+    "/opinion/", "/opinions/", "/editorial/", "/editorials/",
+    "/column/", "/columns/", "/blog/", "/blogs/", "/op-ed/",
+}
+OPINION_HEADLINE_PREFIXES = ("Opinion:", "Editorial:")
+
+JUNK_URL_SEGMENTS = {
+    "/showtimes/", "/movie-show-timings/", "/events/",
+    "/horoscope/", "/astrology/", "/photostory/", "/web-stories/",
+}
+JUNK_HEADLINE_TOKENS = ("Showtimes", "Show Timings")
+
+
+def is_opinion(url, headline):
+    url_lower = url.lower()
+    if any(seg in url_lower for seg in OPINION_URL_SEGMENTS):
+        return True
+    return headline.startswith(OPINION_HEADLINE_PREFIXES)
+
+
+def is_junk(url, headline):
+    url_lower = url.lower()
+    if any(seg in url_lower for seg in JUNK_URL_SEGMENTS):
+        return True
+    return any(tok in headline for tok in JUNK_HEADLINE_TOKENS)
+
+
 def strip_html(text):
     return re.sub(r"<[^>]+>", "", text or "").strip()
 
@@ -77,6 +104,8 @@ def main():
         feed_count = len(d.entries)
         feed_new = 0
         feed_skipped = 0
+        feed_opinion = 0
+        feed_junk = 0
         paper_headlines = existing_headlines.setdefault(feed["name"], set())
 
         for entry in d.entries:
@@ -87,6 +116,14 @@ def main():
 
             art_id = hashlib.md5(link.encode()).hexdigest()
             headline = clean_headline(entry.get("title", ""), is_google_news)
+
+            if is_opinion(link, headline):
+                feed_opinion += 1
+                continue
+
+            if is_junk(link, headline):
+                feed_junk += 1
+                continue
 
             pub = parse_published(entry, now)
             try:
@@ -118,7 +155,7 @@ def main():
             feed_new += 1
 
         total_new += feed_new
-        print(f"{feed['name']:<20} | {feed_count:>3} in feed | {feed_new:>3} new | {feed_skipped:>3} skipped")
+        print(f"{feed['name']:<20} | {feed_count:>3} in feed | {feed_new:>3} new | {feed_skipped:>3} skipped | {feed_opinion:>3} opinion skipped")
 
     with open(ARTICLES_FILE, "w") as f:
         json.dump(articles, f, ensure_ascii=False, indent=2)
