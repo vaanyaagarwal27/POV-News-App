@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Caveat:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#E8E7E3;font-family:"DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
+*{box-sizing:border-box}
+::-webkit-scrollbar{width:0;height:0}
+.pov-sticker:hover{animation:povShimmy .55s ease-in-out both;filter:drop-shadow(0 6px 14px rgba(0,0,0,.18))}
+@keyframes povRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes povFade{from{opacity:0}to{opacity:1}}
+@keyframes povT1{from{width:0}to{width:22ch}}
+@keyframes povT2{from{width:0}to{width:20ch}}
+@keyframes povT3{from{width:0}to{width:23ch}}
+@keyframes povT4{from{width:0}to{width:21ch}}
+@keyframes povShimmy{0%{transform:rotate(var(--r)) translate(0,0)}20%{transform:rotate(calc(var(--r) + 7deg)) translate(-2px,-3px) scale(1.07)}45%{transform:rotate(calc(var(--r) - 6deg)) translate(2px,1px) scale(1.07)}70%{transform:rotate(calc(var(--r) + 4deg)) translate(-1px,-1px) scale(1.04)}100%{transform:rotate(var(--r)) translate(0,0)}}
+@keyframes povFeed{from{opacity:0;transform:translateY(42px)}to{opacity:1;transform:none}}
+@keyframes povStrike{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+@keyframes povCaret{0%,48%{opacity:1}49%,100%{opacity:0}}
+@keyframes povSlab{from{opacity:0;transform:translateY(34px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes povBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes povBlob{0%{transform:translate(0,0) scale(1)}50%{transform:translate(26px,-18px) scale(1.15)}100%{transform:translate(0,0) scale(1)}}
+@keyframes povPulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes povDraw{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes povDrift{0%,100%{transform:rotate(var(--r)) translate(0,0)}25%{transform:rotate(calc(var(--r) + 3deg)) translate(9px,-14px)}50%{transform:rotate(calc(var(--r) - 2.5deg)) translate(-7px,-22px)}75%{transform:rotate(calc(var(--r) + 1.5deg)) translate(-11px,-9px)}}
+@keyframes povDrift2{0%,100%{transform:rotate(var(--r)) translate(0,0)}25%{transform:rotate(calc(var(--r) - 3deg)) translate(-10px,-11px)}50%{transform:rotate(calc(var(--r) + 2.5deg)) translate(8px,-20px)}75%{transform:rotate(calc(var(--r) - 1.5deg)) translate(12px,-8px)}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:44px 24px 64px;gap:28px;position:relative;z-index:1">
+<!-- scattered stickers on the desk -->
+<div style="position:fixed;inset:0;pointer-events:none;z-index:0">
+  <div class="pov-sticker" style="position:absolute;left:0.5%;top:7%;width:132px;--r:-7deg;transform:rotate(-7deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/news-stack.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply;opacity:.92"></div>
+  <div class="pov-sticker" style="position:absolute;left:0.5%;top:52%;width:96px;--r:9deg;transform:rotate(9deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/mic.png" alt="" style="width:100%;height:auto;display:block;"></div>
+  <div class="pov-sticker" style="position:absolute;left:1%;bottom:9%;width:120px;--r:-14deg;transform:rotate(-14deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/news-stack.png" alt="" style="width:100%;height:auto;display:block;"></div>
+  <div class="pov-sticker" style="position:absolute;right:2%;top:6%;width:104px;--r:6deg;transform:rotate(6deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/happy-news.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div class="pov-sticker" style="position:absolute;right:2%;top:46%;width:104px;--r:-8deg;transform:rotate(-8deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/camera.png" alt="" style="width:100%;height:auto;display:block;"></div>
+  <div class="pov-sticker" style="position:absolute;right:2.5%;bottom:18%;width:58px;--r:11deg;transform:rotate(11deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/clock.png" alt="" style="width:100%;height:auto;display:block;"></div>
+  <div class="pov-sticker" style="position:absolute;left:1%;top:26%;width:52px;--r:-16deg;transform:rotate(-16deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/ear.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div class="pov-sticker" style="position:absolute;right:2%;bottom:5%;width:96px;--r:8deg;transform:rotate(8deg);pointer-events:auto;cursor:grab;transition:filter .3s"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;"></div>
+</div>
+
+
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px" style="pointer-events:auto">
+
+<div style="position:relative;width:100%;height:874px;overflow:hidden;background:#F2EFE4;color:#101010;pointer-events:auto">
+
+<!-- shared scrapbook backdrop (behind every screen) -->
+<div style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
+  <div style="position:absolute;left:-40px;top:96px;width:150px;height:120px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.24"></div>
+  <div style="position:absolute;right:-46px;top:262px;width:150px;height:132px;border-radius:52% 48% 55% 45%;background:#8C3B48;opacity:.2"></div>
+  <div style="position:absolute;left:-30px;bottom:118px;width:140px;height:118px;border-radius:46% 54% 50% 50%;background:#E0B44A;opacity:.24"></div>
+  <div style="position:absolute;right:-36px;bottom:-16px;width:150px;height:126px;border-radius:50%;background:#2C4A63;opacity:.16"></div>
+  <div style="position:absolute;right:-18px;top:120px;width:86px;--r:7deg;transform:rotate(7deg);opacity:.32;animation:povDrift 9s ease-in-out infinite"><img src="assets/mic.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:-14px;top:430px;width:92px;--r:-9deg;transform:rotate(-9deg);opacity:.3;animation:povDrift2 10s ease-in-out infinite"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:-10px;bottom:180px;width:78px;--r:10deg;transform:rotate(10deg);opacity:.3;animation:povDrift 11s ease-in-out infinite"><img src="assets/ear.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:-8px;top:-6px;width:104px;--r:-6deg;transform:rotate(-6deg);opacity:.26;animation:povDrift2 12s ease-in-out infinite"><img src="assets/news-stack.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+</div>
+
+<!-- ══════════ WELCOME ══════════ -->
+<sc-if value="{{ isWelcome }}" hint-placeholder-val="{{ true }}">
+<div style="position:relative;z-index:1;height:100%;background:#F2EFE4;overflow:hidden;animation:povFade .5s ease both;display:flex;flex-direction:column;justify-content:flex-end;padding:0 28px 52px">
+
+  <!-- painted patches -->
+  <div style="position:absolute;left:2px;top:78px;width:120px;height:96px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.85"></div>
+  <div style="position:absolute;right:14px;top:74px;width:118px;height:108px;border-radius:52% 48% 55% 45%;background:#8C3B48;opacity:.85"></div>
+  <div style="position:absolute;left:152px;top:208px;width:96px;height:92px;border-radius:50%;background:#9AA46A;opacity:.85"></div>
+  <div style="position:absolute;right:24px;top:290px;width:92px;height:70px;border-radius:52% 48% 46% 54%;background:#8C3B48;opacity:.85"></div>
+  <div style="position:absolute;left:18px;top:372px;width:86px;height:74px;border-radius:50%;background:#8C3B48;opacity:.85"></div>
+  <div style="position:absolute;right:22px;top:552px;width:90px;height:82px;border-radius:50%;background:#E0B44A;opacity:.9"></div>
+  <div style="position:absolute;left:8px;top:626px;width:150px;height:120px;border-radius:46% 54% 50% 50%;background:#7C8A52;opacity:.85"></div>
+  <div style="position:absolute;left:212px;top:716px;width:104px;height:80px;border-radius:50%;background:#8C3B48;opacity:.85"></div>
+
+  <!-- stickers: news-literacy only -->
+  <div style="position:absolute;left:-14px;top:44px;width:168px;--r:-4deg;transform:rotate(-4deg);animation:povDrift 7s ease-in-out infinite"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:-6px;top:40px;width:152px;--r:3deg;transform:rotate(3deg);animation:povDrift2 8.5s ease-in-out infinite"><img src="assets/happy-news.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:146px;top:190px;width:110px;--r:-3deg;transform:rotate(-3deg);animation:povDrift 9s ease-in-out infinite"><img src="assets/ear.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:10px;top:262px;width:106px;--r:6deg;transform:rotate(6deg);animation:povDrift2 7.5s ease-in-out infinite"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:6px;top:344px;width:104px;--r:-6deg;transform:rotate(-6deg);animation:povDrift 8s ease-in-out infinite"><img src="assets/mic.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:12px;top:520px;width:94px;--r:4deg;transform:rotate(4deg);animation:povDrift 9.5s ease-in-out infinite"><img src="assets/clock.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:-6px;top:600px;width:184px;--r:-4deg;transform:rotate(-4deg);animation:povDrift2 8.2s ease-in-out infinite"><img src="assets/news-stack.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:200px;top:686px;width:128px;--r:3deg;transform:rotate(3deg);animation:povDrift 7.8s ease-in-out infinite"><img src="assets/camera.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+
+  <!-- logo, untouched -->
+  <div style="position:absolute;left:50%;top:50%;width:258px;margin-left:-129px;margin-top:-110px;animation:povRise .8s .1s ease both">
+    <img src="assets/pov-logo.png" alt="POV" style="width:100%;height:auto;display:block;mix-blend-mode:multiply">
+  </div>
+
+  <!-- get started -->
+  <div style="position:relative;z-index:3;animation:povRise .9s .2s ease both">
+    <div onClick="{{ goOb1 }}" style="height:56px;border-radius:28px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 12px 28px rgba(0,0,0,.22)" style-hover="background:#262626">
+      Get Started
+      <span style="font:500 15px 'IBM Plex Mono',monospace">→</span>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ ONBOARDING 1 — name + place ══════════ -->
+<sc-if value="{{ isOb1 }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 28px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px">
+    <div onClick="{{ goWelcome }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden">
+      <div style="width:33%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div>
+    </div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">01/03</div>
+  </div>
+
+  <div style="font:400 38px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">Who are we<br>printing for?</div>
+  <div style="margin-top:10px;font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5);animation:povRise .5s .05s ease both">Your name goes on the masthead. Your state decides half the front page.</div>
+  <div style="margin-top:6px;font:600 21px 'Caveat',cursive;color:rgba(140,59,72,.85);transform:rotate(-1.5deg)">start with where you are →</div>
+
+  <div style="margin-top:18px;display:flex;flex-direction:column;gap:8px">
+    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">First name</div>
+    <input value="{{ name }}" onChange="{{ setName }}" placeholder="Ananya" style="height:52px;border-radius:16px;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.72);backdrop-filter:blur(12px);padding:0 18px;font:400 17px 'DM Sans',sans-serif;color:#101010;outline:none">
+  </div>
+
+  <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;flex:1;min-height:0">
+    <div style="display:flex;align-items:baseline;justify-content:space-between">
+      <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Home state</div>
+      <div style="font:300 11.5px 'DM Sans',sans-serif;color:rgba(0,0,0,.38)">India · pick one</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:7px;overflow:auto;padding-bottom:4px">
+      <sc-for list="{{ states }}" as="s" hint-placeholder-count="10">
+        <div onClick="{{ s.pick }}" data-on="{{ s.on }}" style="padding:9px 14px;border-radius:999px;font:400 13.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.66);backdrop-filter:blur(8px)" style-hover="border-color:rgba(0,0,0,.3)">{{ s.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="margin-top:14px;display:flex;flex-direction:column;gap:9px">
+    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Also keep an eye on</div>
+    <div style="display:flex;flex-wrap:wrap;gap:7px">
+      <sc-for list="{{ regions }}" as="r" hint-placeholder-count="5">
+        <div onClick="{{ r.pick }}" data-on="{{ r.on }}" style="padding:8px 13px;border-radius:999px;font:400 13px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.66)">{{ r.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div onClick="{{ goOb2 }}" style="margin-top:18px;height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ ONBOARDING 2 — read time ══════════ -->
+<sc-if value="{{ isOb2 }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 28px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px">
+    <div onClick="{{ goOb1 }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden">
+      <div style="width:66%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div>
+    </div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">02/03</div>
+  </div>
+
+  <div style="font:400 38px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">{{ greeting }}<br>how long have you got?</div>
+  <div style="margin-top:10px;font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">We cut the edition to fit the time — not the other way round.</div>
+
+  <div style="margin-top:24px;display:flex;flex-direction:column;gap:11px">
+    <sc-for list="{{ times }}" as="t" hint-placeholder-count="3">
+      <div onClick="{{ t.pick }}" data-on="{{ t.on }}" style="border-radius:22px;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.7);backdrop-filter:blur(14px);padding:18px 20px;display:flex;align-items:center;gap:16px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.05)" style-hover="border-color:rgba(0,0,0,.28)">
+        <div data-tile="1" style="width:52px;height:52px;border-radius:16px;background:#101010;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none">
+          <div style="font:400 19px/1 'Instrument Serif',serif">{{ t.num }}</div>
+          <div style="font:500 8px/1 'IBM Plex Mono',monospace;opacity:.65;margin-top:3px">MIN</div>
+        </div>
+        <div style="flex:1;min-width:0">
+          <div data-keep="1" style="font:500 16px 'DM Sans',sans-serif">{{ t.label }}</div>
+          <div style="font:300 12.5px/1.4 'DM Sans',sans-serif;color:rgba(0,0,0,.48);margin-top:3px">{{ t.sub }}</div>
+        </div>
+        <div style="width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:400 11px 'IBM Plex Mono',monospace;flex:none">{{ t.mark }}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <sc-if value="{{ isCustom }}" hint-placeholder-val="{{ false }}">
+  <div style="margin-top:18px;border-radius:22px;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.6);padding:20px;animation:povRise .35s ease both">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+      <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Custom length</div>
+      <div style="font:400 26px 'Instrument Serif',serif">{{ custom }} min</div>
+    </div>
+    <input type="range" min="2" max="45" value="{{ custom }}" onChange="{{ setCustom }}" style="width:100%;accent-color:#8C3B48">
+    <div style="display:flex;justify-content:space-between;font:400 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.35);margin-top:6px"><span>2</span><span>45</span></div>
+  </div>
+  </sc-if>
+
+  <div style="flex:1"></div>
+
+  <div style="margin-bottom:16px;border-radius:20px;background:rgba(255,255,255,.55);border:1px solid rgba(0,0,0,.07);padding:14px 16px;display:flex;align-items:center;gap:12px">
+    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(0,0,0,.4)">DELIVERED</div>
+    <div style="display:flex;gap:6px;flex:1">
+      <sc-for list="{{ slots }}" as="w" hint-placeholder-count="3">
+        <div onClick="{{ w.pick }}" data-on="{{ w.on }}" style="flex:1;text-align:center;padding:8px 4px;border-radius:12px;font:400 12.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:rgba(255,255,255,.7)">{{ w.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div onClick="{{ goOb3 }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ ONBOARDING 3 — topics + extras ══════════ -->
+<sc-if value="{{ isOb3 }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 24px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px">
+    <div onClick="{{ goOb2 }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden">
+      <div style="width:100%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div>
+    </div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">03/03</div>
+  </div>
+
+  <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">What should<br>land on page one?</div>
+
+  <div style="margin-top:18px;flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between">
+        <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Interests</div>
+        <div style="font:300 11.5px 'DM Sans',sans-serif;color:rgba(0,0,0,.38)">{{ topicCount }} picked</div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:7px">
+        <sc-for list="{{ topics }}" as="t" hint-placeholder-count="12">
+          <div onClick="{{ t.pick }}" data-on="{{ t.on }}" style="padding:10px 15px;border-radius:999px;font:400 13.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.68);backdrop-filter:blur(8px)" style-hover="border-color:rgba(0,0,0,.3)">{{ t.name }}</div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">How do you like it written?</div>
+      <sc-for list="{{ depths }}" as="d" hint-placeholder-count="3">
+        <div onClick="{{ d.pick }}" data-on="{{ d.on }}" style="border-radius:18px;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.66);padding:14px 16px;cursor:pointer;display:flex;align-items:center;gap:12px">
+          <div data-tile="1" style="width:8px;height:8px;border-radius:50%;background:#101010;opacity:.18;flex:none"></div>
+          <div style="flex:1;min-width:0">
+            <div data-keep="1" style="font:500 14.5px 'DM Sans',sans-serif">{{ d.name }}</div>
+            <div style="font:300 12px/1.4 'DM Sans',sans-serif;color:rgba(0,0,0,.48);margin-top:2px">{{ d.sub }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">So we can write your impact tags</div>
+      <div style="display:flex;flex-wrap:wrap;gap:7px">
+        <sc-for list="{{ lifeStages }}" as="l" hint-placeholder-count="6">
+          <div onClick="{{ l.pick }}" data-on="{{ l.on }}" style="padding:9px 14px;border-radius:999px;font:400 13px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.68)">{{ l.name }}</div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Assists</div>
+      <sc-for list="{{ assists }}" as="a" hint-placeholder-count="3">
+        <div onClick="{{ a.pick }}" style="border-radius:18px;border:1px solid rgba(0,0,0,.09);background:rgba(255,255,255,.6);padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer">
+          <div style="flex:1;min-width:0">
+            <div style="font:500 14px 'DM Sans',sans-serif">{{ a.name }}</div>
+            <div style="font:300 11.8px/1.4 'DM Sans',sans-serif;color:rgba(0,0,0,.46);margin-top:2px">{{ a.sub }}</div>
+          </div>
+          <div data-on="{{ a.on }}" style="width:46px;height:27px;border-radius:14px;background:rgba(0,0,0,.12);position:relative;flex:none;transition:background .2s">
+            <div data-knob="{{ a.on }}" style="position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .22s cubic-bezier(.3,1.4,.5,1)"></div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div onClick="{{ goPress }}" style="margin-top:14px;height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 12px 26px rgba(0,0,0,.2)">File my first edition <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ TYPEWRITER LOADER ══════════ -->
+<sc-if value="{{ isTyping }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 20px;overflow:hidden">
+  <div style="position:absolute;inset:0;pointer-events:none">
+    <div style="position:absolute;top:82px;left:-36px;width:150px;height:124px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.5;animation:povSlab .9s ease both"></div>
+    <div style="position:absolute;top:300px;right:-40px;width:152px;height:130px;border-radius:52% 48% 55% 45%;background:#8C3B48;opacity:.45;animation:povSlab .9s .14s ease both"></div>
+    <div style="position:absolute;bottom:60px;left:-30px;width:146px;height:120px;border-radius:46% 54% 50% 50%;background:#E0B44A;opacity:.5;animation:povSlab .9s .28s ease both"></div>
+    <div style="position:absolute;left:26px;top:210px;font:600 22px 'Caveat',cursive;color:rgba(44,74,99,.7);transform:rotate(-6deg)">sorting the noise…</div>
+  </div>
+
+  <!-- the typewriter -->
+  <div style="position:relative;width:326px;display:flex;flex-direction:column;align-items:center">
+
+    <!-- sheet of paper feeding out -->
+    <div style="position:relative;width:232px;background:#FBFAF7;border-radius:4px 4px 0 0;box-shadow:0 -10px 26px rgba(0,0,0,.14),0 0 0 1px rgba(0,0,0,.07);padding:20px 20px 34px;margin-bottom:-14px;z-index:1;animation:povFeed .8s cubic-bezier(.2,.9,.3,1) both">
+      <div style="font:500 8.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">{{ editionMeta }}</div>
+      <div style="font:400 40px/0.92 'Instrument Serif',serif;letter-spacing:-.03em;margin:8px 0 10px">POV</div>
+      <div style="height:1px;background:rgba(0,0,0,.16);margin-bottom:10px"></div>
+      <div style="display:flex;flex-direction:column">
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT1 .6s steps(21) 0.7s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">&gt; reading 214 stories</div>
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT2 .6s steps(19) 1.4s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">&gt; keeping 6 for you</div>
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT3 .6s steps(22) 2.05s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">&gt; cutting to 5 minutes</div>
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT4 .6s steps(22) 2.75s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">&gt; filing your folders.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;margin-top:8px">
+        <div style="width:8px;height:15px;background:#101010;animation:povCaret .8s steps(1) infinite"></div>
+        <div style="font:400 11.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ typeFoot }}</div>
+      </div>
+    </div>
+
+    <!-- platen + knobs -->
+    <div style="position:relative;width:100%;display:flex;align-items:center;justify-content:center;z-index:2">
+      <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);box-shadow:0 4px 12px rgba(0,0,0,.14)"></div>
+      <div style="flex:1;height:22px;margin:0 -6px;border-radius:12px;background:rgba(255,255,255,.42);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.72);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 6px 16px rgba(0,0,0,.12)"></div>
+      <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);box-shadow:0 4px 12px rgba(0,0,0,.14)"></div>
+    </div>
+
+    <!-- body -->
+    <div style="position:relative;width:100%;margin-top:-4px;border-radius:14px 14px 26px 26px;background:rgba(255,255,255,.4);backdrop-filter:blur(30px) saturate(190%);border:1px solid rgba(255,255,255,.78);box-shadow:0 22px 50px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.9);padding:14px 18px 18px;display:flex;flex-direction:column;gap:9px;z-index:3">
+      <div style="display:flex;justify-content:center"><div style="width:74px;height:8px;border-radius:5px;background:rgba(16,16,16,.16);animation:povStrike .28s ease-in-out infinite alternate"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;gap:4px;justify-content:center"><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div></div>
+        <div style="display:flex;gap:4px;justify-content:center"><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div></div>
+        <div style="display:flex;gap:4px;justify-content:center"><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div></div>
+      </div>
+      <div style="height:13px;border-radius:7px;background:rgba(255,255,255,.62);border:1px solid rgba(0,0,0,.1);margin:2px 22px 0"></div>
+    </div>
+  </div>
+
+  <div style="position:relative;margin-top:26px;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,0,0,.42)">Typing your edition</div>
+</div>
+</sc-if>
+
+<!-- ══════════ FEED (folder stack) ══════════ -->
+<sc-if value="{{ isFeed }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column">
+  <!-- masthead -->
+  <div style="padding:58px 22px 12px;display:flex;align-items:flex-end;justify-content:space-between">
+    <div>
+      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">{{ editionMeta }}</div>
+      <div style="font:400 40px/1 'Instrument Serif',serif;letter-spacing:-.02em;margin-top:6px">POV</div>
+    </div>
+    <div style="text-align:right">
+      <div style="font:300 12px 'DM Sans',sans-serif;color:rgba(0,0,0,.45)">{{ mastGreet }}</div>
+      <div style="font:500 11px 'IBM Plex Mono',monospace;margin-top:4px">{{ readLabel }} · {{ placeLabel }}</div>
+    </div>
+  </div>
+  <div style="margin:0 22px;height:1px;background:rgba(0,0,0,.14)"></div>
+  <div style="margin:10px 22px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="font:300 12.5px 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">{{ leftLabel }}</div>
+    <div style="display:flex;gap:4px">
+      <sc-for list="{{ dots }}" as="d" hint-placeholder-count="6">
+        <div data-on="{{ d.on }}" style="width:16px;height:2.5px;border-radius:2px;background:rgba(0,0,0,.15)"></div>
+      </sc-for>
+    </div>
+  </div>
+  <div style="margin:4px 22px 0;font:600 19px 'Caveat',cursive;color:rgba(140,59,72,.8);transform:rotate(-1deg)">tap the folder to file it away</div>
+
+  <!-- folder stack -->
+  <div onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" style="position:relative;flex:1;margin:12px 20px 0;touch-action:none;user-select:none">
+    <sc-for list="{{ stack }}" as="c" hint-placeholder-count="3">
+      <div style="{{ c.wrapStyle }}">
+        <div onClick="{{ c.file }}" style="position:relative;cursor:pointer">
+          <!-- folder tab -->
+          <div style="{{ c.tabStyle }}">{{ c.tabLabel }}</div>
+          <!-- folder body -->
+          <div style="{{ c.bodyStyle }}">
+            <div style="border-radius:4px 16px 16px 16px;background:rgba(252,250,245,.97);box-shadow:0 4px 14px rgba(0,0,0,.12);padding:16px 16px 15px;display:flex;flex-direction:column;gap:10px;height:100%">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+                <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.45)">{{ c.kicker }}</div>
+                <div style="font:500 9.5px 'IBM Plex Mono',monospace;background:#101010;color:#fff;padding:5px 9px;border-radius:999px;white-space:nowrap">{{ c.read }} read</div>
+              </div>
+              <div style="{{ c.photoStyle }}">
+                <div style="font:400 9.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.5);background:rgba(255,255,255,.85);padding:4px 8px;border-radius:6px">{{ c.photo }}</div>
+              </div>
+              <div style="font:400 25px/1.1 'Instrument Serif',serif;letter-spacing:-.01em">{{ c.title }}</div>
+              <div style="font:300 13px/1.48 'DM Sans',sans-serif;color:rgba(0,0,0,.6)">{{ c.dek }}</div>
+              <sc-if value="{{ c.hasImpact }}" hint-placeholder-val="{{ true }}">
+              <div style="border-radius:14px;background:rgba(44,74,99,.1);border:1px solid rgba(44,74,99,.28);padding:9px 12px">
+                <div style="font:500 9px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#2C4A63">affects</div>
+                <div style="font:400 13px/1.35 'DM Sans',sans-serif;color:#1b2f40;margin-top:3px">{{ c.impact }}</div>
+              </div>
+              </sc-if>
+              <div style="flex:1"></div>
+              <div style="display:flex;align-items:center;gap:9px">
+                <div onClick="{{ c.open }}" style="flex:1;height:44px;border-radius:22px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font:500 13.5px 'DM Sans',sans-serif;cursor:pointer">Read more <span style="font:400 12px 'IBM Plex Mono',monospace">→</span></div>
+                <div onClick="{{ c.clip }}" style="height:44px;padding:0 15px;border-radius:22px;border:1px solid rgba(0,0,0,.16);display:flex;align-items:center;font:500 12px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.6);cursor:pointer;background:rgba(255,255,255,.7)" style-hover="border-color:rgba(0,0,0,.4)">{{ c.clipLabel }}</div>
+              </div>
+              <sc-if value="{{ c.hasThread }}" hint-placeholder-val="{{ false }}">
+                <div style="font:500 10.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">thread · {{ c.threadLen }} beats inside</div>
+              </sc-if>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+
+    <!-- swipe verdict overlays -->
+    <div style="{{ saveBadgeStyle }}">CLIP</div>
+    <div style="{{ skipBadgeStyle }}">FILED</div>
+  </div>
+
+  <div style="padding:10px 22px 0;display:flex;align-items:center;justify-content:center;gap:8px">
+    <div onClick="{{ doSkip }}" style="padding:7px 13px;border-radius:999px;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.6);font:400 10.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.5);cursor:pointer" style-hover="border-color:rgba(0,0,0,.3)">← next folder</div>
+    <div onClick="{{ doSave }}" style="padding:7px 13px;border-radius:999px;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.6);font:400 10.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.5);cursor:pointer" style-hover="border-color:rgba(0,0,0,.3)">clip →</div>
+  </div>
+
+  <!-- glass tab bar -->
+  <div style="padding:14px 22px 30px;display:flex;justify-content:center">
+    <div style="display:flex;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.62);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.7);box-shadow:0 10px 30px rgba(0,0,0,.12)">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+        <div onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ THREADS LIST ══════════ -->
+<sc-if value="{{ isThreads }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column">
+  <div style="padding:58px 22px 12px">
+    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">Still unfolding</div>
+    <div style="font:400 38px/1 'Instrument Serif',serif;letter-spacing:-.02em;margin-top:8px">Threads</div>
+    <div style="font:300 13.5px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5);margin-top:8px">Long sagas, kept in order. Open one to catch up in a scroll.</div>
+  </div>
+  <div style="flex:1;min-height:0;overflow:auto;padding:6px 20px 0;display:flex;flex-direction:column;gap:16px">
+    <sc-for list="{{ threadList }}" as="t" hint-placeholder-count="3">
+      <div onClick="{{ t.open }}" style="position:relative;cursor:pointer">
+        <div style="{{ t.tabStyle }}">{{ t.kicker }}</div>
+        <div style="{{ t.bodyStyle }}">
+          <div style="border-radius:4px 14px 14px 14px;background:rgba(252,250,245,.97);padding:15px 16px;box-shadow:0 4px 12px rgba(0,0,0,.1)">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.42)">{{ t.count }}</div>
+              <div style="font:500 10px 'IBM Plex Mono',monospace;color:#8C3B48">{{ t.fresh }}</div>
+            </div>
+            <div style="font:400 24px/1.12 'Instrument Serif',serif;margin-top:8px">{{ t.title }}</div>
+            <div style="font:300 13px/1.45 'DM Sans',sans-serif;color:rgba(0,0,0,.55);margin-top:6px">{{ t.sub }}</div>
+            <div style="display:flex;align-items:center;gap:6px;margin-top:14px">
+              <sc-for list="{{ t.pips }}" as="p" hint-placeholder-count="6">
+                <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.16)"></div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="padding:14px 22px 30px;display:flex;justify-content:center">
+    <div style="display:flex;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.62);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.7);box-shadow:0 10px 30px rgba(0,0,0,.12)">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+        <div onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ SAVED ══════════ -->
+<sc-if value="{{ isSaved }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column">
+  <div style="padding:58px 22px 14px">
+    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">Clipped &amp; kept</div>
+    <div style="font:400 38px/1 'Instrument Serif',serif;letter-spacing:-.02em;margin-top:8px">Clippings</div>
+  </div>
+  <div style="flex:1;min-height:0;overflow:auto;padding:0 20px;display:flex;flex-direction:column;gap:12px">
+    <sc-if value="{{ noSaved }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:40px;text-align:center;font:300 14px/1.6 'DM Sans',sans-serif;color:rgba(0,0,0,.42)">Nothing clipped yet.<br>Hit <span style="font:600 18px 'Caveat',cursive;color:#8C3B48">clip</span> on a folder to keep it.</div>
+    </sc-if>
+    <sc-for list="{{ savedList }}" as="s" hint-placeholder-count="0">
+      <div onClick="{{ s.open }}" style="position:relative;cursor:pointer">
+        <div style="{{ s.tabStyle }}">{{ s.kicker }}</div>
+        <div style="{{ s.bodyStyle }}">
+          <div style="border-radius:4px 14px 14px 14px;background:rgba(252,250,245,.97);padding:14px 16px;box-shadow:0 4px 12px rgba(0,0,0,.1)">
+            <div style="font:400 19px/1.15 'Instrument Serif',serif">{{ s.title }}</div>
+            <div style="font:400 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.42);margin-top:7px">{{ s.read }} read · affects {{ s.impact }}</div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="padding:14px 22px 30px;display:flex;justify-content:center">
+    <div style="display:flex;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.62);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.7);box-shadow:0 10px 30px rgba(0,0,0,.12)">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+        <div onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ STORY ══════════ -->
+<sc-if value="{{ isStory }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;animation:povRise .32s ease both">
+  <div style="flex:1;min-height:0;overflow:auto">
+    <div style="{{ storyBandStyle }}">
+      <div style="position:absolute;inset:14px;border-radius:18px;background:repeating-linear-gradient(135deg,rgba(252,250,245,.94) 0 9px,rgba(240,236,226,.9) 9px 18px);display:flex;align-items:flex-end;padding:12px">
+        <div style="font:400 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.5);background:rgba(255,255,255,.85);padding:5px 9px;border-radius:7px">{{ story.photo }}</div>
+      </div>
+      <div onClick="{{ backToFeed }}" style="position:absolute;top:58px;left:16px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.72);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;font:400 16px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2">←</div>
+      <div onClick="{{ toggleSave }}" style="position:absolute;top:58px;right:16px;height:38px;padding:0 15px;border-radius:19px;background:rgba(255,255,255,.72);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.85);display:flex;align-items:center;font:500 11.5px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2">{{ saveLabel }}</div>
+    </div>
+
+    <div style="margin-top:-26px;border-radius:26px 26px 0 0;background:rgba(242,239,228,.96);backdrop-filter:blur(10px);padding:22px 22px 30px;display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.45)">{{ story.kicker }}</div>
+        <div style="width:4px;height:4px;border-radius:50%;background:rgba(0,0,0,.2)"></div>
+        <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ story.read }} read</div>
+      </div>
+      <div style="font:400 34px/1.06 'Instrument Serif',serif;letter-spacing:-.02em">{{ story.title }}</div>
+
+      <sc-if value="{{ showImpact }}" hint-placeholder-val="{{ true }}">
+      <div style="border-radius:18px;background:rgba(44,74,99,.1);border:1px solid rgba(44,74,99,.26);padding:14px 16px">
+        <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#2C4A63">How this affects you</div>
+        <div style="font:400 15.5px/1.45 'DM Sans',sans-serif;color:#16293a;margin-top:7px">{{ story.impactLong }}</div>
+        <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(27,47,64,.7);margin-top:9px">tagged from your profile: {{ profileLabel }}</div>
+      </div>
+      </sc-if>
+
+      <div data-story-body="1" style="font:300 16.5px/1.68 'DM Sans',sans-serif;color:rgba(0,0,0,.8)">
+        <sc-for list="{{ story.segs }}" as="s" hint-placeholder-count="6">
+          <sc-if value="{{ s.isPlain }}" hint-placeholder-val="{{ true }}"><span>{{ s.text }}</span></sc-if>
+          <sc-if value="{{ s.isPerson }}" hint-placeholder-val="{{ false }}"><span onClick="{{ s.tap }}" style="color:#2C4A63;background:rgba(44,74,99,.14);border-radius:5px;padding:1px 4px;cursor:pointer;box-shadow:inset 0 -1px 0 rgba(44,74,99,.45)">{{ s.text }}</span></sc-if>
+          <sc-if value="{{ s.isJargon }}" hint-placeholder-val="{{ false }}"><span onClick="{{ s.tap }}" style="border-bottom:1.5px dotted rgba(140,59,72,.6);cursor:help;background:rgba(140,59,72,.07);border-radius:4px;padding:1px 3px">{{ s.text }}</span></sc-if>
+        </sc-for>
+      </div>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <sc-for list="{{ story.chips }}" as="c" hint-placeholder-count="3">
+          <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.12);padding:6px 11px;border-radius:999px">{{ c }}</div>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ story.hasThread }}" hint-placeholder-val="{{ false }}">
+        <div onClick="{{ openStoryThread }}" style="border-radius:20px;background:#101010;color:#fff;padding:18px;cursor:pointer;display:flex;align-items:center;gap:14px">
+          <div style="flex:1">
+            <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;opacity:.6">How we got here</div>
+            <div style="font:400 20px/1.15 'Instrument Serif',serif;margin-top:6px">{{ story.threadTitle }}</div>
+          </div>
+          <div style="font:400 16px 'IBM Plex Mono',monospace;opacity:.7">→</div>
+        </div>
+      </sc-if>
+
+      <div style="font:400 11.5px/1.6 'IBM Plex Mono',monospace;color:rgba(0,0,0,.38)">Blue = a name you can tap. Dotted = plain-English definition.</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ THREAD TIMELINE ══════════ -->
+<sc-if value="{{ isThread }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;animation:povRise .32s ease both">
+  <div style="padding:58px 22px 12px;display:flex;align-items:center;gap:12px">
+    <div onClick="{{ backFromThread }}" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.66);backdrop-filter:blur(14px);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;flex:none">←</div>
+    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.42)">{{ thread.kicker }} · how we got here</div>
+  </div>
+  <div style="padding:0 22px 10px">
+    <div style="font:400 32px/1.06 'Instrument Serif',serif;letter-spacing:-.02em">{{ thread.title }}</div>
+    <div style="font:300 13.5px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.52);margin-top:8px">{{ thread.sub }}</div>
+  </div>
+  <div style="flex:1;min-height:0;overflow:auto;padding:12px 22px 32px">
+    <div style="position:relative;padding-left:26px">
+      <div style="position:absolute;left:5px;top:6px;bottom:20px;width:1.5px;background:rgba(140,59,72,.35);transform-origin:top;animation:povDraw .8s ease both"></div>
+      <sc-for list="{{ thread.beats }}" as="b" hint-placeholder-count="5">
+        <div style="position:relative;padding-bottom:26px">
+          <div style="position:absolute;left:-26px;top:4px;width:11px;height:11px;border-radius:50%;background:#F2EFE4;border:1.5px solid #8C3B48"></div>
+          <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(0,0,0,.45)">{{ b.date }}</div>
+          <div style="font:400 21px/1.15 'Instrument Serif',serif;margin-top:5px">{{ b.title }}</div>
+          <div style="font:300 14px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.6);margin-top:6px">{{ b.text }}</div>
+          <sc-if value="{{ b.hasTag }}" hint-placeholder-val="{{ false }}">
+            <div style="display:inline-flex;margin-top:10px;font:500 10.5px 'IBM Plex Mono',monospace;color:#2C4A63;background:rgba(44,74,99,.12);border:1px solid rgba(44,74,99,.26);padding:5px 10px;border-radius:999px">affects: {{ b.tag }}</div>
+          </sc-if>
+        </div>
+      </sc-for>
+      <div style="position:relative">
+        <div style="position:absolute;left:-26px;top:4px;width:11px;height:11px;border-radius:50%;background:#8C3B48"></div>
+        <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(0,0,0,.45)">NOW</div>
+        <div style="font:400 21px/1.15 'Instrument Serif',serif;margin-top:5px">You're caught up.</div>
+        <div style="font:300 14px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.6);margin-top:6px">We'll add a beat here the moment this moves — no re-reading the whole saga.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ PERSON PROFILE ══════════ -->
+<sc-if value="{{ isPerson }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;animation:povRise .3s ease both">
+  <div style="flex:1;min-height:0;overflow:auto">
+    <div style="padding:58px 22px 0;display:flex;align-items:center;justify-content:space-between">
+      <div onClick="{{ backFromPerson }}" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.66);backdrop-filter:blur(14px);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer">←</div>
+      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.4)">Who's this</div>
+    </div>
+    <div style="padding:22px 22px 30px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;gap:16px;align-items:flex-end">
+        <div style="width:104px;height:126px;border-radius:18px;background:repeating-linear-gradient(135deg,#EFEBE0 0 7px,#E4DFD1 7px 14px);flex:none;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px">
+          <div style="font:400 8.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.42)">{{ person.photo }}</div>
+        </div>
+        <div style="flex:1;min-width:0">
+          <div style="font:400 30px/1.04 'Instrument Serif',serif;letter-spacing:-.01em">{{ person.name }}</div>
+          <div style="font:400 13.5px/1.4 'DM Sans',sans-serif;color:rgba(0,0,0,.55);margin-top:7px">{{ person.role }}</div>
+          <div style="display:inline-flex;margin-top:10px;font:500 10.5px 'IBM Plex Mono',monospace;background:rgba(44,74,99,.14);color:#2C4A63;border:1px solid rgba(44,74,99,.3);padding:5px 10px;border-radius:999px">{{ person.term }}</div>
+        </div>
+      </div>
+
+      <div style="font:300 15px/1.6 'DM Sans',sans-serif;color:rgba(0,0,0,.72)">{{ person.bio }}</div>
+
+      <div style="border-radius:22px;background:rgba(252,250,245,.92);border:1px solid rgba(0,0,0,.08);padding:18px">
+        <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Party &amp; office timeline</div>
+        <div style="position:relative;margin-top:16px;padding-left:22px">
+          <div style="position:absolute;left:4px;top:4px;bottom:8px;width:1.5px;background:rgba(0,0,0,.14)"></div>
+          <sc-for list="{{ person.timeline }}" as="t" hint-placeholder-count="4">
+            <div style="position:relative;padding-bottom:16px">
+              <div style="position:absolute;left:-22px;top:4px;width:9px;height:9px;border-radius:50%;background:#fff;border:1.5px solid #8C3B48"></div>
+              <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.45)">{{ t.yr }}</div>
+              <div style="font:400 14.5px/1.35 'DM Sans',sans-serif;margin-top:3px">{{ t.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="border-radius:22px;background:rgba(252,250,245,.92);border:1px solid rgba(0,0,0,.08);padding:18px;display:flex;flex-direction:column;gap:12px">
+        <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">On the record</div>
+        <sc-for list="{{ person.wins }}" as="w" hint-placeholder-count="3">
+          <div style="display:flex;gap:11px;align-items:flex-start">
+            <div style="width:5px;height:5px;border-radius:50%;background:#8C3B48;margin-top:7px;flex:none"></div>
+            <div style="font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.72)">{{ w }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="font:400 11.5px/1.6 'IBM Plex Mono',monospace;color:rgba(0,0,0,.35)">Profiles are compiled from the stories in your edition. {{ person.mentions }} mentions this week.</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ GLASS POPOVER (jargon / person peek) ══════════ -->
+<sc-if value="{{ hasPop }}" hint-placeholder-val="{{ false }}">
+<div onClick="{{ closePop }}" style="position:absolute;inset:0;background:rgba(20,20,20,.18);backdrop-filter:blur(2px);z-index:70;display:flex;align-items:flex-end;padding:0 16px 30px;animation:povFade .18s ease both">
+  <div style="width:100%;border-radius:26px;background:rgba(252,250,245,.82);backdrop-filter:blur(28px) saturate(180%);border:1px solid rgba(255,255,255,.85);box-shadow:0 -8px 40px rgba(0,0,0,.18);padding:20px;animation:povRise .26s cubic-bezier(.2,1.1,.3,1) both">
+    <sc-if value="{{ popIsJargon }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.42)">Jargon buster</div>
+        <div style="font:400 27px/1.1 'Instrument Serif',serif">{{ pop.term }}</div>
+        <div style="font:300 15px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.72)">{{ pop.def }}</div>
+        <div style="font:400 12.5px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.45);border-top:1px solid rgba(0,0,0,.1);padding-top:10px;margin-top:4px">In plain terms: {{ pop.plain }}</div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ popIsPerson }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;gap:14px;align-items:center">
+          <div style="width:62px;height:62px;border-radius:16px;background:repeating-linear-gradient(135deg,#EFEBE0 0 6px,#E4DFD1 6px 12px);flex:none"></div>
+          <div style="flex:1;min-width:0">
+            <div style="font:400 23px/1.08 'Instrument Serif',serif">{{ pop.name }}</div>
+            <div style="font:400 12.5px/1.35 'DM Sans',sans-serif;color:rgba(0,0,0,.5);margin-top:4px">{{ pop.role }}</div>
+          </div>
+        </div>
+        <div style="font:300 14.5px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.72)">{{ pop.bio }}</div>
+        <div onClick="{{ openPerson }}" style="height:48px;border-radius:24px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 14px 'DM Sans',sans-serif;cursor:pointer">Full profile <span style="font:400 13px 'IBM Plex Mono',monospace">→</span></div>
+      </div>
+    </sc-if>
+  </div>
+</div>
+</sc-if>
+
+</div>
+</x-import>
+
+<!-- side annotation -->
+<div style="width:250px;padding-top:20px;display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif;pointer-events:auto">
+  <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">POV · prototype</div>
+  <div style="font:400 22px/1.15 'Instrument Serif',serif;color:#101010">Tap through the whole flow.</div>
+  <div style="font:300 13px/1.6 'DM Sans',sans-serif;color:rgba(0,0,0,.55)">Welcome → three onboarding steps → typewriter → folder stack. Tap a folder and it swipes off the pile, revealing the next one. Read more dives into the story; clip keeps it.</div>
+  <div style="height:1px;background:rgba(0,0,0,.12)"></div>
+  <div onClick="{{ restart }}" style="align-self:flex-start;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,0,0,.18);font:500 12px 'DM Sans',sans-serif;cursor:pointer;background:rgba(255,255,255,.6)">Restart flow</div>
+  <div onClick="{{ skipToFeed }}" style="align-self:flex-start;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,0,0,.18);font:500 12px 'DM Sans',sans-serif;cursor:pointer;background:rgba(255,255,255,.6)">Jump to folders</div>
+</div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;typeSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:3.6,&quot;min&quot;:2,&quot;max&quot;:8,&quot;step&quot;:0.2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;swipeThreshold&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:105,&quot;min&quot;:50,&quot;max&quot;:200,&quot;step&quot;:5,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;showImpactTags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Features&quot;},&quot;jargonBuster&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Features&quot;}}">
+const PEOPLE = {
+  ns: { name: 'Nirmala Sitharaman', role: 'Union Finance Minister · BJP', term: 'In office since 2019', photo: 'portrait · PTI',
+    bio: 'India\u2019s finance minister since 2019 and the person who chairs the GST Council, where the centre and all states negotiate tax rates together.',
+    timeline: [
+      { yr: '2006', label: 'Joins the BJP' },
+      { yr: '2014', label: 'Minister of State, Commerce & Industry' },
+      { yr: '2017', label: 'Defence Minister' },
+      { yr: '2019', label: 'Finance & Corporate Affairs Minister' },
+      { yr: '2026', label: 'Eighth consecutive Union Budget' },
+    ],
+    wins: ['Chairs the GST Council, the body that sets what you pay on almost everything.', 'Oversaw the corporate tax cut of 2019 and the pandemic-era credit guarantee scheme.', 'Presented a record run of consecutive Union Budgets.'],
+    mentions: '4' },
+  pg: { name: 'Piyush Goyal', role: 'Union Commerce & Industry Minister · BJP', term: 'In office since 2021', photo: 'portrait · PIB',
+    bio: 'India\u2019s lead negotiator on trade deals \u2014 the person in the room when tariffs on Indian exports are argued over.',
+    timeline: [
+      { yr: '2010', label: 'National Treasurer, BJP' },
+      { yr: '2014', label: 'Power, Coal & Renewable Energy Minister' },
+      { yr: '2017', label: 'Railways Minister' },
+      { yr: '2021', label: 'Commerce & Industry Minister' },
+    ],
+    wins: ['Led talks on the India\u2013UAE and India\u2013Australia trade agreements.', 'Fronts India\u2019s export-promotion push for services and electronics.', 'Currently leads the tariff negotiations with Washington.'],
+    mentions: '3' },
+  rg: { name: 'Rahul Gandhi', role: 'Leader of the Opposition, Lok Sabha · Congress', term: 'LoP since 2024', photo: 'portrait · ANI',
+    bio: 'Leader of the Opposition in the Lok Sabha, and the loudest critic of the government\u2019s tax and jobs record.',
+    timeline: [
+      { yr: '2004', label: 'First elected MP from Amethi' },
+      { yr: '2013', label: 'Congress Vice-President' },
+      { yr: '2017', label: 'Congress President' },
+      { yr: '2024', label: 'Leader of the Opposition, Lok Sabha' },
+    ],
+    wins: ['Led the Bharat Jodo Yatra, a months-long cross-country march.', 'Made unemployment and price rise the opposition\u2019s central pitch in 2024.', 'Heads the opposition benches\u2019 push for a GST review.'],
+    mentions: '2' },
+};
+
+const JARGON = {
+  slab: { term: 'GST slab', def: 'A tax bracket. Every good and service sits in one slab, and the slab decides the percentage added to its price.', plain: 'Which shelf your shampoo sits on decides its tax.' },
+  rnr: { term: 'Revenue-neutral rate', def: 'The tax rate at which a government collects the same money it did before a reform \u2014 rates change, income doesn\u2019t.', plain: 'Reshuffle the rates, keep the total collection flat.' },
+  ceasefire: { term: 'Tariff ceasefire', def: 'A temporary pause where two countries agree to stop raising import taxes on each other while they keep negotiating.', plain: 'Nobody fires the next tariff shot for now. Nothing is settled.' },
+  tier: { term: 'Wage-level tier', def: 'The US bands each sponsored job into four pay levels; the higher your tier, the stronger your visa case.', plain: 'Get paid more, get picked sooner.' },
+  repo: { term: 'Repo rate', def: 'The rate at which the RBI lends to banks. It sets the floor for what your bank charges you.', plain: 'The RBI\u2019s price of money. Your EMI follows it.' },
+  stance: { term: 'Neutral stance', def: 'A signal from the central bank that it could move rates either way next time \u2014 no promises.', plain: 'They\u2019re keeping their options open.' },
+  msp: { term: 'MSP', def: 'Minimum Support Price \u2014 the floor price at which the government promises to buy certain crops from farmers.', plain: 'A guaranteed price so a bad market doesn\u2019t wipe out a harvest.' },
+  deficit: { term: 'Rainfall deficit', def: 'How far below the long-period average the monsoon has landed, measured region by region.', plain: 'How much rain didn\u2019t show up.' },
+  placement: { term: 'Placement season', def: 'The campus hiring window where companies make job offers to final-year students before they graduate.', plain: 'The months that decide whether you graduate with an offer.' },
+};
+
+// folder stock: solid manila-style colours and one striped variant
+const FOLDER = {
+  gst: { fill: '#8C3B48', ink: '#FBF6EE' },
+  tariff: { fill: 'repeating-linear-gradient(90deg,#2C4A63 0 9px,#EFE6D4 9px 18px)', tab: '#2C4A63', ink: '#FBF6EE' },
+  visa: { fill: '#6E7A44', ink: '#FBF6EE' },
+  campus: { fill: '#E0B44A', ink: '#241C08' },
+  rbi: { fill: '#2C4A63', ink: '#FBF6EE' },
+  monsoon: { fill: 'repeating-linear-gradient(90deg,#7C8A52 0 9px,#EFE6D4 9px 18px)', tab: '#7C8A52', ink: '#FBF6EE' },
+};
+
+function seg(text) { return { text, isPlain: true, isPerson: false, isJargon: false }; }
+function per(text, pid) { return { text, pid, isPlain: false, isPerson: true, isJargon: false }; }
+function jar(text, jid) { return { text, jid, isPlain: false, isPerson: false, isJargon: true }; }
+
+const CARDS = [
+  { id: 'gst', kicker: 'Tax · National', tab: 'TAX', read: '2 min', photo: 'photo · GST Council press meet',
+    title: 'Four GST slabs collapse into two',
+    dek: 'Everyday items drop to 5%, most goods settle at 18%, and a 40% band is carved out for tobacco and luxury.',
+    impact: 'your monthly bills',
+    impactLong: 'Your phone bill, food delivery and salon visit all sit in the slabs being moved. If the 18% band holds, a student\u2019s typical monthly spend drops about \u20b9240.',
+    chips: ['GST Council', 'Consumer prices', 'States vs Centre'],
+    thread: 'gst', threadTitle: 'Nine years of the GST fight',
+    segs: [seg('The GST Council, chaired by '), per('Nirmala Sitharaman', 'ns'), seg(', voted to fold four tax '), jar('slabs', 'slab'),
+      seg(' into two. Everyday items move to 5%, most goods to 18%, and a 40% band is reserved for tobacco and luxury cars. '),
+      per('Rahul Gandhi', 'rg'), seg(' called it \u201cnine years late\u201d and demanded the minutes be made public. Eight states are withholding support until the Centre guarantees a '),
+      jar('revenue-neutral rate', 'rnr'), seg(', because a third of their budgets now ride on this one tax. Rollout is slated for the next financial year.')] },
+  { id: 'tariff', kicker: 'Trade · India\u2013US', tab: 'TRADE', read: '2 min', photo: 'photo · container port, Mundra',
+    title: 'Tariff truce extended by 90 more days',
+    dek: 'Washington and Delhi freeze new duties while talks continue. Textiles and shrimp get room; IT services stay unresolved.',
+    impact: 'the job market',
+    impactLong: 'Roughly a fifth of entry-level tech and export-services hiring is tied to US demand. A freeze keeps campus offers on the table; a collapse in talks is what shrinks them.',
+    chips: ['Exports', 'Hiring', 'US trade policy'],
+    thread: 'tariff', threadTitle: 'How the tariff standoff got here',
+    segs: [seg('Both sides signed a 90-day '), jar('tariff ceasefire', 'ceasefire'), seg(' \u2014 no new duties while negotiators keep meeting. '),
+      per('Piyush Goyal', 'pg'), seg(' said textiles, shrimp and gems get immediate relief, but services \u2014 the sector that employs most Indian graduates \u2014 is still on the table. '),
+      seg('The pause is not a deal: the existing duties stay exactly where they are, and either side can walk away when the clock runs out.')] },
+  { id: 'visa', kicker: 'Immigration · US', tab: 'VISAS', read: '1 min', photo: 'photo · visa interview queue',
+    title: 'H-1B selection tilts toward higher salaries',
+    dek: 'A proposed rule would rank applicants by pay band instead of running a pure lottery. Fresh graduates are the clearest losers.',
+    impact: 'travel & visas',
+    impactLong: 'If you were planning a US masters and a work visa after it, the entry-level path narrows. Ranking by pay band pushes first-job applicants to the back of the queue.',
+    chips: ['H-1B', 'Study abroad', 'Tech jobs'],
+    segs: [seg('The US has proposed replacing the H-1B lottery with a ranking by '), jar('wage-level tier', 'tier'),
+      seg('. Level 4 applicants would be picked first, Level 1 \u2014 typically fresh graduates \u2014 last. '),
+      seg('Indian nationals receive roughly seven in ten H-1B visas, so the change lands hardest here. A comment period runs before anything is final.')] },
+  { id: 'campus', kicker: 'Jobs · Karnataka', tab: 'JOBS', read: '2 min', photo: 'photo · campus placement drive',
+    title: 'Slowest placement season in six years',
+    dek: 'Offer counts are down 18% across Karnataka engineering colleges. Median packages held steady \u2014 there are simply fewer of them.',
+    impact: 'tuition & loans',
+    impactLong: 'Fewer offers stretch the time between graduating and your first salary, which is when education-loan repayment usually starts. Check your grace period.',
+    chips: ['Placements', 'Education loans', 'Karnataka'],
+    segs: [seg('This '), jar('placement season', 'placement'), seg(' produced 18% fewer offers across Karnataka engineering colleges than last year. '),
+      seg('Service companies cut intake hardest; product firms held numbers but raised the bar. Median packages barely moved, which means the squeeze is on how many get hired, not on what they\u2019re paid. '),
+      seg('Placement cells are pushing six-month internships as a bridge.')] },
+  { id: 'rbi', kicker: 'Money · National', tab: 'MONEY', read: '1 min', photo: 'photo · RBI headquarters, Mumbai',
+    title: 'RBI holds rates, keeps its options open',
+    dek: 'The repo rate stays put for a fourth straight meeting. Two of six committee members wanted a cut.',
+    impact: 'your EMI',
+    impactLong: 'Your education loan and any floating-rate EMI stay where they are this quarter. Banks reprice within about two months of any move, so nothing changes on your statement yet.',
+    chips: ['Repo rate', 'Loans', 'Inflation'],
+    segs: [seg('The Monetary Policy Committee left the '), jar('repo rate', 'repo'), seg(' unchanged and kept a '), jar('neutral stance', 'stance'),
+      seg('. Two of six members dissented in favour of a cut, citing cooling food inflation. '),
+      seg('For borrowers, a hold means floating-rate EMIs stay flat for at least another quarter.')] },
+  { id: 'monsoon', kicker: 'Climate · Maharashtra', tab: 'CLIMATE', read: '2 min', photo: 'photo · dry reservoir, Marathwada',
+    title: 'Marathwada ends the monsoon 24% short',
+    dek: 'Reservoir levels sit below half. The state has begun early tanker planning for 1,100 villages.',
+    impact: 'food prices',
+    impactLong: 'A shortfall this size in a pulses-and-onion belt shows up in your grocery bill roughly two months later. Watch dal and onion, not headlines.',
+    chips: ['Monsoon', 'Water', 'Food inflation'],
+    segs: [seg('Marathwada closed the season with a 24% rainfall '), jar('deficit', 'deficit'), seg(', the worst of any subdivision this year. '),
+      seg('Reservoirs are at 47% of capacity and tanker supply planning has started early for about 1,100 villages. Farmer groups want the '),
+      jar('MSP', 'msp'), seg(' procurement window opened sooner for pulses, which is the crop most exposed here.')] },
+];
+
+const THREADS = {
+  tariff: { kicker: 'Trade', title: 'The India\u2013US tariff standoff', sub: 'Eleven months, four escalations and one pause. Here is the whole saga in order.', fresh: 'new beat today', count: '6 beats',
+    beats: [
+      { date: 'OCT 2025', title: 'Washington opens a review', text: 'The US trade office begins a review of duties on Indian textiles, shrimp and steel, citing an import surge.', hasTag: false },
+      { date: 'DEC 2025', title: 'First duties land', text: 'A 15% duty hits textiles and shrimp. Exporters in Tiruppur and Andhra Pradesh report cancelled orders within weeks.', hasTag: true, tag: 'job market' },
+      { date: 'FEB 2026', title: 'Delhi retaliates, narrowly', text: 'India raises duties on almonds, apples and motorcycles \u2014 politically pointed, economically small.', hasTag: false },
+      { date: 'MAY 2026', title: 'Services enter the fight', text: 'A proposal to tax offshore IT contracts appears in a draft bill. Campus hiring forecasts are cut the same month.', hasTag: true, tag: 'job market' },
+      { date: 'JUL 2026', title: 'First 90-day pause', text: 'Negotiators agree to stop escalating. Existing duties stay. Nothing is rolled back.', hasTag: false },
+      { date: 'SEP 2026', title: 'Pause extended', text: 'A second 90-day freeze is signed. Goods get relief; services stay unresolved and now dominate the talks.', hasTag: true, tag: 'travel & visas' },
+    ] },
+  gst: { kicker: 'Tax', title: 'Nine years of the GST fight', sub: 'One tax, twenty-eight states and a decade of arguing about who gets which rupee.', fresh: 'updated 2d ago', count: '5 beats',
+    beats: [
+      { date: 'JUL 2017', title: 'One nation, four slabs', text: 'GST replaces a patchwork of state taxes with 5, 12, 18 and 28% bands \u2014 plus cesses on top.', hasTag: false },
+      { date: '2020', title: 'The compensation crunch', text: 'Pandemic collections collapse and the Centre borrows to pay states their promised shortfall. Trust erodes.', hasTag: false },
+      { date: '2022', title: 'Compensation ends', text: 'The five-year guarantee to states lapses. Several states say their budgets never recovered.', hasTag: false },
+      { date: 'JUN 2026', title: 'Two-slab plan leaks', text: 'A group of ministers circulates a plan to merge the middle slabs. Consumer goods firms start modelling price cuts.', hasTag: true, tag: 'your monthly bills' },
+      { date: 'SEP 2026', title: 'Council votes it through', text: 'Four slabs become two, with a 40% band for tobacco and luxury. Eight states withhold support pending a revenue guarantee.', hasTag: true, tag: 'your monthly bills' },
+    ] },
+};
+
+const STATES = ['Maharashtra','Karnataka','Delhi NCR','Tamil Nadu','Uttar Pradesh','West Bengal','Telangana','Kerala','Gujarat','Rajasthan','Punjab','Bihar','Madhya Pradesh','Assam','Odisha','Goa','Jharkhand','Haryana'];
+const REGIONS = ['United States','Gulf & UAE','China','Europe','Southeast Asia','Africa'];
+const TOPICS = ['Politics','Economy','Jobs & hiring','Climate','Tech & AI','Sport','Campus & exams','Culture','Health','Courts','Startups','Cinema','Space','Crypto'];
+const LIFE = ['Student','First job','Job hunting','Freelancing','Studying abroad soon','Supporting family'];
+
+class Component extends DCLogic {
+  state = {
+    screen: 'welcome', tab: 'feed',
+    name: '', place: '', regions: ['United States'],
+    mins: 5, custom: 12, slot: 'Morning',
+    topics: ['Politics', 'Jobs & hiring'], depth: 'Brief first, depth on tap',
+    life: ['Student'], assists: { jargon: true, people: true, impact: true },
+    idx: 0, drag: null, exit: null, pop: null, storyId: null, personId: null, threadId: null, saved: [],
+    back: 'feed',
+  };
+
+  set = (k, v) => this.setState({ [k]: v });
+  toggle = (k, v, single) => this.setState(s => {
+    if (single) return { [k]: v };
+    const a = s[k];
+    return { [k]: a.indexOf(v) >= 0 ? a.filter(x => x !== v) : a.concat([v]) };
+  });
+
+  startEdition = () => {
+    clearTimeout(this._t);
+    this.setState({ screen: 'typing' });
+    this._t = setTimeout(() => this.setState({ screen: 'feed' }), (this.props.typeSeconds ?? 3.6) * 1000);
+  };
+  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); }
+
+  // ── folder leaves the pile (click or swipe), next folder rises
+  fileAway = (save) => {
+    if (this.state.exit) return;
+    const card = CARDS[this.state.idx % CARDS.length];
+    this.setState(s => ({
+      exit: save ? 'right' : 'left', drag: null,
+      saved: save && s.saved.indexOf(card.id) < 0 ? s.saved.concat([card.id]) : s.saved,
+    }));
+    clearTimeout(this._e);
+    this._e = setTimeout(() => this.setState(s => ({ idx: s.idx + 1, exit: null })), 380);
+  };
+
+  onDown = e => {
+    if (this.state.exit) return;
+    this._id = e.pointerId;
+    try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {}
+    this._start = { x: e.clientX, y: e.clientY };
+    this.setState({ drag: { dx: 0, dy: 0 } });
+  };
+  onMove = e => {
+    if (!this._start) return;
+    const dx = e.clientX - this._start.x, dy = e.clientY - this._start.y;
+    if (Math.abs(dx) > 6 || Math.abs(dy) > 6) this._moved = true;
+    this.setState({ drag: { dx, dy } });
+  };
+  onUp = () => {
+    const d = this.state.drag;
+    this._start = null;
+    setTimeout(() => { this._moved = false; }, 60);
+    if (!d) return;
+    const th = this.props.swipeThreshold ?? 105;
+    if (d.dx > th) this.fileAway(true);
+    else if (d.dx < -th) this.fileAway(false);
+    else this.setState({ drag: null });
+  };
+
+  renderVals() {
+    const s = this.state;
+    const scr = s.screen;
+
+    const mk = (arr, selected, key, single) => arr.map(name => {
+      const on = single ? selected === name : selected.indexOf(name) >= 0;
+      return { name, on: on ? 'on' : 'off', pick: () => this.toggle(key, name, single) };
+    });
+
+    const states = STATES.map(name => ({ name, on: s.place === name ? 'on' : 'off', pick: () => this.set('place', name) }));
+
+    const times = [
+      { num: '5', label: 'Coffee run', sub: 'Six folders, headline + why it matters.', v: 5 },
+      { num: '15', label: 'Commute', sub: 'Twelve folders plus one thread to catch up on.', v: 15 },
+      { num: '\u2022', label: 'Custom', sub: 'Pick your own minutes and we cut to fit.', v: 0 },
+    ].map(t => ({ ...t, on: s.mins === t.v ? 'on' : 'off', mark: s.mins === t.v ? '\u2713' : '', pick: () => this.set('mins', t.v) }));
+
+    const story = CARDS.find(c => c.id === s.storyId) || CARDS[0];
+    const person = PEOPLE[s.personId] || PEOPLE.ns;
+    const thread = THREADS[s.threadId] || THREADS.tariff;
+
+    // ── folder styling helpers
+    const folderTab = (id, big) => {
+      const f = FOLDER[id] || FOLDER.gst;
+      return 'display:inline-flex;align-items:center;padding:' + (big ? '7px 20px 6px' : '6px 16px 5px')
+        + ';border-radius:12px 16px 0 0;background:' + (f.tab || f.fill) + ';color:' + f.ink
+        + ';font:500 ' + (big ? '10px' : '9px') + ' "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase;'
+        + 'box-shadow:0 -2px 8px rgba(0,0,0,.08);margin-left:8px;position:relative;z-index:2';
+    };
+    const folderBody = (id, h) => {
+      const f = FOLDER[id] || FOLDER.gst;
+      return 'position:relative;border-radius:4px 20px 20px 20px;background:' + f.fill
+        + ';box-shadow:0 16px 34px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.25);padding:9px;'
+        + (h ? 'height:' + h + 'px;' : '');
+    };
+
+    // ── folder stack geometry
+    const d = s.drag || { dx: 0, dy: 0 };
+    const stack = [];
+    for (let i = 0; i < 3; i++) {
+      const c = CARDS[(s.idx + i) % CARDS.length];
+      const base = 'position:absolute;left:0;right:0;top:0;';
+      let t, z, extra = '';
+      if (i === 0) {
+        if (s.exit) {
+          const dir = s.exit === 'right' ? 1 : -1;
+          t = 'translate(' + (dir * 460) + 'px,-34px) rotate(' + (dir * 18) + 'deg)';
+          extra = 'transition:transform .38s cubic-bezier(.4,0,.7,.2),opacity .38s ease;opacity:.15;';
+        } else {
+          t = 'translate(' + d.dx + 'px,' + d.dy * 0.35 + 'px) rotate(' + (d.dx / 24) + 'deg)';
+          extra = s.drag ? 'transition:none;' : 'transition:transform .34s cubic-bezier(.2,1.1,.3,1);';
+        }
+        z = 30;
+      } else {
+        const lift = s.exit ? 1 : Math.min(1, Math.abs(d.dx) / 130) * (i === 1 ? 1 : 0.5);
+        const ty = i * 18 - lift * 14;
+        const sc = 1 - i * 0.04 + lift * 0.035;
+        t = 'translateY(' + ty + 'px) scale(' + sc + ') rotate(' + (i === 1 ? 1.6 : -1.2) + 'deg)';
+        z = 30 - i * 10;
+        extra = 'transform-origin:top center;transition:transform .38s cubic-bezier(.2,1.05,.35,1);opacity:' + (1 - i * 0.05) + ';';
+      }
+      stack.push({
+        ...c,
+        tabLabel: c.tab,
+        tabStyle: folderTab(c.id, true),
+        bodyStyle: folderBody(c.id, 452),
+        photoStyle: 'position:relative;height:74px;border-radius:12px;background:repeating-linear-gradient(135deg,#EFEBE0 0 9px,#E4DFD1 9px 18px);display:flex;align-items:flex-end;padding:8px;flex:none',
+        hasImpact: (this.props.showImpactTags ?? true) && !!s.assists.impact,
+        hasThread: !!c.thread, threadLen: c.thread ? THREADS[c.thread].beats.length : 0,
+        clipLabel: s.saved.indexOf(c.id) >= 0 ? 'clipped \u2713' : 'clip',
+        file: () => { if (!this._moved) this.fileAway(false); },
+        clip: e => { if (e && e.stopPropagation) e.stopPropagation(); this.fileAway(true); },
+        open: e => { if (e && e.stopPropagation) e.stopPropagation(); this.setState({ screen: 'story', storyId: c.id, back: 'feed' }); },
+        wrapStyle: base + 'z-index:' + z + ';transform:' + t + ';' + extra + (i === 0 ? '' : 'pointer-events:none;'),
+      });
+    }
+    stack.reverse();
+
+    const badge = (active, pos) => {
+      const o = Math.min(1, active / 90);
+      return 'position:absolute;z-index:40;' + pos + ';padding:9px 16px;border-radius:999px;font:500 12px "IBM Plex Mono",monospace;letter-spacing:.16em;'
+        + 'background:rgba(252,250,245,.9);backdrop-filter:blur(14px);border:1px solid rgba(0,0,0,.14);pointer-events:none;'
+        + 'opacity:' + o + ';transform:scale(' + (0.85 + o * 0.15) + ');';
+    };
+
+    const tabStyle = name => {
+      const on = s.tab === name && (scr === 'feed' || scr === 'threads' || scr === 'saved');
+      return 'padding:11px 22px;border-radius:999px;font:500 13px "DM Sans",sans-serif;cursor:pointer;'
+        + (on ? 'background:#101010;color:#fff;' : 'color:rgba(0,0,0,.55);');
+    };
+    const tabs = [
+      { name: 'Today', key: 'feed', screen: 'feed' },
+      { name: 'Threads', key: 'threads', screen: 'threads' },
+      { name: 'Clippings', key: 'saved', screen: 'saved' },
+    ].map(t => ({ name: t.name, style: tabStyle(t.key), pick: () => this.setState({ tab: t.key, screen: t.screen }) }));
+
+    const readMins = s.mins === 0 ? s.custom : s.mins;
+    const savedList = s.saved.map(id => {
+      const c = CARDS.find(x => x.id === id);
+      return { ...c, tabStyle: folderTab(id, false), bodyStyle: folderBody(id, 0),
+        open: () => this.setState({ screen: 'story', storyId: id, back: 'saved' }) };
+    });
+
+    const pop = s.pop || {};
+    const popData = pop.kind === 'person' ? { ...PEOPLE[pop.id] } : { ...JARGON[pop.id] };
+
+    return {
+      isWelcome: scr === 'welcome', isOb1: scr === 'ob1', isOb2: scr === 'ob2', isOb3: scr === 'ob3',
+      isTyping: scr === 'typing', isFeed: scr === 'feed', isThreads: scr === 'threads', isSaved: scr === 'saved',
+      isStory: scr === 'story', isThread: scr === 'thread', isPerson: scr === 'person',
+
+      goWelcome: () => this.set('screen', 'welcome'),
+      goOb1: () => this.set('screen', 'ob1'),
+      goOb2: () => this.set('screen', 'ob2'),
+      goOb3: () => this.set('screen', 'ob3'),
+      goPress: this.startEdition,
+      typeFoot: 'set in ' + (s.place || 'India') + ' \u00b7 ' + readMins + ' min',
+      restart: () => this.setState({ screen: 'welcome', idx: 0, saved: [], pop: null, exit: null }),
+      skipToFeed: () => this.setState({ screen: 'feed', tab: 'feed' }),
+
+      name: s.name,
+      setName: e => this.set('name', e.target.value),
+      states, regions: mk(REGIONS, s.regions, 'regions'),
+      greeting: s.name ? 'Alright ' + s.name + ',' : 'Alright,',
+      mastGreet: s.name ? 'Hi ' + s.name : 'Your edition',
+      times, isCustom: s.mins === 0, custom: s.custom,
+      setCustom: e => this.set('custom', Number(e.target.value)),
+      slots: mk(['Morning', 'Lunch', 'Night'], s.slot, 'slot', true),
+      topics: mk(TOPICS, s.topics, 'topics'), topicCount: s.topics.length,
+      depths: [
+        { name: 'Brief first, depth on tap', sub: 'Short folders; open only what grabs you.' },
+        { name: 'Explain like I\u2019m new', sub: 'More background, fewer assumptions.' },
+        { name: 'Straight facts, no framing', sub: 'What happened, who said it, nothing else.' },
+      ].map(x => ({ ...x, on: s.depth === x.name ? 'on' : 'off', pick: () => this.set('depth', x.name) })),
+      lifeStages: mk(LIFE, s.life, 'life'),
+      assists: [
+        { key: 'jargon', name: 'Jargon buster', sub: 'Underline hard terms with a plain-English definition.' },
+        { key: 'people', name: 'Who\u2019s who', sub: 'Highlight names and show a quick profile card.' },
+        { key: 'impact', name: 'Impact tags', sub: 'Add a line on how each story touches you.' },
+      ].map(a => ({ name: a.name, sub: a.sub, on: s.assists[a.key] ? 'on' : 'off',
+        pick: () => this.setState(st => ({ assists: { ...st.assists, [a.key]: !st.assists[a.key] } })) })),
+
+      editionMeta: 'Sat 12 Sep · 06:40',
+      readLabel: readMins + ' min',
+      placeLabel: s.place || 'India',
+      leftLabel: 'Folder ' + ((s.idx % CARDS.length) + 1) + ' of ' + CARDS.length + ' \u00b7 ' + readMins + ' min edition',
+      dots: CARDS.map((c, i) => ({ on: i === s.idx % CARDS.length ? 'on' : 'off' })),
+
+      stack, tabs,
+      onDown: this.onDown, onMove: this.onMove, onUp: this.onUp,
+      doSkip: () => this.fileAway(false),
+      doSave: () => this.fileAway(true),
+      saveBadgeStyle: badge(d.dx > 0 ? d.dx : 0, 'top:16px;right:14px'),
+      skipBadgeStyle: badge(d.dx < 0 ? -d.dx : 0, 'top:16px;left:14px'),
+
+      threadList: Object.keys(THREADS).map(k => ({
+        ...THREADS[k], pips: THREADS[k].beats.map(() => ({})),
+        tabStyle: folderTab(k, false), bodyStyle: folderBody(k, 0),
+        open: () => this.setState({ screen: 'thread', threadId: k, back: 'threads' }),
+      })),
+      savedList, noSaved: s.saved.length === 0,
+
+      storyBandStyle: 'position:relative;height:270px;background:' + ((FOLDER[story.id] || FOLDER.gst).tab || (FOLDER[story.id] || FOLDER.gst).fill),
+      showImpact: (this.props.showImpactTags ?? true) && !!s.assists.impact,
+      story: {
+        ...story,
+        hasThread: !!story.thread,
+        segs: story.segs.map(g => {
+          const jOn = (this.props.jargonBuster ?? true) && !!s.assists.jargon;
+          const pOn = !!s.assists.people;
+          const isJ = g.isJargon && jOn, isP = g.isPerson && pOn;
+          return {
+            text: g.text,
+            isPlain: !isJ && !isP,
+            isPerson: isP,
+            isJargon: isJ,
+            tap: isP ? () => this.set('pop', { kind: 'person', id: g.pid })
+              : isJ ? () => this.set('pop', { kind: 'jargon', id: g.jid }) : null,
+          };
+        }),
+      },
+      profileLabel: (s.life[0] || 'Student').toLowerCase() + ' \u00b7 ' + (s.place || 'India'),
+      saveLabel: s.saved.indexOf(story.id) >= 0 ? 'Clipped \u2713' : 'Clip it',
+      toggleSave: () => this.setState(st => ({ saved: st.saved.indexOf(story.id) >= 0 ? st.saved.filter(x => x !== story.id) : st.saved.concat([story.id]) })),
+      backToFeed: () => this.setState({ screen: s.back || 'feed' }),
+      openStoryThread: () => this.setState({ screen: 'thread', threadId: story.thread, back: 'story' }),
+
+      thread, backFromThread: () => this.setState({ screen: s.back === 'story' ? 'story' : 'threads' }),
+      person, backFromPerson: () => this.setState({ screen: 'story' }),
+
+      hasPop: !!s.pop,
+      popIsJargon: s.pop && s.pop.kind === 'jargon',
+      popIsPerson: s.pop && s.pop.kind === 'person',
+      pop: popData,
+      closePop: () => this.set('pop', null),
+      openPerson: () => this.setState({ screen: 'person', personId: s.pop.id, pop: null }),
+    };
+  }
+
+  componentDidMount() {
+    this._sty = document.createElement('style');
+    this._sty.textContent = [
+      '[data-on="on"]{background:#101010 !important;color:#fff !important;border-color:#101010 !important}',
+      '[data-on="on"] [data-knob]{transform:translateX(19px)}',
+      '[data-on="on"][data-knob]{background:#fff !important}',
+      '[data-on="on"] div{color:rgba(255,255,255,.74) !important}',
+      '[data-on="on"] [data-keep]{color:#fff !important}',
+      '[data-on="on"] [data-tile]{background:#fff !important}',
+      '[data-on="on"] [data-tile] div{color:#101010 !important}',
+      'input::placeholder{color:rgba(0,0,0,.28)}',
+    ].join('\n');
+    document.head.appendChild(this._sty);
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#EFEDE4;font-family:"DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
+*{box-sizing:border-box}
+::-webkit-scrollbar{width:0;height:0}
+@keyframes povRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes povFade{from{opacity:0}to{opacity:1}}
+@keyframes povT1{from{width:0}to{width:22ch}}
+@keyframes povT2{from{width:0}to{width:20ch}}
+@keyframes povT3{from{width:0}to{width:23ch}}
+@keyframes povT4{from{width:0}to{width:21ch}}
+@keyframes povFeed{from{opacity:0;transform:translateY(42px)}to{opacity:1;transform:none}}
+@keyframes povStrike{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+@keyframes povCaret{0%,48%{opacity:1}49%,100%{opacity:0}}
+@keyframes povSlab{from{opacity:0;transform:translateY(34px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes povBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes povDrift{0%,100%{transform:rotate(var(--r)) translate(0,0)}25%{transform:rotate(calc(var(--r) + 3deg)) translate(9px,-14px)}50%{transform:rotate(calc(var(--r) - 2.5deg)) translate(-7px,-22px)}75%{transform:rotate(calc(var(--r) + 1.5deg)) translate(-11px,-9px)}}
+@keyframes povDrift2{0%,100%{transform:rotate(var(--r)) translate(0,0)}25%{transform:rotate(calc(var(--r) - 3deg)) translate(-10px,-11px)}50%{transform:rotate(calc(var(--r) + 2.5deg)) translate(8px,-20px)}75%{transform:rotate(calc(var(--r) - 1.5deg)) translate(12px,-8px)}}
+@keyframes povSlideL{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
+@keyframes povSlideR{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+</style>
+</helmet>
+
+<div style="min-height:100svh;display:flex;align-items:center;justify-content:center;padding:40px 24px;position:relative;z-index:1;overflow:hidden">
+<span aria-hidden="true" style="position:absolute;left:-110px;top:12%;width:330px;height:330px;border-radius:50%;background:rgba(147,160,111,.3);filter:blur(34px)"></span>
+<span aria-hidden="true" style="position:absolute;right:-120px;top:6%;width:280px;height:280px;border-radius:50%;background:rgba(124,139,168,.26);filter:blur(36px)"></span>
+<span aria-hidden="true" style="position:absolute;right:4%;bottom:-90px;width:300px;height:300px;border-radius:50%;background:rgba(230,185,62,.24);filter:blur(38px)"></span>
+<span aria-hidden="true" style="position:absolute;left:6%;bottom:-100px;width:270px;height:270px;border-radius:50%;background:rgba(158,74,87,.2);filter:blur(36px)"></span>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+
+<div style="position:relative;width:100%;height:874px;overflow:hidden;background:#F2EFE4;color:#101010;pointer-events:auto">
+
+<!-- shared scrapbook backdrop -->
+<div style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
+  <div style="position:absolute;left:-40px;top:96px;width:150px;height:120px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.22"></div>
+  <div style="position:absolute;right:-46px;top:262px;width:150px;height:132px;border-radius:52% 48% 55% 45%;background:#8C3B48;opacity:.18"></div>
+  <div style="position:absolute;left:-30px;bottom:118px;width:140px;height:118px;border-radius:46% 54% 50% 50%;background:#E0B44A;opacity:.22"></div>
+  <div style="position:absolute;right:-36px;bottom:-16px;width:150px;height:126px;border-radius:50%;background:#2C4A63;opacity:.15"></div>
+  <div style="position:absolute;right:-18px;top:120px;width:86px;--r:7deg;transform:rotate(7deg);opacity:.3;animation:povDrift 9s ease-in-out infinite"><img src="assets/mic.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:-14px;top:430px;width:92px;--r:-9deg;transform:rotate(-9deg);opacity:.28;animation:povDrift2 10s ease-in-out infinite"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:-8px;top:-6px;width:104px;--r:-6deg;transform:rotate(-6deg);opacity:.24;animation:povDrift2 12s ease-in-out infinite"><img src="assets/news-stack.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+</div>
+
+<!-- ══════════ 1 · WELCOME ══════════ -->
+<sc-if value="{{ isWelcome }}" hint-placeholder-val="{{ true }}">
+<div style="position:relative;z-index:1;height:100%;background:#F2EFE4;overflow:hidden;animation:povFade .5s ease both;display:flex;flex-direction:column;justify-content:flex-end;padding:0 28px 52px">
+  <div style="position:absolute;left:2px;top:78px;width:120px;height:96px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.85"></div>
+  <div style="position:absolute;right:14px;top:74px;width:118px;height:108px;border-radius:52% 48% 55% 45%;background:#8C3B48;opacity:.85"></div>
+  <div style="position:absolute;left:152px;top:208px;width:96px;height:92px;border-radius:50%;background:#9AA46A;opacity:.85"></div>
+  <div style="position:absolute;right:24px;top:290px;width:92px;height:70px;border-radius:52% 48% 46% 54%;background:#8C3B48;opacity:.85"></div>
+  <div style="position:absolute;left:18px;top:372px;width:86px;height:74px;border-radius:50%;background:#8C3B48;opacity:.85"></div>
+  <div style="position:absolute;right:22px;top:552px;width:90px;height:82px;border-radius:50%;background:#E0B44A;opacity:.9"></div>
+  <div style="position:absolute;left:8px;top:626px;width:150px;height:120px;border-radius:46% 54% 50% 50%;background:#7C8A52;opacity:.85"></div>
+  <div style="position:absolute;left:212px;top:716px;width:104px;height:80px;border-radius:50%;background:#8C3B48;opacity:.85"></div>
+
+  <div style="position:absolute;left:-14px;top:44px;width:168px;--r:-4deg;transform:rotate(-4deg);animation:povDrift 7s ease-in-out infinite"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:-6px;top:40px;width:152px;--r:3deg;transform:rotate(3deg);animation:povDrift2 8.5s ease-in-out infinite"><img src="assets/happy-news.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:146px;top:190px;width:110px;--r:-3deg;transform:rotate(-3deg);animation:povDrift 9s ease-in-out infinite"><img src="assets/ear.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:10px;top:262px;width:106px;--r:6deg;transform:rotate(6deg);animation:povDrift2 7.5s ease-in-out infinite"><img src="assets/megaphone.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:6px;top:344px;width:104px;--r:-6deg;transform:rotate(-6deg);animation:povDrift 8s ease-in-out infinite"><img src="assets/mic.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;right:12px;top:520px;width:94px;--r:4deg;transform:rotate(4deg);animation:povDrift 9.5s ease-in-out infinite"><img src="assets/clock.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:-6px;top:600px;width:184px;--r:-4deg;transform:rotate(-4deg);animation:povDrift2 8.2s ease-in-out infinite"><img src="assets/news-stack.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+  <div style="position:absolute;left:200px;top:686px;width:128px;--r:3deg;transform:rotate(3deg);animation:povDrift 7.8s ease-in-out infinite"><img src="assets/camera.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+
+  <div style="position:absolute;left:50%;top:50%;width:258px;margin-left:-129px;margin-top:-126px;animation:povRise .8s .1s ease both">
+    <img src="assets/pov-logo.png" alt="POV" style="width:100%;height:auto;display:block;mix-blend-mode:multiply">
+    <div style="margin-top:10px;text-align:center;font:300 14.5px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.62)">The same story, read across every paper — and what they disagree on.</div>
+  </div>
+
+  <div style="position:relative;z-index:3;animation:povRise .9s .2s ease both">
+    <div onClick="{{ goName }}" style="height:56px;border-radius:28px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 12px 28px rgba(0,0,0,.22)" style-active="background:#8C3B48">
+      Get started
+      <span style="font:500 15px 'IBM Plex Mono',monospace">→</span>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ 2 · NAME ══════════ -->
+<sc-if value="{{ isName }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:30px">
+    <div onClick="{{ goWelcome }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:25%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">01/04</div>
+  </div>
+
+  <div style="font:400 40px/1.04 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">What's your<br>name?</div>
+  <div style="margin-top:12px;font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">It goes on the masthead of your edition. Nothing else.</div>
+
+  <input value="{{ name }}" onChange="{{ setName }}" placeholder="Ananya" style="margin-top:26px;height:56px;border-radius:16px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.78);backdrop-filter:blur(12px);padding:0 18px;font:400 18px 'DM Sans',sans-serif;color:#101010;outline:none">
+
+  <div style="flex:1"></div>
+  <div onClick="{{ goPlace }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ 3 · HOME STATE ══════════ -->
+<sc-if value="{{ isPlace }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
+    <div onClick="{{ goName }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:50%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">02/04</div>
+  </div>
+
+  <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">{{ placeHeading }}</div>
+  <div style="margin-top:12px;font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">Your state decides the regional half of the edition. National and world stories arrive either way.</div>
+
+  <div style="margin-top:24px;display:flex;flex-direction:column;gap:8px">
+    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Home state</div>
+    <div style="position:relative">
+      <select value="{{ place }}" onChange="{{ setPlace }}" style="appearance:none;-webkit-appearance:none;width:100%;height:56px;border-radius:16px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.82);padding:0 44px 0 18px;font:400 17px 'DM Sans',sans-serif;color:#101010;outline:none;cursor:pointer">
+        <sc-for list="{{ stateOptions }}" as="s" hint-placeholder-count="8">
+          <option value="{{ s.name }}">{{ s.name }}</option>
+        </sc-for>
+      </select>
+      <div style="position:absolute;right:18px;top:20px;font:400 14px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4);pointer-events:none">▾</div>
+    </div>
+    <div style="font:400 11.5px/1.5 'IBM Plex Mono',monospace;color:rgba(0,0,0,.38)">{{ placeDepth }}</div>
+  </div>
+
+  <div style="margin-top:26px;display:flex;flex-direction:column;gap:10px">
+    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.42)">Also keep an eye on</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <sc-for list="{{ regionChips }}" as="r" hint-placeholder-count="4">
+        <div onClick="{{ r.pick }}" data-on="{{ r.on }}" style="padding:10px 15px;border-radius:999px;font:400 13.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.7)">{{ r.name }}</div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="flex:1"></div>
+  <div onClick="{{ goTime }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ 4 · READ TIME ══════════ -->
+<sc-if value="{{ isTime }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
+    <div onClick="{{ goPlace }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:75%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">03/04</div>
+  </div>
+
+  <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">{{ greeting }}<br>how long have you got?</div>
+  <div style="margin-top:12px;font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">We cut the edition to fit the time, not the other way round.</div>
+
+  <div style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
+    <sc-for list="{{ times }}" as="t" hint-placeholder-count="3">
+      <div onClick="{{ t.pick }}" data-on="{{ t.on }}" style="border-radius:22px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.74);backdrop-filter:blur(14px);padding:18px 20px;display:flex;align-items:center;gap:16px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.05)">
+        <div data-tile="1" style="width:54px;height:54px;border-radius:16px;background:#101010;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none">
+          <div style="font:400 20px/1 'Instrument Serif',serif">{{ t.num }}</div>
+          <div style="font:500 8px/1 'IBM Plex Mono',monospace;opacity:.65;margin-top:3px">MIN</div>
+        </div>
+        <div style="flex:1;min-width:0">
+          <div data-keep="1" style="font:500 16px 'DM Sans',sans-serif">{{ t.label }}</div>
+          <div style="font:300 12.5px/1.4 'DM Sans',sans-serif;color:rgba(0,0,0,.5);margin-top:3px">{{ t.sub }}</div>
+        </div>
+        <div style="width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:400 11px 'IBM Plex Mono',monospace;flex:none">{{ t.mark }}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="flex:1"></div>
+  <div onClick="{{ goTopics }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ 5 · INTERESTS ══════════ -->
+<sc-if value="{{ isTopics }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
+    <div onClick="{{ goTime }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:100%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">04/04</div>
+  </div>
+
+  <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">What should land<br>on page one?</div>
+  <div style="margin-top:12px;display:flex;align-items:baseline;justify-content:space-between">
+    <div style="font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">Tap as many as you like.</div>
+    <div style="font:500 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ topicCount }} picked</div>
+  </div>
+
+  <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;flex:1;min-height:0;overflow:auto">
+    <sc-for list="{{ topics }}" as="t" hint-placeholder-count="10">
+      <div onClick="{{ t.pick }}" data-on="{{ t.on }}" style="padding:12px 17px;border-radius:999px;font:400 14.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.72)">{{ t.name }}</div>
+    </sc-for>
+  </div>
+
+  <div onClick="{{ goPress }}" style="margin-top:16px;height:56px;border-radius:28px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 12px 26px rgba(0,0,0,.2)" style-active="background:#8C3B48">File my first edition <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+</div>
+</sc-if>
+
+<!-- ══════════ TYPEWRITER LOADER ══════════ -->
+<sc-if value="{{ isTyping }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 20px;overflow:hidden">
+  <div style="position:absolute;inset:0;pointer-events:none">
+    <div style="position:absolute;top:82px;left:-36px;width:150px;height:124px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.5;animation:povSlab .9s ease both"></div>
+    <div style="position:absolute;top:300px;right:-40px;width:152px;height:130px;border-radius:52% 48% 55% 45%;background:#8C3B48;opacity:.45;animation:povSlab .9s .14s ease both"></div>
+    <div style="position:absolute;bottom:60px;left:-30px;width:146px;height:120px;border-radius:46% 54% 50% 50%;background:#E0B44A;opacity:.5;animation:povSlab .9s .28s ease both"></div>
+  </div>
+
+  <div style="position:relative;width:326px;display:flex;flex-direction:column;align-items:center">
+    <div style="position:relative;width:232px;background:#FBFAF7;border-radius:4px 4px 0 0;box-shadow:0 -10px 26px rgba(0,0,0,.14),0 0 0 1px rgba(0,0,0,.07);padding:20px 20px 34px;margin-bottom:-14px;z-index:1;animation:povFeed .8s cubic-bezier(.2,.9,.3,1) both">
+      <div style="font:500 8.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">{{ editionMeta }}</div>
+      <div style="font:400 40px/0.92 'Instrument Serif',serif;letter-spacing:-.03em;margin:8px 0 10px">POV</div>
+      <div style="height:1px;background:rgba(0,0,0,.16);margin-bottom:10px"></div>
+      <div style="display:flex;flex-direction:column">
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT1 .6s steps(21) 0.5s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">{{ typeLine1 }}</div>
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT2 .6s steps(19) 1.1s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">{{ typeLine2 }}</div>
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT3 .6s steps(22) 1.7s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">{{ typeLine3 }}</div>
+        <div style="overflow:hidden;white-space:nowrap;width:0;animation:povT4 .6s steps(22) 2.3s both;font:400 12.5px/1.85 'IBM Plex Mono',monospace;color:rgba(0,0,0,.75)">> your edition is set.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;margin-top:8px">
+        <div style="width:8px;height:15px;background:#101010;animation:povCaret .8s steps(1) infinite"></div>
+        <div style="font:400 11.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ typeFoot }}</div>
+      </div>
+    </div>
+
+    <div style="position:relative;width:100%;display:flex;align-items:center;justify-content:center;z-index:2">
+      <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);box-shadow:0 4px 12px rgba(0,0,0,.14)"></div>
+      <div style="flex:1;height:22px;margin:0 -6px;border-radius:12px;background:rgba(255,255,255,.42);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.72);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 6px 16px rgba(0,0,0,.12)"></div>
+      <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);box-shadow:0 4px 12px rgba(0,0,0,.14)"></div>
+    </div>
+
+    <div style="position:relative;width:100%;margin-top:-4px;border-radius:14px 14px 26px 26px;background:rgba(255,255,255,.4);backdrop-filter:blur(30px) saturate(190%);border:1px solid rgba(255,255,255,.78);box-shadow:0 22px 50px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.9);padding:14px 18px 18px;display:flex;flex-direction:column;gap:9px;z-index:3">
+      <div style="display:flex;justify-content:center"><div style="width:74px;height:8px;border-radius:5px;background:rgba(16,16,16,.16);animation:povStrike .28s ease-in-out infinite alternate"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;gap:4px;justify-content:center"><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div></div>
+        <div style="display:flex;gap:4px;justify-content:center"><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div></div>
+        <div style="display:flex;gap:4px;justify-content:center"><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div><div style="width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.14);box-shadow:0 1px 2px rgba(0,0,0,.12)"></div></div>
+      </div>
+      <div style="height:13px;border-radius:7px;background:rgba(255,255,255,.62);border:1px solid rgba(0,0,0,.1);margin:2px 22px 0"></div>
+    </div>
+  </div>
+
+  <div style="position:relative;margin-top:26px;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,0,0,.42)">Typing your edition</div>
+</div>
+</sc-if>
+
+<!-- ══════════ THE BRIEF — one story per screen ══════════ -->
+<sc-if value="{{ isBrief }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column">
+  <div style="padding:56px 22px 10px;display:flex;align-items:flex-end;justify-content:space-between">
+    <div>
+      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.4)">{{ editionMeta }}</div>
+      <div style="font:400 36px/1 'Instrument Serif',serif;letter-spacing:-.02em;margin-top:5px">POV</div>
+    </div>
+    <div style="text-align:right">
+      <div style="font:300 12px 'DM Sans',sans-serif;color:rgba(0,0,0,.45)">{{ mastGreet }}</div>
+      <div style="font:500 11px 'IBM Plex Mono',monospace;margin-top:4px">{{ progressLabel }}</div>
+    </div>
+  </div>
+  <div style="margin:0 22px;height:1px;background:rgba(0,0,0,.14)"></div>
+  <div style="margin:10px 22px 0;display:flex;gap:4px">
+    <sc-for list="{{ pips }}" as="p" hint-placeholder-count="5">
+      <div data-on="{{ p.on }}" style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.14)"></div>
+    </sc-for>
+  </div>
+
+  <div onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" style="position:relative;flex:1;margin:14px 20px 0;touch-action:none;user-select:none">
+    <sc-for list="{{ stack }}" as="c" hint-placeholder-count="2">
+      <div style="{{ c.wrapStyle }}">
+        <div onClick="{{ c.next }}" style="position:relative;cursor:pointer">
+          <div style="{{ c.tabStyle }}">{{ c.tabLabel }}</div>
+          <div style="{{ c.bodyStyle }}">
+            <div style="border-radius:4px 16px 16px 16px;background:rgba(252,250,245,.97);box-shadow:0 4px 14px rgba(0,0,0,.12);padding:18px 17px 16px;display:flex;flex-direction:column;gap:12px;height:100%">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+                <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.45)">{{ c.regionLabel }}</div>
+                <div style="font:500 9.5px 'IBM Plex Mono',monospace;background:#101010;color:#fff;padding:5px 9px;border-radius:999px;white-space:nowrap">{{ c.readLabel }}</div>
+              </div>
+              <div style="font:400 28px/1.1 'Instrument Serif',serif;letter-spacing:-.01em">{{ c.headline }}</div>
+              <div style="display:flex;align-items:center;gap:8px">
+                <div style="font:500 11px 'IBM Plex Mono',monospace;color:#8C3B48">{{ c.sourceLabel }}</div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:7px">
+                <sc-for list="{{ c.affectsPills }}" as="a" hint-placeholder-count="3">
+                  <div style="display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:rgba(44,74,99,.1);border:1px solid rgba(44,74,99,.26)">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#2C4A63"></div>
+                    <div style="font:500 11px 'IBM Plex Mono',monospace;color:#1b2f40;white-space:nowrap">{{ a.name }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="height:1px;background:rgba(0,0,0,.1)"></div>
+              <div style="font:300 13px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.55)">{{ c.firstFact }}</div>
+              <div style="flex:1"></div>
+              <div data-nav="1" onClick="{{ c.open }}" style="height:46px;border-radius:23px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font:500 14px 'DM Sans',sans-serif;cursor:pointer" style-active="background:#8C3B48">Open the story <span style="font:400 12px 'IBM Plex Mono',monospace">→</span></div>
+              <div style="text-align:center;font:400 10.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.38)">{{ c.nextHint }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+    <div style="{{ nextBadgeStyle }}">NEXT</div>
+  </div>
+
+  <div style="padding:12px 22px 30px;display:flex;justify-content:center">
+    <div onClick="{{ doNext }}" style="padding:12px 22px;border-radius:999px;background:rgba(255,255,255,.66);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.75);box-shadow:0 10px 30px rgba(0,0,0,.12);font:500 12.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.6);cursor:pointer" style-active="background:rgba(255,255,255,.9)">{{ nextButtonLabel }}</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ INSIDE A STORY ══════════ -->
+<sc-if value="{{ isStory }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;animation:povRise .3s ease both">
+  <div style="{{ storyBandStyle }}">
+    <div onClick="{{ backToBrief }}" style="position:absolute;top:54px;left:16px;width:38px;height:38px;border-radius:50%;background:rgba(252,250,245,.9);border:1px solid rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font:400 16px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2">←</div>
+    <sc-if value="{{ showListen }}" hint-placeholder-val="{{ true }}">
+      <div onClick="{{ tapListen }}" style="position:absolute;top:54px;right:16px;height:38px;padding:0 15px;border-radius:19px;background:rgba(252,250,245,.9);border:1px solid rgba(255,255,255,.9);display:flex;align-items:center;gap:8px;font:500 11.5px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2" style-active="background:#fff">▶ {{ listenLabel }}</div>
+    </sc-if>
+    <div style="position:absolute;left:20px;bottom:18px;right:20px;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(252,250,245,.92)">{{ story.regionLabel }}</div>
+  </div>
+
+  <div style="flex:1;min-height:0;overflow:auto">
+    <div style="margin-top:-24px;border-radius:24px 24px 0 0;background:rgba(242,239,228,.97);padding:22px 22px 34px;display:flex;flex-direction:column;gap:16px">
+      <div style="font:400 33px/1.07 'Instrument Serif',serif;letter-spacing:-.02em">{{ story.headline }}</div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+        <div style="font:500 11px 'IBM Plex Mono',monospace;color:#8C3B48">{{ story.sourceLabel }}</div>
+        <div style="width:4px;height:4px;border-radius:50%;background:rgba(0,0,0,.2)"></div>
+        <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.45)">{{ story.readLabel }}</div>
+        <div style="width:4px;height:4px;border-radius:50%;background:rgba(0,0,0,.2)"></div>
+        <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.45)">{{ story.publishedLabel }}</div>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:7px">
+        <sc-for list="{{ story.affectsPills }}" as="a" hint-placeholder-count="3">
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:rgba(44,74,99,.1);border:1px solid rgba(44,74,99,.26)">
+            <div style="width:5px;height:5px;border-radius:50%;background:#2C4A63"></div>
+            <div style="font:500 11px 'IBM Plex Mono',monospace;color:#1b2f40;white-space:nowrap">affects {{ a.name }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ listenNote }}" hint-placeholder-val="{{ false }}">
+        <div style="border-radius:14px;background:rgba(224,180,74,.18);border:1px solid rgba(224,180,74,.5);padding:11px 14px;font:400 12px/1.45 'IBM Plex Mono',monospace;color:#4a3708">Audio comes from the pipeline — button is wired, sound is not yet.</div>
+      </sc-if>
+
+      <div style="height:1px;background:rgba(0,0,0,.12)"></div>
+
+      <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.45)">What everyone agrees on</div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <sc-for list="{{ story.facts }}" as="f" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="font:300 16.5px/1.6 'DM Sans',sans-serif;color:rgba(0,0,0,.82)">
+              <sc-for list="{{ f.segs }}" as="s" hint-placeholder-count="3"><sc-if value="{{ s.isPlain }}" hint-placeholder-val="{{ true }}"><span>{{ s.text }}</span></sc-if><sc-if value="{{ s.isPerson }}" hint-placeholder-val="{{ false }}"><span onClick="{{ s.tap }}" style="color:#2C4A63;background:rgba(44,74,99,.14);border-radius:5px;padding:0 3px;cursor:pointer;box-shadow:inset 0 -1px 0 rgba(44,74,99,.45)">{{ s.text }}</span></sc-if><sc-if value="{{ s.isJargon }}" hint-placeholder-val="{{ false }}"><span onClick="{{ s.tap }}" style="border-bottom:1.5px dotted rgba(140,59,72,.65);background:rgba(140,59,72,.07);border-radius:3px;padding:0 2px;cursor:pointer">{{ s.text }}</span></sc-if></sc-for>
+            </div>
+            <sc-if value="{{ showSources }}" hint-placeholder-val="{{ true }}">
+              <div style="font:400 10.5px/1.45 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ f.sourceLine }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+
+      <div onClick="{{ goDiffer }}" style="margin-top:4px;border-radius:20px;background:#2C4A63;color:#FBF6EE;padding:18px;cursor:pointer;display:flex;align-items:center;gap:14px" style-active="background:#1b2f40">
+        <div style="flex:1">
+          <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;opacity:.7">The part nobody shows you</div>
+          <div style="font:400 21px/1.15 'Instrument Serif',serif;margin-top:6px">Where the papers differ</div>
+          <div style="font:400 10.5px 'IBM Plex Mono',monospace;opacity:.72;margin-top:6px">{{ story.differCount }}</div>
+        </div>
+        <div style="font:400 16px 'IBM Plex Mono',monospace;opacity:.8">→</div>
+      </div>
+
+      <div style="display:flex;gap:10px">
+        <div onClick="{{ backToBrief }}" style="flex:1;height:48px;border-radius:24px;border:1px solid rgba(0,0,0,.16);background:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;font:500 13px 'DM Sans',sans-serif;cursor:pointer" style-active="background:#fff">Back to brief</div>
+        <div onClick="{{ doNext }}" style="flex:1;height:48px;border-radius:24px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font:500 13px 'DM Sans',sans-serif;cursor:pointer" style-active="background:#8C3B48">{{ nextButtonLabel }}</div>
+      </div>
+
+      <div style="font:400 11px/1.6 'IBM Plex Mono',monospace;color:rgba(0,0,0,.36)">Dotted words have a plain-English meaning. Blue names open a card. Tap either.</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ WHERE THE PAPERS DIFFER ══════════ -->
+<sc-if value="{{ isDiffer }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;background:#1F3444;color:#FBF6EE;animation:povFade .28s ease both">
+  <div style="position:absolute;inset:0;pointer-events:none;overflow:hidden;opacity:.5">
+    <div style="position:absolute;left:-50px;top:120px;width:170px;height:140px;border-radius:48% 52% 46% 54%;background:#8C3B48;opacity:.5"></div>
+    <div style="position:absolute;right:-56px;bottom:150px;width:180px;height:150px;border-radius:52% 48% 55% 45%;background:#6E7A44;opacity:.45"></div>
+  </div>
+
+  <div style="position:relative;padding:54px 22px 14px;display:flex;align-items:center;gap:12px">
+    <div onClick="{{ backToStory }}" style="width:36px;height:36px;border-radius:50%;background:rgba(251,246,238,.14);border:1px solid rgba(251,246,238,.3);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;flex:none;color:#FBF6EE">←</div>
+    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;opacity:.7">{{ story.sourceLabel }}</div>
+  </div>
+  <div style="position:relative;padding:0 22px 12px">
+    <div style="font:400 34px/1.04 'Instrument Serif',serif;letter-spacing:-.02em">Where the papers differ</div>
+    <div style="font:300 13.5px/1.5 'DM Sans',sans-serif;opacity:.72;margin-top:8px">{{ story.headline }}</div>
+  </div>
+
+  <div style="position:relative;flex:1;min-height:0;overflow:auto;padding:8px 18px 34px;display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;opacity:.65">Contested</div>
+      <sc-for list="{{ story.contested }}" as="c" hint-placeholder-count="2">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="font:400 21px/1.2 'Instrument Serif',serif">{{ c.point }}</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ c.positions }}" as="p" hint-placeholder-count="2">
+              <div style="{{ p.slipStyle }}">
+                <div style="{{ p.outletStyle }}">{{ p.outlet }}</div>
+                <div style="font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.8);margin-top:6px">{{ p.claim }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="height:1px;background:rgba(251,246,238,.2)"></div>
+
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;opacity:.65">Framing by outlet</div>
+      <sc-for list="{{ story.framing }}" as="f" hint-placeholder-count="3">
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="width:5px;align-self:stretch;border-radius:3px;background:{{ f.bar }};flex:none"></div>
+          <div style="flex:1;min-width:0">
+            <div style="font:500 11.5px 'IBM Plex Mono',monospace;letter-spacing:.04em">{{ f.outlet }}</div>
+            <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.82;margin-top:4px">{{ f.note }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div onClick="{{ backToStory }}" style="height:50px;border-radius:25px;border:1px solid rgba(251,246,238,.35);display:flex;align-items:center;justify-content:center;font:500 13px 'DM Sans',sans-serif;cursor:pointer;color:#FBF6EE" style-active="background:rgba(251,246,238,.12)">Back to the story</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ CAUGHT UP ══════════ -->
+<sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 28px;animation:povFade .35s ease both">
+  <div style="position:absolute;left:-30px;top:120px;width:150px;height:124px;border-radius:48% 52% 46% 54%;background:#6E7A44;opacity:.55"></div>
+  <div style="position:absolute;right:-34px;bottom:170px;width:152px;height:130px;border-radius:52% 48% 55% 45%;background:#E0B44A;opacity:.6"></div>
+  <div style="position:absolute;right:8px;top:96px;width:120px;--r:5deg;transform:rotate(5deg);animation:povDrift 9s ease-in-out infinite"><img src="assets/happy-news.png" alt="" style="width:100%;height:auto;display:block;mix-blend-mode:multiply"></div>
+
+  <div style="position:relative">
+    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.42)">{{ editionMeta }}</div>
+    <div style="font:400 44px/1.02 'Instrument Serif',serif;letter-spacing:-.025em;margin-top:10px">You're caught up.</div>
+    <div style="font:300 15px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.6);margin-top:12px">{{ doneLine }}</div>
+
+    <div style="margin-top:26px;display:flex;gap:10px">
+      <sc-for list="{{ doneStats }}" as="d" hint-placeholder-count="3">
+        <div style="flex:1;border-radius:18px;background:rgba(252,250,245,.9);border:1px solid rgba(0,0,0,.09);padding:14px 12px">
+          <div style="font:400 26px/1 'Instrument Serif',serif">{{ d.num }}</div>
+          <div style="font:500 9px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.45);margin-top:6px">{{ d.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div onClick="{{ replay }}" style="margin-top:26px;height:52px;border-radius:26px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 14.5px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Read it again <span style="font:400 13px 'IBM Plex Mono',monospace">↻</span></div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ══════════ LOADING / ERROR ══════════ -->
+<sc-if value="{{ isDataError }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:80;padding:16px;background:rgba(140,59,72,.94);color:#FBF6EE;font:400 12px/1.5 'IBM Plex Mono',monospace">{{ dataError }}</div>
+</sc-if>
+
+<!-- ══════════ TAP CARD (jargon / person) ══════════ -->
+<sc-if value="{{ hasPop }}" hint-placeholder-val="{{ false }}">
+<div onClick="{{ closePop }}" style="position:absolute;inset:0;background:rgba(20,20,20,.2);backdrop-filter:blur(2px);z-index:70;display:flex;align-items:flex-end;padding:0 16px 30px;animation:povFade .18s ease both">
+  <div style="width:100%;border-radius:26px;background:rgba(252,250,245,.86);backdrop-filter:blur(28px) saturate(180%);border:1px solid rgba(255,255,255,.85);box-shadow:0 -8px 40px rgba(0,0,0,.18);padding:20px;animation:povRise .26s cubic-bezier(.2,1.1,.3,1) both">
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.42)">{{ pop.kindLabel }}</div>
+      <div style="font:400 27px/1.1 'Instrument Serif',serif">{{ pop.title }}</div>
+      <div style="font:300 15px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.74)">{{ pop.body }}</div>
+      <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.36);border-top:1px solid rgba(0,0,0,.1);padding-top:10px;margin-top:4px">Tap anywhere to close</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+</div>
+</x-import>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;typeSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:3.2,&quot;min&quot;:1.5,&quot;max&quot;:8,&quot;step&quot;:0.2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;swipeThreshold&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:90,&quot;min&quot;:40,&quot;max&quot;:200,&quot;step&quot;:5,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;showListen&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Features&quot;},&quot;showSources&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Features&quot;}}">
+const STATES = ['Andhra Pradesh','Arunachal Pradesh','Assam','Bihar','Chhattisgarh','Delhi NCR','Goa','Gujarat','Haryana','Himachal Pradesh','Jharkhand','Karnataka','Kerala','Madhya Pradesh','Maharashtra','Manipur','Meghalaya','Mizoram','Nagaland','Odisha','Punjab','Rajasthan','Sikkim','Tamil Nadu','Telangana','Tripura','Uttar Pradesh','Uttarakhand','West Bengal','Andaman & Nicobar Islands','Chandigarh','Dadra & Nagar Haveli and Daman & Diu','Jammu & Kashmir','Ladakh','Lakshadweep','Puducherry'];
+const DEEP = ['Karnataka','Maharashtra','Delhi NCR','Tamil Nadu','Uttar Pradesh','West Bengal','Telangana','Kerala','Gujarat','Rajasthan'];
+const WATCH = ['United States','Gulf & UAE','China','Europe'];
+const TOPICS = ['Politics','Economy','Jobs','Climate','Tech','Sport','Campus & exams','Courts','Culture','Health'];
+
+// folder stock — one per story slot, cycled
+const STOCK = [
+  { fill: '#8C3B48', ink: '#FBF6EE' },
+  { fill: 'repeating-linear-gradient(90deg,#2C4A63 0 9px,#EFE6D4 9px 18px)', tab: '#2C4A63', ink: '#FBF6EE' },
+  { fill: '#6E7A44', ink: '#FBF6EE' },
+  { fill: '#E0B44A', ink: '#241C08' },
+  { fill: '#2C4A63', ink: '#FBF6EE' },
+  { fill: 'repeating-linear-gradient(90deg,#7C8A52 0 9px,#EFE6D4 9px 18px)', tab: '#7C8A52', ink: '#FBF6EE' },
+];
+const BARS = ['#E0B44A', '#9FC0EA', '#C98A96', '#9AA46A'];
+
+class Component extends DCLogic {
+  state = {
+    screen: 'welcome',
+    name: '', place: 'Karnataka', watch: ['United States'],
+    minutes: 8, topics: ['Politics', 'Economy'],
+    stories: [], dataError: '',
+    idx: 0, drag: null, exit: null, pop: null, listenNote: false,
+  };
+
+  componentDidMount() {
+    this._sty = document.createElement('style');
+    this._sty.textContent = [
+      '[data-on="on"]{background:#101010 !important;color:#fff !important;border-color:#101010 !important}',
+      '[data-on="on"] div{color:rgba(255,255,255,.74) !important}',
+      '[data-on="on"] [data-keep]{color:#fff !important}',
+      '[data-on="on"] [data-tile]{background:#fff !important}',
+      '[data-on="on"] [data-tile] div{color:#101010 !important}',
+      'input::placeholder{color:rgba(0,0,0,.28)}',
+      'select{font-family:"DM Sans",sans-serif}',
+    ].join('\n');
+    document.head.appendChild(this._sty);
+    this.load();
+  }
+  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); }
+
+  load = () => {
+    fetch('mock-stories.json', { cache: 'no-store' })
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(j => {
+        const list = Array.isArray(j) ? j : (j.stories || []);
+        this.setState({ stories: list, dataError: list.length ? '' : 'mock-stories.json has no stories.' });
+      })
+      .catch(e => this.setState({ dataError: 'Could not read mock-stories.json (' + e.message + ')' }));
+  };
+
+  set = (k, v) => this.setState({ [k]: v });
+  toggle = (k, v) => this.setState(s => {
+    const a = s[k];
+    return { [k]: a.indexOf(v) >= 0 ? a.filter(x => x !== v) : a.concat([v]) };
+  });
+
+  startEdition = () => {
+    clearTimeout(this._t);
+    this.setState({ screen: 'typing' });
+    this._t = setTimeout(() => this.setState({ screen: 'brief' }), (this.props.typeSeconds ?? 3.2) * 1000);
+  };
+
+  // ── next story: folder leaves the pile, next rises
+  nextStory = () => {
+    if (this.state.exit) return;
+    const list = this.visible();
+    if (this.state.idx >= list.length - 1) { this.setState({ screen: 'done', drag: null }); return; }
+    this.setState({ exit: 'up', drag: null, screen: 'brief' });
+    clearTimeout(this._e);
+    this._e = setTimeout(() => this.setState(s => ({ idx: s.idx + 1, exit: null })), 360);
+  };
+
+  onDown = e => {
+    if (this.state.exit) return;
+    this._start = { x: e.clientX, y: e.clientY };
+    this.setState({ drag: { dx: 0, dy: 0 } });
+  };
+  onMove = e => {
+    if (!this._start) return;
+    const dx = e.clientX - this._start.x, dy = e.clientY - this._start.y;
+    if (Math.abs(dx) > 6 || Math.abs(dy) > 6) this._moved = true;
+    this.setState({ drag: { dx, dy } });
+  };
+  onUp = () => {
+    const d = this.state.drag;
+    this._start = null;
+    setTimeout(() => { this._moved = false; }, 60);
+    if (!d) return;
+    if (d.dy < -(this.props.swipeThreshold ?? 90)) this.nextStory();
+    else this.setState({ drag: null });
+  };
+
+  // ── mark jargon terms + people names inside a fact sentence
+  segment(text, jargon, people) {
+    const marks = [];
+    (jargon || []).forEach(j => { if (j && j.term) marks.push({ term: j.term, kind: 'jargon', payload: j }); });
+    (people || []).forEach(p => { if (p && p.name) marks.push({ term: p.name, kind: 'person', payload: p }); });
+    const hits = [];
+    marks.forEach(m => {
+      const t = m.term.toLowerCase(), low = text.toLowerCase();
+      let from = 0, at;
+      while ((at = low.indexOf(t, from)) !== -1) {
+        hits.push({ at, end: at + m.term.length, mark: m });
+        from = at + m.term.length;
+      }
+    });
+    hits.sort((a, b) => a.at - b.at || (b.end - b.at) - (a.end - a.at));
+    const segs = [];
+    let cur = 0;
+    hits.forEach(h => {
+      if (h.at < cur) return;
+      if (h.at > cur) segs.push({ text: text.slice(cur, h.at), isPlain: true, isPerson: false, isJargon: false });
+      const isP = h.mark.kind === 'person';
+      segs.push({
+        text: text.slice(h.at, h.end),
+        isPlain: false, isPerson: isP, isJargon: !isP,
+        tap: () => this.set('pop', h.mark.kind === 'person'
+          ? { kindLabel: 'Who\u2019s this', title: h.mark.payload.name, body: h.mark.payload.who }
+          : { kindLabel: 'In plain English', title: h.mark.payload.term, body: h.mark.payload.plain }),
+      });
+      cur = h.end;
+    });
+    if (cur < text.length) segs.push({ text: text.slice(cur), isPlain: true, isPerson: false, isJargon: false });
+    return segs.length ? segs : [{ text, isPlain: true, isPerson: false, isJargon: false }];
+  }
+
+  visible() {
+    // read-time budget: fit stories into the chosen minutes, always at least two
+    const list = this.state.stories;
+    if (!list.length) return [];
+    const budget = this.state.minutes * 60;
+    const out = [];
+    let used = 0;
+    for (const st of list) {
+      const cost = Number(st.read_seconds) || 60;
+      if (out.length >= 2 && used + cost > budget) break;
+      out.push(st); used += cost;
+    }
+    return out;
+  }
+
+  fmtRead(sec) {
+    const n = Number(sec) || 0;
+    return n < 120 ? n + ' sec read' : Math.round(n / 60) + ' min read';
+  }
+  fmtPublished(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d)) return String(iso);
+    return d.toLocaleString('en-IN', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const scr = s.screen;
+    const list = this.visible();
+    const total = list.length;
+    const idx = Math.min(s.idx, Math.max(0, total - 1));
+    const current = list[idx] || null;
+
+    const stock = i => STOCK[i % STOCK.length];
+    const folderTab = i => {
+      const f = stock(i);
+      return 'display:inline-flex;align-items:center;padding:7px 20px 6px;border-radius:12px 16px 0 0;background:'
+        + (f.tab || f.fill) + ';color:' + f.ink + ';font:500 10px "IBM Plex Mono",monospace;letter-spacing:.16em;'
+        + 'text-transform:uppercase;box-shadow:0 -2px 8px rgba(0,0,0,.08);margin-left:8px;position:relative;z-index:2';
+    };
+    const folderBody = (i, h) => {
+      const f = stock(i);
+      return 'position:relative;border-radius:4px 20px 20px 20px;background:' + f.fill
+        + ';box-shadow:0 16px 34px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.25);padding:9px;'
+        + (h ? 'height:' + h + 'px;' : '');
+    };
+
+    const decorate = (st, i) => {
+      if (!st) return null;
+      const regions = st.regions || [];
+      const affects = st.affects || [];
+      const facts = (st.agreed_facts || []).map(f => ({
+        segs: this.segment(f.text || '', st.jargon, st.people),
+        sourceLine: (f.sources || []).join(' · '),
+      }));
+      return {
+        id: st.id,
+        headline: st.headline || '',
+        regionLabel: regions.join(' · '),
+        tabLabel: (regions[0] || 'news').toString().slice(0, 14),
+        readLabel: this.fmtRead(st.read_seconds),
+        sourceLabel: 'covered by ' + (st.source_count || 0) + ' papers',
+        publishedLabel: this.fmtPublished(st.published),
+        affectsPills: affects.map(a => ({ name: a })),
+        firstFact: ((st.agreed_facts || [])[0] || {}).text || '',
+        facts,
+        contested: (st.contested || []).map((c, ci) => ({
+          point: c.point,
+          positions: (c.positions || []).map((p, pi) => ({
+            outlet: p.outlet,
+            claim: p.claim,
+            slipStyle: 'border-radius:16px;background:rgba(252,250,245,.96);padding:14px 15px;box-shadow:0 10px 24px rgba(0,0,0,.22);'
+              + 'transform:rotate(' + (pi % 2 ? 0.7 : -0.7) + 'deg);margin-' + (pi % 2 ? 'left' : 'right') + ':18px;'
+              + 'animation:' + (pi % 2 ? 'povSlideR' : 'povSlideL') + ' .4s ease both;',
+            outletStyle: 'display:inline-flex;font:500 10.5px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;'
+              + 'color:' + (pi % 2 ? '#2C4A63' : '#8C3B48') + ';border-bottom:2px solid ' + (pi % 2 ? 'rgba(44,74,99,.35)' : 'rgba(140,59,72,.35)') + ';padding-bottom:3px',
+          })),
+        })),
+        framing: (st.framing || []).map((f, fi) => ({ outlet: f.outlet, note: f.note, bar: BARS[fi % BARS.length] })),
+        differCount: ((st.contested || []).length) + ' contested points · ' + ((st.framing || []).length) + ' outlet angles',
+        stock: i,
+      };
+    };
+
+    const story = decorate(current, idx) || {
+      headline: '', regionLabel: '', readLabel: '', sourceLabel: '', publishedLabel: '',
+      affectsPills: [], facts: [], contested: [], framing: [], differCount: '',
+    };
+
+    // ── folder stack (current + next peeking)
+    const d = s.drag || { dx: 0, dy: 0 };
+    const stack = [];
+    for (let i = 0; i < 2; i++) {
+      const st = list[idx + i];
+      if (!st) continue;
+      const dec = decorate(st, idx + i);
+      let t, z, extra;
+      if (i === 0) {
+        if (s.exit) {
+          t = 'translateY(-560px) rotate(-6deg)';
+          extra = 'transition:transform .36s cubic-bezier(.4,0,.7,.2),opacity .36s ease;opacity:.1;';
+        } else {
+          const dy = Math.min(0, d.dy);
+          t = 'translateY(' + dy + 'px) rotate(' + (d.dx / 40) + 'deg)';
+          extra = s.drag ? 'transition:none;' : 'transition:transform .34s cubic-bezier(.2,1.1,.3,1);';
+        }
+        z = 30;
+      } else {
+        const lift = s.exit ? 1 : Math.min(1, Math.abs(Math.min(0, d.dy)) / 120);
+        t = 'translateY(' + (18 - lift * 16) + 'px) scale(' + (0.96 + lift * 0.04) + ') rotate(1.6deg)';
+        z = 20;
+        extra = 'transform-origin:top center;transition:transform .38s cubic-bezier(.2,1.05,.35,1);opacity:.95;';
+      }
+      stack.push({
+        ...dec,
+        tabStyle: folderTab(idx + i),
+        bodyStyle: folderBody(idx + i, 470),
+        nextHint: idx + i >= total - 1 ? 'tap the folder to finish' : 'tap the folder for the next story',
+        next: e => {
+          if (this._moved) return;
+          const t = e && e.target;
+          if (t && t.closest && t.closest('[data-nav]')) return;
+          this.nextStory();
+        },
+        open: e => {
+          if (e && e.stopPropagation) e.stopPropagation();
+          this.setState({ screen: 'story', listenNote: false, drag: null });
+        },
+        wrapStyle: 'position:absolute;left:0;right:0;top:0;z-index:' + z + ';transform:' + t + ';' + extra
+          + (i === 0 ? '' : 'pointer-events:none;'),
+      });
+    }
+    stack.reverse();
+
+    const nextActive = Math.min(1, Math.abs(Math.min(0, d.dy)) / 90);
+    const isLast = idx >= total - 1;
+    const totalSources = list.reduce((a, x) => a + (Number(x.source_count) || 0), 0);
+    const totalMins = Math.max(1, Math.round(list.reduce((a, x) => a + (Number(x.read_seconds) || 0), 0) / 60));
+
+    return {
+      isWelcome: scr === 'welcome', isName: scr === 'name', isPlace: scr === 'place', isTime: scr === 'time',
+      isTopics: scr === 'topics', isTyping: scr === 'typing', isBrief: scr === 'brief',
+      isStory: scr === 'story', isDiffer: scr === 'differ', isDone: scr === 'done',
+
+      goWelcome: () => this.set('screen', 'welcome'),
+      goName: () => this.set('screen', 'name'),
+      goPlace: () => this.set('screen', 'place'),
+      goTime: () => this.set('screen', 'time'),
+      goTopics: () => this.set('screen', 'topics'),
+      goPress: this.startEdition,
+      restart: () => this.setState({ screen: 'welcome', idx: 0, exit: null, pop: null, listenNote: false }),
+      skipToBrief: () => this.setState({ screen: 'brief', idx: 0, exit: null }),
+      replay: () => this.setState({ screen: 'brief', idx: 0, exit: null }),
+
+      name: s.name,
+      setName: e => this.set('name', e.target.value),
+      greeting: s.name ? 'Alright ' + s.name + ',' : 'Alright,',
+      mastGreet: s.name ? 'Hi ' + s.name : 'Your edition',
+
+      place: s.place,
+      setPlace: e => this.set('place', e.target.value),
+      stateOptions: STATES.map(n => ({ name: n })),
+      placeHeading: 'Where do you\nread from?',
+      placeDepth: DEEP.indexOf(s.place) >= 0
+        ? 'Deep regional coverage for ' + s.place + '.'
+        : 'Lighter regional coverage for ' + s.place + ' — national and world stories fill the edition.',
+      regionChips: WATCH.map(n => ({ name: n, on: s.watch.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('watch', n) })),
+
+      times: [
+        { num: '3', label: 'Between classes', sub: 'The two stories that matter most.', v: 3 },
+        { num: '8', label: 'Coffee run', sub: 'The full brief, still short.', v: 8 },
+        { num: '15', label: 'Commute', sub: 'Every story, plus where the papers differ.', v: 15 },
+      ].map(t => ({ ...t, on: s.minutes === t.v ? 'on' : 'off', mark: s.minutes === t.v ? '\u2713' : '',
+        pick: () => this.setState({ minutes: t.v, idx: 0 }) })),
+
+      topics: TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
+      topicCount: s.topics.length,
+
+      editionMeta: 'Sat 13 Sep · ' + s.minutes + ' min edition',
+      typeLine1: '> reading ' + (s.stories.length * 12 + 8) + ' articles',
+      typeLine2: '> keeping ' + total + ' stories',
+      typeLine3: '> cutting to ' + s.minutes + ' minutes',
+      typeFoot: (s.name ? s.name + ' \u00b7 ' : '') + s.place,
+
+      progressLabel: total ? (idx + 1) + ' of ' + total : 'loading',
+      pips: list.map((x, i) => ({ on: i === idx ? 'on' : 'off' })),
+      stack,
+      onDown: this.onDown, onMove: this.onMove, onUp: this.onUp,
+      doNext: this.nextStory,
+      nextButtonLabel: isLast ? 'Finish edition ↑' : 'Next story ↑',
+      nextBadgeStyle: 'position:absolute;z-index:40;top:14px;left:50%;margin-left:-34px;padding:9px 16px;border-radius:999px;'
+        + 'font:500 12px "IBM Plex Mono",monospace;letter-spacing:.16em;background:rgba(252,250,245,.92);'
+        + 'border:1px solid rgba(0,0,0,.14);pointer-events:none;opacity:' + nextActive + ';transform:scale(' + (0.85 + nextActive * 0.15) + ');',
+
+      story,
+      storyBandStyle: 'position:relative;height:190px;flex:none;background:' + (stock(idx).tab || stock(idx).fill),
+      showListen: this.props.showListen ?? true,
+      showSources: this.props.showSources ?? true,
+      listenNote: s.listenNote,
+      listenLabel: s.listenNote ? 'soon' : 'listen',
+      tapListen: () => this.setState(st => ({ listenNote: !st.listenNote })),
+      backToBrief: () => this.setState({ screen: 'brief' }),
+      goDiffer: () => this.setState({ screen: 'differ' }),
+      backToStory: () => this.setState({ screen: 'story' }),
+
+      doneLine: 'That\u2019s the whole edition for ' + s.place + '.',
+      doneStats: [
+        { num: String(total), label: 'stories' },
+        { num: String(totalMins), label: 'minutes' },
+        { num: String(totalSources), label: 'sources' },
+      ],
+
+      isDataError: !!s.dataError,
+      dataError: s.dataError,
+
+      hasPop: !!s.pop,
+      pop: s.pop || { kindLabel: '', title: '', body: '' },
+      closePop: () => this.set('pop', null),
+    };
+  }
+}
+
+</script>
+</body>
+</html>

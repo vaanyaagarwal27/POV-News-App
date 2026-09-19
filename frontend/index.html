@@ -1,13 +1,220 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POV</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:#EFEDE4;color:#111110;overflow-x:clip;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#111110;text-decoration:none}
+a:hover{color:#9E4A57}
+@keyframes pov-spin{to{transform:rotate(360deg)}}
+@keyframes pov-spin-r{to{transform:rotate(-360deg)}}
+@keyframes pov-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@keyframes pov-float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(26px,22px) scale(1.05)}66%{transform:translate(-14px,34px) scale(.97)}}
+</style>
+</helmet>
+
+<div style="font-family:'DM Sans',system-ui,sans-serif;background:#EFEDE4">
+
+  <header style="position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:90;display:flex;align-items:center;gap:8px;padding:8px 10px 8px 18px;border-radius:999px;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.75);box-shadow:0 8px 30px rgba(17,17,16,.09),inset 0 1px 0 rgba(255,255,255,.9);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%)">
+    <a href="#top" style="display:flex;align-items:center"><img src="img/pov-logo.png" alt="POV" style="display:block;height:34px;mix-blend-mode:multiply"></a>
+    <nav style="display:flex;align-items:center;gap:20px;padding-left:12px;font:500 13px/1 'DM Sans',sans-serif">
+      <a href="#features">Features</a>
+      <a href="app/index.html" style="padding:10px 18px;border-radius:999px;background:#111110;color:#EFEDE4">Open the app →</a>
+    </nav>
+  </header>
+
+  <section id="top" style="position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:92px 24px 24px;overflow:hidden">
+    <span aria-hidden="true" style="position:absolute;left:-90px;top:14%;width:330px;height:330px;border-radius:50%;background:rgba(147,160,111,.34);filter:blur(34px);animation:pov-float 17s ease-in-out infinite"></span>
+    <span aria-hidden="true" style="position:absolute;right:-110px;top:8%;width:240px;height:240px;border-radius:50%;background:rgba(124,139,168,.3);filter:blur(34px)"></span>
+    <span aria-hidden="true" style="position:absolute;right:6%;bottom:-70px;width:280px;height:280px;border-radius:50%;background:rgba(230,185,62,.28);filter:blur(36px)"></span>
+    <span aria-hidden="true" style="position:absolute;left:8%;bottom:-90px;width:250px;height:250px;border-radius:50%;background:rgba(158,74,87,.22);filter:blur(34px)"></span>
+
+    <span style="position:relative;font:500 11px/1 'DM Sans',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#5A564C">news that keeps up with you</span>
+
+    <div ref="{{ medallionRef }}" style="position:relative;flex:0 1 auto;min-height:0;width:min(94vw,calc(100svh - 300px),760px);aspect-ratio:1;container-type:size;display:flex;align-items:center;justify-content:center">
+      <div aria-hidden="true" style="position:absolute;inset:0;border-radius:50%;border:1px solid rgba(17,17,16,.1)"></div>
+      <div aria-hidden="true" style="position:absolute;inset:9%;border-radius:50%;border:1px dashed rgba(158,74,87,.3);animation:pov-spin 46s linear infinite"></div>
+      <div aria-hidden="true" style="position:absolute;inset:20%;border-radius:50%;border:1px solid rgba(147,160,111,.42);animation:pov-spin-r 34s linear infinite"></div>
+      <div aria-hidden="true" style="position:absolute;inset:28%;border-radius:50%;background:radial-gradient(circle at 32% 24%,rgba(255,255,255,.96),rgba(255,255,255,.35) 58%,rgba(255,255,255,0) 78%)"></div>
+      <img src="img/pov-logo.png" alt="POV" style="position:relative;display:block;width:54%;object-fit:contain;mix-blend-mode:multiply">
+      <p style="position:absolute;left:50%;top:76%;transform:translateX(-50%);margin:0;width:58%;text-align:center;font:400 clamp(13px,4.4cqw,27px)/1.24 'Instrument Serif',Georgia,serif;color:#111110;text-wrap:balance">Facts don't take sides. Neither do we.</p>
+    </div>
+
+    <p style="position:relative;margin:0;font:500 clamp(9.5px,1.05vw,11.5px)/1.4 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#5A564C;text-align:center">One story. Every source. No agenda.</p>
+
+    <div style="position:relative;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+      <a href="app/index.html" style="padding:15px 26px;border-radius:999px;background:#111110;color:#EFEDE4;font:500 15px/1 'DM Sans',sans-serif" style-hover="background:#9E4A57;color:#fff">Open the app →</a>
+      <a href="#features" style="padding:15px 26px;border-radius:999px;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.8);box-shadow:0 6px 22px rgba(17,17,16,.07);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);font:500 15px/1 'DM Sans',sans-serif">See the seven ideas</a>
+    </div>
+
+    <div aria-hidden="true" style="position:relative;margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:6px;animation:pov-bob 2.6s ease-in-out infinite">
+      <span style="font:500 10px/1 'DM Sans',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#5A564C">scroll</span>
+      <span style="font-size:14px;color:#5A564C">↓</span>
+    </div>
+  </section>
+
+  <section id="features" ref="{{ ringSectionRef }}" style="position:relative;height:520svh">
+    <div style="position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center">
+      <span aria-hidden="true" style="position:absolute;left:-120px;top:20%;width:300px;height:300px;border-radius:50%;background:rgba(147,160,111,.3);filter:blur(40px)"></span>
+      <span aria-hidden="true" style="position:absolute;right:-130px;bottom:12%;width:320px;height:320px;border-radius:50%;background:rgba(158,74,87,.22);filter:blur(42px)"></span>
+      <div style="position:absolute;left:50%;top:clamp(52px,7svh,72px);transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;padding:0 24px">
+        
+        
+      </div>
+
+      <h2 style="margin:0;font:400 clamp(26px,3vw,40px)/1.06 'Instrument Serif',Georgia,serif;letter-spacing:-.01em">Seven ideas, one scroll</h2><span style="font:500 10.5px/1 'DM Sans',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#5A564C">what POV does differently</span><div ref="{{ stageRef }}" style="position:relative;width:100%;height:min(58svh,520px);margin-top:clamp(24px,5svh,48px);perspective:1600px;perspective-origin:50% 46%">
+        <div ref="{{ ringRef }}" style="position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d">
+          <sc-for list="{{ cards }}" as="c" hint-placeholder-count="7">
+            <article data-card="1" style="position:absolute;left:0;top:0;width:296px;height:352px;margin-left:-148px;margin-top:-176px;will-change:transform,opacity">
+              <div style="position:absolute;left:0;top:0;width:52%;height:40px;border-radius:16px 22px 0 0;background:{{ c.tab }};border:1px solid rgba(255,255,255,.5);border-bottom:none;box-shadow:0 -2px 14px rgba(17,17,16,.08)"></div>
+              <div style="position:absolute;left:0;top:28px;right:0;bottom:0;display:flex;flex-direction:column;gap:13px;padding:26px 24px 24px;border-radius:20px;background:{{ c.body }};border:1px solid rgba(255,255,255,.72);box-shadow:0 24px 54px rgba(17,17,16,.14),inset 0 1px 0 rgba(255,255,255,.95);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%)">
+                <div style="display:flex;align-items:center;justify-content:space-between">
+                  <span style="font:700 10.5px/1 'Space Mono',monospace;letter-spacing:.18em;color:#3C382F">{{ c.no }}</span>
+                  <span style="width:26px;height:26px;border-radius:50%;background:{{ c.tone }};box-shadow:inset 0 1px 0 rgba(255,255,255,.6)"></span>
+                </div>
+                <h3 style="margin:0;font:400 25px/1.1 'Instrument Serif',Georgia,serif;letter-spacing:-.01em;text-wrap:balance">{{ c.title }}</h3>
+                <p style="margin:0;font:400 13.5px/1.55 'DM Sans',sans-serif;color:#2F2C25;text-wrap:pretty">{{ c.body_text }}</p>
+                <div style="margin-top:auto;padding-top:12px;border-top:1px solid rgba(17,17,16,.16);font:500 10.5px/1 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8A3F4B">{{ c.tag }}</div>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:50%;bottom:clamp(24px,4svh,48px);transform:translateX(-50%);z-index:4;display:flex;align-items:center;gap:9px">
+        <sc-for list="{{ cards }}" as="c" hint-placeholder-count="7">
+          <span data-pip="1" style="width:7px;height:7px;border-radius:50%;background:rgba(17,17,16,.2)"></span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="app" style="position:relative;padding:110px 24px 120px">
+    <div style="position:relative;max-width:1120px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:26px;padding:80px 30px 84px;border-radius:34px;overflow:hidden;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.82);box-shadow:0 30px 70px rgba(17,17,16,.12),inset 0 1px 0 rgba(255,255,255,.95);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);text-align:center">
+      <span aria-hidden="true" style="position:absolute;left:-70px;top:-70px;width:230px;height:230px;border-radius:50%;background:rgba(147,160,111,.5);filter:blur(8px)"></span>
+      <span aria-hidden="true" style="position:absolute;right:-60px;bottom:-80px;width:250px;height:250px;border-radius:50%;background:rgba(230,185,62,.45);filter:blur(8px)"></span>
+      <span aria-hidden="true" style="position:absolute;right:22%;top:-90px;width:180px;height:180px;border-radius:50%;background:rgba(124,139,168,.38);filter:blur(10px)"></span>
+      <img src="img/pov-logo.png" alt="POV" style="position:relative;display:block;width:min(34vw,240px);mix-blend-mode:multiply">
+      <h2 style="position:relative;margin:0;max-width:22ch;font:400 clamp(30px,3.8vw,50px)/1.04 'Instrument Serif',Georgia,serif;letter-spacing:-.015em;text-wrap:balance">News you don't have to double-check.</h2>
+      <a href="app/index.html" style="position:relative;padding:17px 32px;border-radius:999px;background:#111110;color:#EFEDE4;font:500 16px/1 'DM Sans',sans-serif" style-hover="background:#9E4A57;color:#fff">Open the app →</a>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(17,17,16,.14)">
+    <div style="max-width:1120px;margin:0 auto;padding:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font:400 12.5px/1 'DM Sans',sans-serif;color:#3C382F">
+      <span>POV — a news app with peripheral vision</span>
+      <span style="display:flex;gap:20px"><a href="#features">Features</a><a href="app/index.html">Open the app</a></span>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ringRadius&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0.24,&quot;max&quot;:0.46,&quot;step&quot;:0.02,&quot;default&quot;:0.34,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Carousel&quot;},&quot;idleDrift&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Carousel&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this.boot(); }
+  componentDidUpdate() { this.boot(); }
+
+  boot() {
+    if (this._on) return;
+    const stage = this.stage, ring = this.ring, sec = this.ringSection;
+    if (!stage || !ring || !sec) return;
+    this.cardEls = Array.from(ring.querySelectorAll('[data-card]'));
+    this.pips = Array.from(sec.querySelectorAll('[data-pip]'));
+    if (!this.cardEls.length) return;
+    this._on = true;
+
+    this.reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.spin = 0;
+    this.target = 0;
+    this.activePip = -1;
+    let prev = performance.now();
+
+    const frame = now => {
+      this.raf = requestAnimationFrame(frame);
+      const dt = Math.min((now - prev) / 1000, 0.05); prev = now;
+      const n = this.cardEls.length;
+      const r = sec.getBoundingClientRect();
+      const span = Math.max(r.height - window.innerHeight, 1);
+      const p = Math.min(Math.max(-r.top / span, 0), 1);
+      this.target = p * n * 0.999 + (this.reduced ? 0 : this.drift(now, p));
+      // critically-damped follow: smooth at any frame rate, no overshoot
+      const k = 1 - Math.exp(-dt * 9);
+      this.spin += (this.target - this.spin) * k;
+      if (r.bottom > -400 && r.top < window.innerHeight + 400) this.layout();
+    };
+    this.raf = requestAnimationFrame(frame);
+  }
+
+  // Bounded and non-cumulative: p=0 always maps to card 01, and an idle tab never drifts away.
+  drift(now, p) {
+    if (this.props.idleDrift === false || p > 0.004) return 0;
+    return Math.sin(now / 1000 * 0.5) * 0.34;
+  }
+
+  layout() {
+    const n = this.cardEls.length;
+    const box = this.stage.getBoundingClientRect();
+    const w = box.width, h = box.height;
+    const radius = Math.max(Math.min(w * (this.props.ringRadius ?? 0.34), 470), 250);
+    const scale = Math.min(1, Math.max(0.6, Math.min(w / 1150, h / 400)));
+    const step = 360 / n;
+
+    this.cardEls.forEach((el, i) => {
+      let rel = ((i - this.spin) % n + n) % n;
+      if (rel > n / 2) rel -= n;
+      const rad = rel * step * Math.PI / 180;
+      const depth = Math.cos(rad);
+      const front = Math.max(depth, 0);
+      const x = Math.sin(rad) * radius;
+      const z = (depth - 1) * radius * 0.55;
+      el.style.transform = `translate3d(${x}px,${-front * 16}px,${z}px) rotateY(${-rel * step * 0.6}deg) scale(${scale * (0.82 + front * 0.18)})`;
+      el.style.opacity = String(Math.max(0.1, 0.22 + front * 0.78));
+      el.style.zIndex = String(1000 + Math.round(depth * 100));
+    });
+
+    const active = (Math.round(this.spin) % n + n) % n;
+    if (active !== this.activePip) {
+      this.activePip = active;
+      this.pips.forEach((p, i) => {
+        p.style.transition = 'transform .3s ease, background .3s ease';
+        p.style.background = i === active ? '#111110' : 'rgba(17,17,16,.2)';
+        p.style.transform = i === active ? 'scale(1.5)' : 'scale(1)';
+      });
+    }
+  }
+
+  componentWillUnmount() { cancelAnimationFrame(this.raf); }
+
+  renderVals() {
+    return {
+      stageRef: el => { this.stage = el; },
+      ringRef: el => { this.ring = el; },
+      ringSectionRef: el => { this.ringSection = el; },
+      medallionRef: el => { this.medallion = el; },
+      cards: [
+        { no: '01', title: 'Cross-checked, not single-source', body_text: 'Every story is assembled from multiple outlets before you ever see it. No lone byline deciding what happened.', tag: 'Multi-source by default', tone: '#9E4A57', tab: 'rgba(158,74,87,.55)', body: 'rgba(206,150,158,.34)' },
+        { no: '02', title: 'See where they disagree', body_text: 'Not just the agreed facts — the exact lines where the sources split, marked side by side.', tag: 'The gap, marked', tone: '#93A06F', tab: 'rgba(110,122,82,.55)', body: 'rgba(158,175,124,.34)' },
+        { no: '03', title: 'Jargon Buster', body_text: 'Tap any hard word — tariff, injunction, quantitative easing — and get it in plain English, in place.', tag: 'Tap to translate', tone: '#E6B93E', tab: 'rgba(199,154,46,.55)', body: 'rgba(230,201,120,.34)' },
+        { no: '04', title: "Who's Who", body_text: 'Tap any name and know instantly who they are, what they run, and why they turn up in this story.', tag: 'Instant context', tone: '#7C8BA8', tab: 'rgba(78,94,124,.55)', body: 'rgba(140,157,186,.32)' },
+        { no: '05', title: 'Listen instead of read', body_text: 'Full text-to-speech on every edition. Same reporting, hands free, on the walk or the commute.', tag: 'Audio on everything', tone: '#8A3F4B', tab: 'rgba(122,48,60,.55)', body: 'rgba(190,131,140,.32)' },
+        { no: '06', title: 'Cut to your time', body_text: 'Five minutes or twenty — say how long you have and the feed rebuilds itself to fit exactly that.', tag: 'You set the length', tone: '#C79A2E', tab: 'rgba(166,126,32,.55)', body: 'rgba(219,186,104,.32)' },
+        { no: '07', title: 'Never lost mid-story', body_text: 'Every story carries its full timeline, so walking in on day forty still makes sense from the first line.', tag: 'Full backstory', tone: '#6E7A52', tab: 'rgba(88,99,64,.55)', body: 'rgba(150,166,118,.32)' }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
 </html>

@@ -1,0 +1,185 @@
+{
+  "generated": "2026-09-13T06:40:00+05:30",
+  "stories": [
+    {
+      "id": "brics-summit-2026",
+      "headline": "BRICS Summit gets underway in Delhi as leaders meet and traffic is rerouted",
+      "source_count": 13,
+      "read_seconds": 90,
+      "affects": ["commuters", "students", "global economy"],
+      "regions": ["Delhi", "national", "global"],
+      "published": "2026-09-13T04:15:00+05:30",
+      "agreed_facts": [
+        { "text": "The BRICS Summit 2026 is currently underway in New Delhi.", "sources": ["The Hindu", "Livemint", "Indian Express", "Hindustan Times", "Deccan Herald", "Reuters"] },
+        { "text": "Chinese President Xi Jinping arrived in New Delhi for the summit.", "sources": ["Livemint", "The Hindu"] },
+        { "text": "PM Modi proposed a 10-point agenda for global governance.", "sources": ["The Hindu"] },
+        { "text": "Delhi Police issued traffic advisories for the duration of the summit.", "sources": ["Livemint", "Indian Express"] }
+      ],
+      "contested": [
+        { "point": "The primary focus of the summit", "positions": [
+          { "outlet": "Reuters", "claim": "Russia advocates for BRICS to counter Western influence." },
+          { "outlet": "The Hindu", "claim": "PM Modi emphasises strengthening BRICS identity and the global governance agenda." }
+        ] },
+        { "point": "Bilateral meetings versus the overall BRICS agenda", "positions": [
+          { "outlet": "Hindustan Times", "claim": "Bilateral meetings on trade, energy and defence are the key components of the summit." },
+          { "outlet": "The Hindu", "claim": "The summit's focus is collective proposals for global governance, not side deals." }
+        ] }
+      ],
+      "framing": [
+        { "outlet": "The Hindu", "note": "Led with PM Modi's proposals for strengthening BRICS and global governance." },
+        { "outlet": "Livemint", "note": "Focused on local impact — Delhi's traffic advisories from VVIP movements." },
+        { "outlet": "Reuters", "note": "Highlighted Russia's call for BRICS to counter the West and stronger bilateral ties." }
+      ],
+      "jargon": [
+        { "term": "VVIP", "plain": "A Very Very Important Person — usually a head of state, whose movement gets roads closed and extra security." },
+        { "term": "global governance", "plain": "The ways countries and international bodies jointly manage shared problems like trade, climate and security." },
+        { "term": "geopolitical", "plain": "About how geography and politics interact — who has leverage over whom, and where." }
+      ],
+      "people": [
+        { "name": "Narendra Modi", "who": "Prime Minister of India, hosting the BRICS Summit." },
+        { "name": "Xi Jinping", "who": "President of the People's Republic of China, attending the summit." },
+        { "name": "Vladimir Putin", "who": "President of Russia, attending the summit and making geopolitical statements." }
+      ]
+    },
+    {
+      "id": "saudi-pipeline-yemen",
+      "headline": "Saudi pipeline shut after drone attack as Houthis advance and Red Sea tension rises",
+      "source_count": 10,
+      "read_seconds": 90,
+      "affects": ["fuel prices", "shipping", "regional stability"],
+      "regions": ["Saudi Arabia", "Yemen", "Red Sea", "Iraq", "global"],
+      "published": "2026-09-13T03:05:00+05:30",
+      "agreed_facts": [
+        { "text": "Saudi Arabia has shut down its East-West oil pipeline.", "sources": ["AP", "Al Jazeera", "The Guardian", "Indian Express"] },
+        { "text": "The pipeline shutdown followed a reported drone attack on pumping stations.", "sources": ["Hindustan Times", "Livemint", "Al Jazeera", "The Guardian"] },
+        { "text": "Houthi forces have advanced and captured strategic locations along Yemen's Red Sea coast.", "sources": ["AP", "Indian Express", "The Guardian", "Hindustan Times"] },
+        { "text": "The events come amid concerns over control of shipping routes like Bab al-Mandab.", "sources": ["AP", "Hindustan Times", "The Guardian"] }
+      ],
+      "contested": [
+        { "point": "Where the drone attack originated", "positions": [
+          { "outlet": "Hindustan Times", "claim": "Drones reportedly launched from Iraq struck the pipeline, according to US officials cited by CNN." },
+          { "outlet": "Al Jazeera", "claim": "Saudi Arabia stated the attack originated in Iraq." }
+        ] },
+        { "point": "Whether the pipeline attack and the Houthi advance are linked", "positions": [
+          { "outlet": "AP", "claim": "Presents both as directly related events opening 'a new front in the Iran war'." },
+          { "outlet": "The Guardian", "claim": "Reports both but frames the pipeline attack as blamed on Iraq, with Houthi advances part of the ongoing Yemen conflict — no direct operational link stated." }
+        ] }
+      ],
+      "framing": [
+        { "outlet": "AP", "note": "Frames the events as a direct escalation — a 'new front' in a broader Iran war." },
+        { "outlet": "Hindustan Times", "note": "Emphasises the strategic jolt for Saudi Arabia from drones allegedly launched from Iraq." },
+        { "outlet": "The Guardian", "note": "Highlights the humanitarian crisis in Yemen and the struggle over strategic shipping routes." }
+      ],
+      "jargon": [
+        { "term": "East-West pipeline", "plain": "Saudi Arabia's main pipeline, moving crude from eastern oil fields to Red Sea export terminals — bypassing the Strait of Hormuz." },
+        { "term": "Bab al-Mandab", "plain": "The narrow strait between Yemen and Djibouti linking the Red Sea to the Gulf of Aden. A huge share of world shipping passes through it." },
+        { "term": "Houthi", "plain": "An Iran-backed Yemeni armed group, also called Ansar Allah, fighting Yemen's internationally recognised government." }
+      ],
+      "people": []
+    },
+    {
+      "id": "trump-iran-oil-remarks",
+      "headline": "Trump links the Iran war to oil prices and the midterms in a run of remarks",
+      "source_count": 6,
+      "read_seconds": 75,
+      "affects": ["fuel prices", "your savings", "job market"],
+      "regions": ["United States", "Middle East", "global"],
+      "published": "2026-09-13T02:20:00+05:30",
+      "agreed_facts": [
+        { "text": "US President Donald Trump made statements regarding the ongoing US-Iran war.", "sources": ["Indian Express", "Deccan Herald", "Reuters"] },
+        { "text": "He claimed oil prices would fall as a result of US action.", "sources": ["Reuters", "AP"] },
+        { "text": "He tied the conflict's outcome to the coming midterm elections.", "sources": ["Indian Express", "AP"] }
+      ],
+      "contested": [
+        { "point": "Whether oil prices will actually fall", "positions": [
+          { "outlet": "Reuters", "claim": "Analysts quoted say supply risk in the Gulf keeps a floor under crude prices." },
+          { "outlet": "AP", "claim": "Reports the claim largely as stated, noting prices have eased from last week's spike." }
+        ] },
+        { "point": "How central the midterms are to the strategy", "positions": [
+          { "outlet": "Indian Express", "claim": "Treats the electoral framing as the main story." },
+          { "outlet": "Deccan Herald", "claim": "Leads on the military escalation and treats the election line as an aside." }
+        ] }
+      ],
+      "framing": [
+        { "outlet": "Reuters", "note": "Market-first: what the remarks do to crude and to the rupee." },
+        { "outlet": "Indian Express", "note": "Politics-first: the remarks as a campaign message." },
+        { "outlet": "Deccan Herald", "note": "Conflict-first: the war timeline, with the comments as context." }
+      ],
+      "jargon": [
+        { "term": "midterm elections", "plain": "US elections held halfway through a presidential term. They decide control of Congress." },
+        { "term": "crude", "plain": "Unrefined oil. Its global price feeds straight into what you pay at the pump." }
+      ],
+      "people": [
+        { "name": "Donald Trump", "who": "President of the United States, making the statements in question." }
+      ]
+    },
+    {
+      "id": "apple-foldable-duo",
+      "headline": "Apple unveils a foldable iPhone duo as the price debate takes over the launch",
+      "source_count": 8,
+      "read_seconds": 60,
+      "affects": ["students", "your budget", "tech jobs"],
+      "regions": ["global", "national"],
+      "published": "2026-09-12T23:40:00+05:30",
+      "agreed_facts": [
+        { "text": "Apple announced two foldable iPhone models at its September event.", "sources": ["Livemint", "The Verge", "Reuters", "Indian Express"] },
+        { "text": "Indian pricing was announced above the outgoing Pro line.", "sources": ["Livemint", "Indian Express"] },
+        { "text": "Pre-orders open this week, with deliveries later this month.", "sources": ["The Verge", "Reuters"] }
+      ],
+      "contested": [
+        { "point": "Whether the price is justified", "positions": [
+          { "outlet": "The Verge", "claim": "Calls the hinge and display engineering a genuine generational jump." },
+          { "outlet": "Livemint", "claim": "Frames the pricing as out of step with Indian buying power and EMI budgets." }
+        ] },
+        { "point": "Who the device is for", "positions": [
+          { "outlet": "Reuters", "claim": "Positions it as a halo product to lift average selling prices." },
+          { "outlet": "Indian Express", "claim": "Reports strong early interest from students on exchange offers." }
+        ] }
+      ],
+      "framing": [
+        { "outlet": "The Verge", "note": "Product review lens — hardware first, price second." },
+        { "outlet": "Livemint", "note": "Consumer-wallet lens — affordability and EMI maths." },
+        { "outlet": "Reuters", "note": "Investor lens — margins and average selling price." }
+      ],
+      "jargon": [
+        { "term": "average selling price", "plain": "The typical amount a company gets per device sold. Pricier models push it up." },
+        { "term": "exchange offer", "plain": "Trading in your old phone for a discount on the new one." }
+      ],
+      "people": []
+    },
+    {
+      "id": "indian-origin-crime-reports",
+      "headline": "Reports of Indian-origin suspects in overseas cases spark a coverage dispute",
+      "source_count": 7,
+      "read_seconds": 75,
+      "affects": ["studying abroad", "visas", "diaspora"],
+      "regions": ["global", "national"],
+      "published": "2026-09-12T22:10:00+05:30",
+      "agreed_facts": [
+        { "text": "Several overseas criminal cases this week involved suspects described as Indian-origin.", "sources": ["PTI", "Hindustan Times", "The Guardian"] },
+        { "text": "Officials in two of the countries involved confirmed arrests but not nationality details.", "sources": ["Reuters", "The Guardian"] },
+        { "text": "Indian diaspora groups asked outlets to stop leading with nationality.", "sources": ["PTI", "Indian Express"] }
+      ],
+      "contested": [
+        { "point": "Whether nationality belongs in the headline", "positions": [
+          { "outlet": "Hindustan Times", "claim": "Keeps 'Indian-origin' in the headline as a matter of reader relevance." },
+          { "outlet": "The Guardian", "claim": "Argues naming nationality without official confirmation risks collective blame." }
+        ] },
+        { "point": "How many cases are actually connected", "positions": [
+          { "outlet": "PTI", "claim": "Reports the cases separately, with no link established." },
+          { "outlet": "Indian Express", "claim": "Groups them as a pattern in a single round-up." }
+        ] }
+      ],
+      "framing": [
+        { "outlet": "Hindustan Times", "note": "Diaspora-interest lens — what it means for Indians abroad." },
+        { "outlet": "The Guardian", "note": "Media-ethics lens — the reporting itself is the story." },
+        { "outlet": "PTI", "note": "Wire lens — confirmed facts only, case by case." }
+      ],
+      "jargon": [
+        { "term": "diaspora", "plain": "People from one country living permanently in others — here, Indians abroad." },
+        { "term": "collective blame", "plain": "Treating a whole group as responsible for what a few individuals did." }
+      ],
+      "people": []
+    }
+  ]
+}
