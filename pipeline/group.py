@@ -21,6 +21,9 @@ STOPWORDS = {
     "india", "indian", "says", "said", "news", "live", "updates", "latest",
     "today", "new", "amid", "over", "after", "report", "check", "watch",
     "video", "know", "here", "why", "how", "what", "year", "day",
+    # additional noise
+    "exclusive", "sources", "source", "say", "told", "reveals", "revealed",
+    "big", "top", "full", "list", "ahead", "set", "key", "last",
 }
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")

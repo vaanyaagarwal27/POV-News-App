@@ -155,7 +155,7 @@ def main():
             feed_new += 1
 
         total_new += feed_new
-        print(f"{feed['name']:<20} | {feed_count:>3} in feed | {feed_new:>3} new | {feed_skipped:>3} skipped | {feed_opinion:>3} opinion skipped")
+        print(f"{feed['name']:<20} | {feed_count:>3} in feed | {feed_new:>3} new | {feed_skipped:>3} skipped | {feed_opinion:>3} opinion skipped | {feed_junk:>3} junk skipped")
 
     with open(ARTICLES_FILE, "w") as f:
         json.dump(articles, f, ensure_ascii=False, indent=2)
