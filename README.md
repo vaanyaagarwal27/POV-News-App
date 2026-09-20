@@ -176,7 +176,7 @@ Reuters and AP no longer publish public RSS, so their articles arrive via Google
 
 Stories are classified into exactly one of:
 
-`Politics` · `Economy` · `Jobs` · `Tech` · `Climate` · `Courts` · `Health` · `Campus & exams` · `Sport` · `Culture`
+`Politics` · `Economy`  · `Health` · `Campus & exams` · `Sport` 
 
 Any story returned with a topic outside this list is rejected by the validator.
 
