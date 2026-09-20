@@ -542,8 +542,19 @@ class Component extends DCLogic {
     ].join('\n');
     document.head.appendChild(this._sty);
     this.load();
+    this.tickClock();
+    this._clock = setInterval(this.tickClock, 1000);
   }
-  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); }
+  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); clearInterval(this._clock); }
+
+  // ios-frame.jsx hardcodes the status-bar time as 9:41; overwrite it with the real time (iOS style: 12-hour, no AM/PM)
+  tickClock = () => {
+    const d = new Date();
+    const now = (d.getHours() % 12 || 12) + ':' + String(d.getMinutes()).padStart(2, '0');
+    document.querySelectorAll('span').forEach(el => {
+      if (el.style.fontWeight === '590' && el.children.length === 0 && /^\d{1,2}:\d{2}$/.test(el.textContent) && el.textContent !== now) el.textContent = now;
+    });
+  };
 
   load = () => {
     fetch('stories.json', { cache: 'no-store' })
