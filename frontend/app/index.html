@@ -95,8 +95,8 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
   <div style="display:flex;align-items:center;gap:12px;margin-bottom:30px">
     <div onClick="{{ goWelcome }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
-    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:25%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
-    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">01/04</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:33.34%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">01/03</div>
   </div>
 
   <div style="font:400 40px/1.04 'Instrument Serif',serif;letter-spacing:-.02em;white-space:nowrap;animation:povRise .5s ease both">What's your name?</div>
@@ -122,8 +122,8 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
   <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
     <div onClick="{{ goName }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
-    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:50%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
-    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">02/04</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:66.67%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">02/03</div>
   </div>
 
   <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">{{ placeHeading }}</div>
@@ -167,8 +167,8 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
   <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
     <div onClick="{{ goPlace }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
-    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:75%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
-    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">03/04</div>
+    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:100%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
+    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">03/03</div>
   </div>
 
   <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">{{ greeting }}<br>how long have you got?</div>
@@ -208,32 +208,7 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
   </div>
 
   <div style="flex:1"></div>
-  <div onClick="{{ goTopics }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
-</div>
-</sc-if>
-
-<!-- ══════════ 5 · INTERESTS ══════════ -->
-<sc-if value="{{ isTopics }}" hint-placeholder-val="{{ false }}">
-<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:62px 24px 32px">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
-    <div onClick="{{ goTime }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;background:rgba(255,255,255,.6)">←</div>
-    <div style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.09);overflow:hidden"><div style="width:100%;height:100%;background:#8C3B48;transform-origin:left;animation:povBar .6s ease both"></div></div>
-    <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">04/04</div>
-  </div>
-
-  <div style="font:400 36px/1.05 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">What should land<br>on page one?</div>
-  <div style="margin-top:12px;display:flex;align-items:baseline;justify-content:space-between">
-    <div style="font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">Tap as many as you like.</div>
-    <div style="font:500 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ topicCount }} picked</div>
-  </div>
-
-  <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;flex:1;min-height:0;overflow:auto">
-    <sc-for list="{{ topics }}" as="t" hint-placeholder-count="10">
-      <div onClick="{{ t.pick }}" data-on="{{ t.on }}" style="padding:12px 17px;border-radius:999px;font:400 14.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.72)">{{ t.name }}</div>
-    </sc-for>
-  </div>
-
-  <div onClick="{{ goPress }}" style="margin-top:16px;height:56px;border-radius:28px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 12px 26px rgba(0,0,0,.2)" style-active="background:#8C3B48">File my first edition <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+  <div onClick="{{ goPress }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
 </div>
 </sc-if>
 
@@ -510,7 +485,6 @@ const STATES_AZ = STATES.slice().sort((a, b) => a.localeCompare(b));
 const DEEP = ['Karnataka','Maharashtra','Delhi','Tamil Nadu','Uttar Pradesh','West Bengal','Telangana','Kerala','Gujarat','Rajasthan'];
 const normQuery = v => v.replace(/\s+/g, ' ').trim().toLowerCase();
 const WATCH = ['United States','Gulf & UAE','China','Europe'];
-const TOPICS = ['Politics','Economy','Jobs','Climate','Tech','Sports','Campus & exams','Courts','Culture','Health'];
 const NAME_SCREEN_TOPICS = ['Politics','Economy','Health','Campus & exams','Sports'];
 
 // folder stock — one per story slot, cycled
@@ -786,14 +760,13 @@ class Component extends DCLogic {
       : STATES_AZ.filter(n => n.toLowerCase().indexOf(q) === 0).concat(STATES_AZ.filter(n => n.toLowerCase().indexOf(q) > 0));
     return {
       isWelcome: scr === 'welcome', isName: scr === 'name', isPlace: scr === 'place', isTime: scr === 'time',
-      isTopics: scr === 'topics', isTyping: scr === 'typing', isBrief: scr === 'brief',
+      isTyping: scr === 'typing', isBrief: scr === 'brief',
       isStory: scr === 'story', isDiffer: scr === 'differ', isDone: scr === 'done',
 
       goWelcome: () => this.set('screen', 'welcome'),
       goName: () => this.set('screen', 'name'),
       goPlace: () => this.set('screen', 'place'),
       goTime: () => this.set('screen', 'time'),
-      goTopics: () => this.set('screen', 'topics'),
       goPress: this.startEdition,
       restart: () => this.setState({ screen: 'welcome', idx: 0, exit: null, pop: null, listenNote: false }),
       skipToBrief: () => this.setState({ screen: 'brief', idx: 0, exit: null }),
@@ -868,9 +841,7 @@ class Component extends DCLogic {
       customSliderStyle: 'width:100%;height:28px;margin:0;display:block;cursor:pointer;background-color:transparent;background-image:linear-gradient(to right,#8C3B48 '
         + ((s.customMin - 3) / 17 * 100) + '%,rgba(0,0,0,.09) ' + ((s.customMin - 3) / 17 * 100) + '%);background-size:100% 3px;background-position:center;background-repeat:no-repeat;border-radius:2px',
 
-      topics: TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
       nameScreenTopics: NAME_SCREEN_TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
-      topicCount: s.topics.length,
 
       editionMeta: 'Sat 13 Sep · ' + s.minutes + ' min edition',
       typeLine1: '> reading ' + (s.stories.length * 12 + 8) + ' articles',
