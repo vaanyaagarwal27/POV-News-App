@@ -8,3 +8,5 @@ pipeline/data/
 .env
 __pycache__/
 *.pyc
+.venv/
+AWSCLIV2.pkg
