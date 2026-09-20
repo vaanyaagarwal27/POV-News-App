@@ -659,7 +659,7 @@ class Component extends DCLogic {
     if (!iso) return '';
     const d = new Date(iso);
     if (isNaN(d)) return String(iso);
-    return d.toLocaleString('en-IN', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+    return d.toLocaleString('en-IN', { day: 'numeric', month: 'short' });
   }
 
   renderVals() {
