@@ -273,9 +273,11 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
     </div>
   </div>
   <div style="margin:0 22px;height:1px;background:rgba(0,0,0,.14)"></div>
-  <div style="margin:10px 22px 0;display:flex;gap:4px">
+  <div style="margin:0 22px;display:flex;gap:4px">
     <sc-for list="{{ pips }}" as="p" hint-placeholder-count="5">
-      <div data-on="{{ p.on }}" style="flex:1;height:3px;border-radius:2px;background:rgba(0,0,0,.14)"></div>
+      <div onClick="{{ p.jump }}" aria-label="{{ p.label }}" style="flex:1;padding:10px 0;cursor:pointer">
+        <div data-on="{{ p.on }}" style="height:3px;border-radius:2px;background:rgba(0,0,0,.14);transition:background .2s"></div>
+      </div>
     </sc-for>
   </div>
 
@@ -916,7 +918,15 @@ class Component extends DCLogic {
       typeFoot: (s.name ? s.name + ' \u00b7 ' : '') + s.place,
 
       progressLabel: total ? (idx + 1) + ' of ' + total : 'loading',
-      pips: list.map((x, i) => ({ on: i === idx ? 'on' : 'off' })),
+      pips: list.map((x, i) => ({
+        on: i === idx ? 'on' : 'off',
+        label: 'Go to story ' + (i + 1),
+        jump: () => {
+          if (i === idx) return;
+          clearTimeout(this._e); clearTimeout(this._s);
+          this.setState({ idx: i, exit: null, settle: false, drag: null, screen: 'brief' });
+        },
+      })),
       stack,
       onDown: this.onDown, onMove: this.onMove, onUp: this.onUp,
       doNext: this.nextStory,
