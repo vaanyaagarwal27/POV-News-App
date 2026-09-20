@@ -188,6 +188,23 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
         <div style="width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:400 11px 'IBM Plex Mono',monospace;flex:none">{{ t.mark }}</div>
       </div>
     </sc-for>
+
+    <div onClick="{{ pickCustom }}" data-on="{{ customOn }}" style="border-radius:22px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.74);backdrop-filter:blur(14px);padding:18px 20px;display:flex;align-items:center;gap:16px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.05)">
+      <div data-tile="1" style="width:54px;height:54px;border-radius:16px;background:#101010;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none">
+        <div style="font:400 20px/1 'Instrument Serif',serif">{{ customNum }}</div>
+        <div style="font:500 8px/1 'IBM Plex Mono',monospace;opacity:.65;margin-top:3px">MIN</div>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div data-keep="1" style="font:500 16px 'DM Sans',sans-serif">Custom</div>
+        <div style="font:300 12.5px/1.4 'DM Sans',sans-serif;color:rgba(0,0,0,.5);margin-top:3px">Slide to set your own time.</div>
+      </div>
+      <div style="width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:400 11px 'IBM Plex Mono',monospace;flex:none">{{ customMark }}</div>
+    </div>
+
+    <div style="padding:0 6px">
+      <input type="range" min="3" max="20" step="1" value="{{ customMinVal }}" onChange="{{ setCustomMin }}" aria-label="Custom reading time in minutes" style="{{ customSliderStyle }}">
+      <div style="display:flex;justify-content:space-between;margin-top:2px;font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)"><span>3 MIN</span><span>20 MIN</span></div>
+    </div>
   </div>
 
   <div style="flex:1"></div>
@@ -511,7 +528,7 @@ class Component extends DCLogic {
   state = {
     screen: 'welcome',
     name: '', place: '', placeQuery: '', placeOpen: false, placeHi: -1, watch: [],
-    minutes: 8, topics: [],
+    minutes: 8, customMode: false, customMin: 10, topics: [],
     stories: [], dataError: '',
     idx: 0, drag: null, exit: null, pop: null, listenNote: false,
   };
@@ -525,6 +542,11 @@ class Component extends DCLogic {
       '[data-on="on"] [data-tile]{background:#fff !important}',
       '[data-on="on"] [data-tile] div{color:#101010 !important}',
       'input::placeholder{color:rgba(0,0,0,.28)}',
+      'input[type="range"]{-webkit-appearance:none;appearance:none;outline:none}',
+      'input[type="range"]::-webkit-slider-runnable-track{-webkit-appearance:none;height:28px;background:transparent}',
+      'input[type="range"]::-moz-range-track{height:28px;background:transparent}',
+      'input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;box-sizing:border-box;width:22px;height:22px;margin-top:3px;border-radius:50%;background:#8C3B48;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}',
+      'input[type="range"]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#8C3B48;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}',
       'input[placeholder="Type or pick your state"]::placeholder{color:rgba(0,0,0,.2)}',
       'select{font-family:"DM Sans",sans-serif}',
     ].join('\n');
@@ -832,11 +854,19 @@ class Component extends DCLogic {
       regionChips: WATCH.map(n => ({ name: n, on: s.watch.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('watch', n) })),
 
       times: [
-        { num: '3', label: 'Between classes', sub: 'The two stories that matter most.', v: 3 },
+        { num: '3', label: 'Slow Mornings', sub: 'The two stories that matter most.', v: 3 },
         { num: '8', label: 'Coffee run', sub: 'The full brief, still short.', v: 8 },
         { num: '15', label: 'Commute', sub: 'Every story, plus where the papers differ.', v: 15 },
-      ].map(t => ({ ...t, on: s.minutes === t.v ? 'on' : 'off', mark: s.minutes === t.v ? '\u2713' : '',
-        pick: () => this.setState({ minutes: t.v, idx: 0 }) })),
+      ].map(t => ({ ...t, on: !s.customMode && s.minutes === t.v ? 'on' : 'off', mark: !s.customMode && s.minutes === t.v ? '\u2713' : '',
+        pick: () => this.setState({ minutes: t.v, customMode: false, idx: 0 }) })),
+      customOn: s.customMode ? 'on' : 'off',
+      customMark: s.customMode ? '\u2713' : '',
+      customNum: String(s.customMin),
+      pickCustom: () => this.setState({ customMode: true, minutes: s.customMin, idx: 0 }),
+      customMinVal: s.customMin,
+      setCustomMin: e => { const v = Math.max(3, Math.min(20, Number(e.target.value) || 3)); this.setState({ customMode: true, customMin: v, minutes: v, idx: 0 }); },
+      customSliderStyle: 'width:100%;height:28px;margin:0;display:block;cursor:pointer;background-color:transparent;background-image:linear-gradient(to right,#8C3B48 '
+        + ((s.customMin - 3) / 17 * 100) + '%,rgba(0,0,0,.09) ' + ((s.customMin - 3) / 17 * 100) + '%);background-size:100% 3px;background-position:center;background-repeat:no-repeat;border-radius:2px',
 
       topics: TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
       nameScreenTopics: NAME_SCREEN_TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
