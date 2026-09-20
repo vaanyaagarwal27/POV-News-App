@@ -360,9 +360,6 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
         </sc-for>
       </div>
 
-      <sc-if value="{{ listenNote }}" hint-placeholder-val="{{ false }}">
-        <div style="border-radius:14px;background:rgba(224,180,74,.18);border:1px solid rgba(224,180,74,.5);padding:11px 14px;font:400 12px/1.45 'IBM Plex Mono',monospace;color:#4a3708">Audio comes from the pipeline — button is wired, sound is not yet.</div>
-      </sc-if>
 
       <div style="height:1px;background:rgba(0,0,0,.12)"></div>
 
@@ -546,7 +543,7 @@ class Component extends DCLogic {
     name: '', place: '', placeQuery: '', placeOpen: false, placeHi: -1, watch: [],
     minutes: 8, customMode: false, customMin: 10, topics: [],
     stories: [], dataError: '',
-    idx: 0, drag: null, exit: null, settle: false, pop: null, listenNote: false,
+    idx: 0, drag: null, exit: null, settle: false, pop: null, audioPlaying: false,
   };
 
   componentDidMount() {
@@ -571,7 +568,13 @@ class Component extends DCLogic {
     this.tickClock();
     this._clock = setInterval(this.tickClock, 1000);
   }
-  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); clearTimeout(this._s); clearInterval(this._clock); }
+  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); clearTimeout(this._s); clearInterval(this._clock); this._stopAudio(); }
+
+  _stopAudio = () => {
+    const a = this._audio;
+    if (a) { this._audio = null; a.pause(); }
+    this.setState({ audioPlaying: false });
+  };
 
   // ios-frame.jsx hardcodes the status-bar time as 9:41; overwrite it with the real time (iOS style: 12-hour, no AM/PM)
   tickClock = () => {
@@ -606,6 +609,7 @@ class Component extends DCLogic {
 
   // ── next story: folder leaves the pile, next rises
   nextStory = () => {
+    this._stopAudio();
     if (this.state.exit) return;
     const list = this.visible();
     if (this.state.idx >= list.length - 1) { this.setState({ screen: 'done', drag: null }); return; }
@@ -619,6 +623,7 @@ class Component extends DCLogic {
   };
 
   prevStory = idx => {
+    this._stopAudio();
     clearTimeout(this._e); clearTimeout(this._s);
     this.setState({ idx: idx - 1, exit: null, settle: false, drag: null, screen: 'brief' });
   };
@@ -951,11 +956,22 @@ class Component extends DCLogic {
       storyBandSticker: 'assets/' + STICKERS[idx % STICKERS.length] + '.png',
       showListen: this.props.showListen ?? true,
       showSources: this.props.showSources ?? true,
-      listenNote: s.listenNote,
-      listenLabel: s.listenNote ? 'soon' : 'listen',
-      tapListen: () => this.setState(st => ({ listenNote: !st.listenNote })),
-      backToBrief: () => this.setState({ screen: 'brief' }),
-      goDiffer: () => this.setState({ screen: 'differ' }),
+      listenLabel: s.audioPlaying ? 'pause' : 'listen',
+      tapListen: () => {
+        const id = current && current.id;
+        if (!id) return;
+        if (this._audio && !this._audio.paused) { this._audio.pause(); return; }
+        if (this._audio && this._audio.paused)  { this._audio.play().catch(() => {}); return; }
+        const a = new Audio('audio/' + id + '.mp3');
+        this._audio = a;
+        a.addEventListener('playing', () => { if (this._audio === a) this.setState({ audioPlaying: true }); });
+        a.addEventListener('pause',   () => { if (this._audio === a) this.setState({ audioPlaying: false }); });
+        a.addEventListener('ended',   () => { if (this._audio === a) { this._audio = null; this.setState({ audioPlaying: false }); } });
+        a.addEventListener('error',   () => { if (this._audio === a) this._audio = null; });
+        a.play().catch(() => { if (this._audio === a) this._audio = null; });
+      },
+      backToBrief: () => { this._stopAudio(); this.setState({ screen: 'brief' }); },
+      goDiffer:    () => { this._stopAudio(); this.setState({ screen: 'differ' }); },
       backToStory: () => this.setState({ screen: 'story' }),
 
       doneLine: 'That\u2019s the whole edition for ' + s.place + '.',
