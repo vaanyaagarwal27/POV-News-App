@@ -413,10 +413,18 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
         <div style="font:400 21px/1.2 'Instrument Serif',serif">{{ cl.angle }}</div>
         <div style="display:flex;flex-direction:column;gap:10px">
           <sc-for list="{{ cl.papers }}" as="p" hint-placeholder-count="2">
-            <div style="border-radius:14px;background:rgba(252,250,245,.1);border:1px solid rgba(251,246,238,.22);padding:13px 15px">
-              <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.75">{{ p.name }}</div>
-              <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.88;margin-top:5px">{{ p.headline }}</div>
-            </div>
+            <sc-if value="{{ p.hasUrl }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ p.url }}" target="_blank" rel="noopener" style="display:block;color:inherit;text-decoration:none;border-radius:14px;background:rgba(252,250,245,.1);border:1px solid rgba(251,246,238,.22);padding:13px 15px">
+                <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.75">{{ p.name }}</div>
+                <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.88;margin-top:5px">{{ p.headline }}</div>
+              </a>
+            </sc-if>
+            <sc-if value="{{ p.noUrl }}" hint-placeholder-val="{{ true }}">
+              <div style="border-radius:14px;background:rgba(252,250,245,.1);border:1px solid rgba(251,246,238,.22);padding:13px 15px">
+                <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.75">{{ p.name }}</div>
+                <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.88;margin-top:5px">{{ p.headline }}</div>
+              </div>
+            </sc-if>
           </sc-for>
         </div>
       </div>
@@ -464,8 +472,14 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
   <div style="width:100%;border-radius:26px;background:rgba(252,250,245,.86);backdrop-filter:blur(28px) saturate(180%);border:1px solid rgba(255,255,255,.85);box-shadow:0 -8px 40px rgba(0,0,0,.18);padding:20px;animation:povRise .26s cubic-bezier(.2,1.1,.3,1) both">
     <div style="display:flex;flex-direction:column;gap:9px">
       <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.42)">{{ pop.kindLabel }}</div>
+      <sc-if value="{{ popHasImage }}" hint-placeholder-val="{{ false }}">
+        <img src="{{ pop.image }}" alt="{{ pop.title }}" onError="{{ popImgFail }}" style="width:72px;height:72px;border-radius:18px;object-fit:cover;object-position:center top;display:block;border:1px solid rgba(0,0,0,.08)">
+      </sc-if>
       <div style="font:400 27px/1.1 'Instrument Serif',serif">{{ pop.title }}</div>
       <div style="font:300 15px/1.55 'DM Sans',sans-serif;color:rgba(0,0,0,.74)">{{ pop.body }}</div>
+      <sc-if value="{{ popHasWiki }}" hint-placeholder-val="{{ false }}">
+        <a href="{{ pop.wikiUrl }}" target="_blank" rel="noopener noreferrer" onClick="{{ popStay }}" style="align-self:flex-start;font:500 13px 'DM Sans',sans-serif;color:#8C3B48;text-decoration:none">Read more →</a>
+      </sc-if>
       <div style="font:400 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.36);border-top:1px solid rgba(0,0,0,.1);padding-top:10px;margin-top:4px">Tap anywhere to close</div>
     </div>
   </div>
@@ -485,6 +499,8 @@ const STATES_AZ = STATES.slice().sort((a, b) => a.localeCompare(b));
 const DEEP = ['Karnataka','Maharashtra','Delhi','Tamil Nadu','Uttar Pradesh','West Bengal','Telangana','Kerala','Gujarat','Rajasthan'];
 const normQuery = v => v.replace(/\s+/g, ' ').trim().toLowerCase();
 const WATCH = ['United States','Gulf & UAE','China','Europe'];
+// onboarding label -> the exact `topic` value stories use
+const STORY_TOPIC = { 'Sports': 'Sport' };
 const NAME_SCREEN_TOPICS = ['Politics','Economy','Health','Campus & exams','Sports'];
 
 // folder stock — one per story slot, cycled
@@ -606,7 +622,8 @@ class Component extends DCLogic {
         text: text.slice(h.at, h.end),
         isPlain: false, isPerson: isP, isJargon: !isP,
         tap: () => this.set('pop', h.mark.kind === 'person'
-          ? { kindLabel: 'Who\u2019s this', title: h.mark.payload.name, body: h.mark.payload.who }
+          ? { kindLabel: 'Who\u2019s this', title: h.mark.payload.name, body: h.mark.payload.who,
+              image: h.mark.payload.image || '', wikiUrl: h.mark.payload.wiki_url || '' }
           : { kindLabel: 'In plain English', title: h.mark.payload.term, body: h.mark.payload.plain }),
       });
       cur = h.end;
@@ -616,8 +633,12 @@ class Component extends DCLogic {
   }
 
   visible() {
+    // interests are ordering, not filtering: matching topics first, both groups keep their existing order
+    const picked = this.state.topics.map(t => STORY_TOPIC[t] || t);
+    const all = this.state.stories;
+    const list = !picked.length ? all
+      : all.filter(st => picked.indexOf(st.topic) >= 0).concat(all.filter(st => picked.indexOf(st.topic) < 0));
     // read-time budget: fit stories into the chosen minutes, always at least two
-    const list = this.state.stories;
     if (!list.length) return [];
     const budget = this.state.minutes * 60;
     const out = [];
@@ -683,7 +704,7 @@ class Component extends DCLogic {
         facts,
         clusters: (st.clusters || []).map(c => ({
           angle: c.angle,
-          papers: (c.papers || []).map(p => ({ name: p.name, headline: p.headline, url: p.url })),
+          papers: (c.papers || []).map(p => ({ name: p.name, headline: p.headline, url: p.url, hasUrl: !!p.url, noUrl: !p.url })),
         })),
         differCount: (() => {
           const cl = st.clusters || [];
@@ -882,6 +903,10 @@ class Component extends DCLogic {
 
       hasPop: !!s.pop,
       pop: s.pop || { kindLabel: '', title: '', body: '' },
+      popHasImage: !!(s.pop && s.pop.image),
+      popHasWiki: !!(s.pop && s.pop.wikiUrl),
+      popImgFail: () => this.setState(st => ({ pop: st.pop && { ...st.pop, image: '' } })),
+      popStay: e => e.stopPropagation(),
       closePop: () => this.set('pop', null),
     };
   }
