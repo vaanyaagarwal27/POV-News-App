@@ -359,9 +359,6 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
             <div style="font:300 16.5px/1.6 'DM Sans',sans-serif;color:rgba(0,0,0,.82)">
               <sc-for list="{{ f.segs }}" as="s" hint-placeholder-count="3"><sc-if value="{{ s.isPlain }}" hint-placeholder-val="{{ true }}"><span>{{ s.text }}</span></sc-if><sc-if value="{{ s.isPerson }}" hint-placeholder-val="{{ false }}"><span onClick="{{ s.tap }}" style="color:#2C4A63;background:rgba(44,74,99,.14);border-radius:5px;padding:0 3px;cursor:pointer;box-shadow:inset 0 -1px 0 rgba(44,74,99,.45)">{{ s.text }}</span></sc-if><sc-if value="{{ s.isJargon }}" hint-placeholder-val="{{ false }}"><span onClick="{{ s.tap }}" style="border-bottom:1.5px dotted rgba(140,59,72,.65);background:rgba(140,59,72,.07);border-radius:3px;padding:0 2px;cursor:pointer">{{ s.text }}</span></sc-if></sc-for>
             </div>
-            <sc-if value="{{ showSources }}" hint-placeholder-val="{{ true }}">
-              <div style="font:400 10.5px/1.45 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">{{ f.sourceLine }}</div>
-            </sc-if>
           </div>
         </sc-for>
       </div>
@@ -404,37 +401,19 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
   </div>
 
   <div style="position:relative;flex:1;min-height:0;overflow:auto;padding:8px 18px 34px;display:flex;flex-direction:column;gap:22px">
-    <div style="display:flex;flex-direction:column;gap:16px">
-      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;opacity:.65">Contested</div>
-      <sc-for list="{{ story.contested }}" as="c" hint-placeholder-count="2">
+    <sc-for list="{{ story.clusters }}" as="cl" hint-placeholder-count="2">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="font:400 21px/1.2 'Instrument Serif',serif">{{ cl.angle }}</div>
         <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="font:400 21px/1.2 'Instrument Serif',serif">{{ c.point }}</div>
-          <div style="display:flex;flex-direction:column;gap:10px">
-            <sc-for list="{{ c.positions }}" as="p" hint-placeholder-count="2">
-              <div style="{{ p.slipStyle }}">
-                <div style="{{ p.outletStyle }}">{{ p.outlet }}</div>
-                <div style="font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.8);margin-top:6px">{{ p.claim }}</div>
-              </div>
-            </sc-for>
-          </div>
+          <sc-for list="{{ cl.papers }}" as="p" hint-placeholder-count="2">
+            <div style="border-radius:14px;background:rgba(252,250,245,.1);border:1px solid rgba(251,246,238,.22);padding:13px 15px">
+              <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.75">{{ p.name }}</div>
+              <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.88;margin-top:5px">{{ p.headline }}</div>
+            </div>
+          </sc-for>
         </div>
-      </sc-for>
-    </div>
-
-    <div style="height:1px;background:rgba(251,246,238,.2)"></div>
-
-    <div style="display:flex;flex-direction:column;gap:14px">
-      <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;opacity:.65">Framing by outlet</div>
-      <sc-for list="{{ story.framing }}" as="f" hint-placeholder-count="3">
-        <div style="display:flex;gap:12px;align-items:flex-start">
-          <div style="width:5px;align-self:stretch;border-radius:3px;background:{{ f.bar }};flex:none"></div>
-          <div style="flex:1;min-width:0">
-            <div style="font:500 11.5px 'IBM Plex Mono',monospace;letter-spacing:.04em">{{ f.outlet }}</div>
-            <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.82;margin-top:4px">{{ f.note }}</div>
-          </div>
-        </div>
-      </sc-for>
-    </div>
+      </div>
+    </sc-for>
 
     <div onClick="{{ backToStory }}" style="height:50px;border-radius:25px;border:1px solid rgba(251,246,238,.35);display:flex;align-items:center;justify-content:center;font:500 13px 'DM Sans',sans-serif;cursor:pointer;color:#FBF6EE" style-active="background:rgba(251,246,238,.12)">Back to the story</div>
   </div>
@@ -673,8 +652,7 @@ class Component extends DCLogic {
       const regions = st.regions || [];
       const affects = st.affects || [];
       const facts = (st.agreed_facts || []).map(f => ({
-        segs: this.segment(f.text || '', st.jargon, st.people),
-        sourceLine: (f.sources || []).join(' · '),
+        segs: this.segment(f, st.jargon, st.people),
       }));
       return {
         id: st.id,
@@ -685,29 +663,24 @@ class Component extends DCLogic {
         sourceLabel: 'covered by ' + (st.source_count || 0) + ' papers',
         publishedLabel: this.fmtPublished(st.published),
         affectsPills: affects.map(a => ({ name: a })),
-        firstFact: ((st.agreed_facts || [])[0] || {}).text || '',
+        firstFact: (st.agreed_facts || [])[0] || '',
         facts,
-        contested: (st.contested || []).map((c, ci) => ({
-          point: c.point,
-          positions: (c.positions || []).map((p, pi) => ({
-            outlet: p.outlet,
-            claim: p.claim,
-            slipStyle: 'border-radius:16px;background:rgba(252,250,245,.96);padding:14px 15px;box-shadow:0 10px 24px rgba(0,0,0,.22);'
-              + 'transform:rotate(' + (pi % 2 ? 0.7 : -0.7) + 'deg);margin-' + (pi % 2 ? 'left' : 'right') + ':18px;'
-              + 'animation:' + (pi % 2 ? 'povSlideR' : 'povSlideL') + ' .4s ease both;',
-            outletStyle: 'display:inline-flex;font:500 10.5px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;'
-              + 'color:' + (pi % 2 ? '#2C4A63' : '#8C3B48') + ';border-bottom:2px solid ' + (pi % 2 ? 'rgba(44,74,99,.35)' : 'rgba(140,59,72,.35)') + ';padding-bottom:3px',
-          })),
+        clusters: (st.clusters || []).map(c => ({
+          angle: c.angle,
+          papers: (c.papers || []).map(p => ({ name: p.name, headline: p.headline, url: p.url })),
         })),
-        framing: (st.framing || []).map((f, fi) => ({ outlet: f.outlet, note: f.note, bar: BARS[fi % BARS.length] })),
-        differCount: ((st.contested || []).length) + ' contested points · ' + ((st.framing || []).length) + ' outlet angles',
+        differCount: (() => {
+          const cl = st.clusters || [];
+          const totalPapers = cl.reduce((a, c) => a + (c.papers || []).length, 0);
+          return cl.length + (cl.length === 1 ? ' angle' : ' angles') + ' · ' + totalPapers + ' papers';
+        })(),
         stock: i,
       };
     };
 
     const story = decorate(current, idx) || {
       headline: '', regionLabel: '', readLabel: '', sourceLabel: '', publishedLabel: '',
-      affectsPills: [], facts: [], contested: [], framing: [], differCount: '',
+      affectsPills: [], facts: [], clusters: [], differCount: '',
     };
 
     // ── folder stack (current + next peeking)
