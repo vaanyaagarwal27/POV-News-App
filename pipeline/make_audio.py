@@ -8,23 +8,25 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 STORIES_FILE = os.path.join(DATA_DIR, "stories.json")
 AUDIO_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "app", "audio")
 
-PAUSE = "  "  # two spaces — natural inter-sentence pause for TTS
+def _esc(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def build_text(story):
-    parts = [story.get("headline", "").strip()]
-    for fact in story.get("agreed_facts", []):
-        if isinstance(fact, str) and fact.strip():
-            parts.append(fact.strip())
-    return PAUSE.join(parts)
+def build_ssml(story):
+    headline = _esc(story.get("headline", "").strip())
+    facts = [_esc(f.strip()) for f in story.get("agreed_facts", [])
+             if isinstance(f, str) and f.strip()]
+    inner = headline + '<break time="700ms"/>' + '<break time="400ms"/>'.join(facts)
+    return '<speak><prosody rate="92%">' + inner + '</prosody></speak>'
 
 
-def synthesise(polly, text, story_id, out_path):
+def synthesise(polly, ssml, story_id, out_path):
     """Try Kajal (neural), fall back to Aditi (standard). Returns voice used."""
     for voice, engine in [("Kajal", "neural"), ("Aditi", "standard")]:
         try:
             resp = polly.synthesize_speech(
-                Text=text,
+                Text=ssml,
+                TextType="ssml",
                 Engine=engine,
                 VoiceId=voice,
                 OutputFormat="mp3",
@@ -62,11 +64,11 @@ def main():
 
         out_path = os.path.join(AUDIO_DIR, f"{story_id}.mp3")
         if os.path.exists(out_path):
-            text = build_text(story)
+            text = build_ssml(story)
             print(f"  {story_id}  {len(text):>5} chars  skipped")
             continue
 
-        text = build_text(story)
+        text = build_ssml(story)
         voice = synthesise(polly, text, story_id, out_path)
         if first_voice is None:
             first_voice = voice
