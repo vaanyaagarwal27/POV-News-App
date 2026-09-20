@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="./tour.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -32,6 +33,11 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 @keyframes povDrift2{0%,100%{transform:rotate(var(--r)) translate(0,0)}25%{transform:rotate(calc(var(--r) - 3deg)) translate(-10px,-11px)}50%{transform:rotate(calc(var(--r) + 2.5deg)) translate(8px,-20px)}75%{transform:rotate(calc(var(--r) - 1.5deg)) translate(12px,-8px)}}
 @keyframes povSlideL{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
 @keyframes povSlideR{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+@keyframes povReel{to{transform:rotate(360deg)}}
+[data-reel]{transform-box:fill-box;transform-origin:center;animation:povReel 9s linear infinite}
+[data-listen-glass] button{appearance:none;-webkit-appearance:none;border:0;margin:0;padding:0;font:inherit;color:inherit;background:none;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+[data-listen-glass] button:focus-visible,[data-listen-glass] [role="slider"]:focus-visible{outline:2px solid #8C3B48;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){[data-listen-glass]{animation:none !important}[data-reel]{animation:none !important}}
 </style>
 </helmet>
 
@@ -307,7 +313,7 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
               <div style="height:1px;background:rgba(0,0,0,.1)"></div>
               <div style="font:300 13px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.55)">{{ c.firstFact }}</div>
               <div style="flex:1"></div>
-              <div data-nav="1" onClick="{{ c.open }}" style="height:46px;border-radius:23px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font:500 14px 'DM Sans',sans-serif;cursor:pointer" style-active="background:#8C3B48">Open the story <span style="font:400 12px 'IBM Plex Mono',monospace">→</span></div>
+              <div data-nav="1" data-tour="open" onClick="{{ c.open }}" style="height:46px;border-radius:23px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font:500 14px 'DM Sans',sans-serif;cursor:pointer" style-active="background:#8C3B48">Open the story <span style="font:400 12px 'IBM Plex Mono',monospace">→</span></div>
               <div style="text-align:center;font:400 10.5px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.38)">{{ c.nextHint }}</div>
             </div>
           </div>
@@ -334,7 +340,7 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
     <img aria-hidden="true" src="{{ storyBandSticker }}" alt="" style="position:absolute;right:14px;bottom:-16px;width:132px;height:auto;transform:rotate(-8deg);filter:drop-shadow(0 10px 16px rgba(0,0,0,.28));pointer-events:none">
     <div onClick="{{ backToBrief }}" style="position:absolute;top:54px;left:16px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);display:flex;align-items:center;justify-content:center;font:400 16px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2">←</div>
     <sc-if value="{{ showListen }}" hint-placeholder-val="{{ true }}">
-      <div onClick="{{ tapListen }}" style="position:absolute;top:54px;right:16px;height:38px;padding:0 15px;border-radius:19px;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);display:flex;align-items:center;gap:8px;font:500 11.5px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2" style-active="background:#fff">▶ {{ listenLabel }}</div>
+      <div data-tour="listen" onClick="{{ tapListen }}" style="position:absolute;top:54px;right:16px;height:38px;padding:0 15px;border-radius:19px;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);display:flex;align-items:center;gap:8px;font:500 11.5px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2" style-active="background:#fff">▶ {{ listenLabel }}</div>
     </sc-if>
     <div style="position:absolute;left:20px;bottom:18px;right:20px;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:{{ storyBandInk }};text-shadow:0 1px 8px rgba(0,0,0,.12)">{{ story.regionLabel }}</div>
   </div>
@@ -374,7 +380,7 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
         </sc-for>
       </div>
 
-      <div onClick="{{ goDiffer }}" style="margin-top:4px;border-radius:20px;background:#2C4A63;color:#FBF6EE;padding:18px;cursor:pointer;display:flex;align-items:center;gap:14px" style-active="background:#1b2f40">
+      <div data-tour="differ" onClick="{{ goDiffer }}" style="margin-top:4px;border-radius:20px;background:#2C4A63;color:#FBF6EE;padding:18px;cursor:pointer;display:flex;align-items:center;gap:14px" style-active="background:#1b2f40">
         <div style="flex:1">
           <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;opacity:.7">The part nobody shows you</div>
           <div style="font:400 21px/1.15 'Instrument Serif',serif;margin-top:6px">Where the papers differ</div>
@@ -488,6 +494,68 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 <div style="position:absolute;left:0;right:0;bottom:0;z-index:80;padding:16px;background:rgba(140,59,72,.94);color:#FBF6EE;font:400 12px/1.5 'IBM Plex Mono',monospace">{{ dataError }}</div>
 </sc-if>
 
+<!-- ══════════ LISTEN SCREEN (frosted glass over the story) ══════════ -->
+<sc-if value="{{ hasListenGlass }}" hint-placeholder-val="{{ false }}">
+<div data-listen-glass="1" role="dialog" aria-label="Listen" style="position:absolute;inset:0;z-index:60;background:rgba(246,243,234,.38);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);animation:povFade .35s ease both;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;padding:96px 20px 40px">
+
+  <button type="button" onClick="{{ closeListen }}" aria-label="Back" style="position:absolute;top:51px;left:13px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);display:flex;align-items:center;justify-content:center;z-index:2">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+  </button>
+
+  <div style="width:100%;max-width:340px;container-type:inline-size">
+    <button type="button" onClick="{{ tapListen }}" aria-label="{{ playAria }}" style="position:relative;display:block;width:100%;border-radius:18px">
+      <svg viewBox="0 0 320 200" width="100%" aria-hidden="true" style="display:block;overflow:visible;filter:drop-shadow(0 18px 26px rgba(20,20,20,.22))">
+        <defs>
+          <linearGradient id="povCasBody" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{{ casAccent }}" stop-opacity=".82"/><stop offset="1" stop-color="{{ casAccent }}" stop-opacity=".5"/></linearGradient>
+          <linearGradient id="povCasShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+          <linearGradient id="povCasGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          <clipPath id="povCasClip"><rect x="6" y="6" width="308" height="188" rx="18"/></clipPath>
+        </defs>
+        <rect x="6" y="6" width="308" height="188" rx="18" fill="url(#povCasBody)"/>
+        <rect x="6" y="6" width="308" height="188" rx="18" fill="url(#povCasShade)"/>
+        <g clip-path="url(#povCasClip)"><path d="M6 6H314V50Q160 72 6 50Z" fill="url(#povCasGloss)" opacity=".5"/></g>
+        <path d="M30 11.5H290" stroke="#fff" stroke-opacity=".95" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="10" y="10" width="300" height="180" rx="14" fill="none" stroke="#fff" stroke-opacity=".28"/>
+        <rect x="6" y="6" width="308" height="188" rx="18" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="1.4"/>
+        <g transform="translate(22 22) rotate(20)"><circle r="5.2" fill="#fff" fill-opacity=".3" stroke="#fff" stroke-opacity=".85" stroke-width=".9"/><path d="M-3 0H3" stroke="#141210" stroke-opacity=".55" stroke-width="1.3" stroke-linecap="round"/></g><g transform="translate(298 22) rotate(-35)"><circle r="5.2" fill="#fff" fill-opacity=".3" stroke="#fff" stroke-opacity=".85" stroke-width=".9"/><path d="M-3 0H3" stroke="#141210" stroke-opacity=".55" stroke-width="1.3" stroke-linecap="round"/></g><g transform="translate(22 178) rotate(60)"><circle r="5.2" fill="#fff" fill-opacity=".3" stroke="#fff" stroke-opacity=".85" stroke-width=".9"/><path d="M-3 0H3" stroke="#141210" stroke-opacity=".55" stroke-width="1.3" stroke-linecap="round"/></g><g transform="translate(298 178) rotate(-10)"><circle r="5.2" fill="#fff" fill-opacity=".3" stroke="#fff" stroke-opacity=".85" stroke-width=".9"/><path d="M-3 0H3" stroke="#141210" stroke-opacity=".55" stroke-width="1.3" stroke-linecap="round"/></g>
+        <rect x="30" y="22" width="260" height="62" rx="7" fill="#F8F2E2" fill-opacity=".96" stroke="#fff" stroke-opacity=".9"/>
+        <rect x="38" y="76" width="244" height="2" rx="1" fill="{{ casAccent }}" fill-opacity=".65"/>
+        <rect x="34" y="92" width="252" height="64" rx="32" fill="#141210" fill-opacity=".62" stroke="#fff" stroke-opacity=".3"/>
+        <rect x="132" y="102" width="56" height="44" rx="8" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".6"/>
+        <path d="M148 112V136M160 112V136M172 112V136" stroke="#fff" stroke-opacity=".55" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="92" cy="124" r="{{ packL }}" fill="#2A211C" fill-opacity=".92" stroke="#fff" stroke-opacity=".22"/><g transform="translate(92 124)"><g data-reel="1" style="{{ reelStyle }}"><circle r="15" fill="#F6F1E3" fill-opacity=".95" stroke="#fff" stroke-width="1"/><circle r="12.2" fill="#181410"/><path d="M3.5 0L11.5 0M1.75 3.03L5.75 9.96M-1.75 3.03L-5.75 9.96M-3.5 0L-11.5 0M-1.75 -3.03L-5.75 -9.96M1.75 -3.03L5.75 -9.96" stroke="#F6F1E3" stroke-width="2.3" stroke-linecap="round"/><circle r="3" fill="#F6F1E3"/><circle cx="8" cy="0" r="1.5" fill="{{ casAccent }}"/></g></g><circle cx="228" cy="124" r="{{ packR }}" fill="#2A211C" fill-opacity=".92" stroke="#fff" stroke-opacity=".22"/><g transform="translate(228 124)"><g data-reel="1" style="{{ reelStyle }}"><circle r="15" fill="#F6F1E3" fill-opacity=".95" stroke="#fff" stroke-width="1"/><circle r="12.2" fill="#181410"/><path d="M3.5 0L11.5 0M1.75 3.03L5.75 9.96M-1.75 3.03L-5.75 9.96M-3.5 0L-11.5 0M-1.75 -3.03L-5.75 -9.96M1.75 -3.03L5.75 -9.96" stroke="#F6F1E3" stroke-width="2.3" stroke-linecap="round"/><circle r="3" fill="#F6F1E3"/><circle cx="8" cy="0" r="1.5" fill="{{ casAccent }}"/></g></g>
+        <path d="M84 194L104 160H216L236 194Z" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".6"/>
+        <circle cx="112" cy="180" r="4.5" fill="#181410" fill-opacity=".75"/><circle cx="208" cy="180" r="4.5" fill="#181410" fill-opacity=".75"/><circle cx="160" cy="169" r="3.6" fill="#181410" fill-opacity=".75"/>
+        <rect x="132" y="174" width="8" height="8" rx="1.5" fill="#181410" fill-opacity=".75"/><rect x="180" y="174" width="8" height="8" rx="1.5" fill="#181410" fill-opacity=".75"/>
+      </svg>
+      <span style="position:absolute;left:10%;top:13%;width:80%;height:24%;display:flex;align-items:center;justify-content:center;padding:0 3%;text-align:center;pointer-events:none"><span style="display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-family:'Instrument Serif',serif;font-weight:400;font-size:14px;font-size:4.7cqw;line-height:1.15;letter-spacing:-.005em;color:#101010">{{ story.headline }}</span></span>
+    </button>
+  </div>
+
+  <div style="width:100%;max-width:340px;border-radius:26px;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);padding:12px 18px 20px">
+    <div role="slider" tabindex="0" aria-label="Playback position" aria-valuemin="0" aria-valuemax="{{ sliderMax }}" aria-valuenow="{{ sliderNow }}" aria-valuetext="{{ elapsedLabel }} of {{ totalLabel }}" onPointerDown="{{ barDown }}" onPointerMove="{{ barMove }}" onPointerUp="{{ barUp }}" onPointerCancel="{{ barUp }}" onKeyDown="{{ barKey }}" style="{{ barStyle }}">
+      <div style="position:absolute;left:0;right:0;top:20px;height:4px;border-radius:2px;background:rgba(0,0,0,.14)"></div>
+      <div style="{{ barFillStyle }}"></div>
+      <div style="{{ barDotStyle }}"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin:0 9px;font:500 11px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.55)"><span>{{ elapsedLabel }}</span><span>{{ totalLabel }}</span></div>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:26px;margin-top:10px">
+      <button type="button" onClick="{{ rewind }}" aria-label="Back 10 seconds" aria-disabled="{{ noSeek }}" style="{{ seekBtnStyle }}width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(32 0) scale(-1 1)"><path d="M25.4 20.4A10 10 0 1 1 17.7 7.15" fill="none" stroke="#101010" stroke-width="2" stroke-linecap="round"/><path d="M21.3 7.8L17.2 10.1L18.3 4.2Z" fill="#101010" stroke="#101010" stroke-width="1.2" stroke-linejoin="round"/></g><text x="16" y="21" text-anchor="middle" font-size="9" font-weight="500" font-family="IBM Plex Mono,monospace" fill="#101010">10</text></svg>
+      </button>
+      <button type="button" onClick="{{ tapListen }}" aria-label="{{ playAria }}" style="width:72px;height:72px;border-radius:50%;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.22)" style-active="background:#8C3B48">
+        <sc-if value="{{ listenPlaying }}" hint-placeholder-val="{{ false }}"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5" width="4" height="14" rx="1.5" fill="#fff"/><rect x="13.5" y="5" width="4" height="14" rx="1.5" fill="#fff"/></svg></sc-if>
+        <sc-if value="{{ listenPaused }}" hint-placeholder-val="{{ true }}"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5L18.5 12L8.5 18.5Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg></sc-if>
+      </button>
+      <button type="button" onClick="{{ forward }}" aria-label="Forward 10 seconds" aria-disabled="{{ noSeek }}" style="{{ seekBtnStyle }}width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M25.4 20.4A10 10 0 1 1 17.7 7.15" fill="none" stroke="#101010" stroke-width="2" stroke-linecap="round"/><path d="M21.3 7.8L17.2 10.1L18.3 4.2Z" fill="#101010" stroke="#101010" stroke-width="1.2" stroke-linejoin="round"/><text x="16" y="21" text-anchor="middle" font-size="9" font-weight="500" font-family="IBM Plex Mono,monospace" fill="#101010">10</text></svg>
+      </button>
+    </div>
+  </div>
+</div>
+</sc-if>
+
 <!-- ══════════ TAP CARD (jargon / person) ══════════ -->
 <sc-if value="{{ hasPop }}" hint-placeholder-val="{{ false }}">
 <div onClick="{{ closePop }}" style="position:absolute;inset:0;background:rgba(20,20,20,.2);backdrop-filter:blur(2px);z-index:70;display:flex;align-items:flex-end;padding:0 16px 30px;animation:povFade .18s ease both">
@@ -543,7 +611,7 @@ class Component extends DCLogic {
     name: '', place: '', placeQuery: '', placeOpen: false, placeHi: -1, watch: [],
     minutes: 8, customMode: false, customMin: 10, topics: [],
     stories: [], dataError: '',
-    idx: 0, drag: null, exit: null, settle: false, pop: null, audioPlaying: false,
+    idx: 0, drag: null, exit: null, settle: false, pop: null, audioPlaying: false, listenOpen: false, pos: 0, dur: 0, canSeek: false, scrub: null,
   };
 
   componentDidMount() {
@@ -567,8 +635,58 @@ class Component extends DCLogic {
     this.load();
     this.tickClock();
     this._clock = setInterval(this.tickClock, 1000);
+    this._lt = setInterval(this.listenTick, 200);
+    this._esc = e => { if (e.key === 'Escape' && this.state.listenOpen) this.closeListen(); };
+    document.addEventListener('keydown', this._esc);
   }
-  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); clearTimeout(this._s); clearInterval(this._clock); this._stopAudio(); }
+  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); clearTimeout(this._s); clearInterval(this._clock); clearInterval(this._lt); document.removeEventListener('keydown', this._esc); this._stopAudio(); }
+
+  // ── Listen screen: everything below only READS the one real audio element (this._audio); it never creates one
+  closeListen = () => {
+    const a = this._audio;
+    if (a && !a.paused) a.pause();
+    this._scrubbing = false; this._pendingSeek = null;
+    this.setState({ listenOpen: false, pos: 0, dur: 0, canSeek: false, scrub: null });
+  };
+
+  listenTick = () => {
+    const s = this.state;
+    if (!s.listenOpen) return;
+    const a = this._audio;
+    if (!a) { if (s.dur > 0 && s.pos !== s.dur) this.setState({ pos: s.dur }); return; }   // playback finished: the app drops the element, park at the end
+    if (this._pendingSeek != null && a.readyState >= 1 && isFinite(a.duration)) { const t = this._pendingSeek; this._pendingSeek = null; this.seekTo(t); }
+    const dur = isFinite(a.duration) ? a.duration : 0;
+    const pos = a.currentTime || 0;
+    const sk = a.seekable;
+    const canSeek = dur > 0 && !!sk && sk.length > 0 && sk.start(0) <= 0.5 && sk.end(sk.length - 1) >= dur - 0.5;
+    if (dur !== s.dur || canSeek !== s.canSeek || Math.abs(pos - s.pos) > 0.05) this.setState({ dur, pos, canSeek });
+  };
+
+  // jump the real audio; returns false (and does nothing) when the source cannot seek there
+  seekTo = t => {
+    const a = this._audio;
+    if (!a || !isFinite(a.duration) || !a.duration) return false;
+    t = Math.max(0, Math.min(a.duration > 1 ? a.duration - 0.5 : a.duration, t));
+    const sk = a.seekable;
+    for (let i = 0; i < sk.length; i++) {
+      if (t >= sk.start(i) - 0.01 && t <= sk.end(i) + 0.01) { a.currentTime = t; this.setState({ pos: t }); return true; }
+    }
+    return false;
+  };
+  // the app drops its audio element when a story finishes; restart the same story through the existing Listen handler, then jump
+  reviveAt = t => {
+    if (this._audio || !this._tapListen) return false;
+    this._pendingSeek = t;
+    this._tapListen();
+    return true;
+  };
+  seekBy = d => { const a = this._audio; return !!a && this.seekTo((a.currentTime || 0) + d); };
+  scrubFrom = e => {
+    const r = e.currentTarget.getBoundingClientRect();
+    const f = Math.max(0, Math.min(1, (e.clientX - r.left) / (r.width || 1)));
+    this._scrubFrac = f;
+    this.setState({ scrub: f });
+  };
 
   _stopAudio = () => {
     const a = this._audio;
@@ -837,7 +955,7 @@ class Component extends DCLogic {
     const showAll = !q || (s.place && s.placeQuery === s.place);
     const placeMatches = showAll ? STATES_AZ
       : STATES_AZ.filter(n => n.toLowerCase().indexOf(q) === 0).concat(STATES_AZ.filter(n => n.toLowerCase().indexOf(q) > 0));
-    return {
+    const vals = {
       isWelcome: scr === 'welcome', isName: scr === 'name', isPlace: scr === 'place', isTime: scr === 'time',
       isTyping: scr === 'typing', isBrief: scr === 'brief',
       isStory: scr === 'story', isDiffer: scr === 'differ', isDone: scr === 'done',
@@ -960,6 +1078,7 @@ class Component extends DCLogic {
       tapListen: () => {
         const id = current && current.id;
         if (!id) return;
+        this.setState({ listenOpen: true });
         if (this._audio && !this._audio.paused) { this._audio.pause(); return; }
         if (this._audio && this._audio.paused)  { this._audio.play().catch(() => {}); return; }
         const a = new Audio('audio/' + id + '.mp3');
@@ -970,6 +1089,49 @@ class Component extends DCLogic {
         a.addEventListener('error',   () => { if (this._audio === a) this._audio = null; });
         a.play().catch(() => { if (this._audio === a) this._audio = null; });
       },
+      hasListenGlass: s.listenOpen,
+      closeListen: this.closeListen,
+      ...(() => {
+        const accent = stock(idx).tab || stock(idx).fill;   // same colour as this story's band
+        const frac = s.scrub != null ? s.scrub : (s.dur > 0 ? Math.min(1, Math.max(0, s.pos / s.dur)) : 0);
+        const mmss = t => { t = Math.max(0, Math.floor(t)); return String(Math.floor(t / 60)).padStart(2, '0') + ':' + String(t % 60).padStart(2, '0'); };
+        const RMIN = 17, RMAX = 28, area = f => Math.sqrt(RMIN * RMIN + (RMAX * RMAX - RMIN * RMIN) * f);
+        const pct = (frac * 100) + '%';
+        return {
+          casAccent: accent,
+          packL: area(1 - frac), packR: area(frac),
+          reelStyle: 'animation-play-state:' + (s.audioPlaying ? 'running' : 'paused'),
+          listenPlaying: s.audioPlaying, listenPaused: !s.audioPlaying,
+          playAria: s.audioPlaying ? 'Pause' : 'Play',
+          elapsedLabel: mmss(frac * s.dur), totalLabel: s.dur > 0 ? mmss(s.dur) : '--:--',
+          sliderMax: Math.floor(s.dur), sliderNow: Math.floor(frac * s.dur),
+          noSeek: !s.canSeek,
+          seekBtnStyle: s.canSeek ? 'opacity:1;' : 'opacity:.38;cursor:default;',
+          barStyle: 'position:relative;height:44px;margin:0 9px;touch-action:none;user-select:none;cursor:' + (s.canSeek ? 'pointer' : 'default'),
+          barFillStyle: 'position:absolute;left:0;top:20px;height:4px;border-radius:2px;background:' + accent + ';width:' + pct,
+          barDotStyle: 'position:absolute;top:13px;left:' + pct + ';width:18px;height:18px;margin-left:-9px;border-radius:50%;background:' + accent + ';border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25);pointer-events:none',
+          rewind: () => { if (!s.canSeek) return; if (!this._audio) this.reviveAt(Math.max(0, s.dur - 10)); else this.seekBy(-10); },
+          forward: () => { if (s.canSeek && this._audio) this.seekBy(10); },
+          barDown: e => {
+            if (!s.canSeek) return;
+            if (e.currentTarget.setPointerCapture) { try { e.currentTarget.setPointerCapture(e.pointerId); } catch (x) {} }
+            this._scrubbing = true; this.scrubFrom(e);
+          },
+          barMove: e => { if (this._scrubbing) this.scrubFrom(e); },
+          barUp: () => {
+            if (!this._scrubbing) return;
+            this._scrubbing = false;
+            const f = this._scrubFrac, d = this.state.dur;
+            this.setState({ scrub: null });
+            if (d > 0 && !this.reviveAt(Math.min(f * d, d - 0.5))) this.seekTo(f * d);
+          },
+          barKey: e => {
+            if (!s.canSeek) return;
+            if (e.key === 'ArrowLeft') { e.preventDefault(); this.seekBy(-5); }
+            else if (e.key === 'ArrowRight') { e.preventDefault(); this.seekBy(5); }
+          },
+        };
+      })(),
       backToBrief: () => { this._stopAudio(); this.setState({ screen: 'brief' }); },
       goDiffer:    () => { this._stopAudio(); this.setState({ screen: 'differ' }); },
       backToStory: () => this.setState({ screen: 'story' }),
@@ -992,6 +1154,8 @@ class Component extends DCLogic {
       popStay: e => e.stopPropagation(),
       closePop: () => this.set('pop', null),
     };
+    this._tapListen = vals.tapListen;
+    return vals;
   }
 }
 
