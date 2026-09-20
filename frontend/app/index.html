@@ -17,6 +17,7 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 *{box-sizing:border-box}
 ::-webkit-scrollbar{width:0;height:0}
 @keyframes povRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes povNudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
 @keyframes povFade{from{opacity:0}to{opacity:1}}
 @keyframes povT1{from{width:0}to{width:22ch}}
 @keyframes povT2{from{width:0}to{width:20ch}}
@@ -98,13 +99,21 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
     <div style="font:500 10px 'IBM Plex Mono',monospace;color:rgba(0,0,0,.4)">01/04</div>
   </div>
 
-  <div style="font:400 40px/1.04 'Instrument Serif',serif;letter-spacing:-.02em;animation:povRise .5s ease both">What's your<br>name?</div>
+  <div style="font:400 40px/1.04 'Instrument Serif',serif;letter-spacing:-.02em;white-space:nowrap;animation:povRise .5s ease both">What's your name?</div>
   <div style="margin-top:12px;font:300 14px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">It goes on the masthead of your edition. Nothing else.</div>
 
-  <input value="{{ name }}" onChange="{{ setName }}" placeholder="Ananya" style="margin-top:26px;height:56px;border-radius:16px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.78);backdrop-filter:blur(12px);padding:0 18px;font:400 18px 'DM Sans',sans-serif;color:#101010;outline:none">
+  <input value="{{ name }}" onChange="{{ setName }}" placeholder="Your name" style="margin-top:26px;height:56px;border-radius:16px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.78);backdrop-filter:blur(12px);padding:0 18px;font:400 18px 'DM Sans',sans-serif;color:#101010;outline:none">
+
+  <div style="margin-top:32px;font:400 40px/1.04 'Instrument Serif',serif;letter-spacing:-.02em">What should land on your page?</div>
+  <div style="margin-top:8px;font:300 13.5px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)">Tap as many as you like.</div>
+  <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:9px">
+    <sc-for list="{{ nameScreenTopics }}" as="t" hint-placeholder-count="5">
+      <div onClick="{{ t.pick }}" data-on="{{ t.on }}" style="padding:12px 17px;border-radius:999px;font:400 14.5px 'DM Sans',sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.72)">{{ t.name }}</div>
+    </sc-for>
+  </div>
 
   <div style="flex:1"></div>
-  <div onClick="{{ goPlace }}" style="height:54px;border-radius:27px;background:#101010;color:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)" style-active="background:#8C3B48">Next <span style="font:400 14px 'IBM Plex Mono',monospace">→</span></div>
+  <div onClick="{{ nameNext }}" style="{{ nameNextStyle }}">Next <span style="{{ nameArrowStyle }}">→</span></div>
 </div>
 </sc-if>
 
@@ -475,7 +484,8 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 const STATES = ['Andhra Pradesh','Arunachal Pradesh','Assam','Bihar','Chhattisgarh','Delhi NCR','Goa','Gujarat','Haryana','Himachal Pradesh','Jharkhand','Karnataka','Kerala','Madhya Pradesh','Maharashtra','Manipur','Meghalaya','Mizoram','Nagaland','Odisha','Punjab','Rajasthan','Sikkim','Tamil Nadu','Telangana','Tripura','Uttar Pradesh','Uttarakhand','West Bengal','Andaman & Nicobar Islands','Chandigarh','Dadra & Nagar Haveli and Daman & Diu','Jammu & Kashmir','Ladakh','Lakshadweep','Puducherry'];
 const DEEP = ['Karnataka','Maharashtra','Delhi NCR','Tamil Nadu','Uttar Pradesh','West Bengal','Telangana','Kerala','Gujarat','Rajasthan'];
 const WATCH = ['United States','Gulf & UAE','China','Europe'];
-const TOPICS = ['Politics','Economy','Jobs','Climate','Tech','Sport','Campus & exams','Courts','Culture','Health'];
+const TOPICS = ['Politics','Economy','Jobs','Climate','Tech','Sports','Campus & exams','Courts','Culture','Health'];
+const NAME_SCREEN_TOPICS = ['Politics','Economy','Health','Campus & exams','Sports'];
 
 // folder stock — one per story slot, cycled
 const STOCK = [
@@ -492,7 +502,7 @@ class Component extends DCLogic {
   state = {
     screen: 'welcome',
     name: '', place: 'Karnataka', watch: ['United States'],
-    minutes: 8, topics: ['Politics', 'Economy'],
+    minutes: 8, topics: [],
     stories: [], dataError: '',
     idx: 0, drag: null, exit: null, pop: null, listenNote: false,
   };
@@ -733,6 +743,7 @@ class Component extends DCLogic {
     const totalSources = list.reduce((a, x) => a + (Number(x.source_count) || 0), 0);
     const totalMins = Math.max(1, Math.round(list.reduce((a, x) => a + (Number(x.read_seconds) || 0), 0) / 60));
 
+    const nameReady = s.name.trim() !== '' && s.topics.length > 0;
     return {
       isWelcome: scr === 'welcome', isName: scr === 'name', isPlace: scr === 'place', isTime: scr === 'time',
       isTopics: scr === 'topics', isTyping: scr === 'typing', isBrief: scr === 'brief',
@@ -750,6 +761,12 @@ class Component extends DCLogic {
 
       name: s.name,
       setName: e => this.set('name', e.target.value),
+      nameNext: () => { if (nameReady) this.set('screen', 'place'); },
+      nameArrowStyle: "display:inline-block;font:400 14px 'IBM Plex Mono',monospace;" + (nameReady ? 'animation:povNudge 1.1s ease-in-out infinite' : ''),
+      nameNextStyle: 'height:54px;border-radius:27px;display:flex;align-items:center;justify-content:center;gap:9px;font:500 15px \'DM Sans\',sans-serif;transition:background .2s,color .2s;'
+        + (nameReady
+          ? 'background:#101010;color:#fff;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.18)'
+          : 'background:rgba(0,0,0,.09);color:rgba(0,0,0,.3);cursor:default'),
       greeting: s.name ? 'Alright ' + s.name + ',' : 'Alright,',
       mastGreet: s.name ? 'Hi ' + s.name : 'Your edition',
 
@@ -770,6 +787,7 @@ class Component extends DCLogic {
         pick: () => this.setState({ minutes: t.v, idx: 0 }) })),
 
       topics: TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
+      nameScreenTopics: NAME_SCREEN_TOPICS.map(n => ({ name: n, on: s.topics.indexOf(n) >= 0 ? 'on' : 'off', pick: () => this.toggle('topics', n) })),
       topicCount: s.topics.length,
 
       editionMeta: 'Sat 13 Sep · ' + s.minutes + ' min edition',
