@@ -325,15 +325,19 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 <sc-if value="{{ isStory }}" hint-placeholder-val="{{ false }}">
 <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;animation:povRise .3s ease both">
   <div style="{{ storyBandStyle }}">
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 85% -10%,rgba(255,255,255,.28),rgba(255,255,255,0) 55%),linear-gradient(180deg,rgba(255,255,255,.08),rgba(0,0,0,.16))"></div>
+    <div aria-hidden="true" style="position:absolute;left:-44px;bottom:-58px;width:190px;height:170px;border-radius:52% 48% 55% 45%;background:rgba(255,255,255,.12);pointer-events:none"></div>
+    <div aria-hidden="true" style="position:absolute;left:14px;bottom:-30px;font:400 132px/1 'Instrument Serif',serif;letter-spacing:-.04em;color:rgba(255,255,255,.16);pointer-events:none">{{ storyBandNum }}</div>
+    <img aria-hidden="true" src="{{ storyBandSticker }}" alt="" style="position:absolute;right:14px;bottom:-16px;width:132px;height:auto;transform:rotate(-8deg);filter:drop-shadow(0 10px 16px rgba(0,0,0,.28));pointer-events:none">
     <div onClick="{{ backToBrief }}" style="position:absolute;top:54px;left:16px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);display:flex;align-items:center;justify-content:center;font:400 16px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2">←</div>
     <sc-if value="{{ showListen }}" hint-placeholder-val="{{ true }}">
       <div onClick="{{ tapListen }}" style="position:absolute;top:54px;right:16px;height:38px;padding:0 15px;border-radius:19px;background:rgba(255,255,255,.45);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 6px 18px rgba(0,0,0,.14);display:flex;align-items:center;gap:8px;font:500 11.5px 'IBM Plex Mono',monospace;cursor:pointer;z-index:2" style-active="background:#fff">▶ {{ listenLabel }}</div>
     </sc-if>
-    <div style="position:absolute;left:20px;bottom:18px;right:20px;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(252,250,245,.92)">{{ story.regionLabel }}</div>
+    <div style="position:absolute;left:20px;bottom:18px;right:20px;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:{{ storyBandInk }};text-shadow:0 1px 8px rgba(0,0,0,.12)">{{ story.regionLabel }}</div>
   </div>
 
   <div style="flex:1;min-height:0;overflow:auto">
-    <div style="margin-top:-24px;border-radius:24px 24px 0 0;background:rgba(246,243,234,.82);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.8);padding:22px 22px 34px;display:flex;flex-direction:column;gap:16px">
+    <div style="position:relative;z-index:1;margin-top:-24px;border-radius:24px 24px 0 0;background:rgba(246,243,234,.82);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.8);padding:22px 22px 34px;display:flex;flex-direction:column;gap:16px">
       <div style="font:400 33px/1.07 'Instrument Serif',serif;letter-spacing:-.02em">{{ story.headline }}</div>
 
       <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
@@ -392,45 +396,63 @@ a{color:#2C4A63;text-decoration:none}a:hover{color:#1b2f40}
 
 <!-- ══════════ WHERE THE PAPERS DIFFER ══════════ -->
 <sc-if value="{{ isDiffer }}" hint-placeholder-val="{{ false }}">
-<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;background:#1F3444;color:#FBF6EE;animation:povFade .28s ease both">
-  <div style="position:absolute;inset:0;pointer-events:none;overflow:hidden;opacity:.5">
-    <div style="position:absolute;left:-50px;top:120px;width:170px;height:140px;border-radius:48% 52% 46% 54%;background:#8C3B48;opacity:.5"></div>
-    <div style="position:absolute;right:-56px;bottom:150px;width:180px;height:150px;border-radius:52% 48% 55% 45%;background:#6E7A44;opacity:.45"></div>
+<div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;background:#F2EFE4;color:#101010;overflow:hidden;animation:povFade .28s ease both">
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
+    <span style="position:absolute;right:-70px;top:-40px;width:250px;height:250px;border-radius:50%;background:rgba(158,74,87,.26);filter:blur(38px)"></span>
+    <span style="position:absolute;left:-90px;top:300px;width:230px;height:230px;border-radius:50%;background:rgba(147,160,111,.3);filter:blur(38px)"></span>
+    <span style="position:absolute;right:-60px;bottom:40px;width:210px;height:210px;border-radius:50%;background:rgba(230,185,62,.26);filter:blur(38px)"></span>
   </div>
 
-  <div style="position:relative;padding:54px 22px 14px;display:flex;align-items:center;gap:12px">
-    <div onClick="{{ backToStory }}" style="width:36px;height:36px;border-radius:50%;background:rgba(251,246,238,.16);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(251,246,238,.35);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;flex:none;color:#FBF6EE">←</div>
-    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;opacity:.7">{{ story.sourceLabel }}</div>
-  </div>
-  <div style="position:relative;padding:0 22px 12px">
-    <div style="font:400 34px/1.04 'Instrument Serif',serif;letter-spacing:-.02em">Where the papers differ</div>
-    <div style="font:300 13.5px/1.5 'DM Sans',sans-serif;opacity:.72;margin-top:8px">{{ story.headline }}</div>
+  <div style="position:relative;padding:54px 22px 6px;display:flex;align-items:center;gap:12px">
+    <div onClick="{{ backToStory }}" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.5);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.75);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 4px 14px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font:400 15px 'IBM Plex Mono',monospace;cursor:pointer;flex:none">←</div>
+    <div style="font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#8C3B48">The part nobody shows you</div>
   </div>
 
-  <div style="position:relative;flex:1;min-height:0;overflow:auto;padding:8px 18px 34px;display:flex;flex-direction:column;gap:22px">
+  <div style="position:relative;padding:14px 22px 16px">
+    <div style="font:400 40px/1.02 'Instrument Serif',serif;letter-spacing:-.02em">Where the papers differ</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-top:14px"><div style="width:26px;height:2px;background:#8C3B48;flex:none"></div><div style="flex:1;height:1px;background:rgba(0,0,0,.14)"></div></div>
+    <div style="font:400 italic 17px/1.3 'Instrument Serif',serif;color:rgba(0,0,0,.66);margin-top:12px">{{ story.headline }}</div>
+    <div style="font:400 10.5px 'IBM Plex Mono',monospace;letter-spacing:.06em;color:rgba(0,0,0,.42);margin-top:10px">{{ story.differCount }}</div>
+  </div>
+
+  <div style="position:relative;flex:1;min-height:0;overflow:auto;padding:8px 18px 34px;display:flex;flex-direction:column;gap:28px">
     <sc-for list="{{ story.clusters }}" as="cl" hint-placeholder-count="2">
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div style="font:400 21px/1.2 'Instrument Serif',serif">{{ cl.angle }}</div>
+      <div style="display:flex;flex-direction:column;gap:13px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:{{ cl.accent }}">{{ cl.num }}</div>
+          <div style="flex:1;height:1px;background:rgba(0,0,0,.12)"></div>
+        </div>
+        <div style="font:400 25px/1.14 'Instrument Serif',serif;letter-spacing:-.01em">{{ cl.angle }}</div>
         <div style="display:flex;flex-direction:column;gap:10px">
           <sc-for list="{{ cl.papers }}" as="p" hint-placeholder-count="2">
             <sc-if value="{{ p.hasUrl }}" hint-placeholder-val="{{ false }}">
-              <a href="{{ p.url }}" target="_blank" rel="noopener" style="display:block;color:inherit;text-decoration:none;border-radius:14px;background:rgba(252,250,245,.12);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(251,246,238,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.28);padding:13px 15px">
-                <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.75">{{ p.name }}</div>
-                <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.88;margin-top:5px">{{ p.headline }}</div>
+              <a href="{{ p.url }}" target="_blank" rel="noopener" style="border-radius:16px;background:rgba(255,255,255,.55);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(255,255,255,.8);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 8px 22px rgba(0,0,0,.06);padding:14px 16px 14px 14px;display:flex;gap:13px;color:inherit;text-decoration:none">
+                <div style="width:3px;flex:none;border-radius:2px;background:{{ cl.accent }}"></div>
+                <div style="display:flex;flex-direction:column;gap:5px;min-width:0;flex:1">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+                    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.5)">{{ p.name }}</div>
+                    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#8C3B48;white-space:nowrap">READ ↗</div>
+                  </div>
+                  <div style="font:400 19px/1.25 'Instrument Serif',serif;letter-spacing:-.005em;color:#101010">{{ p.headline }}</div>
+                </div>
               </a>
             </sc-if>
             <sc-if value="{{ p.noUrl }}" hint-placeholder-val="{{ true }}">
-              <div style="border-radius:14px;background:rgba(252,250,245,.12);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(251,246,238,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.28);padding:13px 15px">
-                <div style="font:500 10.5px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.75">{{ p.name }}</div>
-                <div style="font:300 14px/1.5 'DM Sans',sans-serif;opacity:.88;margin-top:5px">{{ p.headline }}</div>
+              <div style="border-radius:16px;background:rgba(255,255,255,.55);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(255,255,255,.8);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 8px 22px rgba(0,0,0,.06);padding:14px 16px 14px 14px;display:flex;gap:13px">
+                <div style="width:3px;flex:none;border-radius:2px;background:{{ cl.accent }}"></div>
+                <div style="display:flex;flex-direction:column;gap:5px;min-width:0;flex:1">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+                    <div style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.5)">{{ p.name }}</div>
+                    
+                  </div>
+                  <div style="font:400 19px/1.25 'Instrument Serif',serif;letter-spacing:-.005em;color:#101010">{{ p.headline }}</div>
+                </div>
               </div>
             </sc-if>
           </sc-for>
         </div>
       </div>
     </sc-for>
-
-    <div onClick="{{ backToStory }}" style="height:50px;border-radius:25px;border:1px solid rgba(251,246,238,.35);display:flex;align-items:center;justify-content:center;font:500 13px 'DM Sans',sans-serif;cursor:pointer;color:#FBF6EE" style-active="background:rgba(251,246,238,.12)">Back to the story</div>
   </div>
 </div>
 </sc-if>
@@ -512,6 +534,7 @@ const STOCK = [
   { fill: '#2C4A63', ink: '#FBF6EE' },
   { fill: 'repeating-linear-gradient(90deg,#7C8A52 0 9px,#EFE6D4 9px 18px)', tab: '#7C8A52', ink: '#FBF6EE' },
 ];
+const STICKERS = ['megaphone', 'mic', 'ear', 'camera', 'clock'];
 const BARS = ['#E0B44A', '#9FC0EA', '#C98A96', '#9AA46A'];
 
 class Component extends DCLogic {
@@ -717,8 +740,10 @@ class Component extends DCLogic {
         affectsPills: affects.map(a => ({ name: a })),
         firstFact: (st.agreed_facts || [])[0] || '',
         facts,
-        clusters: (st.clusters || []).map(c => ({
+        clusters: (st.clusters || []).map((c, ci) => ({
           angle: c.angle,
+          num: String(ci + 1).padStart(2, '0'),
+          accent: ['#8C3B48', '#6E7A44', '#A8801C', '#2C4A63'][ci % 4],
           papers: (c.papers || []).map(p => ({ name: p.name, headline: p.headline, url: p.url, hasUrl: !!p.url, noUrl: !p.url })),
         })),
         differCount: (() => {
@@ -901,7 +926,10 @@ class Component extends DCLogic {
         + 'border:1px solid rgba(255,255,255,.75);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 6px 18px rgba(0,0,0,.12);pointer-events:none;opacity:' + nextActive + ';transform:scale(' + (0.85 + nextActive * 0.15) + ');',
 
       story,
-      storyBandStyle: 'position:relative;height:190px;flex:none;background:' + (stock(idx).tab || stock(idx).fill),
+      storyBandStyle: 'position:relative;height:190px;flex:none;overflow:hidden;background:' + (stock(idx).tab || stock(idx).fill),
+      storyBandInk: stock(idx).ink,
+      storyBandNum: String(idx + 1).padStart(2, '0'),
+      storyBandSticker: 'assets/' + STICKERS[idx % STICKERS.length] + '.png',
       showListen: this.props.showListen ?? true,
       showSources: this.props.showSources ?? true,
       listenNote: s.listenNote,
