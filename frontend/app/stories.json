@@ -1,7 +1,1272 @@
 {
-  "edition_date": "2026-09-19",
-  "generated_at": "2026-09-19T16:47:46.164650+05:30",
+  "edition_date": "2026-09-20",
+  "generated_at": "2026-09-20T14:44:43.577175+05:30",
   "stories": [
+    {
+      "headline": "Trump signs Russia sanctions bill, allowing tariffs on oil buyers including India and China",
+      "topic": "Politics",
+      "regions": [
+        "international",
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times leads with the US law giving power to impose tariffs on India; Mint leads with India's criticism of the tariffs.",
+      "why_it_matters": "The new US law could significantly impact global energy trade, international relations, and India's economy due to potential tariffs on Russian oil purchases.",
+      "affects": [
+        "oil buyers",
+        "investors",
+        "citizens"
+      ],
+      "agreed_facts": [
+        "US President Donald Trump signed a Russia sanctions bill into law on September 19, 2026.",
+        "The new law is named after the late Senator Lindsey Graham and is officially called the Lindsey O. Graham Sanctioning Russia and Iran Act, 2026.",
+        "This law allows the US President to impose tariffs of up to 100 percent on major buyers of Russian oil and gas.",
+        "India and China are among the major buyers of Russian energy targeted by this law.",
+        "The legislation does not automatically trigger duties but allows the US president to decide the rate and countries targeted.",
+        "Union Minister Kirti Vardhan Singh criticized new US tariffs on countries like India, stating they are unfair.",
+        "Kirti Vardhan Singh emphasized India's commitment to independent energy decisions and buying from commercially viable sources.",
+        "The situation in West Asia and crude oil prices are likely to drive the stock market this week.",
+        "Investors will track crude prices, global bond yields, and FPI activity due to the implications of the US law."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports on President Trump signing the Russia sanctions bill into law, allowing for tariffs on major Russian oil buyers.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Trump signs sweeping Russia sanctions over Ukraine war",
+              "url": "https://www.aljazeera.com/news/2026/9/19/trump-signs-sweeping-russia-sanctions-over-ukraine-war?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Trump signs sweeping Russia sanctions bill",
+              "url": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "The Print",
+              "headline": "Trump signs Russia sanctions bill into law",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWmxpcXlZeGxTS0tmWHhnekpiVGJ5dlFVamhoZ0twdE9GU0JSNGtGQkQ3YzlkcFVaVmNWaHlpV2NwUEhNYVRsLWZmNjhzYVM4RVVvM3R0QmF3ZGgyOVJfNFItMmlFUzY0cF9CLUQyb2JJanZxRzB4QkdQa1RLbzl6anhZONIBiAFBVV95cUxPMHYtSTJqSExuMU91NUZaNVM2aW53TlRhTTg4Y091NkZJa0NSOHM1RXhwc19iRm9tdEJlODl5QVNIVDJJWnc3SmFjQ2RZa3NuX0dnekFDNkIzTnVaUGlKMXBxLXc0eTdUTXVWOVJ3X1RhNDJ2N2FRV0VFUUFYYzJmazg4ZXhvQk84?oc=5"
+            },
+            {
+              "name": "Business Standard",
+              "headline": "Trump signs Russia sanctions bill, opens door to new tariffs on oil buyers",
+              "url": "https://www.business-standard.com/world-news/trump-signs-russia-sanctions-bill-opens-door-to-new-tariffs-on-oil-buyers-126091900107_1.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the potential for tariffs on India and India's official response to the US law.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "US law gives Trump power to impose 100% tariffs on India, China over Russian oil",
+              "url": "https://www.hindustantimes.com/india-news/us-law-gives-trump-power-to-impose-100-tariffs-on-india-china-over-russian-oil-101789874185931.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "How will the U.S.’s Sanctioning Act affect India? | Explained",
+              "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece"
+            },
+            {
+              "name": "Mint",
+              "headline": "Trump tariffs ‘unfair’: India will buy energy from commercially viable sources, says MoS amid Russia-Iran sanctions law",
+              "url": "https://www.livemint.com/news/india/trump-tariffs-unfair-india-will-buy-energy-from-commercially-viable-sources-says-mos-amid-russia-iran-sanctions-law-11789828160506.html"
+            }
+          ]
+        },
+        {
+          "angle": "Examines how the US law and related geopolitical factors are expected to influence the stock market.",
+          "papers": [
+            {
+              "name": "Business Standard",
+              "headline": "Crude oil, West Asia situation likely to drive stock market this week",
+              "url": "https://www.business-standard.com/markets/news/crude-oil-west-asia-situation-likely-to-drive-stock-market-this-week-126092000204_1.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "tariffs",
+          "plain": "These are taxes added to imported goods."
+        },
+        {
+          "term": "bond yields",
+          "plain": "This is the return an investor gets on a bond."
+        },
+        {
+          "term": "FPI activity",
+          "plain": "This describes what foreign portfolio investors are doing."
+        }
+      ],
+      "people": [
+        {
+          "name": "Donald Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        },
+        {
+          "name": "Lindsey Graham",
+          "who": "American politician and attorney (1955–2026)",
+          "detail": "Lindsey Olin Graham was an American politician, attorney, and military officer who represented South Carolina in the United States Senate from 2003 until his death in 2026. A member of the Republican Party, he represent…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/U.S._Senator_Lindsey_Graham%2C_Official_Photo%2C_113th_Congress_%283x4_cropped%29.jpg/330px-U.S._Senator_Lindsey_Graham%2C_Official_Photo%2C_113th_Congress_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Lindsey_Graham"
+        },
+        {
+          "name": "Kirti Vardhan Singh",
+          "who": "Indian politician (born 1966)",
+          "detail": "Raja Kirti Vardhan Singh is an Indian politician from Uttar Pradesh. He is currently serving as a Minister of State for External Affairs in the Third Modi Government and Member of Parliament, Lok Sabha for the Gonda con…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Kirtivardhan_Singh_assuming_charge_as_the_Minister_of_State_of_Environment%2C_Forest_and_Climate_Change.jpg/330px-Kirtivardhan_Singh_assuming_charge_as_the_Minister_of_State_of_Environment%2C_Forest_and_Climate_Change.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Kirti_Vardhan_Singh"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "6364d3f0",
+      "source_count": 7,
+      "read_seconds": 102
+    },
+    {
+      "headline": "India secures dominant hockey wins and shooting medals at Asian Games; international incidents also reported",
+      "topic": "Sport",
+      "regions": [
+        "national",
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Times of India Sports leads with India's dominant hockey victories; Hindustan Times leads with narratives around Indian athletic achievements; BBC News leads with an anthem controversy.",
+      "why_it_matters": "The Asian Games highlight athletic achievements, national pride, and occasional international incidents.",
+      "affects": [
+        "athletes",
+        "sports fans",
+        "citizens"
+      ],
+      "agreed_facts": [
+        "India's men's hockey team defeated Indonesia 13-1 in their opening Pool A match at the Asian Games.",
+        "Dilpreet Singh scored four goals for India in their 13-1 victory over Indonesia.",
+        "India's women's hockey team defeated Uzbekistan 19-0 in their Pool B opener at the Asian Games.",
+        "Deepika scored eight goals for India in their 19-0 victory over Uzbekistan.",
+        "Elavenil Valarivan secured a silver medal in the Asian Games 10m air rifle event.",
+        "Organisers played the North Korean national anthem for the South Korean men's hockey team at the Asian Games in Japan.",
+        "Pakistan will face Sri Lanka in the Asian Games semi-final."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports India's overwhelming wins in both men's and women's opening hockey matches, highlighting top scorers.",
+          "papers": [
+            {
+              "name": "Times of India Sports",
+              "headline": "Dilpreet's four-goal show headlines India's 13-1 rout of Indonesia at Asian Games",
+              "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/dilpreet-singhs-four-goal-show-headlines-indias-13-1-rout-of-indonesia-at-asian-games/articleshow/134365493.cms"
+            },
+            {
+              "name": "Times of India Sports",
+              "headline": "Deepika's 8-goal blitz powers India to 19-0 thrashing of Uzbekistan at Asian Games",
+              "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/deepikas-8-goal-blitz-powers-india-to-19-0-thrashing-of-uzbekistan-at-asian-games/articleshow/134363814.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on individual Indian athletes' medal successes and team performances, often including personal or historical context.",
+          "papers": [
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "After World Cup low, India start afresh at Asian Games with 13-1 demolition of Indonesia",
+              "url": "https://www.hindustantimes.com/sports/hockey/after-world-cup-low-india-start-afresh-at-asian-games-with-13-1-demolition-of-indonesia-101789891934151.html"
+            },
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "Elavenil Valarivan takes silver after late stumble in Asian Games 10m air rifle, only second since Gagan Narang in 2010",
+              "url": "https://www.hindustantimes.com/sports/elavenil-valarivan-takes-silver-after-late-stumble-in-asian-games-10m-air-rifle-only-second-after-gagan-narang-101789888396433.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Keralam CM congratulates Vidarsha Vinod on Asian Games shooting silver medal",
+              "url": "https://www.thehindu.com/news/national/kerala/keralam-cm-congratulates-vidarsha-vinod-on-asian-games-shooting-silver-medal/article71487275.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Covers non-Indian specific events at the Asian Games, including a diplomatic incident and an upcoming cricket match.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "North Korean anthem played for South Korea at Asian Games",
+              "url": "https://www.bbc.co.uk/sport/hockey/articles/cmx2zg85gq03o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "ESPNcricinfo",
+              "headline": "Pakistan face familiar Sri Lanka in Asian Games semi-final",
+              "url": "https://www.cricinfo.com/ci/content/story/1554968.html?ex_cid=OTC-RSS"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Dilpreet Singh",
+          "who": "Indian field hockey player",
+          "detail": "Dilpreet Singh is an Indian field hockey player who plays as a forward for the national team. He is registered with the Punjab Armed Police and plays for Hockey Punjab in the domestic tournaments.",
+          "image": null,
+          "wiki_url": "https://en.wikipedia.org/wiki/Dilpreet_Singh"
+        },
+        {
+          "name": "Deepika",
+          "who": "Indian actress (born 1986)",
+          "detail": "Deepika Prakash Padukone is an Indian actress who works predominantly in Hindi films. Her accolades include three Filmfare Awards.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Deepika_Padukone_2025_%281%29.png/330px-Deepika_Padukone_2025_%281%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Deepika_Padukone"
+        },
+        {
+          "name": "Elavenil Valarivan",
+          "who": "Indian sport shooter (born 1999)",
+          "detail": "Elavenil Valarivan is an Indian sport shooter specialising in the 10 meter air rifle. She has represented India at several international shooting events, including the World Championships, World Cup, Asian Games, Asian…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Elavenil_Valarivan.jpg/330px-Elavenil_Valarivan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Elavenil_Valarivan"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "c9f0f895",
+      "source_count": 5,
+      "read_seconds": 79
+    },
+    {
+      "headline": "IIT Bombay student found dead after exam incident; faculty booked for alleged caste abuse and abetment of suic",
+      "topic": "Campus & exams",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "The Hindu leads with a faculty member being booked for caste abuse and abetment; NDTV highlights IIT Bombay's denial of disciplinary action.",
+      "why_it_matters": "This incident highlights serious concerns about student mental health, academic pressure, and alleged caste discrimination in higher education institutions.",
+      "affects": [
+        "students",
+        "faculty members"
+      ],
+      "agreed_facts": [
+        "Sahil Wakode, a second-year BTech Energy Science student, was found dead in his hostel at IIT Bombay.",
+        "A case has been registered following a complaint filed by the victim's father, and an FIR was filed alleging abetment of suicide.",
+        "The victim's father alleged that an IIT Bombay professor made \"casteist slurs.\"",
+        "The student was caught using a mobile phone or ChatGPT during an exam.",
+        "IIT Bombay stated that no disciplinary action was initiated against the student.",
+        "IIT Bombay had assured the student that the exam incident would not have any adverse impacts on his career.",
+        "The student's death triggered protest on campus."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the story by focusing on the legal actions taken, including allegations of caste abuse and abetment of suicide against a faculty member.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "IIT Bombay faculty member booked for caste abuse, suicide abetment",
+              "url": "https://www.thehindu.com/news/national/maharashtra/iit-bombay-faculty-member-booked-for-caste-abuse-suicide-abetment/article71485392.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "IIT-Bombay charged with abetment of suicide after student's death in ChatGPT-linked exam row",
+              "url": "https://www.hindustantimes.com/india-news/iit-bombay-suicide-student-protest-chatgpt-exams-suspension-director-fir-latest-news-101789811163397.html"
+            },
+            {
+              "name": "NDTV",
+              "headline": "IIT Bombay Professor Made 'Casteist Slurs': Father Of Student Who Killed Self",
+              "url": "https://www.ndtv.com/india-news/iit-bombay-suicide-case-iit-bombay-suryanarayan-dulla-professor-made-casteist-slurs-father-of-student-sahil-wakode-who-killed-self-12070698#publisher=newsstand"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasises IIT Bombay's official response, specifically its denial of initiating disciplinary action against the student and its account of the exam incident.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "\"No Disciplinary Action Was Initiated\": IIT Bombay On 2nd Year Student Suicide",
+              "url": "https://www.ndtv.com/education/no-disciplinary-action-was-initiated-iit-bombay-on-2nd-year-student-suicide-12071046#publisher=newsstand"
+            },
+            {
+              "name": "Mint",
+              "headline": "IIT Bombay denies action against student after FIR filed alleging abetment of suicide over ChatGPT-linked exam row",
+              "url": "https://www.livemint.com/news/india/iit-bombay-denies-action-against-student-after-fir-filed-alleging-abetment-of-suicide-over-chatgpt-linked-exam-row-11789819975272.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "IIT Bombay student found dead in hostel; institute says had been caught using mobile phone during exam",
+              "url": "https://www.thehindu.com/news/national/maharashtra/iit-bombay-student-found-dead-in-hostel-institute-says-had-been-caught-using-mobile-phone-during-exam/article71483750.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the broader context of the student's death, including the link to ChatGPT use in an exam and subsequent protests on campus.",
+          "papers": [
+            {
+              "name": "The Print",
+              "headline": "IIT Bombay: 2nd year student’s death by suicide triggers protest",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdXRldWlsbEx2YWh2N2dLWE9IS0F2WURzTHBZTXhBVjFsTkhabmdHNE9ITmhzQkFSX1Nud2cwM2FxVFdXS0Q4YUZpYVI2TUFhY1hMVGhERllqQjBPaDVmbTAtOG1pYWppQzExOHd2QzYxRXpOZmFsRThmVTlaR1pQWm5XLURpcTVtdGRBaFJVeG1GdzFEbWZaekdKa3R3Z9IBowFBVV95cUxNa3AwUjlUZmdJeWZxZEF5Y1E2YTM1STVxbWNUZHZzNER6RnVOQzRSVk1uaHNLTG1aUGpGcFkwSDl2OU1WMmhwMWNpdDkyelJDaHNjalZRMWdGVVJyNGJvcGpRaEJxTjZsMUpMOVFCcjNiTnU3TDRBLUNNemQtR1c0RVA1cWNQRDJCOGY0SHQ2Y1Bzclk4WlZzMjdQU1BJeWVNNnFZ?oc=5"
+            },
+            {
+              "name": "Mint",
+              "headline": "IIT Bombay student caught using ChatGPT in exam dies by suicide; protest erupts on campus: What we know so far",
+              "url": "https://www.livemint.com/news/india/iit-bombay-student-caught-using-chatgpt-in-exam-dies-by-suicide-protest-erupts-on-campus-11789785794539.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "FIR",
+          "plain": "It is the first official report of a crime that police record."
+        },
+        {
+          "term": "abetment of suicide",
+          "plain": "It means helping or encouraging someone to kill themselves."
+        },
+        {
+          "term": "ChatGPT",
+          "plain": "It is a computer program that can write text like a human."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "e4da3b7f",
+      "source_count": 5,
+      "read_seconds": 86
+    },
+    {
+      "headline": "Mamata Banerjee challenges EC's freeze on Trinamool Congress name and symbol in Supreme Court",
+      "topic": "Politics",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "NDTV leads with Himanta Sarma's jab at Mamata Banerjee; Indian Express leads with opposition parties backing Mamata Banerjee over the symbol freeze.",
+      "why_it_matters": "This legal challenge could significantly impact the political standing and electoral prospects of the Trinamool Congress party.",
+      "affects": [
+        "party members",
+        "voters",
+        "politicians"
+      ],
+      "agreed_facts": [
+        "Mamata Banerjee moved the Supreme Court.",
+        "She is challenging the Election Commission's decision to freeze the Trinamool Congress name and symbol.",
+        "The Election Commission froze the original Trinamool Congress name and symbol amidst a rival faction's claim."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports Mamata Banerjee's action of moving the Supreme Court to challenge the Election Commission's decision.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Mamata Banerjee challenges EC decision to freeze Trinamool name, symbol in Supreme Court",
+              "url": "https://indianexpress.com/article/india/mamata-banerjee-challenges-ec-decision-to-freeze-tmc-name-symbol-supreme-court-10884768/"
+            },
+            {
+              "name": "The Print",
+              "headline": "Mamata Banerjee moves SC challenging EC’s freeze on Trinamool name, symbol",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWm1GcUNvYWZaRUViTTlXUmdCamZxSm9YTmpVeWRjcW5rbVdWQ09jX2hSWTh6YUg3UGxYemRLaUdDanJWeHlRbHlDZ0JST3ExSlpKMnl1LTBPVVFzazNTQjl0ZU1rVVNnb0JPcDF0aXVkYlI4SEtOQ0JzVFNfS2F0S243R3FwWGp5cHJCRGFPSFV1dm1YeUpfUFdNeWQ2dXpyZlhsRnZaNTdCUEHSAbABQVVfeXFMTm55M0JRWUQ3UElRVmVhOHJYQXYtalFoejE5Y3hvZ3JEdXhBNXRDVUZpcTV2MEhUemxtSVBRNWNlMjFlWTNPenRZYmVRejduRWZFZjNaYnRVQkZWQTN2Y3pEWjNEWG1nMEwwSGxjOW1GQUhyRUJTTXJqZlFWejdzdzhPYTNXYmxEOE5vRndZSzJfVGJpRm9hR2NuSXh3WVpTa1AweVJIa1VKRlNSbFlIZXg?oc=5"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Mamata Banerjee moves Supreme Court against ECI freeze on TMC symbol",
+              "url": "https://www.hindustantimes.com/india-news/mamata-banerjee-moves-supreme-court-against-eci-freeze-on-tmc-symbol-101789794124268.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Mamata moves Supreme Court against ECI’s freeze on Trinamool Congress symbol",
+              "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Mamata moves Supreme Court against EC order freezing TMC name, symbol",
+              "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasises the political fallout and support for Mamata Banerjee from opposition parties following the Election Commission's decision.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Vote theft, party theft… murder of democracy: Opposition hits out at BJP, backs Mamata Banerjee over Trinamool Congress symbol freeze",
+              "url": "https://indianexpress.com/article/india/vote-theft-party-theft-murder-of-democracy-opposition-hits-out-at-bjp-backs-mamata-banerjee-over-trinamool-congress-symbol-feeze-10884384/"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "EC’s Trinamool symbol freeze order thaws the ice: Rahul Gandhi dials Mamata Banerjee, extends support",
+              "url": "https://www.hindustantimes.com/india-news/we-are-in-this-together-rahul-mamata-phone-call-revives-front-against-bjp-101789732730730.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights Himanta Biswa Sarma's criticism of Mamata Banerjee regarding the party symbol issue.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "'Football Will Deflate': Himanta Sarma Jabs Mamata Banerjee Over Party Symbol",
+              "url": "https://www.ndtv.com/india-news/himanta-sarma-jabs-mamata-banerjee-over-new-trinamool-symbol-for-bypolls-football-will-deflate-12070863#publisher=newsstand"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Mamata Banerjee",
+          "who": "Chief Minister of West Bengal from 2011 to 2026",
+          "detail": "Mamata Banerjee is an Indian politician and lawyer who served as the eighth chief minister of West Bengal from 2011 to 2026. She was the first and only woman to hold that office.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Official_portrait_of_Mamata_Banerjee.jpg/330px-Official_portrait_of_Mamata_Banerjee.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Mamata_Banerjee"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "c0c7c76d",
+      "source_count": 5,
+      "read_seconds": 60
+    },
+    {
+      "headline": "Two killed and oil refinery hit in 'massive' Ukrainian drone attack on Moscow region, Russia says",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 2,
+      "teaser": "Reuters leads with the drone attack occurring on the final day of the Russian election; BBC News leads with Russia's report of two killed in the attack.",
+      "why_it_matters": "A major drone attack on a capital city during an election period highlights ongoing geopolitical tensions and the human cost of conflict.",
+      "affects": [
+        "residents of moscow region",
+        "civilians"
+      ],
+      "agreed_facts": [
+        "Russia says two people were killed in the Moscow region.",
+        "An oil refinery in the Russian capital was hit.",
+        "A mass Ukrainian drone attack targeted Moscow."
+      ],
+      "clusters": [
+        {
+          "angle": "Focuses on the immediate impact and Russia's statements regarding the Ukrainian drone attack on Moscow.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Two killed in 'massive' Ukrainian drone attack on Moscow region, Russia says",
+              "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Mass Ukrainian drone attack on Moscow kills two, Russia says",
+              "url": "https://www.aljazeera.com/news/2026/9/20/mass-ukrainian-drone-attack-on-moscow-kills-two-russia-says?traffic_source=rss"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Two dead in Moscow region, drones hit oil refinery in Russian capital",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVVNJbGZEQXkzaEQ0UGs4U192Sks0X1UtRWtrYXhIbG0tdDhKLU4xYU1kZTFTY2g3VG4xSUE1b3MxVUNzLXlNUjZrSnRiQy1jeWo2bmJhNElYME1DUWxKdHBtbktxSUpNUkNJcjRkc1NMUmtkT2hKOWpZRGdfdDRiV0JaZVNnTWd5Sk1qbnA3N0oyWEFULTVBcllkZGsyOHZLenl4ZHNLbHRIX1B0RDRJdA?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Frames the drone attack in the broader political context of the ongoing Russian election.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "Russian election enters final day after Ukraine targets Moscow in massive drone attack",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWF9NeWpBYnEyU1JJdWppTldhbFJ1RDR0emoxZ1ZyNTE0WF8xTW1VTE5lb2dDYkFyUS1BVU9NdzRxYnpqdXNHVk1KWU42RTZvVy1uQXBoaDBNQ2pWQVJUY2xtTGtyMDdMMjhYdG1jbHVkYUhOaEhXcDVmYlo5Q2NWcVRfZHlmZnRKamd1YlRPOFN3VlE5OFlfWEVHbmFDenU3VzFZVWNGQVlhbkxXWjZmc25R?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "c81e728d",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Rahul Gandhi critiques government on education, hostel funding, and 'system's' preference for 'andhbhakts' at ",
+      "topic": "Campus & exams",
+      "regions": [
+        "national",
+        "Madhya Pradesh"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times leads with Rahul Gandhi's remarks on funding for PM Modi's birthday versus hostels; The Hindu highlights his statement that the 'system' prefers 'andhbhakts'.",
+      "why_it_matters": "The debate over education, student welfare, and governmental priorities impacts the future of students and national policy.",
+      "affects": [
+        "students",
+        "citizens"
+      ],
+      "agreed_facts": [
+        "Rahul Gandhi participated in a ‘Chhatron Ki Goonj’ programme, which took place in Indore, Madhya Pradesh.",
+        "He targeted PM Modi's birthday celebration, questioning why money was available to light diyas but not for hostels.",
+        "Gandhi stated that the ‘system’ fears students who ask questions.",
+        "Rahul Gandhi also stated that the 'system' run by Modi prefers ‘andhbhakts’ over students who ask questions."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames Rahul Gandhi's remarks by highlighting his specific criticism of government spending priorities for PM Modi's birthday versus hostel facilities.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "‘Money to light diyas, not for hostels?’ Rahul Gandhi targets PM Modi's birthday celebration",
+              "url": "https://www.hindustantimes.com/india-news/money-to-light-diyas-not-for-hostels-rahul-gandhi-targets-pm-modis-birthday-celebration-101789890582573.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "‘Money to light diyas, not for hostels?’ Rahul Gandhi targets PM Modi's birthday celebration | India News",
+              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOU0Fmd2E2ZmpmaC00NHN3MUdObnVTT3VyY2JTemVpYU1JVDdWSjVJWXEyUjdVQ2sycTctYkxKOEppOU1YLVpRVzRmdGtXaGhzZUMzOWN1c1hza0RNMU1iaUlCaG8wMjNIWjNBd0lqQk9uQmdJbERjdkJxc1Nyd01sZ3ZSU1dFLTc5eGx1dFFhYjFQU1dLQlpEQlNjaWxHNGhRWlIwcElaVWE4VnlNSENnM0lzTjdQanJKMF9KYks1R1M2TExZYmRzNEZDdGs2UXp6SE03SlBxclVidkpjOTFqWWFQWVDSAeoBQVVfeXFMTmxjb1B0bmpvWFVlRjhSVS1VRXUyaDUtT3h1WDctWUx5em00bjdqNURSdm9MSnk5dFctLXFVb0x6WlUzT3FBQlNiYVpCZWxRaUtIV3dzRXV4OVZNam9aMkZBZkVlb1JEQ0p1Yks5MmsyV2swMnNZYi05TG01cjNveFA1dktwTkRFU3daRm84VXRQMERRNzFKTXpkSnViR1RtMkFtbk5Ha0RaaUJ3TkJ1MC1zRUFJVUc4UVFuazg5bzVFdkk4UVJUUkRsU3N2a1AyYmFQZzRxcWI2OVBtUXdQNm56SDk2Zk5qbmFB?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes Rahul Gandhi's broader theory about the 'system' and its alleged preference for unquestioning 'andhbhakts' over students who ask critical questions.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "BJP-RSS have hollowed out the education system, Rahul Gandhi standing with students: Congress",
+              "url": "https://www.thehindu.com/news/national/bjp-rss-have-hollowed-out-the-education-system-rahul-gandhi-standing-with-students-congress/article71487291.ece"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "At Indore event, Rahul theory on why Modi-Shah ‘system’ is against students",
+              "url": "https://indianexpress.com/article/india/rahul-gandhi-chhatron-ki-goonj-indore-modi-shah-education-attack-10885418/"
+            },
+            {
+              "name": "The Print",
+              "headline": "Rahul targets ‘andhbhakts’ at Indore Chhatron ki Goonj; says ‘system doesn’t want students to ask questions’",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMHlYcmMwYUpGdGRTcGUxUGhSR0VYT3g0dlpkb1FnLXE3UHp3X0dnZnVrcVlRNlZCQnNfR1RvZ3BjTVBDUDVHcFN2OHE1V2ZUcmpSWUhZTHZWSjBXVVhoWTNyazdhOUJYTVBlNGplSFNnNnZuSjk5dFoxbzNQS2NsV2RXNUFzUEVKRnEwYXZoSGp6XzY3ZU9JcFRyUzc2N0s0dFBGNlN4bEE5ZFVKM2szYndXWU5rX2xsSkxRSWV2bGo0TTVzZTBRU2JsQm5mZnNLQlBj0gHYAUFVX3lxTE5jZUJFTDBvSFNOSzBibHdVYkRFcG96eGFnNXhVdG9xOVhZbnczRWNkRWlWNDdOanI4S1R1SmxNUDcxOHQwZ2kyRTdYb0dkUkFrUDNEQmdmVnFaejhfTnFkcE1BZTBvOGlVWXN3VUZkaFhoRnltYUh2SEpQbnRlYVo4NlNhV0ZscUFDWmp2NjcwOFo3SUJsX3R0a3dpVXQzVFJhV0p1dDktVXVxbjlKeEJjM3gxTlEzbTdDUngyc2xFdG1kZnkyVE14N2I3eTN1dW1MRWgwNGRNOQ?oc=5"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "‘System’ run by Modi prefers andhbhakts over students who ask questions, says Rahul Gandhi",
+              "url": "https://www.thehindu.com/news/national/system-run-by-modi-prefers-andhbhakts-over-students-who-ask-questions-says-rahul-gandhi/article71485654.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Reports on the political backlash and counter-efforts surrounding Rahul Gandhi's event, including BJP's criticism of mimicry and the appearance of 'Jhooth Ki Goonj' posters.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "Mimicry of PM Modi at Rahul Gandhi event irks BJP: ‘Mother isn't subject of politics’",
+              "url": "https://www.hindustantimes.com/india-news/pm-modis-mimicry-at-rahul-gandhi-event-irks-bjp-mother-is-not-subject-of-politics-101789876578143.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "‘Jhooth Ki Goonj’ posters surface in Indore ahead of Rahul Gandhi’s student event",
+              "url": "https://www.thehindu.com/news/national/madhya-pradesh/jhooth-ki-goonj-posters-surface-in-indore-ahead-of-rahul-gandhis-student-event/article71484138.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "‘Chhatron Ki Goonj’",
+          "plain": "It is a program by Rahul Gandhi for students."
+        },
+        {
+          "term": "‘andhbhakts’",
+          "plain": "These are people who blindly follow, Rahul Gandhi said."
+        },
+        {
+          "term": "‘system’",
+          "plain": "Rahul Gandhi refers to the governing structure as the system."
+        }
+      ],
+      "people": [
+        {
+          "name": "Rahul Gandhi",
+          "who": "12th Leader of the Opposition in Lok Sabha since 2024",
+          "detail": "Rahul Rajiv Gandhi is an Indian politician. A member of the Indian National Congress (INC), he is currently serving as the 12th leader of the Opposition in Lok Sabha and as the member of the Lok Sabha for Rae Bareli, Ut…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Rahul_Gandhi.png/330px-Rahul_Gandhi.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Rahul_Gandhi"
+        },
+        {
+          "name": "PM Modi",
+          "who": "2019 Indian propaganda film",
+          "detail": "PM Narendra Modi is a 2019 Indian Hindi-language propaganda film. It was directed by Omung Kumar, written by Anirudh Chawla and Vivek Oberoi, and produced under the banner of Legend Studios.",
+          "image": "https://upload.wikimedia.org/wikipedia/en/c/c7/PM_Narendra_Modi_movie_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "wiki_url": "https://en.wikipedia.org/wiki/PM_Narendra_Modi_(film)"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "a87ff679",
+      "source_count": 4,
+      "read_seconds": 73
+    },
+    {
+      "headline": "Indian states launch welfare and education initiatives, including school renovations, breakfast schemes, and a",
+      "topic": "Campus & exams",
+      "regions": [
+        "Andhra Pradesh",
+        "Tamil Nadu",
+        "national"
+      ],
+      "disagreement": 2,
+      "teaser": "Mint leads with the launch of new welfare schemes in Tamil Nadu; Hindustan Times focuses on a minister's controversial comments and bypoll details.",
+      "why_it_matters": "These initiatives aim to improve educational infrastructure, student nutrition, and child welfare in several states.",
+      "affects": [
+        "students",
+        "newborns",
+        "school children"
+      ],
+      "agreed_facts": [
+        "Lokesh inaugurated RSR High School and Devireddy Sarada High School in Nellore, renovated at a cost of ₹21.40 crore through private funding under the P4 model.",
+        "Tamil Nadu Chief Minister C Joseph Vijay will launch the expansion of the Perunthalaivar Kamarajar Breakfast scheme for students of classes VI to VIII on September 22.",
+        "School education Minister A. Rajmohan noted that menu innovations, including non-vegetarian options like chicken biryani, were on the cards for the mid-day meal.",
+        "Tamil Nadu Chief Minister C Joseph Vijay will launch a scheme on September 28 offering one-gram gold rings to newborns.",
+        "1.28 lakh one-gram gold rings have been purchased for phase 1 of the newborn scheme.",
+        "Under the gold ring scheme, every child born in a government hospital from June 22 onwards will be given a one-gram gold ring.",
+        "The Education Ministry announced a national-level Solid Waste Management Quiz for classes 6 to 12.",
+        "Students can participate in the quiz from September 17 to October 17.",
+        "The nominations of 58 candidates for the Madurantakam and Dharapuram bypolls were accepted in Tamil Nadu."
+      ],
+      "clusters": [
+        {
+          "angle": "Focuses on the upcoming launch of expanded welfare initiatives by the Chief Minister, emphasizing the benefits to recipients.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Chicken biryani for mid-day meal in Tamil Nadu schools? ‘Even prisoner in jail gets...’ — what CM Vijay's minister said",
+              "url": "https://www.livemint.com/news/india/chicken-biryani-for-mid-day-meal-in-tamil-nadu-schools-even-prisoner-in-jail-gets-what-cm-vijays-minister-said-11789885028106.html"
+            },
+            {
+              "name": "Mint",
+              "headline": "Tamil Nadu gold ring for newborns: CM Vijay to launch scheme on Sep 28; 1.28L pieces ready for phase 1—check eligibility",
+              "url": "https://www.livemint.com/news/india/tamil-nadu-gold-ring-for-newborns-cm-vijay-to-launch-scheme-on-sep-28-1-28l-pieces-ready-for-phase-1-check-eligibility-11789752385693.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "CM Vijay to launch one-gram gold ring scheme for newborns in Tamil Nadu on September 28",
+              "url": "https://www.hindustantimes.com/india-news/cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-in-tamil-nadu-on-september-28-101789734240757.html"
+            }
+          ]
+        },
+        {
+          "angle": "Presents a diverse set of government-related news, including a minister's controversial remark, school renovations, a national quiz, and byelection details.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Lokesh inaugurates two government schools renovated under P4 model in Nellore",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/lokesh-inaugurates-two-government-schools-renovated-under-p4-model-in-nellore/article71472405.ece"
+            },
+            {
+              "name": "NDTV",
+              "headline": "Education Ministry Announces Solid Waste Management Quiz For Classes 6 To 12",
+              "url": "https://www.ndtv.com/education/education-ministry-announces-solid-waste-management-quiz-for-classes-6-to-12-12071330#publisher=newsstand"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "'Even prisoner gets chicken biryani': Tamil Nadu minister on CM Vijay's breakfast scheme for school children",
+              "url": "https://www.hindustantimes.com/india-news/even-prisoner-gets-chicken-biryani-tamil-nadu-minister-on-cm-vijays-breakfast-scheme-for-school-children-101789796675220.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Tami Nadu bypoll: Know schedule, candidates and more in Vijay govt's first electoral test",
+              "url": "https://www.hindustantimes.com/india-news/tami-nadu-bypoll-know-schedule-candidates-and-more-tvk-vijay-govt-first-electoral-test-101789718369896.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "P4 model",
+          "plain": "It refers to a funding model involving private investment in projects."
+        },
+        {
+          "term": "Perunthalaivar Kamarajar Breakfast scheme",
+          "plain": "It is a government program providing breakfast to school students."
+        },
+        {
+          "term": "Solid Waste Management Quiz",
+          "plain": "It is a national competition for school students on managing waste."
+        }
+      ],
+      "people": [
+        {
+          "name": "Lokesh",
+          "who": "Indian politician (born 1983)",
+          "detail": "Nara Lokesh is an Indian politician currently serving as the Minister for Information Technology, Electronics and Communications, Real Time Governance and Human Resources Development in the Government of Andhra Pradesh.…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nara_Lokesh_at_CII_Partnership_Summit_2025%2C_Visakhapatnam.jpg/330px-Nara_Lokesh_at_CII_Partnership_Summit_2025%2C_Visakhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Nara_Lokesh"
+        },
+        {
+          "name": "C Joseph Vijay",
+          "who": "Chief Minister of Tamil Nadu since 2026",
+          "detail": "Chandrasekaran Joseph Vijay is an Indian politician and former actor who is currently serving as the ninth chief minister of Tamil Nadu since May 2026. He is the founder and president of the political party Tamilaga Vet…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/C._Joseph_Vijay_%28cropped%29.jpg/330px-C._Joseph_Vijay_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/C._Joseph_Vijay"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "70efdf2e",
+      "source_count": 4,
+      "read_seconds": 89
+    },
+    {
+      "headline": "Rahul Gandhi's political activities and related controversies draw BJP criticism, Congress accusations",
+      "topic": "Politics",
+      "regions": [
+        "national",
+        "Madhya Pradesh",
+        "Kerala"
+      ],
+      "disagreement": 2,
+      "teaser": "NDTV leads with the BJP's criticism of Rahul Gandhi's 'Maa' remarks; Indian Express leads with Congress's allegations regarding MP police actions ahead of a Rahul Gandhi event.",
+      "why_it_matters": "The political exchanges and events involving Rahul Gandhi reflect ongoing power dynamics and national political discourse in India.",
+      "affects": [
+        "political leaders",
+        "voters",
+        "students"
+      ],
+      "agreed_facts": [
+        "Rahul Gandhi is a Congress leader and MP.",
+        "The BJP has commented on Rahul Gandhi."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the political discourse around Rahul Gandhi as one dominated by BJP's critical responses to his statements and accusations.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "'Uncouth, Foul-Mouthed': BJP On Rahul Gandhi's \"Maa\" Remarks With Comic",
+              "url": "https://www.ndtv.com/india-news/uncouth-foul-mouthed-bjp-on-rahul-gandhis-maa-remarks-with-comic-pulkit-mani-12071043#publisher=newsstand"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "‘TMC formed after breaking away from Congress’: BJP's reminder to Rahul Gandhi amid symbol row",
+              "url": "https://www.hindustantimes.com/india-news/tmc-formed-after-breaking-away-from-congress-bjps-reminder-to-rahul-gandhi-amid-symbol-row-101789722115450.html"
+            }
+          ]
+        },
+        {
+          "angle": "Reports on controversies and internal party discussions surrounding Rahul Gandhi's events and political engagements.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "MP cops ‘threatening’ coaching centre owners ahead of Rahul Gandhi event: Congress",
+              "url": "https://indianexpress.com/article/india/rahul-gandhi-indore-event-congress-mp-police-coaching-centres-10884889/"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Home dept examining AG’s legal opinion on ED’s request to register case against Pinarayi Vijayan: Chennithala",
+              "url": "https://www.thehindu.com/news/national/kerala/home-dept-examining-ags-legal-opinion-on-eds-request-to-register-case-against-pinarayi-vijayan-chennithala/article71483864.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Rahul Gandhi",
+          "who": "12th Leader of the Opposition in Lok Sabha since 2024",
+          "detail": "Rahul Rajiv Gandhi is an Indian politician. A member of the Indian National Congress (INC), he is currently serving as the 12th leader of the Opposition in Lok Sabha and as the member of the Lok Sabha for Rae Bareli, Ut…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Rahul_Gandhi.png/330px-Rahul_Gandhi.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Rahul_Gandhi"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "33e75ff0",
+      "source_count": 4,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Police investigate multiple suspicious deaths across India and internationally",
+      "topic": "Courts",
+      "regions": [
+        "Delhi",
+        "Uttarakhand",
+        "Karnataka",
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "The Hindu leads with the Narela deaths and a Doddaballapur murder; Hindustan Times covers Surendra Koli's death and a Bengaluru ransom plot.",
+      "why_it_matters": "Ongoing investigations into multiple suspicious deaths highlight persistent law enforcement challenges and public safety concerns.",
+      "affects": [
+        "citizens",
+        "families",
+        "communities"
+      ],
+      "agreed_facts": [
+        "A Delhi Police head constable and his wife were found dead in their Narela flat, which was locked from inside.",
+        "Surendra Koli, who was acquitted in all 13 cases related to Nithari killings, was found dead in Haridwar.",
+        "He was found with a noose around his neck at his tea stall.",
+        "Police are awaiting the autopsy report to establish the cause of Surendra Koli's death."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports on the initial discovery and police investigation into the Delhi Police head constable and his wife found dead in their locked flat in Narela.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Delhi Police head constable, wife found dead in Narela; children find flat locked from inside",
+              "url": "https://www.thehindu.com/news/cities/Delhi/delhi-police-head-constable-wife-found-dead-in-narela-children-find-flat-locked-from-inside/article71485886.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Delhi cop, wife found dead in Narela flat locked from inside: Police",
+              "url": "https://www.hindustantimes.com/india-news/delhi-cop-wife-found-dead-in-narela-flat-locked-from-inside-police-101789816749172.html"
+            }
+          ]
+        },
+        {
+          "angle": "Details Surendra Koli's death in Haridwar, emphasizing his acquittal in the Nithari cases and the ongoing police efforts to determine the cause of death.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "Nithari case's Surendra Koli cremated in Haridwar; police await autopsy report",
+              "url": "https://www.hindustantimes.com/cities/delhi-news/surendra-koli-s-last-rites-performed-police-await-autopsy-report-101789841887641.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Nithari case's Surendra Koli, acquitted in all 13 cases, found dead in Haridwar",
+              "url": "https://www.hindustantimes.com/india-news/nithari-killing-case-surendra-koli-acquitted-in-all-13-cases-found-dead-in-haridwar-101789784892894.html"
+            }
+          ]
+        },
+        {
+          "angle": "Provides deeper context on Surendra Koli's life after his acquittal, highlighting his financial difficulties and struggles to find housing.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Life after Nithari: Surendra Koli faced financial crunch, had trouble finding house",
+              "url": "https://indianexpress.com/article/india/acquittal-nithari-case-surendra-koli-documentary-financial-crunch-10885506/"
+            }
+          ]
+        },
+        {
+          "angle": "Provides individual reports on a variety of distinct suspicious death investigations in different locations.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Woman found dead inside suitcase brought to Kansas fire station, police launches homicide investigation",
+              "url": "https://www.livemint.com/news/us-news/woman-found-dead-inside-suitcase-brought-to-kansas-fire-station-police-launches-homicide-investigation-11789852982464.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Doddaballapur lodge murder: accused husband found dead in village lake",
+              "url": "https://www.thehindu.com/news/national/karnataka/doddaballapur-lodge-murder-accused-husband-found-dead-in-village-lake/article71484079.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "UK-returned graduate held in ‘ ₹1 crore ransom plot’ after boy's body found in SUV boot in Bengaluru",
+              "url": "https://www.hindustantimes.com/india-news/bengaluru-uk-returned-mtech-graduate-held-after-boy-s-body-found-in-suv-boot-101789800063214.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "b6d767d2",
+      "source_count": 4,
+      "read_seconds": 89
+    },
+    {
+      "headline": "Iran sets 7 conditions for US talks, demands end to hostilities; Houthis target Riyadh with ballistic missiles",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Mint leads with Iran setting 7 terms for US talks; BBC News leads with Houthis targeting Saudi Arabia with ballistic missiles.",
+      "why_it_matters": "Ongoing conflicts and diplomatic efforts in the Middle East affect regional stability and international relations.",
+      "affects": [
+        "diplomatic relations",
+        "regional security"
+      ],
+      "agreed_facts": [
+        "Iran has announced 7 conditions for starting negotiations with the US government.",
+        "Iran's demands include an end to hostilities.",
+        "The Houthis stated they targeted the Saudi capital, Riyadh, with ballistic missiles.",
+        "Saudi Arabia claims it shot down a ballistic missile aimed at its capital, Riyadh."
+      ],
+      "clusters": [
+        {
+          "angle": "Highlights Iran's specific conditions for resuming negotiations with the US.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Iran war: Tehran sets 7 terms to renew US talks — what are the demands? Will US strike against Houthis? What we know",
+              "url": "https://www.livemint.com/news/world/iran-war-tehran-sets-7-terms-to-renew-us-talks-what-are-the-demands-will-us-strike-against-houthis-what-we-know-11789880465957.html"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Iran war live: Tehran sets terms for talks; Saudi forces foil Riyadh attack",
+              "url": "https://www.aljazeera.com/news/liveblog/2026/9/20/iran-war-live-tehran-calls-for-end-to-war-lifting-of-us-naval-blockade?traffic_source=rss"
+            },
+            {
+              "name": "Mint",
+              "headline": "US-Iran war LIVE Updates: Iran sets 7 terms for renewed talks; Trump cuts short Camp David stay; Houthis attack Riyadh",
+              "url": "https://www.livemint.com/news/us-news/usiran-war-live-updates-tehran-seven-terms-for-peace-talks-saudi-forces-houthis-riyadh-attack-strait-of-hormuz-oil-trum-11789866401038.html"
+            },
+            {
+              "name": "Times of India",
+              "headline": "Iran gives US 3 conditions to restart talks, says ‘Trump’s threats will not achieve results’",
+              "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-gives-us-3-conditions-to-restart-talks-says-trumps-threats-will-not-achieve-results/articleshow/134360212.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Reports directly on the Houthi claims of targeting Riyadh and Saudi Arabia's counter-claim of shooting down a missile.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Houthis say they targeted Saudi capital with ballistic missiles",
+              "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Times of India",
+              "headline": "Saudi Arabia claims Houthis tried to attack its capital Riyadh with missiles",
+              "url": "https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-claims-houthis-tried-to-attack-its-capital-riyadh-with-missiles/articleshow/134362350.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes the issuance of air-raid alerts in Riyadh in response to the attack.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Saudi Arabia Issues Rare Air-Raid Alerts for Riyadh",
+              "url": "https://www.livemint.com/news/us-news/saudi-arabia-issues-rare-air-raid-alerts-for-riyadh-11789798975186.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "ballistic missiles",
+          "plain": "Missiles that follow a curved path after launch, without propulsion."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "d67d8ab4",
+      "source_count": 4,
+      "read_seconds": 60
+    },
+    {
+      "headline": "Keralam Minister K.M. Shaji faces controversy over luxury vehicle use",
+      "topic": "Politics",
+      "regions": [
+        "Himachal Pradesh",
+        "Kerala"
+      ],
+      "disagreement": 3,
+      "teaser": "The Hindu details K.M. Shaji's car controversy; The Print focuses on his defense; Mint covers Neha Thakur's career pivot.",
+      "why_it_matters": "This highlights public scrutiny over the appropriate use of official resources by government ministers.",
+      "affects": [
+        "government officials",
+        "political leaders"
+      ],
+      "agreed_facts": [
+        "Keralam Minister K.M. Shaji is facing controversy over the use of a luxury vehicle as his official vehicle."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the issue as a controversy surrounding a minister's use of a loaned luxury car, detailing its viral impact and mixed public reception.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Keralam minister K.M. Shaji faces controversy over use of ‘loaned’ luxury car as official vehicle",
+              "url": "https://www.thehindu.com/news/national/kerala/keralam-minister-km-shaji-faces-controversy-over-use-of-loaned-luxury-car-as-official-vehicle/article71487102.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Centers on Minister K.M. Shaji's defense of using a friend's Range Rover as an official vehicle amidst the controversy.",
+          "papers": [
+            {
+              "name": "The Print",
+              "headline": "Keralam Minister Shaji defends using friend’s Range Rover as official vehicle",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWWtMTDF5eE5RZk12SU9ORFJlXzNwUUNIRm1UUUF2RHFERzBRYzlSUm5HYWdQTGxvZnBmSTJkTDVtNWNUNEJOUzM1OTRUWEFkTjFFMkx5MHlYakRCMkE0WVRYRkhGYnpEWWFJVG1qb0NBV3JudkJrcTM5WXRVWmxmTW40SkJRZ2hXZVBEVkYzVTVUaGpiYTY0dExKQllWcWR1MGdCd3VhVHdrZm4zaUFBRdIBtgFBVV95cUxOT3o5bjkzVkI4TG94NW1qRjVwOXc0T3VoSmJQa3FITkFKTl82elMydXo2ZDN6ZUNtQXRLNVpIV1lndkNpU2RtbS1jelp1Slcxb0Z4OUxEZUpmaUt0b1RmV3FsbU5fWEl1bFUzSXFFUktzc3AxMTZzcTc4SEJRY3lkOXFRa0NTU0ktVEtRRUpuNTlXX3BPal81SDNsUThqUFRaSWZNUjhJLVBQV0lPc1hGWkxlbTNpUQ?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights Neha Thakur's unconventional career as Himachal Pradesh's first woman truck driver and her use of social media to share her experiences.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Meet 25-year-old Neha Thakur, who left her air hostess dream to become Himachal's first woman truck driver",
+              "url": "https://www.livemint.com/news/trends/meet-25-year-old-neha-thakur-who-left-her-air-hostess-dream-to-become-himachals-first-woman-truck-driver-11789889299139.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "8f14e45f",
+      "source_count": 3,
+      "read_seconds": 59
+    },
+    {
+      "headline": "Shafali Verma scores historic century, Elavenil Valarivan wins silver as India bags medals at Asian Games 2026",
+      "topic": "Sport",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Times of India highlights Shafali Verma's historic century; Hindustan Times covers the personal stories of various Indian athletes.",
+      "why_it_matters": "These performances highlight India's athletic achievements and aspirations at the ongoing international event.",
+      "affects": [
+        "indian athletes",
+        "sports enthusiasts",
+        "medal contenders"
+      ],
+      "agreed_facts": [
+        "Shafali Verma scored a century at the Asian Games 2026.",
+        "Shafali Verma became the first player to score a century in women’s Asian Games cricket.",
+        "India Women's cricket team reached the final of the Asian Games 2026.",
+        "Elavenil Valarivan won a silver medal in the women's 10m air rifle at the Asian Games 2026.",
+        "The Asian Games 2026 are taking place in Aichi-Nagoya."
+      ],
+      "clusters": [
+        {
+          "angle": "Focuses on the dominant performance of India's women's cricket team and Shafali Verma's historic century.",
+          "papers": [
+            {
+              "name": "Times of India Sports",
+              "headline": "Shafali’s ton helps India crush Bangladesh, storm into Asian Games final",
+              "url": "https://timesofindia.indiatimes.com/sports/cricket/asian-games-2026-womens-t20/shafali-vermas-century-and-indias-bowling-blitz-crush-bangladesh-as-defending-champions-storm-into-asian-games-final/articleshow/134365242.cms"
+            },
+            {
+              "name": "Times of India Sports",
+              "headline": "Shafali Verma scripts Asian Games history, becomes first cricketer to score century",
+              "url": "https://timesofindia.indiatimes.com/sports/cricket/asian-games-2026-womens-t20/shafali-verma-scripts-asian-games-history-becomes-ever-first-cricketer-to-score-century/articleshow/134364781.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights India's medal performance at the games, featuring Elavenil Valarivan's individual silver.",
+          "papers": [
+            {
+              "name": "Times of India Sports",
+              "headline": "Asian Games 2026: India's medals today, results and highlights as Elavenil wins silvers",
+              "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/asian-games-2026-india-medals-today-results-and-highlights-as-elavenil-valarivan-leads-early-charge/articleshow/134364767.cms"
+            },
+            {
+              "name": "Times of India Sports",
+              "headline": "Second medal for India, Elavenil wins silver in women’s 10m air rifle at Asiad 2026",
+              "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/elavenil-valarivan-narrowly-misses-out-on-gold-settles-for-womens-10m-air-rifle-silver-at-asian-games-2026/articleshow/134364039.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes the personal journeys and medal aspirations of various Indian athletes.",
+          "papers": [
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "Asian Games 2026: From underdogs to contenders, Manush-Manav pair and a shot at history",
+              "url": "https://www.hindustantimes.com/sports/asian-games-2026-from-underdogs-to-contenders-manush-manav-pair-and-a-shot-at-history-101789880897113.html"
+            },
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "Asian Games: Quimcy DSouza's teqball run falls just short of a medal",
+              "url": "https://www.hindustantimes.com/sports/others/asian-games-quimcy-dsouzas-teqball-way-falls-just-short-of-a-medal-101789872753881.html"
+            },
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "Asian Games: The MMA fellowship that pulled Suchika Tariyal back into the sport",
+              "url": "https://www.hindustantimes.com/sports/others/asian-games-the-mma-fellowship-that-pulled-suchika-tariyal-back-into-the-sport-101789835646382.html"
+            }
+          ]
+        },
+        {
+          "angle": "Reports on logistical challenges faced by the Indian contingent, specifically an accommodation crisis.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Asian Games 2026: Sports Ministry reaches out to Indian diaspora amid accommodation crisis in Nagoya",
+              "url": "https://www.livemint.com/news/india/asian-games-2026-sports-ministry-reaches-out-to-indian-diaspora-amid-accommodation-crisis-in-nagoya-11789744884314.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Shafali Verma",
+          "who": "Indian cricketer (born 2004)",
+          "detail": "Shafali Verma is an Indian cricketer who plays for the Indian women's national cricket team. In 2019, at the age of 15, she became the youngest cricketer to play in a Women's Twenty20 International (T20I) match for Indi…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Shafali_Verma_in_2025.jpg/330px-Shafali_Verma_in_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Shafali_Verma"
+        },
+        {
+          "name": "Elavenil Valarivan",
+          "who": "Indian sport shooter (born 1999)",
+          "detail": "Elavenil Valarivan is an Indian sport shooter specialising in the 10 meter air rifle. She has represented India at several international shooting events, including the World Championships, World Cup, Asian Games, Asian…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Elavenil_Valarivan.jpg/330px-Elavenil_Valarivan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Elavenil_Valarivan"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "45c48cce",
+      "source_count": 3,
+      "read_seconds": 78
+    },
+    {
+      "headline": "Investigations into Espionage, Financial Irregularities, and Bribery Reported",
+      "topic": "Courts",
+      "regions": [
+        "Jammu and Kashmir",
+        "national",
+        "Karnataka"
+      ],
+      "disagreement": 3,
+      "teaser": "NDTV leads with a border spy case; The Hindu leads with ED attachments in a financial case; Mint leads with a GST officer bribery case.",
+      "why_it_matters": "These reports highlight ongoing law enforcement efforts and investigations into various criminal activities across India.",
+      "affects": [
+        "citizens",
+        "taxpayers",
+        "investors"
+      ],
+      "agreed_facts": [],
+      "clusters": [
+        {
+          "angle": "Focuses on a national security case involving espionage and cross-border infiltration.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "How Pakistan's ISI Lured Truck Driver Into Becoming Border Spy In Kathua",
+              "url": "https://www.ndtv.com/india-news/how-pakistans-isi-lured-truck-driver-into-becoming-border-spy-in-kathua-12071670#publisher=newsstand"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights enforcement action in a financial irregularities case involving a large sum.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "PACL case: ED attaches shares worth ₹42.13 crore",
+              "url": "https://www.thehindu.com/news/national/pacl-case-ed-attaches-shares-worth-4213-crore/article71484076.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "d3d94468",
+      "source_count": 2,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Elections underway in Germany, local polls in Andhra Pradesh, and funeral for Hong Kong's former leader",
+      "topic": "Politics",
+      "regions": [
+        "Andhra Pradesh",
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "The Hindu leads with local body elections in Andhra Pradesh; BBC News leads with German elections; Al Jazeera leads with Tung Chee-hwa's state funeral in Hong Kong.",
+      "why_it_matters": "Elections and leadership transitions are significant political events shaping regional and international governance.",
+      "affects": [
+        "voters",
+        "political leaders"
+      ],
+      "agreed_facts": [],
+      "clusters": [
+        {
+          "angle": "Focuses on the Jana Sena Party's upcoming local body elections in Srikakulam district.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Local body elections will lay a strong foundation for Jana Sena Party in Srikakulam district: JSP leader",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/local-body-elections-will-lay-a-strong-foundation-for-jana-sena-party-in-srikakulam-district-jsp-leader/article71487105.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the ongoing German elections and the political pressure on Chancellor Merz.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "German elections under way which could decide fate of Chancellor Merz",
+              "url": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Reports on the state funeral for Hong Kong's first post-colonial leader, Tung Chee-hwa.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "State funeral honours Hong Kong’s first post-colonial leader Tung Chee-hwa",
+              "url": "https://www.aljazeera.com/news/2026/9/20/state-funeral-honours-hong-kongs-first-post-colonial-leader-tung-chee-hwa?traffic_source=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-20",
+      "id": "c20ad4d7",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Tata Group Directors Vote to Extend N Chandrasekaran's Tenure and Advance Listing Plans",
+      "topic": "Economy",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 2,
+      "teaser": "Business Standard leads with the 4-1 vote to extend N Chandrasekaran's tenure; Hindustan Times leads with Noel Tata's sole opposition.",
+      "why_it_matters": "Decisions regarding leadership and listing plans affect the strategic direction and future of a major national conglomerate.",
+      "affects": [
+        "corporate executives",
+        "investors"
+      ],
+      "agreed_facts": [
+        "Directors voted 4-1 to extend N Chandrasekaran's tenure by five years.",
+        "The decision advances listing plans.",
+        "Noel Tata was the only board member to vote against the decision to retain N Chandrasekaran.",
+        "Noel Tata is the chairman of Tata Trusts.",
+        "Noel Tata pushed to keep the group private."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the board's decision as a strategic move to extend N Chandrasekaran's tenure and advance listing plans, rebuffing Noel Tata's efforts to keep the group private.",
+          "papers": [
+            {
+              "name": "Business Standard",
+              "headline": "Inside the 24 hours that laid bare Tata's fight for control and its future",
+              "url": "https://www.business-standard.com/companies/news/inside-the-24-hours-that-laid-bare-tata-s-fight-over-control-and-its-future-126091900375_1.html"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes the internal conflict within the Tata Group board, highlighting Noel Tata's isolated opposition to N Chandrasekaran's retention.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "Noel Tata vs N Chandrasekaran? Inside their tense Tata Group ties",
+              "url": "https://www.hindustantimes.com/india-news/noel-tata-and-n-chandrasekaran-inside-their-complicated-tata-group-ties-tata-trusts-row-101789729602765.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "N Chandrasekaran",
+          "who": "Indian business executive (born 1963)",
+          "detail": "Natarajan Chandrasekaran is an Indian business executive. He is the chairman of Tata Sons and Tata Group.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg/330px-Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Natarajan_Chandrasekaran"
+        },
+        {
+          "name": "Noel Tata",
+          "who": "Irish businessman (born 1957)",
+          "detail": "Noel Naval Tata is an Indian-born Irish businessman of Parsi and Swiss descent. He is the chairman of the Tata Trusts, Trent and Tata Investment Corporation, the managing director of Tata International, and the vice cha…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mr._Noel_Tata_and_Mr._Philip_Clarke%2C_CEO%2C_Tesco_meeting_the_Union_Minister_for_Commerce_%26_Industry_and_Textiles%2C_Shri_Anand_Sharma%2C_in_New_Delhi_on_May_10%2C_2013_%28cropped%29.jpg/330px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Noel_Tata"
+        }
+      ],
+      "published": "2026-09-20",
+      "id": "1f0e3dad",
+      "source_count": 2,
+      "read_seconds": 53
+    },
     {
       "headline": "Trump Bans CNN, MS NOW, and Politico from White House, Citing 'Fake News'",
       "topic": "Politics",
@@ -1016,6 +2281,501 @@
       "id": "67c6a1e7",
       "source_count": 4,
       "read_seconds": 53
+    },
+    {
+      "headline": "Saudi Arabia's capital targeted by Houthi missile attacks, prompting air raid alerts and international respons",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Mint leads with the Houthis claiming responsibility for attacks; Al Jazeera leads with Turkiye's backing of Saudi Arabia's security.",
+      "why_it_matters": "The ongoing Houthi attacks on Saudi Arabia are intensifying, leading to air raid alerts and international condemnation and offers of support.",
+      "affects": [
+        "saudi residents",
+        "regional security"
+      ],
+      "agreed_facts": [
+        "Saudi Arabia confirmed that Yemen’s Houthi rebels tried to attack its capital.",
+        "Flames and black smoke were seen near Riyadh airport.",
+        "The attacks involved ballistic missiles.",
+        "Saudi Arabia issued air raid alerts for Riyadh.",
+        "Houthi attacks on Saudi Arabia have escalated."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports the immediate confirmed events of attacks, visible signs, and official alerts in Riyadh.",
+          "papers": [
+            {
+              "name": "AP",
+              "headline": "Saudi Arabia confirms Yemen’s Houthi rebels tried to attack its capital with a ballistic missile",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTl93X1pobmY4NGRuMlI4SHU5azdKQlZYbDRfQWJsUDBwcGIyZTdGOEIzY2g4Z29BLU9HUHFpbjdNbXNXdGxObzRGOVBoZC1acklPemZlRUhPeFdKaVMtcUFudWtIdmhHUVEya1M0R1NxakxsdUlpN05HNGtlSkFhRlFKTUs?oc=5"
+            },
+            {
+              "name": "The Print",
+              "headline": "Flames, smoke seen near Riyadh airport after Saudi warning of aerial attack threat",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXZGaHVMblA1QUxOMFBWV216eDZISWtLRFEtRWtqczJEcWN6Um1ueGR2R21WZm1EbWRQYkt2ZmRibVR5YVduejNVcnNyQW53VUM1OXlRMHN6bXpDUVRHb0Y3b2ppNmtQcHdGc3BTRkp4alFUYjNqR0F2SFR2ZVBvNDFzQmpaMW5iQlBZaTZZamZfeGtpcmQ2VVUyeEZPMDFEdXB1eTV3RnhnbXRySU51VnVjc2V6alHSAbwBQVVfeXFMTXRnSXBYZjFuMWFlZVBQb2IzZGtlbDZQeWNfV2lxcURQZlBGNkd4MXY2cFpLdmtHYm1RaG1lN0pTZGt6dVZleVgzbDVVUVluMElnVmZJb2N4UkdGUFYwNkh3XzZEeVhKNGFmZXRxSkZhMUJUOGpwX1BGa0M2Q0dHY3dqaWpVNU84NW9aZEF6TUZTdFJVVlA5YVFwYU1KUV9vTUktNjB2Q2QxUFY3eWxBLWc2ZTBCTXdKU1pGY0g?oc=5"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Flames, black smoke seen near Riyadh airport, eyewitness says",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQVhEVEhONEZLVTN1Q0NyUzZwOXdIS3JLY0VVMVhabU40LV96QjY3d3A5M3NNTElCTy1SdzFFSVIyOEhxWW1OMUxKM1hHUFc0UDNnaXpLRlBPR2VhZkdsWVktOWtCSWxTUWhYV1FFcnN6c3A1WVVoc192OWNJSWhJQnc0U1QwZ1ZtRXd2a0hlNkJJMVVrckJpSXFlZzJDNVhUTVI5RWtGcVd6SW01UHNEWk9lMA?oc=5"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
+              "url": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Saudi-led coalition says defence intercepted Houthi missile fired at Riyadh",
+              "url": "https://www.aljazeera.com/news/2026/9/19/saudi-led-coalition-says-defences-intercept-houthi-missile-fired-at-riyadh?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Centers on the Houthi rebels' direct claims of responsibility and the specific types of weapons used in the attacks.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Houthis claim attacks on Saudi capital after flames, black smoke seen near Riyadh airport",
+              "url": "https://www.livemint.com/news/world/houthis-claim-attacks-on-saudi-capital-after-flames-black-smoke-seen-near-riyadh-airport-11789843604832.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the diplomatic responses and offers of support from other nations in response to the attacks.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Turkiye backs Saudi Arabia’s security amid escalating Houthi attacks: FM",
+              "url": "https://www.aljazeera.com/news/2026/9/19/turkiye-backs-saudi-arabias-security-amid-escalating-houthi-attacks-fm?traffic_source=rss"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Attacks by Yemen’s Houthi rebels on Saudi Arabia undermine regional security: MEA",
+              "url": "https://www.hindustantimes.com/india-news/attacks-by-yemen-s-houthi-rebels-on-saudi-arabia-undermine-regional-security-mea-101789738671970.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "ballistic missile",
+          "plain": "A ballistic missile is a rocket that flies a set path to hit a target."
+        },
+        {
+          "term": "air raid alerts",
+          "plain": "Air raid alerts are warnings given when enemy aircraft or missiles are near."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "093f65e0",
+      "source_count": 7,
+      "read_seconds": 63
+    },
+    {
+      "headline": "US and Denmark reach security agreement on Greenland, allowing increased US military presence",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Al Jazeera frames the deal as Trump 'settling for less'; Mint highlights Trump's claim of 'complete ability' in Greenland; AP notes Denmark's cautious optimism.",
+      "why_it_matters": "The agreement impacts international relations and regional security.",
+      "affects": [
+        "international relations",
+        "regional security",
+        "greenland residents"
+      ],
+      "agreed_facts": [
+        "The US and Denmark reached a deal on Greenland.",
+        "Donald Trump announced the deal.",
+        "The deal allows for an increase in US military presence in Greenland.",
+        "Greenland is an autonomous territory of Denmark.",
+        "Trump stated the agreement gives the US \"permanent control over security, and all other needs, in Greenland\".",
+        "Trump previously threatened to annex the territory."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the deal as a successful achievement for US security and influence, as stated by Donald Trump.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "‘Will FOREVER have complete ability to do what is necessary in Greenland’ — Trump announces US-Denmark deal",
+              "url": "https://www.livemint.com/news/us-news/will-forever-have-complete-ability-to-do-what-is-necessary-in-greenland-trump-announces-us-denmark-deal-11789781824701.html"
+            },
+            {
+              "name": "Times of India",
+              "headline": "US reaches deal with Denmark for ‘permanent security control’ over Greenland, says Donald Trump",
+              "url": "https://timesofindia.indiatimes.com/world/us/us-reaches-deal-with-denmark-for-permanent-security-control-over-greenland-says-donald-trump/articleshow/134343806.cms"
+            },
+            {
+              "name": "Reuters",
+              "headline": "EXCLUSIVE: US and Denmark reach deal on Greenland, Trump says",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYXUxU0wtWHlQT1lrMjB0b2Q5c080QTY4SmJDSkF3c1R1SUNkVVV5TmUxeVBaRk56ZTV4SWtqaXNBQzBfUnRiNWN5NmVQNGFTNGNGNFJqMjd5WTB3cGxhQ1p3UDdSemxwQXdYYkpjS1ktV2hkVzZRR1R4Tmw0M2VEZjQxZ0JWU0ptVlBha00tckVhSFBzclE?oc=5"
+            },
+            {
+              "name": "BBC News",
+              "headline": "US and Denmark reach deal over Greenland after Trump annexation threats",
+              "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Frames the deal as a compromise for Donald Trump, falling short of his original ambition to annex Greenland.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Trump ‘settled for less’ with new US-Denmark Greenland security deal",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-settled-for-less-with-new-us-denmark-greenland-security-deal?traffic_source=rss"
+            },
+            {
+              "name": "The Print",
+              "headline": "Trump threatened to redraw the map. Greenland deal shows the limits of his disruption",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZXZ3SEcwX1ltZ1hBUG5ES3lralBhY2JEVjI4QkRHaUd2dHBnLTNhNHc3bm5YajVNTHloYlBUVjgxMzB2RlpPMVRCN1F3R1dPeUNYRDREckw1ek9IOWtqWEZsNmJ2XzdsMFpybGpNcjZlRWtLby1tV0pXX1BWRVZWbdIBhgFBVV95cUxNZFp2dldoMkRIQnBYUjZTdlVuWEk4WS02aG9JNFJlT2s3U3J3a3lNNmQyV1FzdENvYS1YVmtleFFtMHAwYUd2bjJBTkRDNC1SN2RYRW1wU0pqbDM4ZEFIOG4ycmJaX2lDd1FXTnU0Y0pkRXZFTzZfaHVSRUtZQjR2WU9odUJDZw?oc=5"
+            },
+            {
+              "name": "AP",
+              "headline": "Trump has a deal to build US military presence in Greenland while leaving island in Denmark's hands",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOd3VpRkZyY3B5MENtdkZiUFFhRzBMd25SZU9kMFZia2JxTEM4bFNvUFY5aTVzU2RDeXFIcWVGTVl4bUJrVzRTYkgyRVVfeXlhR1lFekxFVGFvaW42eEMyUEE0d1BJMnlFbjRzOXRhbGdnaDhiTFFTMnZQSUM0TVp4RDB6aXpBNTVqNUZUbHZFUFlIaWltTmFR?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights Denmark's reaction to the announced deal, focusing on their cautious optimism.",
+          "papers": [
+            {
+              "name": "AP",
+              "headline": "Denmark's leaders are cautiously optimistic about Trump's announcement of a Greenland deal",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWmw2bGhWR1ZlemVQbEdTSXNDR0lZVTdUX3VmdWgzb2NteEx0SmhIRmpxTU4xT1V5aWhuQW1aZmszemRtTkh6andTcDNWcUZyc2Y3Q2hwX25hMlUyVVliaElXSzluQVJZMkJsemVXZEVFeF9xM0xFNGJyZndBUDNpUmJMQUJUU21RcVBodUNYNE1ibTJnVE8w?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "autonomous territory",
+          "plain": "An autonomous territory manages its own affairs."
+        }
+      ],
+      "people": [
+        {
+          "name": "Donald Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "35f4a8d4",
+      "source_count": 7,
+      "read_seconds": 64
+    },
+    {
+      "headline": "Deadly attack targets mosque near police compound in Pakistan, casualty figures disputed",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Reuters and The Print lead with 16 killed in a suicide attack; Times of India, BBC News, and AP lead with at least 21 killed in a blast.",
+      "why_it_matters": "Such attacks undermine stability and safety in the region and result in loss of life.",
+      "affects": [
+        "security personnel",
+        "children"
+      ],
+      "agreed_facts": [
+        "An attack occurred in northwest Pakistan.",
+        "The attack took place near a mosque and a police compound.",
+        "The attack involved explosives.",
+        "Multiple people were killed in the attack."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports at least 21 killed, detailing the incident as an explosive-laden vehicle ramming a mosque or a bombing.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "21 security personnel dead in blast at police line in Pakistan",
+              "url": "https://timesofindia.indiatimes.com/world/pakistan/21-security-personnel-dead-in-blast-at-police-line-in-pakistan/articleshow/134346248.cms"
+            },
+            {
+              "name": "BBC News",
+              "headline": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
+              "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "AP",
+              "headline": "Bombing at mosque near police offices in Pakistan kills at least 21",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOME0xV1p0MnlVdnRCTk9SMVNJV3ZuMnFPeW15UFR5Z2NfZVZFMGxTX1paMGdwZDJXZUJ0REFYcnJBS1ROZXZkRnQzek9jdnJZN1lCdjhwUmxRU1NtNEt2amxYbG9fakNPODB3dVY3UjBfYzV6MVhJZkdXOWVza3JsNUUtR2NFZWdXNWJ5ZmFDUG1qNFI4WEFqRnhjN0FUUXg3bEIzbQ?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Reports 16 killed and identifies the incident as a suicide attack near a police compound.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "Suicide attack kills 16 near mosque in northwest Pakistan police compound",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa2FDS19hVkc3ZWVMb3p5VWd0dURvb1dGX05iRGRWT3FYWGJzNjFaZXNrR0ZRNkZ6QmJONF90NnItRE85WnJpUUNiNEl2ZEF1N1JHUUx5c3ZUYm9OU1FZOWxOU296TDBJTnQwcV9NNHJaVWI4OWV5QUhTM3pQSGp6RTM2bW82akt3SjNKeVdWdzJreW5GN0RtRHowNGhHQmhmeDZfQ21lS0NEZ0pY0gGyAUFVX3lxTE4zUFBzcEptNHhMeWQ1bWkwMUo0cW05SUlFNHNjdWJkTDZqRmtOVFFxUEhPLXI3Vkhva0wtT2tVZ2gyWHNuZ1hsVEFKX1dCcFdkTE9ENndxT24tWF9VdkJzdGdBVkdVbk9NYmpOMXZqQ281cDczMFFJcnd3c0QtLWdwREFSVWt6UTgwNEJyU2FWVXlSZHBfdy1QcTBPVDlFNVBqUW8wWEpFV1ZPUFpjNUp4Wmc?oc=5"
+            },
+            {
+              "name": "The Print",
+              "headline": "Suicide attack kills 16 near mosque in northwest Pakistan police compound",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa2FDS19hVkc3ZWVMb3p5VWd0dURvb1dGX05iRGRWT3FYWGJzNjFaZXNrR0ZRNkZ6QmJONF90NnItRE85WnJpUUNiNEl2ZEF1N1JHUUx5c3ZUYm9OU1FZOWxOU296TDBJTnQwcV9NNHJaVWI4OWV5QUhTM3pQSGp6RTM2bW82akt3SjNKeVdWdzJreW5GN0RtRHowNGhHQmhmeDZfQ21lS0NEZ0pY0gGyAUFVX3lxTE4zUFBzcEptNHhMeWQ1bWkwMUo0cW05SUlFNHNjdWJkTDZqRmtOVFFxUEhPLXI3Vkhva0wtT2tVZ2gyWHNuZ1hsVEFKX1dCcFdkTE9ENndxT24tWF9VdkJzdGdBVkdVbk9NYmpOMXZqQ281cDczMFFJcnd3c0QtLWdwREFSVWt6UTgwNEJyU2FWVXlSZHBfdy1QcTBPVDlFNVBqUW8wWEpFV1ZPUFpjNUp4Wmc?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "police compound",
+          "plain": "A secured area with buildings for police use."
+        },
+        {
+          "term": "explosives",
+          "plain": "Materials designed to cause a sudden, violent blast."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "07e1cd7d",
+      "source_count": 5,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Union Agriculture Minister addresses flood damage and state appeals for agricultural aid",
+      "topic": "Politics",
+      "regions": [
+        "national",
+        "Bihar",
+        "Telangana"
+      ],
+      "disagreement": 3,
+      "teaser": "The Hindu leads with Bihar CM's flood relief donation; The Print leads with Union Minister Shivraj Singh Chouhan's call for Centre-state cooperation.",
+      "why_it_matters": "Government actions and appeals for aid impact agricultural resilience and disaster response in states.",
+      "affects": [
+        "farmers",
+        "flood victims",
+        "state economies"
+      ],
+      "agreed_facts": [
+        "Shivraj Singh Chouhan is the Union Agriculture Minister."
+      ],
+      "clusters": [
+        {
+          "angle": "This cluster highlights the specific impact of floods in Bihar, the state's response including the Chief Minister's donation, and the central government's assessment visit.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Bihar CM donates one month’s salary to flood victims",
+              "url": "https://www.thehindu.com/news/national/bihar/bihar-cm-donates-one-months-salary-to-flood-victims/article71485520.ece"
+            }
+          ]
+        },
+        {
+          "angle": "This cluster centres on specific requests made by state ministers and chief ministers to the Union Agriculture Minister for central funds and assistance to address agricultural challenges and climate impact like El Niño.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "Minister T Siddique seeks central funds for climate-resilient agriculture",
+              "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPRnlOYkVzUXFBMWEtSnFUc29zc3lFMWlrVjRjZXNIQ3hzNEE1a1JqdGFfYVRrSmt5ZzJDY3RHVEhQc1gtTHd1a05kMWF1NHBnZlFfZWRpdS10NjBIcmhLUzdEVms5cHFpR3ZuWEVnejlOUzdXT1hmYUR0QmRwb1NXSnhjZDZ6Ql81WXFxSG9SSWFYNHdKNkh6MWNFNXhXNEt4emkxWDA1bTZxZ0VuR0VNOVJNMldfWkhOaU1rYU15bzZDazZzOTRzbkVoTDIzT2ZrYUlaZktvbE5TWlhoNnN0RHhQLUNtWkYwazlVQklObm_SAfYBQVVfeXFMTjFiT1RfdnB5cnM3YlhTSDRmUGlLYWVtbVdWVW84VUpsQWNpbzdveUk1Yjh2OGRYamw5ZTJfQ3lMWDdZUS01bHY5V3ZYeDdIXzdKZy1OYWxENjIyMFZUVlpqUzVkSkpzUlQ5all3aDJJMEktYWNPUnh5QXM5WG5PTTlpUTJHN1NHYzR0cHhLd1dVTjZOLWRrbGZxM2xXUG9temw1eHdXeXFERDlWaEhVMDcteEtENlhxeGJ1NFN1bnZxbjVDZVVGcnMzVjNLLWNsN1drSElkLVFQN2l4ajRJRXVIQkRTbTJHamF3b3FaVzU4dm1WOFZR?oc=5"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Telangana CM seeks central aid to mitigate El Niño fallout in state",
+              "url": "https://www.hindustantimes.com/india-news/telangana-cm-seeks-central-aid-to-mitigate-el-ni-o-fallout-in-state-101789759614446.html"
+            }
+          ]
+        },
+        {
+          "angle": "This cluster emphasizes the Union Agriculture Minister's general statement advocating for cooperative efforts between the Centre and states to ensure farmers' welfare.",
+          "papers": [
+            {
+              "name": "The Print",
+              "headline": "Centre, states must work together for farmers’ welfare: Shivraj Singh Chouhan",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcENKd3Z2aVZMbTFvWG5xNk1YVjB4SnBnb1Q1TXU1MDFob3hTRm04Q2hNUUZXaHIzS09tQUN0T1E2dXdJZUxtVnoycGNGcUlwWm82TW1RWkZsZ0VMcm1lT0t3VzN1ak1FdndNNXZtX3ZOekZ0X2RKTkMwVlRkQzlmRFMtVVJOT01PS2llR01uVFplZ2pqei1pUVJxSzBOOU5KWVh0b1lYY0ZWZzNJQXfSAbMBQVVfeXFMTkZkbFhrNGNlVy1RWk9zWUpMcld1MzZTUy1RLS1rbW96SEw4LWFMelhELTF5eDlCSW1rcnVBLUEycGV1RGp6VWRWUE11RkZxRENnTklBdlRiblZTRVphVXFvMzZuWE5MaUMzSTZpc0d1N2ZHWEFkVUl1d2laanplWGhvTm10SmJaUTVyWlhTLW5WV3UzRUlqX3h2R095MUdwSjI5SG5xZ2lOQnMwVW1HMjNWbzg?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Shivraj Singh Chouhan",
+          "who": "Indian politician (born 1999)",
+          "detail": "Shivraj Singh Chouhan is an Indian politician who is serving as the 32nd Minister of Agriculture and Farmers' Welfare and 23rd Minister of Rural Development since 2024. Chouhan served as the Chief Minister of Madhya Pra…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Shivraj_Singh_Chouhan_2025.jpg/330px-Shivraj_Singh_Chouhan_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "7cbbc409",
+      "source_count": 4,
+      "read_seconds": 60
+    },
+    {
+      "headline": "Cristiano Ronaldo Included in Portugal Nations League Squad; West Indies Announce Squad Changes",
+      "topic": "Sport",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 1,
+      "teaser": "Hindustan Times leads with Cristiano Ronaldo's Portugal call-up; ESPNcricinfo leads with Chinelle Henry's return to the West Indies squad.",
+      "why_it_matters": "These squad selections are significant for the athletes' careers and their respective national teams' upcoming international competitions.",
+      "affects": [
+        "football fans",
+        "cricket fans",
+        "athletes"
+      ],
+      "agreed_facts": [
+        "Cristiano Ronaldo, aged 41, was named in Portugal's Nations League squad.",
+        "Cristiano Ronaldo's inclusion is in the first Portugal squad selected by new Portugal coach Jorge Jesus."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports the inclusion of Cristiano Ronaldo in Portugal's Nations League squad.",
+          "papers": [
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "Cristiano Ronaldo keeps Portugal chapter alive at 41 with fresh Nations League call-up after World Cup 2026",
+              "url": "https://www.hindustantimes.com/sports/football/cristiano-ronaldo-keeps-portugal-chapter-alive-at-41-with-fresh-nations-league-call-up-after-world-cup-2026-101789735214285.html"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Ronaldo named in first Portugal squad since World Cup - at age of 41",
+              "url": "https://www.bbc.co.uk/sport/football/articles/cmeq8v8e3ql7o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Ronaldo included in Jesus' first Portugal squad",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ25US1Jvcl9yR0UzRjZ3dFZtSzhMUTc5aGFNZ2VjSjdOQ2ZUT1pnekxNM2FjSk5KSjRXUm1pV1JteWNhbG15bVZXWmxGd21OTHVZb3ZYaEQwbVpqaU5tLWFadW43MjhfNzZwQlhERG9PU0NDdkYxcVgwNnJiQUNDcUtkMDdoSTFTY1ZSc0lqS3lCa3E4eGpuQw?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Reports specific changes to the West Indies women's cricket squad for an upcoming tour.",
+          "papers": [
+            {
+              "name": "ESPNcricinfo",
+              "headline": "Dottin to miss Zimbabwe tour, Matthews to only play ODIs",
+              "url": "https://www.cricinfo.com/ci/content/story/1555039.html?ex_cid=OTC-RSS"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "Nations League",
+          "plain": "The Nations League is a football tournament for European national teams."
+        }
+      ],
+      "people": [
+        {
+          "name": "Cristiano Ronaldo",
+          "who": "Portuguese footballer (born 1985)",
+          "detail": "Cristiano Ronaldo dos Santos Aveiro is a Portuguese professional footballer who plays as a forward for and captains the Saudi Pro League club Al-Nassr and the Portugal national team. Nicknamed CR7, he is widely regarded…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/330px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+        },
+        {
+          "name": "Jorge Jesus",
+          "who": "Portuguese football manager (born 1954)",
+          "detail": "Jorge Fernando Pinheiro de Jesus is a Portuguese professional football manager and former player who is the head coach of the Portugal national team.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/2020-02-17_Encontro_com_T%C3%A9cnico_do_Flamengo%2C_Jorge_Jesus_%28cropped%29.jpg/330px-2020-02-17_Encontro_com_T%C3%A9cnico_do_Flamengo%2C_Jorge_Jesus_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Jorge_Jesus"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "28dd2c79",
+      "source_count": 4,
+      "read_seconds": 45
+    },
+    {
+      "headline": "ABVP wins President and Secretary posts, independent candidate secures Vice-President in DUSU elections 2026-2",
+      "topic": "Campus & exams",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times leads with the new DUSU President's background; Mint leads with the independent Vice-President's win.",
+      "why_it_matters": "The DUSU elections determine student representation and leadership within Delhi University.",
+      "affects": [
+        "students"
+      ],
+      "agreed_facts": [
+        "ABVP's Yash Dabas was elected President of DUSU for 2026-27.",
+        "Yash Dabas polled 24,576 votes and defeated NSUI's Vijai Shankar Meena by 2,053 votes.",
+        "Deepanshu Shokeen, an independent candidate, won the Vice-President's post in the DUSU election.",
+        "Deepanshu Shokeen defeated ABVP's Ishu Maurya.",
+        "ABVP claimed the President and Secretary positions."
+      ],
+      "clusters": [
+        {
+          "angle": "Emphasizes ABVP's dominant victory across multiple posts and NSUI's poor showing.",
+          "papers": [
+            {
+              "name": "The Print",
+              "headline": "ABVP bucks Gen Z protest wave, wins 3 of 4 DUSU posts; NSUI shunted out of panel",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSmM2SjFZMXlSd0RiVllNZ0J6SWxoR09nU0Vld2FuY01fTW9PU01OckQwaWVpV3JHZGw1ekt1M0NJT1N3eFhSNWRvMGxCQXhYbzVaa0s4R1ZraXl1UmJrWjFxT3VEbThkWk5rSnpDbUlmUlBhdTdGbWEydTY0NXlncDcyVjUzUDBVd1c5X2lnMjFlTm1xMUt4OGRGVlY0ZkJnSDlKLWdHaGRpM3BxYlNYdnQ2MXZLYlHSAbwBQVVfeXFMTVk3dW5yaVp5aUR6NHh3MHFPbEdTMjJRRlVFd2IzOG9VQ2g3ckVfbEVuLVZJU3dzZnAzeXd5dERqOVBOdkRJRWRRUUNUMklndXNtM2ZnNU5YdTRwTV85b3hFRzZWeW8zeHlySTZ4ZXRteFdRNi1BY2psYW9qazBQV3o0dDJjYkxGTmUyNThSQVVUZ25MbW5lWll0bnQ0VExyYzdvR3c2VlZ2UDJqQlV2ZWRyaHZkeHBvTTg0T20?oc=5"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "ABVP sweeps, NSUI falters, Independent grabs key seat: Takeaways from Delhi University polls",
+              "url": "https://www.hindustantimes.com/india-news/abvp-win-upset-for-nsui-dusu-elections-2026-result-president-yash-dabas-nsui-congress-rahul-gandhi-101789815276349.html"
+            }
+          ]
+        },
+        {
+          "angle": "Centres on Deepanshu Shokeen's independent victory for the Vice-President role, including details of his past affiliation.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "DUSU election results: Who is Deepanshu Shokeen? Independent candidate wins VP post after being denied NSUI ticket",
+              "url": "https://www.livemint.com/news/india/dusu-election-results-who-is-deepanshu-shokeen-independent-candidate-wins-vp-post-after-being-denied-nsui-ticket-11789823136528.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Who is Deepanshu Shokeen? Independent leading in DUSU Vice President contest has already claimed victory",
+              "url": "https://www.hindustantimes.com/india-news/who-is-deepanshu-shokeen-independent-dusu-vice-president-election-results-victory-delhi-university-101789804879389.html"
+            }
+          ]
+        },
+        {
+          "angle": "Details the specific wins of ABVP candidates, particularly the President, and provides background on the President.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "From international tennis tournaments to new DUSU president: Who is ABVP's Yash Dabas?",
+              "url": "https://www.hindustantimes.com/india-news/from-international-tennis-tournaments-to-new-delhi-university-polls-dusu-president-who-is-abvp-yash-dabas-101789822217884.html"
+            },
+            {
+              "name": "NDTV",
+              "headline": "DUSU Election Results 2026 Live: ABVP Leads In President, Secretary Seats",
+              "url": "https://www.ndtv.com/education/dusu-election-result-2026-live-updates-delhi-university-student-union-polls-results-today-check-winners-names-key-highlights-12067059#publisher=newsstand"
+            },
+            {
+              "name": "Mint",
+              "headline": "DUSU election results 2026: Who is Yash Dabas? Meet the new president and ABVP’s Secretary, Joint Secretary winners",
+              "url": "https://www.livemint.com/news/india/who-is-abvps-yash-dabas-all-about-dusus-new-president-secretary-riya-chhawdi-and-joint-secretary-lakshya-raj-singh-11789818566566.html"
+            },
+            {
+              "name": "NDTV",
+              "headline": "Delhi University Election Results 2026: Meet The Women Candidates Making Their Mark",
+              "url": "https://www.ndtv.com/education/dusu-election-results-2026-meet-the-women-candidates-making-their-mark-12068293#publisher=newsstand"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "9778d5d2",
+      "source_count": 4,
+      "read_seconds": 61
     },
     {
       "headline": "India to charge 0.4% fee on UPI merchant payments over ₹2,000 from Oct 2026, ending free services",
