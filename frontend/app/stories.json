@@ -1,0 +1,1216 @@
+{
+  "edition_date": "2026-09-19",
+  "generated_at": "2026-09-19T16:47:46.164650+05:30",
+  "stories": [
+    {
+      "headline": "Trump Bans CNN, MS NOW, and Politico from White House, Citing 'Fake News'",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 1,
+      "teaser": "Al Jazeera leads with questioning Trump's authority to ban news outlets; AP leads with Trump's direct announcement of the ban.",
+      "why_it_matters": "This affects media access and potentially press freedom in the United States.",
+      "affects": [
+        "news media",
+        "journalists"
+      ],
+      "agreed_facts": [
+        "Donald Trump stated he is banning media outlets CNN, MS NOW, and Politico from the White House.",
+        "He cited ‘fake news’ as the reason for the ban."
+      ],
+      "clusters": [
+        {
+          "angle": "Directly reports the ban of specific news outlets from the White House and the stated reason.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Trump says he is banning CNN and Politico from White House",
+              "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "AP",
+              "headline": "Trump says he is banning CNN, MS NOW and Politico from the White House",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSmJvU3QxRHMzN3h2Umc4M3RyNFMtell5WGNTV1d2ampGY25aLUZjLVgxWlRmWS1JWVItZ3RoVXFtOUhlX01zdEhGbzhrN1VMUndiekJxOG1MZFNPTE1TZkJsZHRZb0doZUNid1NXVS1NTmtpV1FyQ3FGM0VLWDFnOWRjVXc5YnFsYTJiM3cwM21acFNYV3RieUYtcw?oc=5"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Trump says he is banning media outlets CNN, MS NOW, Politico from White House",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMlVWa0ZnX0VIQWsxTUVRTnRrSV9SLVFKd19wQ2FGRGx0QlNtSUZfd3JBbDRZZ2hNU2lXa1haT0dESVZoMWp4UnF5UDFTRllIQ19Ibno2QVVndW1yODN3VUdvV3RpN21Sd2R6dUZyLUFGSGtnd2hrS1FNVTNDajlVNG9TRDVxa0lyN2s3NTgtXzBTMktpU0dQcTFwdmlZX0dEcWc?oc=5"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Trump bans CNN, MS NOW, Politico from the White House",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-bans-cnn-ms-now-politico-from-the-white-house?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Watch: Trump says ban on some news outlets is 'because they're fake news'",
+              "url": "https://www.bbc.co.uk/news/videos/cm93e7p1wkndo?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Examines the ban within the context of Trump's perceived media attacks and questions its legality.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Can Trump ban CNN, news outlets he doesn’t like from the White House?",
+              "url": "https://www.aljazeera.com/news/2026/9/19/can-trump-ban-cnn-news-outlets-he-doesnt-like-from-the-white-house?traffic_source=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Donald Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "0cee43e8",
+      "source_count": 4,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Trump signs Russia sanctions bill, allowing up to 100% tariffs on major energy buyers including India and Chin",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 2,
+      "teaser": "Hindustan Times leads with the threat of 100% tariffs on India; Times of India leads with China's rejection of the US tariff threat.",
+      "why_it_matters": "This legislation could significantly impact global energy markets and international relations involving major economies.",
+      "affects": [
+        "energy buyers",
+        "governments",
+        "international trade"
+      ],
+      "agreed_facts": [
+        "Donald Trump signed a Russia sanctions bill.",
+        "The new law allows tariffs of up to 100 percent on major buyers of Russian energy, including India and China.",
+        "The sanctions are intended to pressure Moscow over the Ukraine war."
+      ],
+      "clusters": [
+        {
+          "angle": "Donald Trump has signed a new Russia sanctions bill that grants authority to impose significant tariffs on countries buying Russian energy.",
+          "papers": [
+            {
+              "name": "Business Standard",
+              "headline": "Trump signs Russia sanctions bill, opens door to new tariffs on oil buyers",
+              "url": "https://www.business-standard.com/world-news/trump-signs-russia-sanctions-bill-opens-door-to-new-tariffs-on-oil-buyers-126091900107_1.html"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Trump signs sweeping Russia sanctions over Ukraine war",
+              "url": "https://www.aljazeera.com/news/2026/9/19/trump-signs-sweeping-russia-sanctions-over-ukraine-war?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Trump signs sweeping Russia sanctions bill",
+              "url": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Trump to sign Russia sanctions bill today that threatens 100% tariffs on India: Report",
+              "url": "https://www.hindustantimes.com/india-news/trump-to-sign-russia-sanctions-bill-today-that-threatens-100-per-cent-tariffs-on-india-101789751001313.html"
+            }
+          ]
+        },
+        {
+          "angle": "The sanctions bill presents complex challenges for major Russian energy buyers like India and has drawn rejection from China, while Russia warns of complications for peace efforts.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "New US sanctions bill on Russia puts India's Modi in a bind",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcjJCNkhGN0UzLTdmV0g4RzdmUmdLZ254c2JTWjB5cXRRZXZfYTZ0eW5YZ0ZyU1oteVIwdjV6V3VENE5VOGdfVnFHSTVBMnlCU3R0VkVWeWxMSnI5eVlvUTFRQmdVdWhISEpMVlFXa0UwNU1mTnVqV1ZoanVEQXoxOXBWZW5qUld0bE9QWUl1NkVTMHZ3VUZwTUItNTdpLWtrSmJJMA?oc=5"
+            },
+            {
+              "name": "The Print",
+              "headline": "Why Bill allowing Trump to impose 100% tariff on Russian oil buyers is a double-edged sword",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNGRjeE1FazhQMHBQbjBNTi16ckhlRDlDQWJRVmZqWjR5X1hKeUhiMTlXWnBpZlg5NW9ZTEFfaV82enVQSnBiM1FVTHVheEZ2OU1kLXhodFFfSElKUVVpeHJ0aXJPUy1BX21rR3FRak50RmtiV3VhdW5zNjFPZkpnRF9OUWpBRFB0cXVDWU1mWUZTWTJYUEdjRWt5QlhacTZxU3ZsdENkV0ZEYmVTQ3dQZEtMR3BkVDFQblpBaW1DY255SndEVWfSAcsBQVVfeXFMTzFyRG9MLVFOd2hSdS1vZ2hhR1UxUlpjRUE5OE5jNHdZWmpYYlRGT0JPVzJpaU8yQlUyeTZ1UWZqcjZtbGRsTlp5b3JaVG5oTHpqdFh1NzhxWWI0VGpxdTdPdEpNTlhLSXc4WEZONV9tRmdtLUdtZ1JEaV94VWdva2xVYW9sMkRldUYzMmdtT3BmM3kwV1ZKSDI4RnJZd1dyLU93SEpRRVNKUER1SXRwb3laUkZUdXVmTlJhT2pyeC1uSVJOaHBkMzBKSkU?oc=5"
+            },
+            {
+              "name": "Mint",
+              "headline": "US House passes Russia sanctions bill: Why Kremlin says it will ‘complicate’ Ukraine peace efforts",
+              "url": "https://www.livemint.com/news/world/us-house-passes-russia-sanctions-bill-why-kremlin-says-it-will-complicate-ukraine-peace-efforts-11789642478410.html"
+            },
+            {
+              "name": "Times of India",
+              "headline": "‘No basis in international law’: China rejects US tariff threat over Russian oil",
+              "url": "https://timesofindia.indiatimes.com/world/china/no-basis-in-international-law-china-rejects-us-tariff-threat-over-russian-oil/articleshow/134308787.cms"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "tariffs",
+          "plain": "Tariffs are taxes on goods from other countries."
+        }
+      ],
+      "people": [
+        {
+          "name": "Donald Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "3295c76a",
+      "source_count": 8,
+      "read_seconds": 50
+    },
+    {
+      "headline": "US and Denmark Reach Deal on Greenland for Increased Military Presence, Trump Hails Agreement",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 1,
+      "teaser": "Al Jazeera leads with Trump settling for less with the deal; The Print leads with Trump hailing the deal.",
+      "why_it_matters": "This agreement strengthens common security in the Arctic region and defines the extent of US influence in Greenland after previous annexation discussions.",
+      "affects": [
+        "diplomats",
+        "military personnel",
+        "greenland residents"
+      ],
+      "agreed_facts": [
+        "The United States and Denmark have reached a deal on Greenland.",
+        "Donald Trump announced the US-Denmark deal.",
+        "The deal allows for a greater US military presence in Greenland.",
+        "Trump hailed the deal, calling it a 'dream come true'.",
+        "Greenland is an autonomous territory of Denmark.",
+        "Donald Trump stated the US has secured 'permanent security control' over Greenland.",
+        "The deal comes after Trump's ambition to annex Greenland.",
+        "The deal does not deliver Trump's ambition to annex the territory."
+      ],
+      "clusters": [
+        {
+          "angle": "Donald Trump hails new US-Denmark deal for increased US military presence and security control in Greenland.",
+          "papers": [
+            {
+              "name": "The Print",
+              "headline": "‘Dream come true’—Trump hails deal with Denmark allowing greater US military presence in Greenland",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdC03LU4zTjJ2M1MtMlNCRGlPRVRoVHN2WjdwbjRISnp0M3RzV0NiUDFoa2tJRG80Qy1VcUVOVFk5cWhDeVJwT2ZDaW9sd18xSWFYUFA2T0hnVU5uVm90c3dFdnNCZTUwUTBsVTFjZU5fbzB4eG1OMmNwXy1GUlk1NmNBaXpaUUoyMHRwTTc3ZTIwdkd1eTNTQ0NwYWdzbkh3NFVodFlxQ0JHN3RyN1k1SUNyaFdDM095ZWNNaDQyUzlfQ1FqMHhXQkJLQdIB0AFBVV95cUxPTVloS2xlZEVCeFB3WVpQY2JPMG9qaHl1UW5FR2ZSSGZPWV9YWVhjeUI0VDNOVmowYjQxQUZsTTZfbVNyRFNsMUxIX20wNkZxelVFd1JKNkFjeThLVTVLZlRldjZqS29PNVFBU0E2Q2lpeVpnLUZ1dzVoU0I3a3AyNHdQN3F3SXIwZHBRYnBraXROVjYxd0J3Q3cwS1c2ejlDRDVERm5iQTIzWFIzSXc5UVBJTGNJOEpqLUw1UTFrMjh2cHhURmFrZmNNOWhBMmdf?oc=5"
+            },
+            {
+              "name": "Mint",
+              "headline": "‘Will FOREVER have complete ability to do what is necessary in Greenland’ — Trump announces US-Denmark deal",
+              "url": "https://www.livemint.com/news/us-news/will-forever-have-complete-ability-to-do-what-is-necessary-in-greenland-trump-announces-us-denmark-deal-11789781824701.html"
+            },
+            {
+              "name": "AP",
+              "headline": "Trump has a deal to build US military presence in Greenland while leaving island in Denmark's hands",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOd3VpRkZyY3B5MENtdkZiUFFhRzBMd25SZU9kMFZia2JxTEM4bFNvUFY5aTVzU2RDeXFIcWVGTVl4bUJrVzRTYkgyRVVfeXlhR1lFekxFVGFvaW42eEMyUEE0d1BJMnlFbjRzOXRhbGdnaDhiTFFTMnZQSUM0TVp4RDB6aXpBNTVqNUZUbHZFUFlIaWltTmFR?oc=5"
+            },
+            {
+              "name": "BBC News",
+              "headline": "US and Denmark reach deal over Greenland after Trump annexation threats",
+              "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Times of India",
+              "headline": "US reaches deal with Denmark for ‘permanent security control’ over Greenland, says Donald Trump",
+              "url": "https://timesofindia.indiatimes.com/world/us/us-reaches-deal-with-denmark-for-permanent-security-control-over-greenland-says-donald-trump/articleshow/134343806.cms"
+            },
+            {
+              "name": "Reuters",
+              "headline": "EXCLUSIVE: US and Denmark reach deal on Greenland, Trump says",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYXUxU0wtWHlQT1lrMjB0b2Q5c080QTY4SmJDSkF3c1R1SUNkVVV5TmUxeVBaRk56ZTV4SWtqaXNBQzBfUnRiNWN5NmVQNGFTNGNGNFJqMjd5WTB3cGxhQ1p3UDdSemxwQXdYYkpjS1ktV2hkVzZRR1R4Tmw0M2VEZjQxZ0JWU0ptVlBha00tckVhSFBzclE?oc=5"
+            },
+            {
+              "name": "The Print",
+              "headline": "US and Denmark reach deal on Greenland, Trump says",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd256eDFQaTI1aWo5RXNhV2Q2VndIT3hqNjFtTXVsUzNWLXJJVDRweDdTMU5jbXFsSTYzY3ppaG51MDFQWVA5UFJ4d1hEZGYwWVg0SDZXTUlrTkwzWjkzMUZzMm9iZTd6YzJ3cHRLVWtzS2w5djZxbWQzbHVzajdpR1p6UWtMR2ZJN3NSc9IBkgFBVV95cUxNUkljbndOU0I3V1pvaGNmUWVxSVZ4R3BRVHlYUkJIQ201VE9oSGJnMThWbEVRSTUtUmh2UDBaN1pFWndyTE1BdWkxRHptR3RhalhJRWtHU2tPaElnWnpFN0taV1dSNEZCUTVuRnZ4a1pnNTlyQUpZQ2NtMm1fSjR3TjVHYjgzR2o4czFGV1daYlpUZw?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "The deal achieves increased US presence but falls short of Donald Trump's original ambition to annex Greenland.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Trump ‘settled for less’ with new US-Denmark Greenland security deal",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-settled-for-less-with-new-us-denmark-greenland-security-deal?traffic_source=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "autonomous territory",
+          "plain": "A region that governs itself."
+        },
+        {
+          "term": "military presence",
+          "plain": "Soldiers in another area."
+        },
+        {
+          "term": "security control",
+          "plain": "Managing a place's safety."
+        }
+      ],
+      "people": [
+        {
+          "name": "Donald Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "19ca14e7",
+      "source_count": 7,
+      "read_seconds": 60
+    },
+    {
+      "headline": "Trump's White House Actions: Media Ban, Visa Fee Extension, and China Remarks",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "BBC News leads with Trump banning CNN, MS NOW, and Politico from the White House; Mint leads with the extension of the $100,000 H-1B visa fee.",
+      "why_it_matters": "These decisions and statements by the US President reflect his administration's policies on media access, immigration, and international diplomacy.",
+      "affects": [
+        "journalists",
+        "visa applicants"
+      ],
+      "agreed_facts": [
+        "Trump says he is banning CNN, MS NOW, and Politico from the White House.",
+        "Trump accused the outlets of 'fake news'."
+      ],
+      "clusters": [
+        {
+          "angle": "Reporting on President Trump's decision to ban specific news outlets from the White House, citing 'fake news' and unfavorable coverage.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Can Trump ban CNN, news outlets he doesn’t like from the White House?",
+              "url": "https://www.aljazeera.com/news/2026/9/19/can-trump-ban-cnn-news-outlets-he-doesnt-like-from-the-white-house?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Trump says he is banning CNN and Politico from White House",
+              "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "AP",
+              "headline": "Trump says he is banning CNN, MS NOW and Politico from the White House",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSmJvU3QxRHMzN3h2Umc4M3RyNFMtell5WGNTV1d2ampGY25aLUZjLVgxWlRmWS1JWVItZ3RoVXFtOUhlX01zdEhGbzhrN1VMUndiekJxOG1MZFNPTE1TZkJsZHRZb0doZUNid1NXVS1NTmtpV1FyQ3FGM0VLWDFnOWRjVXc5YnFsYTJiM3cwM21acFNYV3RieUYtcw?oc=5"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Trump says he is banning media outlets CNN, MS NOW, Politico from White House",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMlVWa0ZnX0VIQWsxTUVRTnRrSV9SLVFKd19wQ2FGRGx0QlNtSUZfd3JBbDRZZ2hNU2lXa1haT0dESVZoMWp4UnF5UDFTRllIQ19Ibno2QVVndW1yODN3VUdvV3RpN21Sd2R6dUZyLUFGSGtnd2hrS1FNVTNDajlVNG9TRDVxa0lyN2s3NTgtXzBTMktpU0dQcTFwdmlZX0dEcWc?oc=5"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Trump bans CNN, MS NOW, Politico from the White House",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-bans-cnn-ms-now-politico-from-the-white-house?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Watch: Trump says ban on some news outlets is 'because they're fake news'",
+              "url": "https://www.bbc.co.uk/news/videos/cm93e7p1wkndo?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Coverage of the White House extending a $100,000 fee on H-1B visas.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "H-1B visa update: Trump extends $100,000 fee by another year. Here's what it means for Indians",
+              "url": "https://www.livemint.com/news/world/h1b-visa-update-trump-extends-100-000-fee-by-another-year-heres-what-it-means-for-indians-11789786888615.html"
+            }
+          ]
+        },
+        {
+          "angle": "Reporting on President Trump's positive remarks about US-China relations ahead of an upcoming state visit.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "'US doing very well with China': Trump ahead of Xi Jinping's first White House visit in a decade",
+              "url": "https://timesofindia.indiatimes.com/weather/us/us-doing-very-well-with-china-trump-ahead-of-xi-jinpings-first-white-house-visit-in-a-decade/articleshow/134346700.cms"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "fake news",
+          "plain": "It is untrue information spread as real news."
+        }
+      ],
+      "people": [
+        {
+          "name": "Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "c74d97b0",
+      "source_count": 6,
+      "read_seconds": 56
+    },
+    {
+      "headline": "Saudi Arabia Issues Rare Air-Raid Alerts for Riyadh Amid Houthi Attacks and International Diplomatic Efforts",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 2,
+      "teaser": "Mint leads with Saudi Arabia issuing air-raid alerts for Riyadh; Hindustan Times leads with India's condemnation of Houthi attacks.",
+      "why_it_matters": "Escalating tensions and attacks involving Houthi rebels and Saudi Arabia pose a threat to regional stability and global energy security.",
+      "affects": [
+        "regional residents",
+        "global trade",
+        "diplomats"
+      ],
+      "agreed_facts": [
+        "Saudi Arabian authorities issued air-raid alerts for Riyadh early Saturday.",
+        "The alerts were the first in the capital since March and April.",
+        "Residents later received the all-clear after explosions were reported in the capital.",
+        "Saudi Arabia shot down a Houthi drone south of Mecca.",
+        "The Houthis deny targeting the Islamic holy city after the Saudi-led coalition in Yemen accused them of a \"disgraceful act\".",
+        "China has asked Iran to influence Yemen's Houthis to de-escalate regional tensions.",
+        "This appeal followed Saudi Arabia's request for Beijing's assistance with Houthi advances.",
+        "India condemned Houthi attacks on Saudi Arabia's economic facilities and an attempted strike on the holy city of Makkah.",
+        "An EAM spokesperson reiterated India’s condemnation.",
+        "US President Donald Trump signed the Lindsey O Graham Sanctioning Russia and Iran Act of 2026 into law.",
+        "This act expanded sanctions and tariffs on Russia while extending existing sanctions on Iran."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports on Saudi Arabia issuing rare air-raid alerts for its capital, Riyadh, followed by an all-clear.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Saudi Arabia Issues Rare Air-Raid Alerts for Riyadh",
+              "url": "https://www.livemint.com/news/us-news/saudi-arabia-issues-rare-air-raid-alerts-for-riyadh-11789798975186.html"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
+              "url": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Saudi civil defence sends all-clear after alerts issued for capital Riyadh",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYWNnM0NScnlDOXNDY25xQjhZVlRHUUtMOEV3YVZSOW5xekdVelcycGI1VHl3dWpqVGhNM2s1N05NamZxV0hoNVBFN204OHM5dVlQemMySkJGMlpCaURybUY4TVZfd0RDUUxzb3RTeWJVVEI4blFQZFhJekptSHRFUVdqb1pDai1VQ1hPS1JHWk92MEpZYWtESDduUmpwUEg4Nzc4bFp3VDQzM2JMTnRZXzgzbVBvUDk0clU4a3dHMlhuQk0?oc=5"
+            },
+            {
+              "name": "Mint",
+              "headline": "US-Iran war LIVE Updates: Iran threatens regional oil exports; Saudi Arabia issues second danger alert for Riyadh",
+              "url": "https://www.livemint.com/news/us-news/usiran-war-live-updates-trump-un-speech-to-focus-on-iran-gaza-peace-plan-strait-of-hormuz-sanction-bill-11789782948443.html"
+            }
+          ]
+        },
+        {
+          "angle": "Focus on international responses, condemnations, diplomatic appeals, and defensive actions related to Houthi attacks.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "Attacks by Yemen’s Houthi rebels on Saudi Arabia undermine regional security: MEA",
+              "url": "https://www.hindustantimes.com/india-news/attacks-by-yemen-s-houthi-rebels-on-saudi-arabia-undermine-regional-security-mea-101789738671970.html"
+            },
+            {
+              "name": "Times of India",
+              "headline": "China asks Iran to rein in Houthis; why Beijing has stepped in now",
+              "url": "https://timesofindia.indiatimes.com/world/china/china-asks-iran-to-rein-in-houthis-after-saudi-arabia-seeks-help-report/articleshow/134313345.cms"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "How far will Egypt go to help Saudi Arabia secure the Red Sea?",
+              "url": "https://www.aljazeera.com/news-analysis/2026/9/17/how-far-will-egypt-go-to-help-saudi-arabia-secure-the-red-sea?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Saudi Arabia says it shot down Houthi drone south of Mecca",
+              "url": "https://www.bbc.co.uk/news/articles/cr89jqd1w45eo?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "air-raid alerts",
+          "plain": "These are warnings about possible attacks from the air."
+        },
+        {
+          "term": "Saudi-led coalition",
+          "plain": "This is a group of countries led by Saudi Arabia."
+        },
+        {
+          "term": "economic facilities",
+          "plain": "These are places where goods are made or money is generated."
+        },
+        {
+          "term": "holy city of Makkah",
+          "plain": "This is a very important sacred city in Islam."
+        }
+      ],
+      "people": [
+        {
+          "name": "Donald Trump",
+          "who": "President of the United States (2017–2021; since 2025)",
+          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "6c8349cc",
+      "source_count": 6,
+      "read_seconds": 78
+    },
+    {
+      "headline": "IIT Bombay student found dead in hostel after using ChatGPT in exam; institute denies action, protests follow",
+      "topic": "Campus & exams",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times leads with IIT Bombay refuting claims of action; The Print leads with the student's death triggering protests; NDTV leads with this being the third suicide in seven months.",
+      "why_it_matters": "This incident raises concerns about academic pressure, student mental health, and institutional response to rule violations.",
+      "affects": [
+        "students",
+        "educational institutions"
+      ],
+      "agreed_facts": [
+        "An IIT Bombay student was found dead in a hostel.",
+        "The student had been caught using a mobile phone during an examination.",
+        "The student had uploaded the question paper on ChatGPT to seek answers.",
+        "The institute stated that no disciplinary action was initiated against the student.",
+        "Protests erupted on the campus following the student's death.",
+        "This was the third suicide case on the campus within a span of seven months."
+      ],
+      "clusters": [
+        {
+          "angle": "IIT Bombay's refutation of disciplinary action taken against the student",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "'No action initiated': IIT Bombay refutes claims on student's death after ChatGPT row",
+              "url": "https://www.hindustantimes.com/india-news/no-action-initiated-iit-bombay-refutes-claims-on-students-death-after-chatgpt-row-101789801576073.html"
+            },
+            {
+              "name": "NDTV",
+              "headline": "IIT Bombay Student Warned Of 1-Year Suspension For Using ChatGPT In Exam? What Institute Said",
+              "url": "https://www.ndtv.com/india-news/sahil-wakode-iit-bombay-student-suicide-case-iit-bombay-student-warned-of-1-year-suspension-for-using-chatgpt-in-exam-what-institute-said-12067593#publisher=newsstand"
+            }
+          ]
+        },
+        {
+          "angle": "Reporting on the student's death, exam malpractice, and subsequent campus protests",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "IIT Bombay student found dead in hostel; institute says had been caught using mobile phone during exam",
+              "url": "https://www.thehindu.com/news/national/maharashtra/iit-bombay-student-found-dead-in-hostel-institute-says-had-been-caught-using-mobile-phone-during-exam/article71483750.ece"
+            },
+            {
+              "name": "The Print",
+              "headline": "IIT Bombay: 2nd year student’s death by suicide triggers protest",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdXRldWlsbEx2YWh2N2dLWE9IS0F2WURzTHBZTXhBVjFsTkhabmdHNE9ITmhzQkFSX1Nud2cwM2FxVFdXS0Q4YUZpYVI2TUFhY1hMVGhERllqQjBPaDVmbTAtOG1pYWppQzExOHd2QzYxRXpOZmFsRThmVTlaR1pQWm5XLURpcTVtdGRBaFJVeG1GdzFEbWZaekdKa3R3Z9IBowFBVV95cUxNa3AwUjlUZmdJeWZxZEF5Y1E2YTM1STVxbWNUZHZzNER6RnVOQzRSVk1uaHNLTG1aUGpGcFkwSDl2OU1WMmhwMWNpdDkyelJDaHNjalZRMWdGVVJyNGJvcGpRaEJxTjZsMUpMOVFCcjNiTnU3TDRBLUNNemQtR1c0RVA1cWNQRDJCOGY0SHQ2Y1Bzclk4WlZzMjdQU1BJeWVNNnFZ?oc=5"
+            },
+            {
+              "name": "Mint",
+              "headline": "IIT Bombay student caught using ChatGPT in exam dies by suicide; protest erupts on campus: What we know so far",
+              "url": "https://www.livemint.com/news/india/iit-bombay-student-caught-using-chatgpt-in-exam-dies-by-suicide-protest-erupts-on-campus-11789785794539.html"
+            },
+            {
+              "name": "NDTV",
+              "headline": "Caught Using ChatGPT In Exam, IIT Bombay Student Kills Self, Protests Erupt",
+              "url": "https://www.ndtv.com/india-news/iit-bombay-student-dies-by-suicide-he-was-caught-using-chatgpt-in-exam-12067185#publisher=newsstand"
+            }
+          ]
+        },
+        {
+          "angle": "Highlighting the pattern of multiple suicides at IIT Bombay",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "3 Suicides In 7 Months: IIT Bombay Students Call For \"Action, Accountability\"",
+              "url": "https://www.ndtv.com/india-news/3-suicides-in-7-months-iit-bombay-students-call-for-action-accountability-iit-bombay-student-suicide-chatgpt-in-exam-12067943#publisher=newsstand"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "ChatGPT",
+          "plain": "An artificial intelligence tool that can give answers."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "eccbc87e",
+      "source_count": 5,
+      "read_seconds": 65
+    },
+    {
+      "headline": "Tata Sons board reappoints N Chandrasekaran as chairman despite Noel Tata's opposition and 'illegal' claim",
+      "topic": "Economy",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 0,
+      "teaser": "",
+      "why_it_matters": "The leadership decision for a major conglomerate impacts its strategic direction and market confidence.",
+      "affects": [
+        "business executives",
+        "investors",
+        "company employees"
+      ],
+      "agreed_facts": [
+        "N Chandrasekaran was reappointed as chairman of Tata Sons.",
+        "His tenure was extended by five years.",
+        "The Tata Sons board voted 4-1 for his reappointment.",
+        "Noel Tata voted against the decision.",
+        "Noel Tata is chairman of Tata Trusts.",
+        "Tata Trusts called N Chandrasekaran's reappointment \"illegal\"."
+      ],
+      "clusters": [
+        {
+          "angle": "Opposition from Noel Tata and Tata Trusts to N Chandrasekaran's reappointment, including claims of it being illegal.",
+          "papers": [
+            {
+              "name": "Business Standard",
+              "headline": "Inside the 24 hours that laid bare Tata's fight for control and its future",
+              "url": "https://www.business-standard.com/companies/news/inside-the-24-hours-that-laid-bare-tata-s-fight-over-control-and-its-future-126091900375_1.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Noel Tata vs N Chandrasekaran? Inside their tense Tata Group ties",
+              "url": "https://www.hindustantimes.com/india-news/noel-tata-and-n-chandrasekaran-inside-their-complicated-tata-group-ties-tata-trusts-row-101789729602765.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Tata Trusts dissents to reappointment of N. Chandrasekaran as Tata Sons chairperson",
+              "url": "https://www.thehindu.com/business/Industry/tata-trusts-dissents-to-reappointment-of-n-chandrasekaran-as-tata-sons-chairperson/article71476401.ece"
+            },
+            {
+              "name": "Business Standard",
+              "headline": "Chandra's reappointment 'illegal', says Noel Tata-led Tata Trusts",
+              "url": "https://www.business-standard.com/companies/news/chandra-s-reappointment-illegal-noel-tata-led-tata-trusts-126091701142_1.html"
+            },
+            {
+              "name": "Business Standard",
+              "headline": "Noel Tata opposes Chandra's reappointment, calls decision 'premature'",
+              "url": "https://www.business-standard.com/companies/news/noel-tata-n-chandrasekaran-chairman-extension-reappointment-tata-sons-listing-126091700859_1.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "N Chandrasekaran",
+          "who": "Indian business executive (born 1963)",
+          "detail": "Natarajan Chandrasekaran is an Indian business executive. He is the chairman of Tata Sons and Tata Group.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg/330px-Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Natarajan_Chandrasekaran"
+        },
+        {
+          "name": "Noel Tata",
+          "who": "Irish businessman (born 1957)",
+          "detail": "Noel Naval Tata is an Indian-born Irish businessman of Parsi and Swiss descent. He is the chairman of the Tata Trusts, Trent and Tata Investment Corporation, the managing director of Tata International, and the vice cha…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mr._Noel_Tata_and_Mr._Philip_Clarke%2C_CEO%2C_Tesco_meeting_the_Union_Minister_for_Commerce_%26_Industry_and_Textiles%2C_Shri_Anand_Sharma%2C_in_New_Delhi_on_May_10%2C_2013_%28cropped%29.jpg/330px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Noel_Tata"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "c16a5320",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "PM Modi turns 76, discusses West Asia with UAE President, inaugurates SEMICON India, and receives global wishe",
+      "topic": "Politics",
+      "regions": [
+        "national",
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "The Hindu leads with PM Modi's phone call with the UAE President; Hindustan Times highlights his birthday events and political tenure.",
+      "why_it_matters": "The prime minister's birthday marked significant diplomatic engagements and national events, reflecting his political influence.",
+      "affects": [
+        "indian citizens",
+        "international relations",
+        "technology sector"
+      ],
+      "agreed_facts": [
+        "Prime Minister Narendra Modi turned 76 on Thursday.",
+        "PM Modi and the UAE President discussed West Asia and their strategic partnership during a phone call.",
+        "PM Modi inaugurated SEMICON India.",
+        "Prime Minister Narendra Modi received birthday wishes from politicians.",
+        "Prime Minister Narendra Modi received birthday wishes from international leaders."
+      ],
+      "clusters": [
+        {
+          "angle": "International diplomatic engagements and birthday wishes for PM Modi",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "PM Modi, UAE Preident discuss West Asia, strategic partnership during phone call",
+              "url": "https://www.thehindu.com/news/national/pm-modi-uae-preident-discuss-west-asia-strategic-partnership-during-phone-call/article71483544.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "PM Modi, UAE President discuss West Asia crisis, bilateral ties over phone call",
+              "url": "https://www.hindustantimes.com/india-news/pm-modi-uae-president-discuss-west-asia-crisis-bilateral-ties-over-phone-call-101789731645364.html"
+            },
+            {
+              "name": "Mint",
+              "headline": "PM Modi birthday: After US, Russia, Nepal, Vietnam leaders, Giorgia Meloni pens heartfelt wish to Indian ‘friend’",
+              "url": "https://www.livemint.com/news/india/pm-modi-birthday-how-us-russia-nepal-vietnam-italy-meloni-wished-him-you-rightly-enjoy-deep-respect-11789634605913.html"
+            }
+          ]
+        },
+        {
+          "angle": "Domestic events and widespread birthday greetings for PM Modi",
+          "papers": [
+            {
+              "name": "The Print",
+              "headline": "Birthday moment for Prime Minister Modi at SEMICON India",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUmZQLThVaW5kcV9KdFIzVkhiUFNHNFdFb0lfOHlFVmVkNjhpakpqVEVSdUFEUVhtMFNzZEtiSFNFOUM0M3FsdERzMWNWamhNVkVxTTVodkI5dUh1dUVSdVdTUkI2UkR0NHBicDhPQXdaVjdKWWhiLVRYa0Q0RzY0Zy01MDlsZkU5QjhEVnlrd2dLSXowX3U2U9IBngFBVV95cUxPS1VPenZvYmJyRVNOZlJ5aXZLOWVSTUV0T2FJTmswWHlPc25td2h6NlluRVI3YXZpRHdoZ3Fzakc1bnlHcWRiV0tqbDlOeFAycVJZMmxncC1ZUDdYbnJCT21OUlhWYVQ4V1FzeFJCTWNUUElBajBKem9hMnQwTHJqcjl4MHBFc0hPd3VhaVViRklNTXpQSnNoZDV4U2FXQQ?oc=5"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Narendra Modi birthday LIVE: PM inaugurates SEMICON 2026 India, addresses Bengal's 'Annapurna Divas' on birthday",
+              "url": "https://www.hindustantimes.com/india-news/pm-modi-76th-birthday-wishes-live-updates-nda-bjp-varanasi-lamps-vadnagar-bjp-25-years-in-office-gujarat-amit-shah-101789608217390.html"
+            },
+            {
+              "name": "Mint",
+              "headline": "PM Modi birthday: Wishes pour in from across politics, sports and Bollywood",
+              "url": "https://www.livemint.com/news/india/pm-modi-turns-76-birthday-wishes-pour-in-from-across-politics-sports-and-bollywood-11789622147053.html"
+            }
+          ]
+        },
+        {
+          "angle": "Commemorating PM Modi's political tenure and milestones",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "PM Modi turns 76: 25 years in power that transformed India's political landscape",
+              "url": "https://www.hindustantimes.com/india-news/25-years-of-modi-the-making-of-a-political-force-101789583959262.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "SEMICON India",
+          "plain": "An event inaugurated by Prime Minister Modi on his birthday."
+        }
+      ],
+      "people": [
+        {
+          "name": "Narendra Modi",
+          "who": "Prime Minister of India since 2014",
+          "detail": "Narendra Damodardas Modi is an Indian politician who has served as the prime minister of India since 26 May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanas…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/The_official_portrait_of_Shri_Narendra_Modi%2C_the_Prime_Minister_of_the_Republic_of_India.jpg/330px-The_official_portrait_of_Shri_Narendra_Modi%2C_the_Prime_Minister_of_the_Republic_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Narendra_Modi"
+        },
+        {
+          "name": "UAE President",
+          "who": "Football league",
+          "detail": "The UAE President's Cup, or simply the President Cup, is a football tournament that takes place in United Arab Emirates, between clubs in the UAE Pro League and the UAE First Division League. The winner qualifies for th…",
+          "image": "https://upload.wikimedia.org/wikipedia/en/7/78/UAE_President%27s_Cup.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "wiki_url": "https://en.wikipedia.org/wiki/UAE_President's_Cup"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "ea5d2f1c",
+      "source_count": 4,
+      "read_seconds": 57
+    },
+    {
+      "headline": "Global developments include UN General Assembly proceedings and President Donald Trump's role in economic and ",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 2,
+      "teaser": "Al Jazeera leads with the EU urging the US regarding a Palestinian delegation; Times of India leads with Trump meeting Venezuela's acting president.",
+      "why_it_matters": "These reports cover significant international diplomatic and economic decisions impacting global stability.",
+      "affects": [
+        "diesel buyers",
+        "borrowers"
+      ],
+      "agreed_facts": [
+        "The United Nations General Assembly is referenced.",
+        "President Donald Trump is mentioned."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports focus on international diplomatic efforts and meetings surrounding the UN General Assembly.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "EU urges US to lift travel ban on Palestinian delegation for UNGA meeting",
+              "url": "https://www.aljazeera.com/news/2026/9/19/eu-urges-us-to-lift-travel-ban-on-palestinian-delegation-for-unga-meeting?traffic_source=rss"
+            },
+            {
+              "name": "Times of India",
+              "headline": "Trump to meet Venezuela acting president, first meeting since Maduro’s removal",
+              "url": "https://timesofindia.indiatimes.com/world/us/trump-to-meet-venezuela-acting-president-delcy-rodriguez-first-since-maduros-removal/articleshow/134346769.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Reports highlight President Trump's statements and the impact of his policies on economic indicators like diesel prices and interest rates.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Iran War Drives Bigger Diesel Supply Loss Despite Trump’s Claims",
+              "url": "https://www.livemint.com/news/us-news/iran-war-drives-bigger-diesel-supply-loss-despite-trump-s-claims-11789759718718.html"
+            },
+            {
+              "name": "BBC News",
+              "headline": "US interest rates raised for first time in three years",
+              "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "c51ce410",
+      "source_count": 4,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Health Ministry proposes mandatory CCTV surveillance at medical stores; surveys show widespread prescription n",
+      "topic": "Health",
+      "regions": [
+        "national",
+        "Maharashtra"
+      ],
+      "disagreement": 2,
+      "teaser": "The Hindu leads with survey findings on prescription non-compliance in Mumbai and state FDA action; Mint highlights the government's proposal for mandatory CCTV surveillance at medical stores.",
+      "why_it_matters": "This proposal aims to regulate the sale of prescription drugs, ensuring patient safety and proper medication use.",
+      "affects": [
+        "consumers",
+        "patients",
+        "medical store owners"
+      ],
+      "agreed_facts": [
+        "The Health Ministry has proposed amending the Drugs Rules, 1945.",
+        "This proposal, issued via a gazette notification on September 8, aims to curb the unauthorised sale of prescription drugs.",
+        "It specifically intends to prevent the unauthorised access to and sale of Schedule H, H1, and X drugs without valid prescriptions.",
+        "The proposal includes mandatory CCTV surveillance at medical stores.",
+        "A survey found that 64% of consumers say chemists rarely ask for prescriptions.",
+        "A survey in Mumbai involving 3,697 respondents found that 71% of consumers were rarely asked for prescriptions.",
+        "In Mumbai, 36% of respondents said chemists never refused to give them medicines without a prescription, and another 35% said they did so very rarely.",
+        "The Maharashtra FDA acted against 880 drug licensees in three months."
+      ],
+      "clusters": [
+        {
+          "angle": "Details of the government's proposal for CCTV surveillance at medical stores to regulate prescription drug sales",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "India proposes mandatory CCTVs at medical stores to regulate prescription drug sales",
+              "url": "https://www.livemint.com/news/india/health-ministry-mandatory-cctv-coverage-medical-stores-prescription-drugs-regulation-of-sales-chemists-pharmacies-11789625876785.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Why Health Ministry has proposed CCTV surveillance at medical stores for prescription drugs",
+              "url": "https://www.hindustantimes.com/india-news/why-health-ministry-has-proposed-cctv-surveillance-at-medical-stores-for-prescription-drugs-101789642403548.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Govt proposes mandatory CCTV to monitor unauthorised sale of prescription drugs",
+              "url": "https://www.hindustantimes.com/india-news/govt-proposes-mandatory-cctv-to-monitor-unauthorised-sale-of-prescription-drugs-101789643011957.html"
+            },
+            {
+              "name": "Mint",
+              "headline": "Amid govt's proposal for CCTVs at medical stores, 64% of consumers say chemists rarely ask for prescription: Survey",
+              "url": "https://www.livemint.com/news/india/amid-govt-proposal-for-cctvs-at-medical-stores-64-of-consumers-say-chemists-rarely-ask-for-prescription-survey-11789648077190.html"
+            }
+          ]
+        },
+        {
+          "angle": "Survey findings on the lack of prescription checks by chemists and related enforcement actions",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "71% consumers in Mumbai rarely asked for prescription, survey finds; Maharashtra FDA acted against 880 drug licensees in three months",
+              "url": "https://www.thehindu.com/news/cities/mumbai/71-consumers-in-mumbai-rarely-asked-for-prescription-survey-finds-maharashtra-fda-acted-against-880-drug-licensees-in-three-months/article71480804.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "Drugs Rules, 1945",
+          "plain": "These are the official regulations for medicines from the year 1945."
+        },
+        {
+          "term": "gazette notification",
+          "plain": "This is an official public announcement or order by the government."
+        },
+        {
+          "term": "drug licensees",
+          "plain": "These are people or businesses with official permission to sell medicines."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "17e62166",
+      "source_count": 3,
+      "read_seconds": 72
+    },
+    {
+      "headline": "US military deaths in Iran war exceed Pentagon's publicly listed count of 18",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 0,
+      "teaser": "",
+      "why_it_matters": "Accurate reporting of military casualties is crucial for public understanding of conflicts and accountability.",
+      "affects": [
+        "military families",
+        "us citizens",
+        "military personnel"
+      ],
+      "agreed_facts": [
+        "The Pentagon publicly lists 18 US military deaths since the Iran war began.",
+        "US troop deaths during the Iran war exceed the Pentagon count.",
+        "US troop deaths during the Iran war exceed the Pentagon count by at least four."
+      ],
+      "clusters": [
+        {
+          "angle": "Multiple reports indicate that the actual number of US military deaths in the Iran war is higher than the official Pentagon count.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "Iran war costs US $45.1 billion; fatalities possibly higher than 18 reported by Pentagon",
+              "url": "https://timesofindia.indiatimes.com/world/us/iran-war-costs-us-45-1-billion-fatalities-possibly-higher-than-18-reported-by-pentagon/articleshow/134346745.cms"
+            },
+            {
+              "name": "Reuters",
+              "headline": "US troop deaths during Iran war exceed Pentagon count by at least four, Washington Post reports",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWTJWTFE3dlFIRDVOVDZiY01XQXNxNDI0Z1RiWlFybTFpaEFEQUtpcVRnaEVNUUxPSkl3eFpLc1JzakdRWHNFQWZSUHhQMmQ0T0MtOHBrUjFYTGIzM0dMUmFwNGZPdWhkZUdUSmR1Q29mTHZXNDJuY2d6MllvMXNTM3pGM1BHQmVvQkstdEd2SDE2ZjJ4dXpxdmVSa25KcWJxaUV5eUFrNGFLSUJoT21wNDRieGxuQjFzTXNxU1dFZFlCT3R3aEJESmRR?oc=5"
+            },
+            {
+              "name": "Mint",
+              "headline": "Iran war US casualties: Why Pentagon tally shows 18 while officials cite 22-23",
+              "url": "https://www.livemint.com/news/us-news/iran-war-us-casualties-why-pentagon-tally-shows-18-while-officials-cite-2223-11789762061360.html"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Report: More US troops have died in Iran war than Pentagon says",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/report-more-us-troops-have-died-in-iran-war-than-pentagon-says?traffic_source=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-09-19",
+      "id": "f7177163",
+      "source_count": 4,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Mamata Banerjee challenges EC's freeze on Trinamool Congress name and symbol in Supreme Court",
+      "topic": "Politics",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 2,
+      "teaser": "Hindustan Times leads with Mamata Banerjee moving the Supreme Court against the ECI freeze; Indian Express leads with opposition backing Mamata Banerjee over the freeze.",
+      "why_it_matters": "The legal challenge affects the recognition of a major political party and the Election Commission's authority.",
+      "affects": [
+        "political parties",
+        "voters",
+        "legislators"
+      ],
+      "agreed_facts": [
+        "Mamata Banerjee has moved the Supreme Court.",
+        "She is challenging the Election Commission's decision.",
+        "The decision is to freeze the Trinamool Congress (TMC) name and symbol.",
+        "The freeze is an interim order.",
+        "The freeze comes amid a tussle between rival factions within the party."
+      ],
+      "clusters": [
+        {
+          "angle": "Mamata Banerjee has moved the Supreme Court to challenge the Election Commission's interim order freezing the Trinamool Congress name and symbol.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Mamata Banerjee challenges EC decision to freeze Trinamool name, symbol in Supreme Court",
+              "url": "https://indianexpress.com/article/india/mamata-banerjee-challenges-ec-decision-to-freeze-tmc-name-symbol-supreme-court-10884768/"
+            },
+            {
+              "name": "The Print",
+              "headline": "Mamata Banerjee moves SC challenging EC’s freeze on Trinamool name, symbol",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWm1GcUNvYWZaRUViTTlXUmdCamZxSm9YTmpVeWRjcW5rbVdWQ09jX2hSWTh6YUg3UGxYemRLaUdDanJWeHlRbHlDZ0JST3ExSlpKMnl1LTBPVVFzazNTQjl0ZU1rVVNnb0JPcDF0aXVkYlI4SEtOQ0JzVFNfS2F0S243R3FwWGp5cHJCRGFPSFV1dm1YeUpfUFdNeWQ2dXpyZlhsRnZaNTdCUEHSAbABQVVfeXFMTm55M0JRWUQ3UElRVmVhOHJYQXYtalFoejE5Y3hvZ3JEdXhBNXRDVUZpcTV2MEhUemxtSVBRNWNlMjFlWTNPenRZYmVRejduRWZFZjNaYnRVQkZWQTN2Y3pEWjNEWG1nMEwwSGxjOW1GQUhyRUJTTXJqZlFWejdzdzhPYTNXYmxEOE5vRndZSzJfVGJpRm9hR2NuSXh3WVpTa1AweVJIa1VKRlNSbFlIZXg?oc=5"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Mamata Banerjee moves Supreme Court against ECI freeze on TMC symbol",
+              "url": "https://www.hindustantimes.com/india-news/mamata-banerjee-moves-supreme-court-against-eci-freeze-on-tmc-symbol-101789794124268.html"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Mamata moves Supreme Court against ECI’s freeze on Trinamool Congress symbol",
+              "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Mamata moves Supreme Court against EC order freezing TMC name, symbol",
+              "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html"
+            }
+          ]
+        },
+        {
+          "angle": "Opposition parties have rallied in support of Mamata Banerjee, criticizing the Election Commission's decision to freeze the Trinamool Congress's name and symbol, which came amid internal party disputes.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Vote theft, party theft… murder of democracy: Opposition hits out at BJP, backs Mamata Banerjee over Trinamool Congress symbol freeze",
+              "url": "https://indianexpress.com/article/india/vote-theft-party-theft-murder-of-democracy-opposition-hits-out-at-bjp-backs-mamata-banerjee-over-trinamool-congress-symbol-feeze-10884384/"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "Trinamool name, symbol on interim freeze; factions told to pick new ones",
+              "url": "https://indianexpress.com/article/india/election-commission-freezes-trinmool-congress-name-symbol-mamata-banerjee-ritabrata-banerjee-10882682/"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "EC’s Trinamool symbol freeze order thaws the ice: Rahul Gandhi dials Mamata Banerjee, extends support",
+              "url": "https://www.hindustantimes.com/india-news/we-are-in-this-together-rahul-mamata-phone-call-revives-front-against-bjp-101789732730730.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Mamata Banerjee",
+          "who": "Chief Minister of West Bengal from 2011 to 2026",
+          "detail": "Mamata Banerjee is an Indian politician and lawyer who served as the eighth chief minister of West Bengal from 2011 to 2026. She was the first and only woman to hold that office.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Official_portrait_of_Mamata_Banerjee.jpg/330px-Official_portrait_of_Mamata_Banerjee.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Mamata_Banerjee"
+        }
+      ],
+      "published": "2026-09-19",
+      "id": "67c6a1e7",
+      "source_count": 4,
+      "read_seconds": 53
+    },
+    {
+      "headline": "India to charge 0.4% fee on UPI merchant payments over ₹2,000 from Oct 2026, ending free services",
+      "topic": "Economy",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 2,
+      "teaser": "Mint leads with an app designed to split UPI payments to avoid new fees; Hindustan Times covers political support for the charges.",
+      "why_it_matters": "The new fee structure impacts a significant portion of India's digital transactions and aims to ensure the payment system's long-term financial viability.",
+      "affects": [
+        "digital payment users",
+        "merchants"
+      ],
+      "agreed_facts": [
+        "Effective October 15, 2026, merchant payments over ₹2,000 will incur a 0.4% charge.",
+        "India's popular instant digital payments system, UPI, has been free of charge until now.",
+        "The charge is aimed at enhancing the payment system's financial sustainability.",
+        "Government sources state that customers should not bear merchant charges.",
+        "Around 4% of merchant UPI payments are over Rs 2,000 but drive 66% of the total value.",
+        "GST on MDR is applicable.",
+        "There will be 'no rethink' on the 0.4% fee for UPI payments above Rs 2,000."
+      ],
+      "clusters": [
+        {
+          "angle": "Reporting on the new UPI payment fee, related developments, and customer impact",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Here comes an app to split UPI payments into  ₹1,999 instalments: Social media reacts, ‘Can be easily flagged for fraud’",
+              "url": "https://www.livemint.com/news/trends/here-comes-an-app-to-split-upi-payments-into-1-999-instalments-social-media-reacts-can-be-easily-flagged-for-fraud-11789649167574.html"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "India to impose controversial fee for UPI instant payments: Who benefits?",
+              "url": "https://www.aljazeera.com/features/2026/9/17/india-to-impose-controversial-fee-for-upi-instant-payments-who-benefits?traffic_source=rss"
+            },
+            {
+              "name": "Reuters",
+              "headline": "India's UPI ends free era with fee on large merchant payments",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQY2tEdUtZclJBdVBxelU0S0UwRWc3NUtTaVpJRVM1UjY1a2VkYnI4c24wT3ppWmotaUNScndBNlUzVFp4d0JsMEszMHRWMnRQbDd0czJtVFRCcHFucjQ2b3Btd1pKTEJGb1dfMDZaLU1nTHNERDdpcWRJZXVfQkxRbjA5VlVmekZhNnNmOW5aemJsclRRVXlTYWFmQlY2RzlZaDA5RlZzQTg4RG1HMml6bEp3R01YRS1uSWVBbHZCUFByUQ?oc=5"
+            },
+            {
+              "name": "NDTV",
+              "headline": "4% Merchant UPI Payments Are Over Rs 2,000 But Drive 66% Of Total Value",
+              "url": "https://www.ndtv.com/india-news/4-merchant-upi-payments-are-over-rs-2-000-but-drive-66-of-total-value-12056188#publisher=newsstand"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "‘No rethink’ on 0.4% fee for UPI payments above Rs 2,000: Report",
+              "url": "https://indianexpress.com/article/india/no-rethink-rollback-0-4-mdr-upi-payments-above-rs-2000-government-sources-say-10880761/"
+            },
+            {
+              "name": "Mint",
+              "headline": "UPI payments: GST on MDR applicable, but customers should not bear merchant charges, government sources say",
+              "url": "https://www.livemint.com/news/india/upi-payments-gst-on-mdr-applicable-but-customers-should-not-bear-merchant-charges-government-sources-say-11789645852225.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlighting political support and the rationale for new UPI charges",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "'We fail to appreciate what we get for free': Omar Abdullah backs UPI MDR charges",
+              "url": "https://www.hindustantimes.com/india-news/we-fail-to-appreciate-what-we-get-for-free-omar-abdullah-backs-upi-mdr-charges-101789627872596.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "India’s digital payments system an ‘envy of the world’: Nirmala Sitharaman",
+              "url": "https://www.hindustantimes.com/india-news/fm-country-s-digital-payments-system-an-envy-of-the-world-101789586838402.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "UPI",
+          "plain": "A fast digital payment system in India."
+        }
+      ],
+      "people": [],
+      "published": "2026-09-17",
+      "id": "b51f47c3",
+      "source_count": 6,
+      "read_seconds": 59
+    },
+    {
+      "headline": "India to impose 0.4% fee on UPI merchant payments over ₹2,000 from October 2026",
+      "topic": "Economy",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "Mint leads with an app attempting to split UPI payments to avoid charges; Al Jazeera leads with India's instant payments system ending its free era.",
+      "why_it_matters": "The new charges aim to enhance the financial sustainability of India's popular digital payments system.",
+      "affects": [
+        "merchants",
+        "customers"
+      ],
+      "agreed_facts": [
+        "Effective October 15, 2026, merchant payments over ₹2,000 will incur a 0.4% charge.",
+        "India's popular instant digital payments system, UPI, has been free of charge until now.",
+        "Government sources have stated that customers should not bear merchant payment charges, as businesses are not to pass these costs on.",
+        "Omar Abdullah backed UPI MDR charges, stating that operating the UPI system costs a lot.",
+        "Nirmala Sitharaman commented on India's digital payments system following opposition to new transaction charges.",
+        "Approximately 4% of merchant UPI payments are over Rs 2,000 but drive 66% of the total value."
+      ],
+      "clusters": [
+        {
+          "angle": "Details surrounding the introduction of a new fee on UPI payments and its effective date.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Here comes an app to split UPI payments into  ₹1,999 instalments: Social media reacts, ‘Can be easily flagged for fraud’",
+              "url": "https://www.livemint.com/news/trends/here-comes-an-app-to-split-upi-payments-into-1-999-instalments-social-media-reacts-can-be-easily-flagged-for-fraud-11789649167574.html"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "India to impose controversial fee for UPI instant payments: Who benefits?",
+              "url": "https://www.aljazeera.com/features/2026/9/17/india-to-impose-controversial-fee-for-upi-instant-payments-who-benefits?traffic_source=rss"
+            },
+            {
+              "name": "Reuters",
+              "headline": "India's UPI ends free era with fee on large merchant payments",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQY2tEdUtZclJBdVBxelU0S0UwRWc3NUtTaVpJRVM1UjY1a2VkYnI4c24wT3ppWmotaUNScndBNlUzVFp4d0JsMEszMHRWMnRQbDd0czJtVFRCcHFucjQ2b3Btd1pKTEJGb1dfMDZaLU1nTHNERDdpcWRJZXVfQkxRbjA5VlVmekZhNnNmOW5aemJsclRRVXlTYWFmQlY2RzlZaDA5RlZzQTg4RG1HMml6bEp3R01YRS1uSWVBbHZCUFByUQ?oc=5"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "‘No rethink’ on 0.4% fee for UPI payments above Rs 2,000: Report",
+              "url": "https://indianexpress.com/article/india/no-rethink-rollback-0-4-mdr-upi-payments-above-rs-2000-government-sources-say-10880761/"
+            },
+            {
+              "name": "Mint",
+              "headline": "UPI payments: GST on MDR applicable, but customers should not bear merchant charges, government sources say",
+              "url": "https://www.livemint.com/news/india/upi-payments-gst-on-mdr-applicable-but-customers-should-not-bear-merchant-charges-government-sources-say-11789645852225.html"
+            }
+          ]
+        },
+        {
+          "angle": "Support for the new UPI charges and the government's stance amidst opposition.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "'We fail to appreciate what we get for free': Omar Abdullah backs UPI MDR charges",
+              "url": "https://www.hindustantimes.com/india-news/we-fail-to-appreciate-what-we-get-for-free-omar-abdullah-backs-upi-mdr-charges-101789627872596.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "India’s digital payments system an ‘envy of the world’: Nirmala Sitharaman",
+              "url": "https://www.hindustantimes.com/india-news/fm-country-s-digital-payments-system-an-envy-of-the-world-101789586838402.html"
+            }
+          ]
+        },
+        {
+          "angle": "Statistical insights into the value and volume of UPI transactions that will be affected by the new charges.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "4% Merchant UPI Payments Are Over Rs 2,000 But Drive 66% Of Total Value",
+              "url": "https://www.ndtv.com/india-news/4-merchant-upi-payments-are-over-rs-2-000-but-drive-66-of-total-value-12056188#publisher=newsstand"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "UPI",
+          "plain": "It is India's instant digital payments system."
+        },
+        {
+          "term": "MDR",
+          "plain": "It is a charge for operating the UPI system."
+        }
+      ],
+      "people": [
+        {
+          "name": "Omar Abdullah",
+          "who": "1st Chief Minister of the Union Territory of Jammu and Kashmir since 2024",
+          "detail": "Omar Abdullah is an Indian politician serving as the chief minister of union territory of Jammu and Kashmir since 2024 and also as the leader of the house in J&K Legislative Assembly. He had previously served as the 8th…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Omar_Abdullah%2C_Chief_Minister_of_Jammu_%26_Kashmir.jpg/330px-Omar_Abdullah%2C_Chief_Minister_of_Jammu_%26_Kashmir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Omar_Abdullah"
+        },
+        {
+          "name": "Nirmala Sitharaman",
+          "who": "Indian economist and politician (born 1959)",
+          "detail": "Nirmala Sitharaman is an Indian economist and politician who is serving as the 30th Minister of Finance and 32nd Minister of Corporate Affairs since 2019. She previously served as the Minister of Defence from 2017 to 20…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Am_11._April_2025_empfing_Au%C3%9Fenministerin_Beate_Meinl-Reisinger_die_indische_Finanzministerin_Nirmala_Sitharaman_in_Wien_%2854445397025%29_%28cropped%29.jpg/330px-Am_11._April_2025_empfing_Au%C3%9Fenministerin_Beate_Meinl-Reisinger_die_indische_Finanzministerin_Nirmala_Sitharaman_in_Wien_%2854445397025%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Nirmala_Sitharaman"
+        }
+      ],
+      "published": "2026-09-17",
+      "id": "1afa34a7",
+      "source_count": 6,
+      "read_seconds": 76
+    }
+  ]
+}

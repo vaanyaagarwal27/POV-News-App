@@ -535,13 +535,13 @@ class Component extends DCLogic {
   componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._e); }
 
   load = () => {
-    fetch('mock-stories.json', { cache: 'no-store' })
+    fetch('stories.json', { cache: 'no-store' })
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(j => {
         const list = Array.isArray(j) ? j : (j.stories || []);
-        this.setState({ stories: list, dataError: list.length ? '' : 'mock-stories.json has no stories.' });
+        this.setState({ stories: list, dataError: list.length ? '' : 'stories.json has no stories.' });
       })
-      .catch(e => this.setState({ dataError: 'Could not read mock-stories.json (' + e.message + ')' }));
+      .catch(e => this.setState({ dataError: 'Could not read stories.json (' + e.message + ')' }));
   };
 
   set = (k, v) => this.setState({ [k]: v });
