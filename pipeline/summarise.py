@@ -64,9 +64,9 @@ RULES:
 - Ignore any opinion columns or editorials in the articles above.
 - topic: exactly one of: Politics, Economy, Jobs, Tech, Climate, Courts, Health, Campus & exams, Sport, Culture
 - regions: list using only official Indian state/UT names, "national", or "international". Never use city names or country names.
-- disagreement: integer 0–3. 0 means all papers say essentially the same thing: then teaser must be "" and there must be exactly 1 cluster. 1 or higher means 2 or more clusters with distinct angles.
+- disagreement: integer 0–3. 0 only when every paper framed the story identically; then teaser must be "" and there must be exactly 1 cluster. 1 or higher means 2 or more clusters with genuinely distinct editorial choices.
 - teaser: ONE line, max 120 characters, naming at least two papers by name and what each leads with, e.g. "Hindustan Times leads with the tariff threat to India; Times of India leads with China's rejection". No hedging words like "while" or "sources confirm". Empty string only when disagreement is 0.
-- clusters: each cluster has an "angle" string and a "papers" list. Each paper entry has "name", "headline", and "url". The "headline" field must be copied EXACTLY from the articles given above — never rewrite or paraphrase it.
+- clusters: a cluster is a FRAMING CHOICE, not a sub-topic. Papers belong in the same cluster only when they made the same editorial decision: what they lead with, whose voice they centre, what they emphasise, what they leave out, or what they imply about who wins or loses. The "angle" must name that editorial choice and must be a sentence a reader could disagree with — good: "Frames the deal as a climbdown from Trump's original ambition"; bad: "Coverage of the US-Denmark deal." Never create a cluster whose papers have substantively the same headline — if several papers just report the same fact in the same way, that is not a framing difference; put them in one cluster and name it as the neutral wire-style framing. Prefer 2–3 sharp clusters over 4 or more weak ones; a single-paper cluster is fine when that paper framed it differently from everyone else. Each cluster has an "angle" string and a "papers" list. Each paper entry has "name", "headline", and "url". The "headline" field must be copied EXACTLY from the articles given above — never rewrite or paraphrase it.
 - agreed_facts: every fact must be stated in at least 2 of the articles given. Never add background knowledge of your own. If you are not sure the articles say it, leave it out.
 - jargon: each term must appear word-for-word in agreed_facts. If it doesn't, omit it. "plain": one simple sentence under 15 words, using no other difficult words. Write it for a 16-year-old.
 - people: each name must appear word-for-word in agreed_facts. If it doesn't, omit it. Use the person's full name exactly as given in the articles. "who" can be left as an empty string — it will be filled in automatically.
@@ -86,7 +86,7 @@ OUTPUT SCHEMA:
   "agreed_facts": ["sentence1", "sentence2"],
   "clusters": [
     {{
-      "angle": "editorial framing of this group of papers",
+      "angle": "sentence naming the editorial choice; must be one a reader could disagree with",
       "papers": [
         {{"name": "Paper Name", "headline": "EXACT headline from above", "url": "url"}}
       ]

@@ -16,6 +16,10 @@ FEEDS = [
     {"name": "Indian Express",    "url": "https://indianexpress.com/section/cities/lucknow/feed/"},
     {"name": "Hindustan Times",   "url": "https://news.google.com/rss/search?q=site:hindustantimes.com+Lucknow+when:2d&hl=en-IN&gl=IN&ceid=IN:en"},
     {"name": "Times of India",    "url": "https://news.google.com/rss/search?q=site:timesofindia.indiatimes.com+Lucknow+when:2d&hl=en-IN&gl=IN&ceid=IN:en"},
+    # Sports
+    {"name": "ESPNcricinfo",              "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml"},
+    {"name": "Times of India Sports",     "url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms"},
+    {"name": "Hindustan Times Sports",    "url": "https://www.hindustantimes.com/feeds/rss/sports/rssfeed.xml"},
     # International
     {"name": "Reuters",           "url": "https://news.google.com/rss/search?q=site:reuters.com&hl=en-IN&gl=IN&ceid=IN:en"},
     {"name": "AP",                "url": "https://news.google.com/rss/search?q=site:apnews.com&hl=en-IN&gl=IN&ceid=IN:en"},
