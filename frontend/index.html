@@ -42,16 +42,21 @@ a:hover{color:#9E4A57}
 
     <span style="position:relative;font:500 11px/1 'DM Sans',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#5A564C">news that keeps up with you</span>
 
-    <div ref="{{ medallionRef }}" style="position:relative;flex:0 1 auto;min-height:0;width:min(94vw,calc(100svh - 300px),760px);aspect-ratio:1;container-type:size;display:flex;align-items:center;justify-content:center">
+    <div ref="{{ medallionRef }}" style="position:relative;flex:0 1 auto;min-height:0;width:min(94vw,calc(100svh - 360px),760px);aspect-ratio:1;container-type:size;display:flex;align-items:center;justify-content:center">
       <div aria-hidden="true" style="position:absolute;inset:0;border-radius:50%;border:1px solid rgba(17,17,16,.1)"></div>
       <div aria-hidden="true" style="position:absolute;inset:9%;border-radius:50%;border:1px dashed rgba(158,74,87,.3);animation:pov-spin 46s linear infinite"></div>
       <div aria-hidden="true" style="position:absolute;inset:20%;border-radius:50%;border:1px solid rgba(147,160,111,.42);animation:pov-spin-r 34s linear infinite"></div>
       <div aria-hidden="true" style="position:absolute;inset:28%;border-radius:50%;background:radial-gradient(circle at 32% 24%,rgba(255,255,255,.96),rgba(255,255,255,.35) 58%,rgba(255,255,255,0) 78%)"></div>
       <img src="img/pov-logo.png" alt="POV" style="position:relative;display:block;width:54%;object-fit:contain;mix-blend-mode:multiply">
-      <p style="position:absolute;left:50%;top:76%;transform:translateX(-50%);margin:0;width:58%;text-align:center;font:400 clamp(13px,4.4cqw,27px)/1.24 'Instrument Serif',Georgia,serif;color:#111110;text-wrap:balance">Facts don't take sides. Neither do we.</p>
+      <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none">
+        <defs><path id="pov-arc" d="M 50,14.4 A 35.6,35.6 0 1 1 49.98,14.4"></path></defs>
+        <text font-family="'DM Sans',sans-serif" font-size="4.1" font-weight="500" fill="#5A564C">
+          <textPath href="#pov-arc" startOffset="0" textLength="216">ONE STORY • EVERY SOURCE • NO AGENDA •</textPath>
+        </text>
+      </svg>
     </div>
 
-    <p style="position:relative;margin:0;font:500 clamp(9.5px,1.05vw,11.5px)/1.4 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#5A564C;text-align:center">One story. Every source. No agenda.</p>
+    <p style="position:relative;margin:0;max-width:30ch;text-align:center;font:400 clamp(19px,2.2vw,26px)/1.26 'Instrument Serif',Georgia,serif;color:#111110;text-wrap:balance">Facts don't take sides. Neither do we.</p>
 
     <div style="position:relative;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
       <a href="app/index.html" style="padding:15px 26px;border-radius:999px;background:#111110;color:#EFEDE4;font:500 15px/1 'DM Sans',sans-serif" style-hover="background:#9E4A57;color:#fff">Open the app →</a>
