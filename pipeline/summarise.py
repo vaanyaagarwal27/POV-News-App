@@ -207,7 +207,8 @@ def validate(story, articles):
 
     # headline length
     if len(story.get("headline", "")) > 110:
-        story["headline"] = story["headline"][:110]
+        cut = story["headline"][:110].rsplit(" ", 1)[0]
+        story["headline"] = cut + "…"
         fixes.append("truncated headline to 110 characters")
 
     # read_seconds

@@ -157,10 +157,25 @@ def main():
         total_new += feed_new
         print(f"{feed['name']:<20} | {feed_count:>3} in feed | {feed_new:>3} new | {feed_skipped:>3} skipped | {feed_opinion:>3} opinion skipped | {feed_junk:>3} junk skipped")
 
+    prune_cutoff = now - timedelta(days=2)
+    before_prune = len(articles)
+    kept = []
+    for a in articles:
+        try:
+            pub_dt = datetime.fromisoformat(a.get("published", ""))
+            if pub_dt.tzinfo is None:
+                pub_dt = pub_dt.replace(tzinfo=timezone.utc)
+            if pub_dt >= prune_cutoff:
+                kept.append(a)
+        except Exception:
+            kept.append(a)
+    dropped = before_prune - len(kept)
+    articles = kept
+
     with open(ARTICLES_FILE, "w") as f:
         json.dump(articles, f, ensure_ascii=False, indent=2)
 
-    print(f"\nTotal new: {total_new}   Total in file: {len(articles)}")
+    print(f"\nDropped {dropped} articles older than 2 days   Total new: {total_new}   Total in file: {len(articles)}")
 
 
 if __name__ == "__main__":

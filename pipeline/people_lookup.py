@@ -56,6 +56,8 @@ def lookup_person(name):
 
 
 def _lookup_uncached(name):
+    if " " not in name.strip():
+        return None
     try:
         # 1. Search
         params = urllib.parse.urlencode({"q": name, "limit": 3})

@@ -213,13 +213,6 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Dilpreet_Singh"
         },
         {
-          "name": "Deepika",
-          "who": "Indian actress (born 1986)",
-          "detail": "Deepika Prakash Padukone is an Indian actress who works predominantly in Hindi films. Her accolades include three Filmfare Awards.",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Deepika_Padukone_2025_%281%29.png/330px-Deepika_Padukone_2025_%281%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Deepika_Padukone"
-        },
-        {
           "name": "Elavenil Valarivan",
           "who": "Indian sport shooter (born 1999)",
           "detail": "Elavenil Valarivan is an Indian sport shooter specialising in the 10 meter air rifle. She has represented India at several international shooting events, including the World Championships, World Cup, Asian Games, Asian…",
@@ -233,7 +226,7 @@
       "read_seconds": 79
     },
     {
-      "headline": "IIT Bombay student found dead after exam incident; faculty booked for alleged caste abuse and abetment of suic",
+      "headline": "IIT Bombay student found dead after exam incident; faculty booked for alleged caste abuse and abetment of suicide",
       "topic": "Campus & exams",
       "regions": [
         "national"
@@ -480,7 +473,7 @@
       "read_seconds": 45
     },
     {
-      "headline": "Rahul Gandhi critiques government on education, hostel funding, and 'system's' preference for 'andhbhakts' at ",
+      "headline": "Rahul Gandhi critiques government on education and hostel funding at Indore student event",
       "topic": "Campus & exams",
       "regions": [
         "national",
@@ -592,7 +585,7 @@
       "read_seconds": 73
     },
     {
-      "headline": "Indian states launch welfare and education initiatives, including school renovations, breakfast schemes, and a",
+      "headline": "Indian states launch welfare and education initiatives, including school renovations and breakfast schemes",
       "topic": "Campus & exams",
       "regions": [
         "Andhra Pradesh",
@@ -680,13 +673,6 @@
         }
       ],
       "people": [
-        {
-          "name": "Lokesh",
-          "who": "Indian politician (born 1983)",
-          "detail": "Nara Lokesh is an Indian politician currently serving as the Minister for Information Technology, Electronics and Communications, Real Time Governance and Human Resources Development in the Government of Andhra Pradesh.…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nara_Lokesh_at_CII_Partnership_Summit_2025%2C_Visakhapatnam.jpg/330px-Nara_Lokesh_at_CII_Partnership_Summit_2025%2C_Visakhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Nara_Lokesh"
-        },
         {
           "name": "C Joseph Vijay",
           "who": "Chief Minister of Tamil Nadu since 2026",
@@ -1246,22 +1232,7 @@
         }
       ],
       "jargon": [],
-      "people": [
-        {
-          "name": "N Chandrasekaran",
-          "who": "Indian business executive (born 1963)",
-          "detail": "Natarajan Chandrasekaran is an Indian business executive. He is the chairman of Tata Sons and Tata Group.",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg/330px-Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Natarajan_Chandrasekaran"
-        },
-        {
-          "name": "Noel Tata",
-          "who": "Irish businessman (born 1957)",
-          "detail": "Noel Naval Tata is an Indian-born Irish businessman of Parsi and Swiss descent. He is the chairman of the Tata Trusts, Trent and Tata Investment Corporation, the managing director of Tata International, and the vice cha…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mr._Noel_Tata_and_Mr._Philip_Clarke%2C_CEO%2C_Tesco_meeting_the_Union_Minister_for_Commerce_%26_Industry_and_Textiles%2C_Shri_Anand_Sharma%2C_in_New_Delhi_on_May_10%2C_2013_%28cropped%29.jpg/330px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Noel_Tata"
-        }
-      ],
+      "people": [],
       "published": "2026-09-20",
       "id": "1f0e3dad",
       "source_count": 2,
@@ -1342,7 +1313,7 @@
       "read_seconds": 45
     },
     {
-      "headline": "Trump signs Russia sanctions bill, allowing up to 100% tariffs on major energy buyers including India and Chin",
+      "headline": "Trump signs Russia sanctions bill, allowing up to 100% tariffs on major energy buyers including India and China",
       "topic": "Politics",
       "regions": [
         "international"
@@ -1616,15 +1587,7 @@
           "plain": "It is untrue information spread as real news."
         }
       ],
-      "people": [
-        {
-          "name": "Trump",
-          "who": "President of the United States (2017–2021; since 2025)",
-          "detail": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Donald_Trump"
-        }
-      ],
+      "people": [],
       "published": "2026-09-19",
       "id": "c74d97b0",
       "source_count": 6,
@@ -1881,29 +1844,14 @@
         }
       ],
       "jargon": [],
-      "people": [
-        {
-          "name": "N Chandrasekaran",
-          "who": "Indian business executive (born 1963)",
-          "detail": "Natarajan Chandrasekaran is an Indian business executive. He is the chairman of Tata Sons and Tata Group.",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg/330px-Natarajan_Chandrasekaran_-_India_Economic_Summit_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Natarajan_Chandrasekaran"
-        },
-        {
-          "name": "Noel Tata",
-          "who": "Irish businessman (born 1957)",
-          "detail": "Noel Naval Tata is an Indian-born Irish businessman of Parsi and Swiss descent. He is the chairman of the Tata Trusts, Trent and Tata Investment Corporation, the managing director of Tata International, and the vice cha…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mr._Noel_Tata_and_Mr._Philip_Clarke%2C_CEO%2C_Tesco_meeting_the_Union_Minister_for_Commerce_%26_Industry_and_Textiles%2C_Shri_Anand_Sharma%2C_in_New_Delhi_on_May_10%2C_2013_%28cropped%29.jpg/330px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Noel_Tata"
-        }
-      ],
+      "people": [],
       "published": "2026-09-19",
       "id": "c16a5320",
       "source_count": 3,
       "read_seconds": 45
     },
     {
-      "headline": "PM Modi turns 76, discusses West Asia with UAE President, inaugurates SEMICON India, and receives global wishe",
+      "headline": "PM Modi turns 76, discusses West Asia with UAE President, inaugurates SEMICON India, and receives global wishes",
       "topic": "Politics",
       "regions": [
         "national",
@@ -1982,29 +1930,14 @@
           "plain": "An event inaugurated by Prime Minister Modi on his birthday."
         }
       ],
-      "people": [
-        {
-          "name": "Narendra Modi",
-          "who": "Prime Minister of India since 2014",
-          "detail": "Narendra Damodardas Modi is an Indian politician who has served as the prime minister of India since 26 May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanas…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/The_official_portrait_of_Shri_Narendra_Modi%2C_the_Prime_Minister_of_the_Republic_of_India.jpg/330px-The_official_portrait_of_Shri_Narendra_Modi%2C_the_Prime_Minister_of_the_Republic_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Narendra_Modi"
-        },
-        {
-          "name": "UAE President",
-          "who": "Football league",
-          "detail": "The UAE President's Cup, or simply the President Cup, is a football tournament that takes place in United Arab Emirates, between clubs in the UAE Pro League and the UAE First Division League. The winner qualifies for th…",
-          "image": "https://upload.wikimedia.org/wikipedia/en/7/78/UAE_President%27s_Cup.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "wiki_url": "https://en.wikipedia.org/wiki/UAE_President's_Cup"
-        }
-      ],
+      "people": [],
       "published": "2026-09-19",
       "id": "ea5d2f1c",
       "source_count": 4,
       "read_seconds": 57
     },
     {
-      "headline": "Global developments include UN General Assembly proceedings and President Donald Trump's role in economic and ",
+      "headline": "Global developments include UN General Assembly proceedings and Donald Trump's role in economic diplomacy",
       "topic": "Politics",
       "regions": [
         "international"
@@ -2060,7 +1993,7 @@
       "read_seconds": 45
     },
     {
-      "headline": "Health Ministry proposes mandatory CCTV surveillance at medical stores; surveys show widespread prescription n",
+      "headline": "Health Ministry proposes mandatory CCTV surveillance at medical stores; surveys show widespread prescription non-compliance",
       "topic": "Health",
       "regions": [
         "national",
@@ -2283,7 +2216,7 @@
       "read_seconds": 53
     },
     {
-      "headline": "Saudi Arabia's capital targeted by Houthi missile attacks, prompting air raid alerts and international respons",
+      "headline": "Saudi Arabia's capital targeted by Houthi missile attacks, prompting air raid alerts and international responses",
       "topic": "Politics",
       "regions": [
         "international"
@@ -2603,15 +2536,7 @@
         }
       ],
       "jargon": [],
-      "people": [
-        {
-          "name": "Shivraj Singh Chouhan",
-          "who": "Indian politician (born 1999)",
-          "detail": "Shivraj Singh Chouhan is an Indian politician who is serving as the 32nd Minister of Agriculture and Farmers' Welfare and 23rd Minister of Rural Development since 2024. Chouhan served as the Chief Minister of Madhya Pra…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Shivraj_Singh_Chouhan_2025.jpg/330px-Shivraj_Singh_Chouhan_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan"
-        }
-      ],
+      "people": [],
       "published": "2026-09-19",
       "id": "7cbbc409",
       "source_count": 4,
@@ -2673,29 +2598,14 @@
           "plain": "The Nations League is a football tournament for European national teams."
         }
       ],
-      "people": [
-        {
-          "name": "Cristiano Ronaldo",
-          "who": "Portuguese footballer (born 1985)",
-          "detail": "Cristiano Ronaldo dos Santos Aveiro is a Portuguese professional footballer who plays as a forward for and captains the Saudi Pro League club Al-Nassr and the Portugal national team. Nicknamed CR7, he is widely regarded…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/330px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
-        },
-        {
-          "name": "Jorge Jesus",
-          "who": "Portuguese football manager (born 1954)",
-          "detail": "Jorge Fernando Pinheiro de Jesus is a Portuguese professional football manager and former player who is the head coach of the Portugal national team.",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/2020-02-17_Encontro_com_T%C3%A9cnico_do_Flamengo%2C_Jorge_Jesus_%28cropped%29.jpg/330px-2020-02-17_Encontro_com_T%C3%A9cnico_do_Flamengo%2C_Jorge_Jesus_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Jorge_Jesus"
-        }
-      ],
+      "people": [],
       "published": "2026-09-19",
       "id": "28dd2c79",
       "source_count": 4,
       "read_seconds": 45
     },
     {
-      "headline": "ABVP wins President and Secretary posts, independent candidate secures Vice-President in DUSU elections 2026-2",
+      "headline": "ABVP wins President and Secretary posts, independent candidate secures Vice-President in DUSU elections 2026-27",
       "topic": "Campus & exams",
       "regions": [
         "national"
@@ -2951,22 +2861,7 @@
           "plain": "It is a charge for operating the UPI system."
         }
       ],
-      "people": [
-        {
-          "name": "Omar Abdullah",
-          "who": "1st Chief Minister of the Union Territory of Jammu and Kashmir since 2024",
-          "detail": "Omar Abdullah is an Indian politician serving as the chief minister of union territory of Jammu and Kashmir since 2024 and also as the leader of the house in J&K Legislative Assembly. He had previously served as the 8th…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Omar_Abdullah%2C_Chief_Minister_of_Jammu_%26_Kashmir.jpg/330px-Omar_Abdullah%2C_Chief_Minister_of_Jammu_%26_Kashmir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Omar_Abdullah"
-        },
-        {
-          "name": "Nirmala Sitharaman",
-          "who": "Indian economist and politician (born 1959)",
-          "detail": "Nirmala Sitharaman is an Indian economist and politician who is serving as the 30th Minister of Finance and 32nd Minister of Corporate Affairs since 2019. She previously served as the Minister of Defence from 2017 to 20…",
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Am_11._April_2025_empfing_Au%C3%9Fenministerin_Beate_Meinl-Reisinger_die_indische_Finanzministerin_Nirmala_Sitharaman_in_Wien_%2854445397025%29_%28cropped%29.jpg/330px-Am_11._April_2025_empfing_Au%C3%9Fenministerin_Beate_Meinl-Reisinger_die_indische_Finanzministerin_Nirmala_Sitharaman_in_Wien_%2854445397025%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-          "wiki_url": "https://en.wikipedia.org/wiki/Nirmala_Sitharaman"
-        }
-      ],
+      "people": [],
       "published": "2026-09-17",
       "id": "1afa34a7",
       "source_count": 6,
