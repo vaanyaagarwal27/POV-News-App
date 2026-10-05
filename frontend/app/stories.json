@@ -1,7 +1,1260 @@
 {
-  "edition_date": "2026-09-20",
-  "generated_at": "2026-09-20T14:44:43.577175+05:30",
+  "edition_date": "2026-10-06",
+  "generated_at": "2026-10-06T01:01:55.704906+05:30",
   "stories": [
+    {
+      "headline": "Supreme Court issues notices on Form 6 changes; Opposition criticises CEC Gyanesh Kumar, BJP accuses Rahul…",
+      "topic": "Politics",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "NDTV leads with the Election Commission fact-checking Rahul Gandhi; Hindustan Times leads with the Opposition slamming CEC Gyanesh Kumar; The Hindu leads with the BJP accusing Rahul Gandhi.",
+      "why_it_matters": "This issue concerns the integrity of the voter registration process and the independence of the Election Commission.",
+      "affects": [
+        "voters",
+        "citizens",
+        "political parties"
+      ],
+      "agreed_facts": [
+        "Form 6 is used by citizens applying for inclusion in electoral rolls for the first time.",
+        "Form 6 is the statutory application used by citizens to register as voters.",
+        "The Supreme Court clarified that it had not approved any modification to Form 6.",
+        "The Supreme Court issued notices to the government and the Election Commission.",
+        "The Supreme Court declined to suspend CEC Gyanesh Kumar.",
+        "Rahul Gandhi made allegations concerning Form 6."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the story by highlighting the Opposition's strong condemnation of CEC Gyanesh Kumar, linking his actions to the Supreme Court's clarification on Form 6 modifications.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "‘Criminal assault on democracy’: Oppn slams CEC Gyanesh Kumar after SC's Form 6 clarification",
+              "url": "https://www.hindustantimes.com/india-news/opposition-slams-cec-gyanesh-kumar-supreme-court-form-6-clarification-sc-rahul-gandhi-abhishek-banerjee-jairam-ramesh-congress-tmc-101791200274750.html"
+            },
+            {
+              "name": "The Print",
+              "headline": "Established beyond doubt Gyanesh Kumar changed Form 6 illegally, unilaterally: Rahul",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVDMyLWNDSFY1U3pMZnBJbG9teWQ2RjJQRmk0aHJTMGVJSHZKNlRVMVd1UWQ0ZmQ3dTdsbk5YWkFTQlFtNXpic1FmcHh1M1A4blQ1MXhhQ05LaXlYSDZNWWNhM3dWaXFsc2gzTUdKcnF5bWpSX0xOUE8yVXNjQXpQSHo2NWhGMm5BWjY0TXhRdUV0eXhJSzVnZkxUWE5zOV9oVERPSl9aUF8ySVV5dGpWbGh3dnJ3UHlI0gG-AUFVX3lxTE9MZmhjMUJNRmZhNjhTN29yVnBiaTZXZVMxZy0xcnVUNXV4dG1YOTgxYkhULWpsWHduS0dmcWpvNVdmcGVqZjVndUNUSDlxU2hnenQxcm5IYlRJc0dRSnBsU0Z2ZGFqLWpLV3VzUzBtNU5LWnBrbVNLek1ZbzBJQkRSb0l2LTZqdElGTDFUejBQemtyRTljS2c1cE9rRXZMYVI3WnpJWl91TWJldWx3X2hIQTFWQVRzTEVxZ1ZZekE?oc=5"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Gyanesh Kumar misled the country, must resign: D. Raja",
+              "url": "https://www.thehindu.com/news/national/gyanesh-kumar-misled-the-country-must-resign-d-raja/article71548259.ece"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "'Serving his political bosses’: Dipke sharpens attack against Gyanesh Kumar as SC denies approving Form 6 changes",
+              "url": "https://www.hindustantimes.com/india-news/did-cec-gyanesh-kumar-lie-to-country-cjp-abhijeet-dipke-saurav-das-ashutosh-ranka-supreme-court-did-not-approve-form-6-modifications-101791197718239.html"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on the BJP's counter-accusations against Rahul Gandhi regarding Form 6 and presents the Supreme Court's actions as evidence of democratic processes.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "After SC notice, BJP accuses Rahul Gandhi of ‘spreading lies and confusion’ over Form 6",
+              "url": "https://www.thehindu.com/news/national/bjp-says-supreme-court-notice-to-ec-centre-shows-independence-of-institutions/article71547151.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Presents the Supreme Court's decisions regarding CEC Gyanesh Kumar and Form 6, alongside the Election Commission's response to allegations, as the central elements of the story.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "Election Commission \"Fact-Checks\" Rahul Gandhi's Form 6 Allegations",
+              "url": "https://www.ndtv.com/india-news/gyanesh-kumar-rahul-gandhi-eci-election-commission-factchecks-rahul-gandhis-form-6-allegations-12142478#publisher=newsstand"
+            },
+            {
+              "name": "Mint",
+              "headline": "SC declines to suspend CEC Gyanesh Kumar, seeks response on poll body decisions",
+              "url": "https://www.livemint.com/news/india/cec-gyanesh-kumar-sir-voter-list-india-supreme-court-order-on-cec-11791189277401.html"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "India News Highlights 2026: Supreme Court to hear pleas seeking suspension of CEC Gyanesh Kumar",
+              "url": "https://indianexpress.com/article/india/today-india-breaking-news-live-updates-04-october-2026-vhp-alok-kumar-ram-mandir-donation-row-sit-probe-gst-arrest-powers-asian-games-10905794/"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "Form 6",
+          "plain": "It is an application form used by citizens to register as voters."
+        },
+        {
+          "term": "electoral rolls",
+          "plain": "These are lists of people who are registered to vote."
+        },
+        {
+          "term": "statutory application",
+          "plain": "This is a formal request required by law."
+        }
+      ],
+      "people": [
+        {
+          "name": "Rahul Gandhi",
+          "who": "12th Leader of the Opposition in Lok Sabha since 2024",
+          "detail": "Rahul Rajiv Gandhi is an Indian politician. A member of the Indian National Congress (INC), he is currently serving as the 12th leader of the Opposition in Lok Sabha and as the member of the Lok Sabha for Rae Bareli, Ut…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Rahul_Gandhi.png/330px-Rahul_Gandhi.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Rahul_Gandhi"
+        },
+        {
+          "name": "Gyanesh Kumar",
+          "who": "26th Chief Election Commissioner of India",
+          "detail": "Gyanesh Kumar is a former IAS officer who currently serves as the Chief Election Commissioner of India and the first to be appointed under the Chief Election Commissioner and Other Election Commissioners Act, 2023. He h…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Chief_Election_Commissioner_of_India%2C_Sh._Gyanesh_Kumar.jpg/330px-The_Chief_Election_Commissioner_of_India%2C_Sh._Gyanesh_Kumar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Gyanesh_Kumar"
+        }
+      ],
+      "published": "2026-10-05",
+      "id": "aab32389",
+      "source_count": 6,
+      "read_seconds": 78
+    },
+    {
+      "headline": "BJP announces 8 Rajya Sabha candidates for Uttar Pradesh, drops Union Ministers; Actor Koel Mallick nominated…",
+      "topic": "Politics",
+      "regions": [
+        "Uttar Pradesh",
+        "West Bengal",
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "Mint leads with the BJP's candidate list for Uttar Pradesh Rajya Sabha elections and the dropping of Union Ministers, Indian Express highlights BJP nominations from other states like West Bengal, and The Hindu reports on the simultaneous polls panel's meetings and planned engagement with the CJI.",
+      "why_it_matters": "These nominations are crucial as they determine representation in the upper house of India's Parliament, impacting legislative processes.",
+      "affects": [
+        "voters",
+        "politicians",
+        "legislators"
+      ],
+      "agreed_facts": [
+        "The BJP announced eight candidates for the Rajya Sabha elections from Uttar Pradesh.",
+        "Union Ministers Hardeep Puri and BL Verma were dropped from the BJP's list of candidates for the Rajya Sabha elections from Uttar Pradesh.",
+        "The BJP nominated actor Koel Mallick as its Rajya Sabha candidate from West Bengal."
+      ],
+      "clusters": [
+        {
+          "angle": "Focuses on the BJP's candidate list for Uttar Pradesh Rajya Sabha elections, highlighting the dropping of sitting Union Ministers.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "UP Rajya Sabha elections: BJP releases list of 8 candidates; Ministers Hardeep Puri, BL Verma dropped",
+              "url": "https://www.livemint.com/news/india/up-rajya-sabha-elections-bjp-releases-list-of-8-candidates-ministers-hardeep-puri-bl-verma-dropped-11791197357242.html"
+            },
+            {
+              "name": "The Print",
+              "headline": "BJP names 8 candidates for UP Rajya Sabha polls",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYkRPZTJHWW1nR2xVTXRGRmRmV3R1NUpfRHJUY1JYcTVzbGJBbElfVmRPM0NLaTE2OGtfeFM1SW1FV05KS3RYUXgwaVFUQUw3ODU3OXN0UE0wNmdlV000MzJzeGxSUmEyaXJKMHNqWThLVjZIQ2RTQUg1TGxMTmxBTmJzVnFQUnFHZ1HSAY8BQVVfeXFMTy1LNnNyLUZyVzVpWnZZYXhYbGJTNU1UX1pDUWItMGx3Q29rUnZkblA1eTVhYlh0WUIzX3ZNSFJ5aUl3X240eGVIVjBnV1FkVjlrYlhXNTFxZG5qS1Vkd3lidDRZOVJFZUZiMUNWSkJ0TzJKeFkxNThxVjhia21EOVpwN1o3SW9HZWNEYk9DVDQ?oc=5"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "BJP’s list of 8 for Rajya Sabha poll: 2 women candidates, 1 big name dropped",
+              "url": "https://indianexpress.com/article/india/bjp-rajya-sabha-polls-hardeep-singh-puri-10907509/"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "BJP's UP Rajya Sabha poll candidate list drops Hardeep Puri, all other sitting MPs in big shake-up | Full list",
+              "url": "https://www.hindustantimes.com/india-news/bjp-announces-8-candidates-rajya-sabha-elections-from-up-union-ministers-hardeep-puri-bl-verma-not-renominated-101791193766439.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the BJP's Rajya Sabha nominations from states other than Uttar Pradesh, particularly featuring actor Koel Mallick.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Rajya Sabha polls: BJP fields Dinesh Arya from Uttarakhand, Koel Mallick from Bengal",
+              "url": "https://indianexpress.com/article/india/bjp-rajya-sabha-candidates-dinesh-arya-koel-mallick-10906318/"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Actor Koel Mallick joins BJP, files Rajya Sabha nomination months after quitting",
+              "url": "https://www.hindustantimes.com/india-news/actor-koel-mallick-joins-bjp-files-rajya-sabha-nomination-months-after-quitting-101791191062422.html"
+            }
+          ]
+        },
+        {
+          "angle": "Reports on the simultaneous polls panel's activities, including meetings with media personalities and its plan to meet the CJI.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "DMK MP defends the simultaneous polls panel’s plan to meet CJI",
+              "url": "https://www.thehindu.com/news/national/dmk-mp-defends-the-simultaneous-polls-panels-plan-to-meet-cji/article71548610.ece"
+            },
+            {
+              "name": "The Hindu",
+              "headline": "Panel on simultaneous elections Bills meets media personalities and economists",
+              "url": "https://www.thehindu.com/news/national/panel-on-simultaneous-elections-bills-meets-media-personalities-and-economists/article71547172.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "Rajya Sabha",
+          "plain": "It is the upper house of India's bicameral Parliament."
+        }
+      ],
+      "people": [
+        {
+          "name": "Hardeep Puri",
+          "who": "Indian politician and diplomat (born 1952)",
+          "detail": "Hardeep Singh Puri is an Indian politician and retired diplomat of Indian Foreign Service who is serving as the Minister of Petroleum and Natural Gas since 2021.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Hardeep_Singh_Puri_with_PM_Modi_%28cropped%29.jpg/330px-Hardeep_Singh_Puri_with_PM_Modi_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Hardeep_Singh_Puri"
+        },
+        {
+          "name": "Koel Mallick",
+          "who": "Indian actress and politician",
+          "detail": "Rukmini Mallick, known professionally as Koel Mallick, or mononymously as Koel, is an Indian actress, politician and a member of Rajya Sabha from West Bengal, known for her work primarily in Bengali films. Often referre…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Koyel_Mullick.jpg/330px-Koyel_Mullick.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Koel_Mallick"
+        }
+      ],
+      "published": "2026-10-05",
+      "id": "8e296a06",
+      "source_count": 5,
+      "read_seconds": 67
+    },
+    {
+      "headline": "Spain calls snap election for November 29 amid ongoing housing crisis and parliamentary defeats",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Mint highlights what's at stake for Prime Minister Pedro Sánchez, while Reuters frames the election as a gamble for him.",
+      "why_it_matters": "The election will determine the future leadership of Spain and how the government addresses the country's housing challenges.",
+      "affects": [
+        "voters",
+        "residents"
+      ],
+      "agreed_facts": [
+        "Spain's Prime Minister Pedro Sánchez has called an early general election for November 29.",
+        "The decision to call an early election was made amid mounting anger over the country's housing crisis.",
+        "The move follows recent defeats on measures aimed at addressing the country's housing crisis in parliament."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the election as a direct consequence of the housing crisis and parliamentary setbacks.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Spain calls snap election amid housing crisis",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/spain-calls-snap-election-amid-housing-crisis?traffic_source=rss"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Spanish PM Sánchez calls early election after housing protests",
+              "url": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on Prime Minister Sánchez's strategic calculation and the political risk involved in calling the snap election.",
+          "papers": [
+            {
+              "name": "AP",
+              "headline": "Spain’s prime minister calls snap election aiming to seize momentum over housing crisis",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYUJUb21rRnJmOXJKSnBLSXRwLTh5ZFlUWGk0c01pODBGb0lUUXJuRmIxOHRTMTdzRGxTcFBqYXFodGM4V2RRNmlrTk1OZHR4REpqQXgxQ1ZRVnowanpnUE1hbWxzc3E5NkYxUnExVzN0bl94ZUFvUks0LTFzLTk1QUpCbXRPa2hEVHhwa01ZeTNFMDZ2?oc=5"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Spain's Sanchez gambles on snap election after housing protests give rare boost",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOVhBVGZVY0xzcUZLLWZFWDNlODhjb3ZtaFowYm5WTEs5b0E0NGZ2alExMUhyU0dkY0VjdllLSkY0dVItUjlqUDU1MEhfU1kzM3lORWpWUXBPek9aXzVvNmhZcS15R1JtRDJHUktOX1BvbzcxenZoSE9YYVBFRllZbk80NXJWeWlJVDgteGJfVFp2VTJuaWNNNHNFWHpobHlIWVdRV3ljTml5U1NCaWZwU2d1Y19QODRuS19IemtmMA?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Examines the high political stakes and potential impact on Prime Minister Sánchez's power, given recent polling.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Spain PM Pedro Sánchez calls snap election for November 29 after housing setback: What’s at stake",
+              "url": "https://www.livemint.com/news/world/spain-pm-pedro-s-nchez-calls-snap-election-for-november-29-after-housing-setback-what-s-at-stake-11791189832546.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "housing crisis",
+          "plain": "A severe shortage of affordable places to live."
+        }
+      ],
+      "people": [
+        {
+          "name": "Pedro Sánchez",
+          "who": "Prime Minister of Spain since 2018",
+          "detail": "Pedro Sánchez Pérez-Castejón is a Spanish politician who has been the prime minister of Spain since 2018. A member of the Spanish Socialist Workers' Party (PSOE), he is also Secretary-General of the party since 2017, ha…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Pedro_S%C3%A1nchez_2026_Portrait_%283x4_cropped%29.jpg/330px-Pedro_S%C3%A1nchez_2026_Portrait_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Pedro_S%C3%A1nchez"
+        }
+      ],
+      "published": "2026-10-05",
+      "id": "4e732ced",
+      "source_count": 5,
+      "read_seconds": 64
+    },
+    {
+      "headline": "Daniil Medvedev disqualified from China Open semifinal for hitting spectator; Novak Djokovic's quarterfinal…",
+      "topic": "Sport",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times Sports leads with Daniil Medvedev's apology and a separate Novak Djokovic controversy; Al Jazeera reports Medvedev's factual disqualification.",
+      "why_it_matters": "The incident affects player conduct rules and safety standards in professional tennis.",
+      "affects": [
+        "tennis players",
+        "tennis fans",
+        "tournament organisers"
+      ],
+      "agreed_facts": [
+        "Daniil Medvedev was disqualified from the China Open.",
+        "He was disqualified for hitting a spectator with a ball during his semifinal match against Novak Djokovic.",
+        "Novak Djokovic won a quarterfinal match against Alexander Zverev at the China Open."
+      ],
+      "clusters": [
+        {
+          "angle": "Provides a concise, factual account of Daniil Medvedev's disqualification without detailing player reactions or other tournament events.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Medvedev disqualified from China Open for hitting fan with a ball",
+              "url": "https://www.aljazeera.com/sports/2026/10/5/medvedev-disqualified-from-china-open-for-hitting-fan-with-a-ball?traffic_source=rss"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Medvedev disqualified from China Open semi after injuring spectator with ball",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZW5aZkNweUtjN2VZa3pzdXhBRldhZ2xZZDJBLUxGUjBDQjRfeFNTclVhNVhMM0FsUDIyT3RZMmVPU25wVzJTdDJkUjVnc1VKTmlNTk5pb2c2a0FMT1FpYkNaUnNLSkVza0RJeTFzTzZMSVNvQ09FcDNaY2p4alZtWUNtbXFuTk9jaEoyZUk1OE5jUzgzZEtJdDczWXVMcDNqaDZCYkI1VlN3RXBHaVMwN1h1UjNHTFlS?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights player reactions, such as Medvedev's apology or Djokovic's shock, and adds specific match details surrounding Daniil Medvedev's disqualification.",
+          "papers": [
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "Daniil Medvedev disqualified from China Open for hitting spectator with a ball during semifinal vs Novak Djokovic",
+              "url": "https://www.hindustantimes.com/sports/tennis/daniil-medvedev-disqualified-from-china-open-for-hitting-spectator-with-a-ball-during-semifinal-vs-novak-djokovic-101791221810765.html"
+            },
+            {
+              "name": "Times of India Sports",
+              "headline": "Medvedev disqualified after hitting spectator with ball; Djokovic ‘shocked’ - Watch",
+              "url": "https://timesofindia.indiatimes.com/sports/tennis/top-stories/daniil-medvedev-disqualified-from-china-open-after-hitting-spectator-with-ball-novak-djokovic-says-i-was-shocked-watch/articleshow/134710510.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on Novak Djokovic's separate quarterfinal match, including his victory and any controversies that occurred during it.",
+          "papers": [
+            {
+              "name": "Hindustan Times Sports",
+              "headline": "‘Most stupid rule’: Novak Djokovic loses his cool, clashes with umpire and Alexander Zverev as VAR drama erupts in tense China Open win",
+              "url": "https://www.hindustantimes.com/sports/tennis/most-stupid-rule-novak-djokovic-loses-his-cool-clashes-with-umpire-and-alexander-zverev-as-var-drama-erupts-in-tense-china-open-win-101791175908897.html"
+            },
+            {
+              "name": "Reuters",
+              "headline": "Djokovic rallies past Zverev in thriller to reach China Open semi-finals",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWlJYeWtFV2kwSF9SMUJTS0h5ODZ0YnhEYTc1NFZoZHpZUlBZd0NheGhJOGs3M3JzM1JGcTVBRjRtYVRsOGcwcmlnajVabkNnVzBaNUhYeU5Tb2FGa3d3bjBlLWdJWU1xTzNJSTZwZk51WUE5WVhSaENzckQwTGNTOFgzeHNHdlNBSVhqWmh1eXd2NTVkYkppTVJ5WWdFVjVFY19MYVBOSzFsWjg?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "disqualified",
+          "plain": "When a player is removed from a competition for breaking rules."
+        }
+      ],
+      "people": [
+        {
+          "name": "Daniil Medvedev",
+          "who": "Russian tennis player (born 1996)",
+          "detail": "Daniil Sergeyevich Medvedev is a Russian professional tennis player. He was formerly ranked as the world No.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Daniil_Medvedev_%282025_DC_Open%29_05_%28cropped%29.jpg/330px-Daniil_Medvedev_%282025_DC_Open%29_05_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Daniil_Medvedev"
+        },
+        {
+          "name": "Novak Djokovic",
+          "who": "Serbian tennis player (born 1987)",
+          "detail": "Novak Djokovic is a Serbian professional tennis player. He has been ranked as the world No.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Novak_Djokovic_Paris_2024_Olympic_Games_%28cropped%29.jpg/330px-Novak_Djokovic_Paris_2024_Olympic_Games_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Novak_Djokovic"
+        },
+        {
+          "name": "Alexander Zverev",
+          "who": "German tennis player (born 1997)",
+          "detail": "Alexander \"Sascha\" Zverev is a German professional tennis player. He has a career-high singles ranking of world No.",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Alexander_Zverev_%28cropped%29.jpg/330px-Alexander_Zverev_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Alexander_Zverev"
+        }
+      ],
+      "published": "2026-10-05",
+      "id": "6f4922f4",
+      "source_count": 4,
+      "read_seconds": 61
+    },
+    {
+      "headline": "US and German Scientists Awarded Nobel Medicine Prize for Brain Research",
+      "topic": "Health",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 2,
+      "teaser": "Reuters and Al Jazeera lead with US and German scientists; AP leads with three scientists; BBC News leads with revealing the brain's inner workings.",
+      "why_it_matters": "Understanding brain activity is crucial for medical advancements.",
+      "affects": [
+        "scientists"
+      ],
+      "agreed_facts": [
+        "US and German scientists won the Nobel medicine prize.",
+        "The Nobel medicine prize was awarded for work on light and brain activity.",
+        "The Nobel medicine prize was awarded to three scientists."
+      ],
+      "clusters": [
+        {
+          "angle": "Emphasises the nationality of the winning scientists and the broad area of their research.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "US and German scientists win Nobel medicine prize for work on light and brain",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQXo2cFZNQjV2OVJOVnRDUlIzR0VJazh3WWt0MXlQXzBkWXlPRG1RVzZtVWlvbmdZMXFBM08xQzR0ZVlVdGtYVm5Dd2ptcHVhZmp1RDFxQkkxUzV4V2FLWWtaNlRWY25MbDVJSGsxNlA0LUdfNkVBOXdDTUdrNDdSR2lNSHc2c2VBMW1iejZWZ0tNN1hiVjBTdC1xcWR1SnA0cTFlVVF0RFA1SGhLWHZzR0QwbWkzYWRiM2U5dmpHdnJ3UnJV?oc=5"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Nobel medicine prize honours US and German scientists for optogenetics work",
+              "url": "https://www.aljazeera.com/news/2026/10/5/nobel-medicine-prize-honours-us-and-german-scientists-for-optogenetics-work?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the number of laureates and the specific mechanism of their brain activity research.",
+          "papers": [
+            {
+              "name": "AP",
+              "headline": "Nobel medicine prize goes to 3 scientists for shining light on brain activity",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZmJWS3hfcm0yUXVXX1dQLW1MNjhkNkhPLXVHWjc1M1RhRXJKT2hRVGlWZjV0LWtQdGtIc0hxeGFCclRMNlEwczVHTndqR21iSENZOHJtem8zeDZXQXVBenBvYWYxcVVvQmx0ck8weTV3dU16OHVyV25nX0tQUlRvdmhPZWJKX0p2aVFBajJhcHE?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Centers on the breakthrough in understanding the fundamental operations of the brain.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Nobel Prize awarded for revealing inner workings of the brain",
+              "url": "https://www.bbc.co.uk/news/articles/c5ev3ypmzly8o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "98f13708",
+      "source_count": 4,
+      "read_seconds": 54
+    },
+    {
+      "headline": "Brazil's Presidential Election Heads to October 25 Run-off Between Flavio Bolsonaro and Lula",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times highlights Trump's mistake regarding Brazil's election; Al Jazeera analyzes Flavio Bolsonaro's projection to win the run-off.",
+      "why_it_matters": "The outcome of the election will determine Brazil's next president and its future political direction.",
+      "affects": [
+        "brazilians",
+        "voters"
+      ],
+      "agreed_facts": [
+        "Brazil held the first round of its presidential election on Sunday.",
+        "Flavio Bolsonaro won the first round of Brazil's presidential election.",
+        "Flavio Bolsonaro will face Lula in a run-off vote.",
+        "The run-off vote is scheduled for October 25."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports the direct results of the first round, naming the winner and the candidates advancing to the run-off.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "Bolsonaro will face Lula in runoff in Brazil's presidential vote",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTzYxcENTQ3M0VnFWR3h0cVF2TkRtc2Rlci13bDE5dnZXMENGLWVPTzdKX3RpRXBvZGJFcEo3d2tmelg2QmN4Q1lkNGhnN1luQ3FCdnRMeUxlTHlTeGswVzNjWVBzdVI2ZWttdm5HR3REQ3lSd3JqSUltVTRuTTY2dWdVTFVsRUNyZGVTVDBkY2E1M3poNG8tNktZMjNtNWliR2dlRkxR?oc=5"
+            },
+            {
+              "name": "BBC News",
+              "headline": "Right-wing Flávio Bolsonaro wins first round of Brazil election",
+              "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Provides an analytical perspective on the election, focusing on projections for the run-off winner and what the first round results indicate.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Bolsonaro favourite to win: What Brazil’s first round of elections tells us",
+              "url": "https://www.aljazeera.com/news/2026/10/5/bolsonaro-favourite-to-win-what-brazils-first-round-of-election-tells-us?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights a prominent international figure's public error concerning the election, shifting focus to the gaffe itself.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "Trump mistakes Brazil for India, says 125 million voted today in 'India's Presidential Election'",
+              "url": "https://www.hindustantimes.com/india-news/trump-mistakes-brazil-for-india-says-125-million-voted-today-in-india-presidential-election-101791172300909.html"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes the visual and narrative aspects of the election day, portraying its unfolding as a dramatic event.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Watch: How Brazil's dramatic election unfolded",
+              "url": "https://www.bbc.co.uk/news/videos/cwp9g54v9xjlo?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "072b030b",
+      "source_count": 4,
+      "read_seconds": 78
+    },
+    {
+      "headline": "Mecca Defence Alliance activated amid Houthi attacks; US and India deepen defence ties",
+      "topic": "Politics",
+      "regions": [
+        "international",
+        "national"
+      ],
+      "disagreement": 2,
+      "teaser": "Times of India and Al Jazeera lead with Mecca defence pact activation; The Hindu leads with US Indo-Pacific Command head's India visit.",
+      "why_it_matters": "These developments signify significant shifts in international and regional military alliances and cooperation to address security threats.",
+      "affects": [
+        "military personnel",
+        "defence industries"
+      ],
+      "agreed_facts": [
+        "Pakistan, Saudi Arabia, and Turkiye have agreed to activate collective deterrence measures.",
+        "These measures are in response to attacks by Yemen's Houthi group."
+      ],
+      "clusters": [
+        {
+          "angle": "Provides a neutral, factual account of the Mecca Defence Pact activation and its purpose.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "Pakistan, Saudi, Turkiye activate Mecca defence pact as Yemen war escalates",
+              "url": "https://timesofindia.indiatimes.com/world/middle-east/pakistan-saudi-arabia-turkiye-activate-mecca-defence-pact-amid-houthi-attacks/articleshow/134716048.cms"
+            },
+            {
+              "name": "Al Jazeera",
+              "headline": "Mecca Alliance: Turkiye, Pakistan agree military deployment to Saudi Arabia",
+              "url": "https://www.aljazeera.com/news/2026/10/5/mecca-alliance-agrees-to-activate-collective-deterrence-measures?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on the high-level military engagement between the United States and India to strengthen defence ties.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Admiral Paparo meets top Indian military leadership at U.S. Envoy’s dinner in New Delhi",
+              "url": "https://www.thehindu.com/news/national/admiral-paparo-meets-top-indian-military-leadership-at-us-envoys-dinner-in-new-delhi/article71548668.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "collective deterrence measures",
+          "plain": "Several countries are working together to stop attacks."
+        },
+        {
+          "term": "Houthi group",
+          "plain": "This is a group of people from Yemen."
+        }
+      ],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "c4ca4238",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Delhi Police reject assault claims and promote accused officer amid allegations by women journalists; Rahul…",
+      "topic": "Politics",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times leads with Delhi Police rejecting assault claims and promoting an accused officer; Mint leads with Rahul Gandhi's criticism.",
+      "why_it_matters": "It raises questions about police conduct, accountability, and the safety of journalists and protesters during demonstrations.",
+      "affects": [
+        "women journalists",
+        "protesters",
+        "police officers"
+      ],
+      "agreed_facts": [
+        "Three women journalists complained that they had been sexually harassed by police officers.",
+        "A Delhi Police officer, Vivek Bhagat, accused of sexually harassing a woman journalist, was promoted.",
+        "The allegations of sexual harassment by women reporters arose during protests at Jantar Mantar.",
+        "Delhi Police rejected assault claims, stating that ‘Females treated with dignity’.",
+        "Congress leader Rahul Gandhi alleged that women protesters and female journalists were mistreated during recent incidents in Delhi.",
+        "Rahul Gandhi demanded that CCTV footage from Saket police station be made public and action be taken against officers found responsible."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the story around Delhi Police's rejection of assault claims and their general stance on women's dignity.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "‘Females treated with dignity’: Delhi Police reject assault claims, issue journalist guidelines as accused cop gets promoted",
+              "url": "https://www.hindustantimes.com/india-news/females-treated-with-dignity-delhi-police-reject-assault-claims-issue-journalist-guidelines-as-accused-cop-gets-promoted-101791217771982.html"
+            },
+            {
+              "name": "NDTV",
+              "headline": "\"Baseless\": Delhi Police On Allegations Of Assault On Female Protesters",
+              "url": "https://www.ndtv.com/india-news/baseless-delhi-police-on-allegations-of-assault-on-female-protesters-12142812#publisher=newsstand"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasises the promotion of the police officer accused of sexual harassment amidst the allegations.",
+          "papers": [
+            {
+              "name": "NDTV",
+              "headline": "Delhi Cop, Accused Of Sexually Harassing Woman, Gets Promotion",
+              "url": "https://www.ndtv.com/india-news/delhi-cop-vivek-bhagat-accused-of-sexually-harassing-woman-journalist-gets-promotion-12142803#publisher=newsstand"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Delhi police official, accused of sexually harassing journalist during anti-CEC protest at Jantar Mantar, promoted",
+              "url": "https://www.hindustantimes.com/india-news/delhi-police-acp-vivek-bhagat-promoted-accused-of-sexually-harassing-journalist-during-anti-cec-protest-at-jantar-mantar-101791206875135.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights Rahul Gandhi's allegations of misconduct against Delhi Police and his demands for transparency and action.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "‘Why are you afraid of women?’ Rahul Gandhi trains guns on Amit Shah over alleged Delhi Police misconduct",
+              "url": "https://www.livemint.com/news/india/why-are-you-afraid-of-women-rahul-gandhi-trains-guns-on-amit-shah-over-alleged-delhi-police-misconduct-11791192022596.html"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "'Release CCTV footage of Saket police station': Rahul Gandhi targets Centre over women journalists' assault allegations",
+              "url": "https://www.hindustantimes.com/india-news/release-cctv-footage-of-saket-police-station-rahul-gandhi-targets-centre-over-women-journalists-assault-allegations-101791191604707.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [
+        {
+          "name": "Rahul Gandhi",
+          "who": "12th Leader of the Opposition in Lok Sabha since 2024",
+          "detail": "Rahul Rajiv Gandhi is an Indian politician. A member of the Indian National Congress (INC), he is currently serving as the 12th leader of the Opposition in Lok Sabha and as the member of the Lok Sabha for Rae Bareli, Ut…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Rahul_Gandhi.png/330px-Rahul_Gandhi.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Rahul_Gandhi"
+        }
+      ],
+      "published": "2026-10-05",
+      "id": "37693cfc",
+      "source_count": 3,
+      "read_seconds": 76
+    },
+    {
+      "headline": "India-born cheetah gives birth to five cubs in Kuno National Park, increasing population to 60",
+      "topic": "Climate",
+      "regions": [
+        "national",
+        "Madhya Pradesh"
+      ],
+      "disagreement": 1,
+      "teaser": "Hindustan Times leads with cheetahs being moved to tiger territory; The Hindu leads with an India-born cheetah giving birth to five cubs.",
+      "why_it_matters": "The birth of new cubs signals progress in cheetah reintroduction and conservation efforts in India.",
+      "affects": [
+        "conservation efforts",
+        "wildlife populations"
+      ],
+      "agreed_facts": [
+        "An India-born cheetah gave birth to five cubs in Kuno National Park, Madhya Pradesh.",
+        "The father of the cubs is a cheetah brought from Botswana.",
+        "The birth of these cubs marks the beginning of the Botswana lineage in India.",
+        "The total cheetah population reached 60."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the story around the recent birth of five cheetah cubs and its immediate impact on the cheetah population and genetic lineage in India.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "India-born cheetah gives birth to five cubs in Madhya Pradesh’s Kuno National Park",
+              "url": "https://www.thehindu.com/news/national/india-born-cheetah-gives-birth-to-five-cubs-in-madhya-pradeshs-kuno-national-park/article71548438.ece"
+            },
+            {
+              "name": "Indian Express",
+              "headline": "Father from Botswana, mother from India: 5 cheetah cubs at Kuno usher in new lineage",
+              "url": "https://indianexpress.com/article/india/kuno-cheetah-cubs-botswana-father-indian-mother-new-lineage-10907572/"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "Indian-born Cheetah gives birth to five cubs at Kuno National Park in Madhya Pradesh, total population reaches 60",
+              "url": "https://www.hindustantimes.com/india-news/madhya-pradesh-kuno-national-park-mp-indian-born-cheetah-gives-birth-to-five-cubs-told-cheetah-population-60-101791194641611.html"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on the future prospect of cheetahs inhabiting tiger territory, providing broader context for the cheetah reintroduction project.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "In a first, cheetahs to roam in tiger territory at Veerangana Durgavati Tiger Reserve",
+              "url": "https://www.hindustantimes.com/india-news/in-a-first-cheetahs-to-roam-in-tiger-territory-at-veerangana-durgavati-tiger-reserve-101791206704079.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "Botswana lineage",
+          "plain": "This means the cubs are descendants of cheetahs from Botswana."
+        }
+      ],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "02e74f10",
+      "source_count": 3,
+      "read_seconds": 51
+    },
+    {
+      "headline": "Russian Lab Worker Dies of Pneumonia; Dozens Quarantined After Incident at Plague Institute",
+      "topic": "Health",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Mint highlights the 'plague scare'; AP emphasizes the unknown cause of pneumonia; Reuters focuses on the subsequent quarantine.",
+      "why_it_matters": "The death of a lab worker from pneumonia and the quarantine of dozens raise public health concerns.",
+      "affects": [
+        "lab workers",
+        "public health officials",
+        "local residents"
+      ],
+      "agreed_facts": [
+        "A laboratory worker died.",
+        "The worker was at a plague institute.",
+        "The worker died of pneumonia.",
+        "Dozens of people were quarantined.",
+        "The incident occurred in Siberia, Russian Federation."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the incident as a 'plague scare', highlighting the 'severe pneumonia' and the World Health Organisation's awareness.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "Russia lab worker dies of 'severe pneumonia', sparking plague scare; dozens quarantined: What we know so far",
+              "url": "https://www.livemint.com/news/world/russia-lab-worker-dies-of-neumonic-plague-sparking-bubonic-plague-scare-dozens-quarantined-11791219197326.html"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes that the worker at a Siberian plague institute died from pneumonia caused by an unknown factor.",
+          "papers": [
+            {
+              "name": "AP",
+              "headline": "Russia reports a worker at a Siberian plague institute got pneumonia from an unknown cause and died",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMUVxck1SdlF6ZTlSV0ZpLWdmR3g5WTAtX2tqR3FieHVXdnBILWhYUTNTblU1bjkxbXdEc3lNYlN5d3AtdVR1NjVDRmIyRmt6dWEwQ1dLWjZnVDYwZTZIZkVyT2FCMWlwOUJ0M3VNVF93RHYwZ2tzMDdzd0pkbmg2dnFrc1RzMmFEbi12YWhuVk1pNXhEZkh1TWozaGZHS2c1ZjNBSQ?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on the immediate consequence of the lab worker's death, namely the quarantine of dozens in Siberia.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "Dozens quarantined in Siberia after plague institute lab worker dies",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT0pYa1NkY1FEdnFwUjJfYWRUQTFyNXd3NWRVNldKRFZOQ09RSHNfd2h3SXhvRnlZT0lqcVNROTBWYVhCQ0JrTkJvYlZzQVEyUk1JWVVaTE56bWwxOWRSUWZ6amdYcDRlMVRpZnhVSG5GcW1iRzZSX1A0WGd1djdrMDdMWTVMbEh0bTZxMDQ3WHZtNkZMeWJnTUlSV0NQWHhFWFZzd1JQNklMNWtHRVVGRTJSc1FqbUY0THJNQ24yS3lucDFSbWRKQWJ3ekxJYTUyNExB?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "pneumonia",
+          "plain": "Pneumonia is an infection that inflames the air sacs in one or both lungs."
+        },
+        {
+          "term": "plague institute",
+          "plain": "A plague institute researches and studies infectious diseases like the plague."
+        }
+      ],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "6ea9ab1b",
+      "source_count": 3,
+      "read_seconds": 59
+    },
+    {
+      "headline": "Supreme Court to hear plea on state boundary changes; State borrowing forecast to increase 26% in Q3",
+      "topic": "Politics",
+      "regions": [
+        "national"
+      ],
+      "disagreement": 2,
+      "teaser": "The Hindu leads with the Supreme Court hearing on states changing ward boundaries; Mint leads with state borrowing projected to rise 26%.",
+      "why_it_matters": "Decisions concerning state administrative boundaries and borrowing strategies impact governance and public finances.",
+      "affects": [
+        "state residents",
+        "taxpayers"
+      ],
+      "agreed_facts": [],
+      "clusters": [
+        {
+          "angle": "Focuses on the Supreme Court's role in adjudicating the legality of states altering administrative boundaries during a Census freeze.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Can States change ward boundaries during Census freeze? SC to hear plea",
+              "url": "https://www.thehindu.com/news/national/can-states-change-ward-boundaries-during-census-freeze-sc-to-hear-plea/article71548314.ece"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights the projected increase in state borrowing for Q3 and the widespread adoption of the RBI's new Benchmark Issuance Strategy by states and UTs.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "State borrowing to rise 26% to  ₹3.6 tn in Q3 under new issuance strategy: ICRA",
+              "url": "https://www.livemint.com/news/india/state-borrowing-set-to-rise-26-in-q3-as-26-states-adopt-new-issuance-strategy-icra-11791195674179.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "e369853d",
+      "source_count": 2,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Morne Morkel discusses player development strategies; Karnataka athletes achieve medal success at Asian Games.",
+      "topic": "Sport",
+      "regions": [
+        "national",
+        "Karnataka"
+      ],
+      "disagreement": 2,
+      "teaser": "ESPNcricinfo and Times of India Sports both feature Morne Morkel's views on player development; The Hindu reports on Karnataka's Asian Games medals.",
+      "why_it_matters": "These reports offer insights into athlete development strategies and regional athletic achievements in prominent sporting events.",
+      "affects": [
+        "young athletes",
+        "cricket players",
+        "state athletes"
+      ],
+      "agreed_facts": [
+        "Morne Morkel made comments regarding player development.",
+        "The Asian Games were referenced in discussions related to athletes."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames Morne Morkel's views on athlete development and learning.",
+          "papers": [
+            {
+              "name": "ESPNcricinfo",
+              "headline": "Morkel: Mayank, Prince 'still learning the trade' in small windows",
+              "url": "https://www.cricinfo.com/ci/content/story/1557225.html?ex_cid=OTC-RSS"
+            },
+            {
+              "name": "Times of India Sports",
+              "headline": "‘Even if he’s not getting game time, he’s still in the dugout’: Morkel on Sooryavanshi",
+              "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-west-indies/even-if-hes-not-getting-game-time-hes-still-in-the-dugout-morne-morkels-big-message-for-vaibhav-sooryavanshi/articleshow/134708605.cms"
+            }
+          ]
+        },
+        {
+          "angle": "Details the medal haul for Karnataka athletes at the Asian Games.",
+          "papers": [
+            {
+              "name": "The Hindu",
+              "headline": "Asian Games 2026: Karnataka athletes return with a haul of four gold, three silver and two bronze medals",
+              "url": "https://www.thehindu.com/news/national/karnataka/asian-games-2026-karnataka-athletes-return-with-a-haul-of-four-gold-three-silver-and-two-bronze-medals/article71544182.ece"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "1c383cd3",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "US Marine's arrest for murder in Okinawa reignites protests and highlights military's alleged crime history",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 1,
+      "teaser": "Al Jazeera leads with the US military's history of alleged crime in Japan; BBC News and AP lead with the outrage and reignited protests in Okinawa.",
+      "why_it_matters": "The incident underscores ongoing tensions between local residents and US military presence in Okinawa, prompting renewed calls for accountability.",
+      "affects": [
+        "local residents",
+        "us military personnel"
+      ],
+      "agreed_facts": [
+        "The murder of 39-year-old Anna Yagi on Okinawa, Japan, involved a US Marine.",
+        "The arrest of the US Marine has reignited protests and triggered outrage in Okinawa, bringing decades of frustration to the fore for local residents."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the incident within the broader context of the US military's historical alleged crimes in Japan.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "Murder in Okinawa: The US military’s history of alleged crime in Japan",
+              "url": "https://www.aljazeera.com/news/2026/10/5/murder-in-okinawa-the-us-militarys-history-of-alleged-crime-in-japan?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Frames the arrest as triggering immediate public outrage and reigniting protests in Okinawa due to existing frustrations.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "'Not again': Arrest of US marine for murder reignites protests in Japan's Okinawa",
+              "url": "https://www.bbc.co.uk/news/articles/cwgkv70gg1j3o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "2838023a",
+      "source_count": 2,
+      "read_seconds": 47
+    },
+    {
+      "headline": "Strait of Hormuz central to Iran's statements as US military presence shifts",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "Al Jazeera questions Iran's war plan maneuvering; Mint analyzes Tehran's Strait of Hormuz leverage.",
+      "why_it_matters": "These developments impact international relations and global energy security.",
+      "affects": [
+        "energy consumers"
+      ],
+      "agreed_facts": [
+        "Iran is involved in matters concerning the Strait of Hormuz.",
+        "The US is involved in discussions related to Iran.",
+        "The Strait of Hormuz is a topic of discussion."
+      ],
+      "clusters": [
+        {
+          "angle": "Questions Iran's strategic response to US military movements.",
+          "papers": [
+            {
+              "name": "Al Jazeera",
+              "headline": "US pulls bombers from UK base: Is Iran manoeuvring Trump’s war plans?",
+              "url": "https://www.aljazeera.com/news-analysis/2026/10/5/us-pulls-bombers-from-uk-base-is-iran-maneouvering-trumps-war-plans?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Analyzes the evolving significance of the Strait of Hormuz as a strategic tool for Iran.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "US-Iran war: Is Tehran losing Strait of Hormuz ‘psychological leverage’? Expert decodes where Tehran stays strong",
+              "url": "https://www.livemint.com/news/us-news/usiran-war-is-tehran-losing-strait-of-hormuz-psychological-leverage-expert-decodes-where-tehran-stays-strong-11791190838102.html"
+            }
+          ]
+        },
+        {
+          "angle": "Reports Iran's stated conditions for reopening the Strait of Hormuz.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "Iran says Strait of Hormuz will not reopen until conditions are met",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUEhSM2E2MkI0TDU0LXVLZl9GLWY5d3FoTU1PdS1ON0xUV1NNQ3FnUlZGRFhOYkVHTVp5RDFaN3pxZ1pVeVNJdTdhemxsNkdRaHJBTWNtRDEwWjg2cnlKb3F5VmpEN25tTHNmV2hLTnFkc1IxSEhLVGplNTJJSnBXMDFmOUN1V3NpRmxoVnJkcmRxd1hmbzBRTHZjd05rWlhUbDBfQmFCZWRkS0pHUTJNa041QlRtSkd5YUE?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "Strait of Hormuz",
+          "plain": "It is a narrow sea passage vital for global oil shipments."
+        }
+      ],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "d82c8d16",
+      "source_count": 3,
+      "read_seconds": 51
+    },
+    {
+      "headline": "Reports detail Flydubai co-pilot's attack plan, its timing, and related intelligence sharing",
+      "topic": "Politics",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 3,
+      "teaser": "BBC News leads with the co-pilot's planned target; Reuters leads with the attack's planning timeline; AP leads with UAE-Israel intelligence sharing.",
+      "why_it_matters": "The reports highlight international security concerns and the role of intelligence sharing in preventing potential aviation threats.",
+      "affects": [
+        "airline passengers",
+        "airline staff",
+        "travelers"
+      ],
+      "agreed_facts": [
+        "A Flydubai co-pilot planned an attack."
+      ],
+      "clusters": [
+        {
+          "angle": "Frames the story by emphasizing the specific target of the planned attack and describing the co-pilot's extremist nature.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Flydubai co-pilot planned to crash plane into Tel Aviv airport or building, reports say",
+              "url": "https://www.bbc.co.uk/news/articles/cm3691y79xp5o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "angle": "Emphasizes the timeline of the co-pilot's plot, stating it was planned before he joined the airline, and attributes this information to Israeli officials.",
+          "papers": [
+            {
+              "name": "Reuters",
+              "headline": "Co-pilot planned flydubai attack before joining airline, two Israeli officials say",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVzZzNy0yYzNKSGZpaEdpT0gxWkNPV05MN01vaDBlYzNUemFCSkFvdHRUOFVMMjVWNzJjbkNzdl9ZalpzZGpja2N0UmpwdUdSZzFmdldFcHN3UmFKTEpGWmNmWHBndi1qRGI5eEIzYXZlOFN1LWR4M0tXaG5ZTkJfMGdYUE9qV2lPVDFDdHRSV3BIeWtrMXEwdkJVSnV0Wk1vanlYWTV6Qm9sYlpBX2xHVGtuZ3QtR0hCX21KQW5DNW9IVUh5a2RnTVZhUWp3dw?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Focuses on the intelligence sharing aspect, reporting that the UAE provided flight and pilot details to Israel.",
+          "papers": [
+            {
+              "name": "AP",
+              "headline": "UAE had shared FlyDubai flight details with Israel, including info on pilots, officials say",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUDB6OUQwcTRCN3p2Mnl0MnY3Mlk4S2pITUZacXlNVDhaV2RkbFo2VUtIOGd3TGxCZVZ5bmhWNXNESUlsN09BX21NaUtLSkFSNjFjdVlqaXpZZDNGRWFlekoxTzlTd2FlbFh2cXF0WnVtSEk0T0t3VkF5Nkx4M3RYVmprS21Cd2FHbUcyaV83OEdVcDBQSWwyaXRmckE1YkJxTVQxVWhIRQ?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "03afdbd6",
+      "source_count": 3,
+      "read_seconds": 54
+    },
+    {
+      "headline": "Trump appoints national intelligence director to lead AI task force; UP sets up AgriStack rollout group",
+      "topic": "Tech",
+      "regions": [
+        "international",
+        "Uttar Pradesh"
+      ],
+      "disagreement": 2,
+      "teaser": "BBC News and AP lead with the US President appointing an AI task force head; Times of India leads with Uttar Pradesh setting up an AgriStack task force.",
+      "why_it_matters": "The establishment of dedicated task forces in different regions highlights the growing governmental focus on technological advancement and its implications across various sectors.",
+      "affects": [
+        "citizens",
+        "tech developers",
+        "farmers"
+      ],
+      "agreed_facts": [
+        "The US president Trump chose his national intelligence chief to lead a new AI taskforce.",
+        "Worries over AI are growing."
+      ],
+      "clusters": [
+        {
+          "angle": "Focuses on the US President's appointment of a national intelligence director to lead a new federal AI task force amid growing worries about AI.",
+          "papers": [
+            {
+              "name": "BBC News",
+              "headline": "Trump chooses top spy boss to run new AI taskforce",
+              "url": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "name": "AP",
+              "headline": "Trump names national intelligence director Jay Clayton to lead a new federal AI task force",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTUk2R0lTbmk2a1QzTm5NcS05eFBCUjI1VmdxUW1lT1c5dEV1NEhqd0RWbUJXZ3VUbHhPODNYNVJvQmVzNFpGWV82XzRaUy00TWZjWUUwS2hLak92ejBKbzEzQkFxWTFfWF9qTXRQVHpyX29Eb0VkRnEybHNTY2pLOEZ3akFHMGZFM1ZYN2VRMVk0TE85RVhodm5OcDZaTm9aSldGU3p1V1ZlV3dwc203Nkln?oc=5"
+            }
+          ]
+        },
+        {
+          "angle": "Reports on the state of Uttar Pradesh establishing a task force to accelerate the rollout of AgriStack.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "UP sets up task force to speed up AgriStack rollout",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPX09mcWtyaUZXbnZUV0lwYzZ1UDFHWEtpdkhIRkFZLU5jV1RkTUNlRFpfSWRxeUQxcENqME9YRDY0RVJwM2s0ZmhvcFBPY2pZYU1VU0hFNWNQT3NVUEZQdmxTaW1rMzVpYWpyQUxWZHhkM0x1N0NuOWtUMWE0bmh1b1RrRjVQMGxqNTFTdUVEYkVvdDBsNVdjVmVkUXNHdU9PRFBZS2p3SnhjNWcwRnhPX1FxeDRkR3NlYjBDdV9tYWJ0UllY0gHKAUFVX3lxTE5sYnAtbEVILVZqX1RpbHhnZHdGcDdUM2swM0hXWjh1MndCVTRpSThuNlFTbVJBb195eWM3Qjh1ZVMyVWJxeU1rNmx5UVc5OWdlM05EbkRFZ01OTl9aWEpBOXc2RHFTbmpYcEoyMU9VQjJDdGpXVDIyUlVYS3F3c3B1cVFacUFTdEYwZGphMk9QQXdOd0c5d1FoVUdsd1h1cWhDNWJwRm5QY0luaGV1aElIRV9uZk1DaTNQaXlhbFRVSlFCYUs1NXVHUUE?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "AI taskforce",
+          "plain": "A group formed to study and work on artificial intelligence."
+        }
+      ],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "fc490ca4",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "India-US Trade Talks Reach 'Plateau' as Concessions Prove Difficult, Says Finance Minister",
+      "topic": "Economy",
+      "regions": [
+        "international"
+      ],
+      "disagreement": 1,
+      "teaser": "Hindustan Times leads with Finance Minister Nirmala Sitharaman's comments on the Lindsey Graham Bill; Mint leads with the India-US trade talks reaching a plateau.",
+      "why_it_matters": "The stalled trade negotiations could affect economic relations between India and the United States.",
+      "affects": [
+        "exporters",
+        "importers"
+      ],
+      "agreed_facts": [
+        "India-US trade talks have reached a \"plateau.\"",
+        "Finance Minister Nirmala Sitharaman stated that further concessions are proving difficult."
+      ],
+      "clusters": [
+        {
+          "angle": "Reports that India-US trade talks have reached a \"plateau,\" with Finance Minister Sitharaman stating that further concessions are proving difficult.",
+          "papers": [
+            {
+              "name": "Mint",
+              "headline": "India-US trade talks hit a plateau, says Sitharaman",
+              "url": "https://www.livemint.com/news/india/trade-talks-need-different-templates-for-different-partners-says-fm-sitharaman-11791185501564.html"
+            },
+            {
+              "name": "Reuters",
+              "headline": "India-US trade talks hit 'plateau', finance minister says, as tariffs narrow room for deal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPM1J5UEt2X3M2VGctS2FVQnMtVkJoOEwzdUZ4SENyTzNJRUZkUmJBYjBjWkVCbkVUNG9ITHRueUJONGpBUHVpZ3VaajhUNGY3SThiYTJHQVB3U2l0MXlaaGNKY1NLbWZ6TXNYV3FmNm9BVjJ0Mktod2d3SWV6TWRjUDNkanRCVHdpRU9oZFgtc2RGbUx1TUwyMU0weVM2Ry0wOGJMN0VMZGM5VGhUdDJ5bWNjYWh0WHhWQlE?oc=5"
+            },
+            {
+              "name": "Hindustan Times",
+              "headline": "India-US trade talks reached a ‘plateau’, says Sitharaman: ‘Give or take beyond this very difficult'",
+              "url": "https://www.hindustantimes.com/india-news/india-us-trade-talks-reached-a-plateau-says-sitharaman-give-or-take-beyond-this-very-difficult-101791177215458.html"
+            }
+          ]
+        },
+        {
+          "angle": "Highlights Finance Minister Sitharaman's comments referencing the Lindsey Graham Bill in the context of trade talks and Russian oil.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "‘There is no Lindsey Graham Bill in Europe’: Nirmala Sitharaman on Russian oil, trade talks",
+              "url": "https://www.hindustantimes.com/india-news/there-is-no-lindsey-graham-bill-in-europe-nirmala-sitharaman-on-russian-oil-trade-talks-101791179918204.html"
+            }
+          ]
+        }
+      ],
+      "jargon": [
+        {
+          "term": "plateau",
+          "plain": "It means things have stopped changing or improving."
+        }
+      ],
+      "people": [
+        {
+          "name": "Nirmala Sitharaman",
+          "who": "Indian economist and politician (born 1959)",
+          "detail": "Nirmala Sitharaman is an Indian economist and politician who is serving as the 30th Minister of Finance and 32nd Minister of Corporate Affairs since 2019. She previously served as the Minister of Defence from 2017 to 20…",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Am_11._April_2025_empfing_Au%C3%9Fenministerin_Beate_Meinl-Reisinger_die_indische_Finanzministerin_Nirmala_Sitharaman_in_Wien_%2854445397025%29_%28cropped%29.jpg/330px-Am_11._April_2025_empfing_Au%C3%9Fenministerin_Beate_Meinl-Reisinger_die_indische_Finanzministerin_Nirmala_Sitharaman_in_Wien_%2854445397025%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "wiki_url": "https://en.wikipedia.org/wiki/Nirmala_Sitharaman"
+        }
+      ],
+      "published": "2026-10-05",
+      "id": "a3f390d8",
+      "source_count": 3,
+      "read_seconds": 45
+    },
+    {
+      "headline": "Kuki Man Found Dead in Manipur's Kangpokpi District Following Alleged Abduction",
+      "topic": "Politics",
+      "regions": [
+        "Manipur"
+      ],
+      "disagreement": 3,
+      "teaser": "Hindustan Times leads with the alleged abduction by an armed group; Indian Express emphasizes the death a day after abduction.",
+      "why_it_matters": "This incident highlights ongoing security concerns and ethnic tensions in Manipur.",
+      "affects": [
+        "kuki community members",
+        "residents of manipur"
+      ],
+      "agreed_facts": [
+        "A Kuki man was found dead in Manipur's Kangpokpi district.",
+        "The man was found dead after an alleged abduction."
+      ],
+      "clusters": [
+        {
+          "angle": "Hindustan Times frames the story by highlighting the alleged abduction by an armed group and identifies the deceased.",
+          "papers": [
+            {
+              "name": "Hindustan Times",
+              "headline": "Kuki Man found dead after alleged abduction by armed group in Manipur's Kangpokpi district",
+              "url": "https://www.hindustantimes.com/india-news/kuki-man-found-dead-after-alleged-abduction-by-armed-group-in-manipurs-kangpokpi-district-101791170072179.html"
+            }
+          ]
+        },
+        {
+          "angle": "Indian Express frames the story by emphasizing the timeline, noting the man was found dead a day after his abduction.",
+          "papers": [
+            {
+              "name": "Indian Express",
+              "headline": "Manipur: Kuki man found dead day after abduction",
+              "url": "https://indianexpress.com/article/india/manipur-kuki-man-abduction-death-10906760/"
+            }
+          ]
+        },
+        {
+          "angle": "Times of India frames the story by specifying the victim's occupation as a farmer and mentioning he was found with his hands tied.",
+          "papers": [
+            {
+              "name": "Times of India",
+              "headline": "Kuki farmer found dead with hands tied in Manipur’s Kangpokpi",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONldfamZXV01ZU0YyZ2VDODh1VlNGamlySTE1T1pSMXpvektBZ1RmbGdzSk5rcDg2V0Mwc2FDemNpcDBYSXc2bXFFTW5rTGNqQmF6bEgzMk5PRHJiMWdZRUQ4QVNPMElFbnJtZXB6ZEhSQmdkRW5XZkRTOThVVTBWb0dYa2h0VWJKeEdxTFktanlvWnJYMWstNGhiaTFEbktqRnJ0Q0lza1V3b1JIbnUyVVFlSFhxeno3ZFdMNmpOd2tGU1dLNTVlTWdlTWdXd1lzS1ZGdTlBMNIB1wFBVV95cUxONldfamZXV01ZU0YyZ2VDODh1VlNGamlySTE1T1pSMXpvektBZ1RmbGdzSk5rcDg2V0Mwc2FDemNpcDBYSXc2bXFFTW5rTGNqQmF6bEgzMk5PRHJiMWdZRUQ4QVNPMElFbnJtZXB6ZEhSQmdkRW5XZkRTOThVVTBWb0dYa2h0VWJKeEdxTFktanlvWnJYMWstNGhiaTFEbktqRnJ0Q0lza1V3b1JIbnUyVVFlSFhxeno3ZFdMNmpOd2tGU1dLNTVlTWdlTWdXd1lzS1ZGdTlBMA?oc=5"
+            }
+          ]
+        }
+      ],
+      "jargon": [],
+      "people": [],
+      "published": "2026-10-05",
+      "id": "32bb90e8",
+      "source_count": 3,
+      "read_seconds": 57
+    },
     {
       "headline": "Trump signs Russia sanctions bill, allowing tariffs on oil buyers including India and China",
       "topic": "Politics",
